@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Island.java&apos; to &apos;MYTEST/src/DFS&apos;&#x0D;&#x0A;- Original project: &apos;MYTEST&apos;&#x0D;&#x0A;- Destination element: &apos;MYTEST/src/DFS&apos;&#x0D;&#x0A;- Original element: &apos;Classics.Island.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;DFS" element1="/src&lt;Classics{Island.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1598973548269" units="1" version="1.0"/>
+</session>

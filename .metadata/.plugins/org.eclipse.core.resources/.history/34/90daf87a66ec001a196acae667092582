@@ -1,0 +1,48 @@
+package Classics;
+//岛屿问题，求岛屿大小，经典DFS
+//如果是求岛屿数量，就在遍历时遇到岛屿++，然后递归把相连岛屿全变0
+public class Island {
+	public static void main(String[] args) {
+		int[][] nums= {{1,0,0,0},
+						{1,1,0,0},
+						{0,1,0,1},
+						{1,1,1,0}};
+		int result=0;
+		int k = 0;
+		boolean[][]flag=new boolean[4][4];
+		for(int i=0;i<nums.length;i++) {
+			for(int j=0;j<nums[0].length;j++) {
+				if(nums[i][j]==1) {
+					k++;
+					recur2(nums, i, j, flag);
+				}
+//				result=result>k?result:k;
+			}
+		}
+		System.out.println(k);
+	}
+	public static int recur1(int[][] nums,int row,int col,boolean[][]flag,int result) {
+		if(row<0||row>=nums.length||col<0||col>=nums[0].length||nums[row][col]==0) return result;
+		if(nums[row][col]==1&&!flag[row][col]) {
+			flag[row][col]=true;
+			result=Math.max(recur1(nums, row+1, col, flag,result+1),
+					Math.max(recur1(nums, row-1, col, flag,result+1), 
+					Math.max(recur1(nums, row, col+1, flag,result+1), recur1(nums, row, col-1, flag,result+1))));
+			flag[row][col]=false;
+		}
+		return result;
+	}
+	public static void recur2(int[][] nums,int row,int col,boolean[][]flag) {
+		if(row<0||row>=nums.length||col<0||col>=nums[0].length||nums[row][col]==0) return ;
+		if(nums[row][col]==1&&!flag[row][col]) {
+			flag[row][col]=true;
+			nums[row][col]=0;
+			recur2(nums, row+1, col, flag);
+			recur2(nums, row-1, col, flag);
+			recur2(nums, row, col+1, flag);
+			recur2(nums, row, col-1, flag);
+			flag[row][col]=false;
+		}
+		return ;
+	}
+}

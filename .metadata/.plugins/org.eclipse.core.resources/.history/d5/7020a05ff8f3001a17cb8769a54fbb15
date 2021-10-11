@@ -1,0 +1,15 @@
+package Base;
+
+public class p9 {
+	public static void main(String[] args) {
+		int a=8,b=6;
+		Integer A=8;
+		Integer B=6;
+		Integer temp=A;
+		A=B;
+		B=temp;
+		System.out.println(A);
+		
+		
+	}
+}

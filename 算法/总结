@@ -1,0 +1,82 @@
+1.全部导入
+	import java.util.*;
+2.Scanner常见问题
+	(1)nextInt之后要nextLine一下,这个nextLine读的是Int后面的回车,再nextLine才是下一行数据
+	(2)循环中避免使用hasnext()与next(),否则根本无法结束输入
+	(3)隔行输入(非数字)
+	while(--n>=0&&sc.hasNextLine()){
+		list.add(sc.nextLine());}
+	(4)隔行输入(数字),所有操作在while(sc.hasnext())内进行
+	while(sc.hasnext){
+	for(int i = 0 ; i < num ;i++){
+                int curr = sc.nextInt();
+                set.add(curr);
+            }
+      }
+3.字符串函数问题
+	(1)split函数:
+	split("a"),会在第一个a前后，将字符串分割成String[]，注意如果同时有两个a，比如String str="baaab",
+	那么分隔结果是strs[0]="b",strs[1]="",strs[2]="",strs[3]="b",也就是会自动将参数替换成""（不是null）
+	split("a",n),分隔成的数组长度为n，注意这里很多讲究，首先，n最多可以是字符串长度，然后下标只能读到length-2.
+	当遇到上面这种重复情况时，当n=5，str[3]=b,n=4,str[3]=b(两者其实等价）,n=3,str[2]="ab"，多出来的不替换
+	(2)replace函数:
+	直接替换，返回值为替换后的字符串
+4.E[]这种数组要得到长度只能用length，Set要得到长度用size(),String用length();
+	StringBuffer获得长度:sb.length(),删除元素deleteCharAt(i)
+	Collections.sort(list)/list.sort(null)顺序排序，还可以根据字母表排序，只能对List操作
+	Collections.reverse(list),逆序排序,Collections.shuffle(list),随机排序,都是对list操作
+	数组可以直接排序，Arrays.sort(int[])
+	比较并返回max=Math.max(area,max);
+	快速获得数组最大值：int[] arr=new int[]{1,'a',3}; return Arrays.stream(arr).max().getAsInt();返回97
+4.数组
+	（1）逆序输出数组：字符串使用toCharArray得到c，创建一个等长数组nc，再用for(int i=c.length-1;i>=0;i--)遍历，
+		将c[i]赋给cc[c.length-1-1],最后直接打印cc
+	（2）实现数组内挪动
+		if(){nums[j]=nums[i];nums[i]=0;j++}
+	（3）实现数组双重遍历
+		for(int i=0;i<nums.length;i++){
+		for(int j=i+1;j<nums.length;j++){
+		}
+		}
+	(4)实现数组往内收敛
+		for(int i=0,j=nums.length-1;i<j;){
+		int min=nums[i]<nums[j]?nums[i++]:nums[j--]}
+	(6)顺序读取不重复元素，不能用Set遍历 注意遍历得到的set是顺序排好的，hashset的无序指的是取出和存放顺序不一样,
+		正确做法是输入字符串转数组后遍历，if(set.add(i)){System.out.print(i)},add返回的是布尔类型，添加成功
+5.栈		
+		Stack类继承自Vector继承自List，实现类就是Stack
+    	stack.empty();/stack.isEmpty();
+    	stack.peek();
+    	stack.push(obj);
+    	stack.pop()
+	(1)有最近相关性（最外层与最外层是一对，类似于洋葱）与先进后出的用栈来实现
+		Stack<Character> stack=new Stack();
+		stack.push('a');
+		if(!stack.empty()){char c=stack.pop()};
+		最近相关性的话，可以判断输入，然后将其相关元素入栈，同时判断输入是否等于pop出来的元素
+		stack泛型是包装好的类型，比较时不能用==
+	（2）由中间向两边扩展求组成面积之类的，可以用维护单调栈法
+6.队列	
+		Queue是一个接口，与List和Set一样继承自Collection，实现类可以是LinkedList(实现了Deque这个子接口）
+		事实上，LinkedList可以做栈（push()，pop()，peek()，isEmpty()
+		可以做队列（抛出异常:add(),remove()，element();返回空:offer(),poll(),peek()）
+		可以做双端队列（与上面完全一样，element换成get，pollLast()就是弹出队尾元素
+7.递归	
+		(1)递归一般有四步
+		public void recur(int level,int param){
+		if(level>MAX_LEVEL) return;//跳出判断
+		process(level,param)//当前逻辑
+		recur(level+!,NEW_param)}//当前逻辑执行完后的下一步
+		(2)要穷尽所有可能，则肯定是用递归,在递归方法里，通常的办法是：
+			--选择一个随递归变化的变量（不一定只有一个），当这些变量变化到某个层次就跳出
+			--创建一个保存结果的容器，当判定到可以跳出时把结果加到容器里面
+			--每一个可能有多少分支就创建多少个递归，加一些if来决定递归的条件
+			--最终结果保存在该容器中
+8.关于值传递与引用传递
+	将一个引用丢进Arraylist，该引用指向的值改变，Arraylist中该对象元素也会改变
+10.常用转换:
+	char转int（特指char中的数字）1='1'-'0'
+	String转int:Integer.parseInt(str),注意千万字面意思用getInteger.这是输入系统变量作为参数
+	String转char或char[]:toCharArray(),charAt(int i),getChars(srcBegin, srcEnd, dst, dstBegin)
+	StringBuilder转String:toString(),加元素用append,删元素用deleteCharAt(int)
+	十进制转二八十六进制字符串:Integer.toBinaryString(int i),Integer.toOctalString(int i),Integer.toHexString(int i)

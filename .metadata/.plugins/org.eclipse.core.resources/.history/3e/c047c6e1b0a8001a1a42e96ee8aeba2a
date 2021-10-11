@@ -1,0 +1,29 @@
+package Sword;
+//输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。
+//如果是则输出Yes,否则输出No。假设输入的数组的任意两个数字都互不相同。
+public class VerifySquenceOfBST {
+	public static void main(String[] args) {
+		int[] sequence= {4,8,6,12,16,14,10};
+		System.out.println(new VerifySquenceOfBST().test(sequence));
+	}
+	boolean flag=true;
+    public boolean test(int [] sequence) {
+    	if(sequence==null) return true;
+    	if(sequence.length==0) return true;
+        int root=sequence[sequence.length-1];
+        int left = 0,right=0;
+        
+        for(int i=0;sequence[i]<root;i++) left++;
+        int[] leftnums=new int[left];
+        for(int i=0;sequence[i]<root;i++) leftnums[i]=sequence[i];
+        
+        for(int j=left;sequence[j]>root;j++) right++;
+        int[] rightnums=new int[right];
+        for(int j=left;sequence[j]>root;j++) rightnums[j-1]=sequence[j-1];
+        
+        if(left+right!=sequence.length-1) flag=false;
+        test(leftnums);
+        test(rightnums);
+        return flag;
+    }
+}
