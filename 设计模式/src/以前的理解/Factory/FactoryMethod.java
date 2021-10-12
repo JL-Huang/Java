@@ -1,4 +1,4 @@
-package Factory;
+package 以前的理解.Factory;
 //工厂方法模式
 //注意这里有几个类是简单工厂模式已经写好直接用，分别是带有run方法Car接口，继承Car接口的Benz类，继承Car接口的Bwm类
 //代码复杂度来说，工厂方法模式更简单，因为增删新的产品只需要删除或添加Car的实现类与CarFactory的实现类

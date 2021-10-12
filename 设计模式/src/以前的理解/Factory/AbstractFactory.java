@@ -1,4 +1,4 @@
-package Factory;
+package 以前的理解.Factory;
 //抽象工厂模式：不可增加产品，可增加产品族
 public class AbstractFactory {
 public static void main(String[] args) {

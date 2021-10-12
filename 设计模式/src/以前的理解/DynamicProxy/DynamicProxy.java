@@ -1,4 +1,4 @@
-package DynamicProxy;
+package 以前的理解.DynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

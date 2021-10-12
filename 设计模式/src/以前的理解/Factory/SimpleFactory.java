@@ -1,4 +1,4 @@
-package Factory;
+package 以前的理解.Factory;
 //简单工厂模式也叫静态工厂模式，因为工厂的方法都是静态方法
 //添加新产品需要修改非常多的代码
 public class SimpleFactory {
