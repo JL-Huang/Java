@@ -1,2 +1,2 @@
-module Annotation {
+module 注解 {
 }

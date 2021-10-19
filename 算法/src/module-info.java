@@ -1,2 +1,2 @@
-module MYTEST {
+module 算法 {
 }
