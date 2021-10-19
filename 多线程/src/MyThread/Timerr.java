@@ -7,14 +7,14 @@ public class Timerr {
 public static void main(String[] args) {
 	Timer t=new Timer();
 	TimeTest tt=new TimeTest();
-//	1000msºóÖ´ĞĞÒ»´Î,×¢ÒâÖ´ĞĞºó¾Í²»ÄÜÔÙÖ´ĞĞÁË
+//	1000msåæ‰§è¡Œä¸€æ¬¡,æ³¨æ„æ‰§è¡Œåå°±ä¸èƒ½å†æ‰§è¡Œäº†
 //	t.schedule(tt, 1000);
-//	1000msºóÃ¿¸ô200Ö´ĞĞÒ»´Î
+//	1000msåæ¯éš”200æ‰§è¡Œä¸€æ¬¡
 	t.schedule(tt, 1000,200);
 	
 }
 }
-//TimerTask:¿ÉÒÔÓÉtimerµ÷¶È¶¨Ê±Ö´ĞĞµÄÈÎÎñ£¬Ğ´ÔÚrun·½·¨ÀïÃæ
+//TimerTask:å¯ä»¥ç”±timerè°ƒåº¦å®šæ—¶æ‰§è¡Œçš„ä»»åŠ¡ï¼Œå†™åœ¨runæ–¹æ³•é‡Œé¢
 class TimeTest extends TimerTask{
 	@Override
 	public void run() {

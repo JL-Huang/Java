@@ -1,9 +1,9 @@
 package ThreadLife;
-//ÖÕÖ¹Ïß³Ì£º
-//1.Õı³£Ö´ĞĞÍê±Ï£º´ÎÊı
-//2.Íâ²¿¸ÉÉæ£º¼ÓÈë±êÊ¶
+//ç»ˆæ­¢çº¿ç¨‹ï¼š
+//1.æ­£å¸¸æ‰§è¡Œå®Œæ¯•ï¼šæ¬¡æ•°
+//2.å¤–éƒ¨å¹²æ¶‰ï¼šåŠ å…¥æ ‡è¯†
 public class StopThread implements Runnable{
-//	1.ĞÂ½¨Ò»¸ö±êÖ¾£¬ÎªtrueÏß³ÌÔËĞĞ
+//	1.æ–°å»ºä¸€ä¸ªæ ‡å¿—ï¼Œä¸ºtrueçº¿ç¨‹è¿è¡Œ
 	private boolean flag=true;
 	private String name;
 	
@@ -16,21 +16,21 @@ public class StopThread implements Runnable{
 	public void run() {
 		int i=0;
 		// TODO Auto-generated method stub
-//		2.¹ØÁª±êÊ¶
+//		2.å…³è”æ ‡è¯†
 		while(flag) {
 			System.out.println(i++);
 		}
 	}
-//	3.¶¨Òå¸Ä±ä±êÊ¶µÄ·½·¨
+//	3.å®šä¹‰æ”¹å˜æ ‡è¯†çš„æ–¹æ³•
 	public void change() {
 		this.flag=false;
 	}
 	public static void main(String[] args) {
-	StopThread st=new StopThread("¹ş¹ş¹ş");
+	StopThread st=new StopThread("å“ˆå“ˆå“ˆ");
 	new Thread(st).start();
 	for(int i=0;i<100000;i++) {
 		if(i==99000) {
-//			·Ç¾²Ì¬·½·¨Ö»ÓĞÊµÀı»¯ÁË¶ÔÏó²ÅÄÜµ÷ÓÃ
+//			éé™æ€æ–¹æ³•åªæœ‰å®ä¾‹åŒ–äº†å¯¹è±¡æ‰èƒ½è°ƒç”¨
 			st.change();
 		}
 	}

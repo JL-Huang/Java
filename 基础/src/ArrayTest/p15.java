@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class p15 {
 public static void main(String[] args) {
-	//Ã°ÅİÅÅĞò
+	//å†’æ³¡æ’åº
 	
 	
 	int[] test= {8,9,5,5,3,8,6,5,623,880};
@@ -24,10 +24,10 @@ public static void main(String[] args) {
 }
 	System.out.println(cnt);
 //	System.out.println(erfenfa(623,test));
-//	ÉÏÃæÕâĞĞ´úÂëÅäºÏInteger»áÃ»ÓĞ·µ»Ø½á¹û£¬Éæ¼°µ½p16´úÂëÖĞµÄ»º´æÎÊÌâ
+//	ä¸Šé¢è¿™è¡Œä»£ç é…åˆIntegerä¼šæ²¡æœ‰è¿”å›ç»“æœï¼Œæ¶‰åŠåˆ°p16ä»£ç ä¸­çš„ç¼“å­˜é—®é¢˜
 	System.out.println(erfenfa(5,test));
 }
-//¶ş·Ö·¨²éÕÒÅÅºÃĞòµÄÊı×é
+//äºŒåˆ†æ³•æŸ¥æ‰¾æ’å¥½åºçš„æ•°ç»„
 private static int erfenfa(int value,int[] test) {
 //Scanner scanner=new Scanner(System.in);
 //int tar=Integer.parseInt(scanner.next());
@@ -44,11 +44,11 @@ while(low<high) {
 	}
 	if(value<test[mid]) {
 		high=mid-1;
-		System.out.println("×ó±ß");
+		System.out.println("å·¦è¾¹");
 	}
 	if(value>test[mid]) {
 		low=mid+1;
-		System.out.println("ÓÒ±ß");
+		System.out.println("å³è¾¹");
 	}
 }
 return -1;

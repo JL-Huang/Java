@@ -1,11 +1,11 @@
 package ConcurrencyTest;
 
-//ÕâÀï³ö´íÖ®´¦ÔÚÓÚ£¬t1Ö´ĞĞµ½ÏÖÓà¶îÊ±£¬t2ÒÑ¾­Ö´ĞĞµ½È¡³öÓà¶î£¬ÕâÑù×Ót1ÏÔÊ¾µÄ¾ÍÊÇt2Ö´ĞĞÍêºóµÄÓà¶î
+//è¿™é‡Œå‡ºé”™ä¹‹å¤„åœ¨äºï¼Œt1æ‰§è¡Œåˆ°ç°ä½™é¢æ—¶ï¼Œt2å·²ç»æ‰§è¡Œåˆ°å–å‡ºä½™é¢ï¼Œè¿™æ ·å­t1æ˜¾ç¤ºçš„å°±æ˜¯t2æ‰§è¡Œå®Œåçš„ä½™é¢
 public class UnsafeAccount {
 public static void main(String[] args) {
-	Account account=new Account(1000, "ÕÉ·òµÄÕË»§");
-	Drawing d1=new Drawing(account, "ÆŞ×Ó²Ù×÷", 100, 1150);
-	Drawing d2=new Drawing(account, "ÕÉ·ò²Ù×÷", 200, 1000);
+	Account account=new Account(1000, "ä¸ˆå¤«çš„è´¦æˆ·");
+	Drawing d1=new Drawing(account, "å¦»å­æ“ä½œ", 100, 1150);
+	Drawing d2=new Drawing(account, "ä¸ˆå¤«æ“ä½œ", 200, 1000);
 	Thread t1=new Thread(d1);
 	Thread t2=new Thread(d2);
 	t1.start();
@@ -40,13 +40,13 @@ class Drawing implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println(Thread.currentThread().getName()+"ÕË»§Ô­Óà¶î"+account.money);
+		System.out.println(Thread.currentThread().getName()+"è´¦æˆ·åŸä½™é¢"+account.money);
 		account.money+=input;
 		account.money-=output;
 
-		System.out.println(Thread.currentThread().getName()+"´æÈë½ğ¶î"+input);
-		System.out.println(Thread.currentThread().getName()+"È¡³öÓà¶î"+output);
-		System.out.println(Thread.currentThread().getName()+"ÕË»§ÏÖÓà¶î"+account.money);
+		System.out.println(Thread.currentThread().getName()+"å­˜å…¥é‡‘é¢"+input);
+		System.out.println(Thread.currentThread().getName()+"å–å‡ºä½™é¢"+output);
+		System.out.println(Thread.currentThread().getName()+"è´¦æˆ·ç°ä½™é¢"+account.money);
 		
 		
 	}

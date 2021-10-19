@@ -3,18 +3,18 @@ package Reflection;
 public class ClassObject {
 public static void main(String[] args) throws ClassNotFoundException {
 	 String path="Reflection.Test";
-//	 ÔÚÀà¼ÓÔØÊ±¾Í»áÔÚ·½·¨Çø´æ·Å¸ÃÀàµÄÊı¾İ½á¹¹£¬È»ºóÔÚ¶ÑÖĞ½¨Á¢´ú±íÕâ¸öÀàµÄClass¶ÔÏó
-//	 ÏÖÔÚ×öµÄ¾ÍÊÇ¸ù¾İ¸ÃÀàµÄÂ·¾¶£¬»ñµÃÆä¼ÓÔØÊ±ÔÚ¶ÑÖĞµÄClass¶ÔÏó
-//	 ×¢ÒâÊÇClass£¬²»ÊÇclass
+//	 åœ¨ç±»åŠ è½½æ—¶å°±ä¼šåœ¨æ–¹æ³•åŒºå­˜æ”¾è¯¥ç±»çš„æ•°æ®ç»“æ„ï¼Œç„¶ååœ¨å †ä¸­å»ºç«‹ä»£è¡¨è¿™ä¸ªç±»çš„Classå¯¹è±¡
+//	 ç°åœ¨åšçš„å°±æ˜¯æ ¹æ®è¯¥ç±»çš„è·¯å¾„ï¼Œè·å¾—å…¶åŠ è½½æ—¶åœ¨å †ä¸­çš„Classå¯¹è±¡
+//	 æ³¨æ„æ˜¯Classï¼Œä¸æ˜¯class
 	 Class c1=Class.forName(path);
 	 System.out.println(c1);
-//	 ×¢Òâ,ÕâÀï·µ»ØµÄÊÇStringÀà¶ÔÏó,Ã¿¸ö±äÁ¿ÔÚÊµÀı»¯Ö®ºó¶¼»á°üº¬ÆäÀàµÄĞÅÏ¢£¬¿ÉÒÔ¶Ô¸Ã±äÁ¿½øĞĞgetclass()
+//	 æ³¨æ„,è¿™é‡Œè¿”å›çš„æ˜¯Stringç±»å¯¹è±¡,æ¯ä¸ªå˜é‡åœ¨å®ä¾‹åŒ–ä¹‹åéƒ½ä¼šåŒ…å«å…¶ç±»çš„ä¿¡æ¯ï¼Œå¯ä»¥å¯¹è¯¥å˜é‡è¿›è¡Œgetclass()
 	 Class c1_1=path.getClass();
 	 System.out.println(c1_1);
-//	 »ñµÃStringÀàµÄClass¶ÔÏó
+//	 è·å¾—Stringç±»çš„Classå¯¹è±¡
 	 Class c2=String.class;
 	 System.out.println(c2);
-//	 intÀàĞÍÊÇ²»ÄÜgetClassµÄ£¬µ«ÊÇInteger¿ÉÒÔ,Á½Õß²¢²»ÊÇÒ»¸ö¶«Î÷£¬¹şÏ£Âë²»Ò»Ñù
+//	 intç±»å‹æ˜¯ä¸èƒ½getClassçš„ï¼Œä½†æ˜¯Integerå¯ä»¥,ä¸¤è€…å¹¶ä¸æ˜¯ä¸€ä¸ªä¸œè¥¿ï¼Œå“ˆå¸Œç ä¸ä¸€æ ·
 	 Integer c3=5;
 	 System.out.println(c3.getClass().hashCode());
 	 System.out.println(int.class.hashCode());
@@ -22,7 +22,7 @@ public static void main(String[] args) throws ClassNotFoundException {
 	 String[] c5=new String[3];
 	 String[][] c6=new String[2][3];
 	 System.out.println(c2.getClass().hashCode());
-//	 ¿ÉÒÔ¿´µ½,Í¬Ò»¸öÎ¬¶ÈµÄÊı×é£¬ÆäClassÊÇÏàÍ¬µÄ£¬¼´Ê¹³¤¶È²»Í¬
+//	 å¯ä»¥çœ‹åˆ°,åŒä¸€ä¸ªç»´åº¦çš„æ•°ç»„ï¼Œå…¶Classæ˜¯ç›¸åŒçš„ï¼Œå³ä½¿é•¿åº¦ä¸åŒ
 	 System.out.println(c4.getClass().hashCode());
 	 System.out.println(c5.getClass().hashCode());
 	 System.out.println(c6.getClass().hashCode());

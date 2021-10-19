@@ -8,14 +8,14 @@ public class APItest {
 	long l;
 public static void main(String[] args) {
 	File file1=new File("F:\\JAVA\\practice\\IOtest/folder1/test1");
-//	mkdir()£¬°´µ±Ç°Â·¾¶´´½¨ÎÄ¼ş¼Ğ£¬ÈôÉÏÒ»¼¶Ä¿Â¼²»´æÔÚÔò×÷°Õ
+//	mkdir()ï¼ŒæŒ‰å½“å‰è·¯å¾„åˆ›å»ºæ–‡ä»¶å¤¹ï¼Œè‹¥ä¸Šä¸€çº§ç›®å½•ä¸å­˜åœ¨åˆ™ä½œç½¢
 //	Boolean flag=file1.mkdir();
 //	System.out.println(flag);
-//	mkdirs(),ÈôÉÏÒ»¼¶Ä¿Â¼²»´æÔÚÒ²Ò»Æğ´´½¨
+//	mkdirs(),è‹¥ä¸Šä¸€çº§ç›®å½•ä¸å­˜åœ¨ä¹Ÿä¸€èµ·åˆ›å»º
 //	Boolean flag=file1.mkdirs();
 //	System.out.println(flag);
 	
-//	´´½¨ĞÂÎÄ¼ş
+//	åˆ›å»ºæ–°æ–‡ä»¶
 //	try {
 //		file1.createNewFile();
 //	} catch (IOException e) {
@@ -32,35 +32,35 @@ public static void main(String[] args) {
 }
 
 public void getnext(File file) {
-//	list()£¬ÁĞ³öËùÓĞÏÂÒ»¼¶ÎÄ¼şÃû³Æ£¬·µ»ØString[]¶ÔÏó
+//	list()ï¼Œåˆ—å‡ºæ‰€æœ‰ä¸‹ä¸€çº§æ–‡ä»¶åç§°ï¼Œè¿”å›String[]å¯¹è±¡
 	String[] strs=file.list();
 	for(String str:strs) {
 		System.out.println(str);
 	}
-//	listFiles(),»ñµÃËùÓĞÏÂÒ»¼¶ÎÄ¼ş£¬·µ»ØFile[]¶ÔÏó
+//	listFiles(),è·å¾—æ‰€æœ‰ä¸‹ä¸€çº§æ–‡ä»¶ï¼Œè¿”å›File[]å¯¹è±¡
 	File[] files=file.listFiles();
 	for(File temp:files) {
 		System.out.println(temp.getAbsolutePath());
 	}
 
 }
-//listRoots(),»ñµÃÅÌ·û
+//listRoots(),è·å¾—ç›˜ç¬¦
 public void getpan(File file) {
 	File[] files=file.listRoots();
 	for(File temp:files) {
 	System.out.println(temp.getAbsolutePath());
 	}
 }
-//ÎÄ¼ş¼Ğ±éÀú¼Ó·µ»ØÎÄ¼ş´óĞ¡
+//æ–‡ä»¶å¤¹éå†åŠ è¿”å›æ–‡ä»¶å¤§å°
 public  void printname(File file,int deep) {
 	for(int i=0;i<deep;i++) {
 	System.out.print("-");
 	}
-	System.out.println(file.getName()+"\t"+"ÎÄ¼ş´óĞ¡"+file.length());
+	System.out.println(file.getName()+"\t"+"æ–‡ä»¶å¤§å°"+file.length());
 	if(file==null||!file.exists()) {
 		return;
 	}else {
-//		ÅĞ¶ÏÊÇ·ñÎªÎÄ¼ş¼Ğ£¬ÈôÊÇÔò¼ÌĞø±éÀú
+//		åˆ¤æ–­æ˜¯å¦ä¸ºæ–‡ä»¶å¤¹ï¼Œè‹¥æ˜¯åˆ™ç»§ç»­éå†
 		if(file.isDirectory()) {
 		for(File temp:file.listFiles()) {
 			printname(temp,deep+1);		
@@ -68,7 +68,7 @@ public  void printname(File file,int deep) {
 		}
 	}
 }
-// ·µ»ØÎÄ¼ş¼Ğ»òÎÄ¼ş´óĞ¡
+// è¿”å›æ–‡ä»¶å¤¹æˆ–æ–‡ä»¶å¤§å°
 public long getlength(File file) {
 	long l = 0;
 	if(file!=null&&file.exists()) {

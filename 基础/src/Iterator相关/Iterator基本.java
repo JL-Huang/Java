@@ -1,4 +1,4 @@
-package IteratorÏà¹Ø;
+package Iteratorç›¸å…³;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -6,8 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-//IteratorÊÇCollectionµÄ¸¸Àà£¬ÊÇÒ»¸ö½Ó¿Ú£¬¿ÉÒÔÊµÏÖÈİÆ÷µÄ±éÀú
-public class Iterator»ù±¾ {
+//Iteratoræ˜¯Collectionçš„çˆ¶ç±»ï¼Œæ˜¯ä¸€ä¸ªæ¥å£ï¼Œå¯ä»¥å®ç°å®¹å™¨çš„éå†
+public class IteratoråŸºæœ¬ {
 public static void main(String[] args) {
 	System.out.println(testiteratorList());
 	System.out.println(testiteratorSet());
@@ -19,13 +19,13 @@ public static StringBuilder testiteratorList() {
 	list1.add("one");
 	list1.add("two");
 	list1.add("three");
-//	ÕâÀï±ê×¢Ò»ÏÂ£¬ListÊÇCollectionµÄ×ÓÀà£¬×ÔÈ»ÊµÏÖÁËIterator½Ó¿Ú
-//	ËüµÄiterator()·½·¨·µ»ØÒ»¸ö´ø·ºĞÍµÄIteratorÀà
-//	IteratorµÄ×÷ÓÃÏàµ±ÓÚforÑ­»·µÄi£¬Ö»Ê¹ÓÃÒ»´Î£¬ËùÒÔÖ±½Ó·ÅforÀïÃæ½ÚÊ¡ÄÚ´æ
+//	è¿™é‡Œæ ‡æ³¨ä¸€ä¸‹ï¼ŒListæ˜¯Collectionçš„å­ç±»ï¼Œè‡ªç„¶å®ç°äº†Iteratoræ¥å£
+//	å®ƒçš„iterator()æ–¹æ³•è¿”å›ä¸€ä¸ªå¸¦æ³›å‹çš„Iteratorç±»
+//	Iteratorçš„ä½œç”¨ç›¸å½“äºforå¾ªç¯çš„iï¼Œåªä½¿ç”¨ä¸€æ¬¡ï¼Œæ‰€ä»¥ç›´æ¥æ”¾foré‡Œé¢èŠ‚çœå†…å­˜
 //	Iterator<String> iterator1=list1.iterator();
-//	hasNext()·½·¨ÊÇµ±ÈİÆ÷ÓĞÃ»ÓĞ±éÀúÍêÊ±·µ»Øfalse£¬·ñÔò·µ»Øtrue
+//	hasNext()æ–¹æ³•æ˜¯å½“å®¹å™¨æœ‰æ²¡æœ‰éå†å®Œæ—¶è¿”å›falseï¼Œå¦åˆ™è¿”å›true
 	for(Iterator<String> iterator1=list1.iterator();iterator1.hasNext();) {
-//		Iterator±¾ÉíµÄtoString·½·¨²¢²»ÊÇ·µ»ØÈİÆ÷ÔªËØ£¬Æänext()·½·¨²ÅÊÇ·µ»ØÆäÊµÏÖÀàµÄÔªËØ
+//		Iteratoræœ¬èº«çš„toStringæ–¹æ³•å¹¶ä¸æ˜¯è¿”å›å®¹å™¨å…ƒç´ ï¼Œå…¶next()æ–¹æ³•æ‰æ˜¯è¿”å›å…¶å®ç°ç±»çš„å…ƒç´ 
 		System.out.println(iterator1);
 		str=iterator1.next();
 		sb.append(str);
@@ -35,7 +35,7 @@ public static StringBuilder testiteratorList() {
 }
 
 
-//Í¬Ñù£¬Set·½·¨Ò²ÊÇCollectionµÄ×ÓÀà£¬ÆäÍ¬ÑùÊµÏÖÁËIterator½Ó¿Ú
+//åŒæ ·ï¼ŒSetæ–¹æ³•ä¹Ÿæ˜¯Collectionçš„å­ç±»ï¼Œå…¶åŒæ ·å®ç°äº†Iteratoræ¥å£
 public static StringBuilder testiteratorSet() {
 	Set<String> set=new HashSet<String>();
 	set.add("hhh");
@@ -43,7 +43,7 @@ public static StringBuilder testiteratorSet() {
 	set.add("kkk");
 	StringBuilder sb=new StringBuilder();
 	for(Iterator<String> iterator=set.iterator();iterator.hasNext();) {
-//Ë³±ãËµÒ»ÏÂ£¬µü´úÆ÷´´½¨³öÀ´ºó£¬ÔÚ±éÀúÊ±²»ÄÜÔÙ¶ÔÈİÆ÷½øĞĞadd»òremove²Ù×÷£¬ÒòÎªµü´úÆ÷ÎŞ·¨Í¬²½£¬»á³öÏÖÏß³Ì²»°²È«
+//é¡ºä¾¿è¯´ä¸€ä¸‹ï¼Œè¿­ä»£å™¨åˆ›å»ºå‡ºæ¥åï¼Œåœ¨éå†æ—¶ä¸èƒ½å†å¯¹å®¹å™¨è¿›è¡Œaddæˆ–removeæ“ä½œï¼Œå› ä¸ºè¿­ä»£å™¨æ— æ³•åŒæ­¥ï¼Œä¼šå‡ºç°çº¿ç¨‹ä¸å®‰å…¨
 		String str=iterator.next();
 		sb.append(str);
 		System.out.println(str);

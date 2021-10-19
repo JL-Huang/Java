@@ -1,4 +1,4 @@
-package »ªÎª;
+package åä¸º;
 
 public class p29 {
 	public static void main(String[] args) {

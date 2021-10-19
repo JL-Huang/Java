@@ -1,6 +1,6 @@
 package MyThread;
-//·½·¨¶şÊµÏÖÏß³Ì×ÊÔ´¹²Ïí
-//Òª×¢ÒâµÄÊÇ£¬¿ªÆôÏß³ÌÓëÆÕÍ¨·½·¨²»Í¬£¬runnableµÄÊµÏÖÀàÀïÃæµÄ×ÊÔ´±»Ïß³Ì¹²Ïí
+//æ–¹æ³•äºŒå®ç°çº¿ç¨‹èµ„æºå…±äº«
+//è¦æ³¨æ„çš„æ˜¯ï¼Œå¼€å¯çº¿ç¨‹ä¸æ™®é€šæ–¹æ³•ä¸åŒï¼Œrunnableçš„å®ç°ç±»é‡Œé¢çš„èµ„æºè¢«çº¿ç¨‹å…±äº«
 public class Share implements Runnable{
 	private int num=100;
 		@Override
@@ -13,14 +13,14 @@ public class Share implements Runnable{
 				e.printStackTrace();
 			}
 			while(num!=0) {
-//				»ñµÃµ±Ç°Ïß³ÌºÍËüµÄÃû×Ö
+//				è·å¾—å½“å‰çº¿ç¨‹å’Œå®ƒçš„åå­—
 				System.out.println(Thread.currentThread().getName()+num--);
 			}
 		}
 	public static void main(String[] args) {
 		Share s=new Share();
-		new Thread(s,"Ğ¡Ã÷").start();
-		new Thread(s,"Ğ¡»Æ").start();
-		new Thread(s,"Ğ¡ºì").start();
+		new Thread(s,"å°æ˜").start();
+		new Thread(s,"å°é»„").start();
+		new Thread(s,"å°çº¢").start();
 	}
 }

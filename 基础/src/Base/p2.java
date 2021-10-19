@@ -6,7 +6,7 @@ public class p2 {
 	int test;
 	public static void main(String args[]) {
 		Scanner mscanner=new Scanner(System.in);
-		int num=Integer.parseInt(mscanner.next());	//¶ÁÈ¡µ½ÓĞĞ§×Ö·û²Å¿É½áÊøÊäÈë£¬²»ÄÜµÃµ½´ø¿Õ¸ñµÄÊı¾İ
+		int num=Integer.parseInt(mscanner.next());	//è¯»å–åˆ°æœ‰æ•ˆå­—ç¬¦æ‰å¯ç»“æŸè¾“å…¥ï¼Œä¸èƒ½å¾—åˆ°å¸¦ç©ºæ ¼çš„æ•°æ®
 		
 		int[] p =new int[num];
 		for(int i=0;i<num;i++) {
@@ -14,7 +14,7 @@ public class p2 {
 
 		}
 		
-		String k=mscanner.next();	//»ñµÃÊäÈë»Ø³µÇ°ËùÓĞ×Ö·û
+		String k=mscanner.next();	//è·å¾—è¾“å…¥å›è½¦å‰æ‰€æœ‰å­—ç¬¦
 		String n=mscanner.next();
 
 	}

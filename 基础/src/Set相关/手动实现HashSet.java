@@ -1,37 +1,37 @@
-package SetÏà¹Ø;
+package Setç›¸å…³;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-//ÊÖ¶¯ÊµÏÖHashSet
-public class ÊÖ¶¯ÊµÏÖHashSet<E>{
+//æ‰‹åŠ¨å®ç°HashSet
+public class æ‰‹åŠ¨å®ç°HashSet<E>{
 	Map<E,String> map=new HashMap<>();
 public static void main(String[] args) {
-		ÊÖ¶¯ÊµÏÖHashSet<String> p=new ÊÖ¶¯ÊµÏÖHashSet<>();
+		æ‰‹åŠ¨å®ç°HashSet<String> p=new æ‰‹åŠ¨å®ç°HashSet<>();
 		p.add("hhh");
 		p.add("jjj");
 		p.add("kkk");
 		System.out.println(p.size());
-//		ÕâÀï½²Ò»ÏÂMAPµÄkeyset()·½·¨£¬·µ»ØµÄÊÇÒ»¸öSet¶ÔÏó
-//		×¢Òâ£¬Ëü·µ»ØµÄ²»ÊÇ¿½±´¶øÊÇÒıÓÃ£¬¶Ô·µ»ØµÄSet¶ÔÏó½øĞĞ²Ù×÷£¬»áÓ°ÏìMap¶ÔÏó
+//		è¿™é‡Œè®²ä¸€ä¸‹MAPçš„keyset()æ–¹æ³•ï¼Œè¿”å›çš„æ˜¯ä¸€ä¸ªSetå¯¹è±¡
+//		æ³¨æ„ï¼Œå®ƒè¿”å›çš„ä¸æ˜¯æ‹·è´è€Œæ˜¯å¼•ç”¨ï¼Œå¯¹è¿”å›çš„Setå¯¹è±¡è¿›è¡Œæ“ä½œï¼Œä¼šå½±å“Mapå¯¹è±¡
 		Set set=p.map.keySet();
 		System.out.println(p);
 		System.out.println(p.map);
 		System.out.println(set);
 		set.remove("hhh");
-//		¿ÉÒÔ¿´µ½£¬ÕâÀïÊÇ¶Ôset²Ù×÷£¬µ«ÊÇÈ´Í¬Ê±É¾³ıÁËmapÖĞµÄÔªËØ
+//		å¯ä»¥çœ‹åˆ°ï¼Œè¿™é‡Œæ˜¯å¯¹setæ“ä½œï¼Œä½†æ˜¯å´åŒæ—¶åˆ é™¤äº†mapä¸­çš„å…ƒç´ 
 		System.out.println(set);
 		System.out.println(p.map);
 
 
 }
 public void add(E e) {
-//	·½·¨ÄÚ²¿µÄ¾Ö²¿±äÁ¿Ö»ÄÜÓĞfinalÒ»¸öĞŞÊÎ·û
+//	æ–¹æ³•å†…éƒ¨çš„å±€éƒ¨å˜é‡åªèƒ½æœ‰finalä¸€ä¸ªä¿®é¥°ç¬¦
 	final String s1="DEFAULT";
 	map.put(e, s1);
 }
-//ÖØĞ´µÄtoString·½·¨Ö»»á¶Ôthis.toString()ÉúĞ§£¬¶ÔÆäËû²»ÉúĞ§
+//é‡å†™çš„toStringæ–¹æ³•åªä¼šå¯¹this.toString()ç”Ÿæ•ˆï¼Œå¯¹å…¶ä»–ä¸ç”Ÿæ•ˆ
 @Override
 public String toString() {
 	StringBuilder sb=new StringBuilder();

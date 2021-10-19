@@ -1,19 +1,19 @@
-package ½£Ö¸offer;
-//Êý×éÖÐÓÐÒ»¸öÊý×Ö³öÏÖµÄ´ÎÊý³¬¹ýÊý×é³¤¶ÈµÄÒ»°ë£¬ÇëÕÒ³öÕâ¸öÊý×Ö¡£
-//ÀýÈçÊäÈëÒ»¸ö³¤¶ÈÎª9µÄÊý×é{1,2,3,2,2,2,5,4,2}¡£
-//ÓÉÓÚÊý×Ö2ÔÚÊý×éÖÐ³öÏÖÁË5´Î£¬³¬¹ýÊý×é³¤¶ÈµÄÒ»°ë£¬Òò´ËÊä³ö2¡£
-//Èç¹û²»´æÔÚÔòÊä³ö0¡£
+package å‰‘æŒ‡offer;
+//æ•°ç»„ä¸­æœ‰ä¸€ä¸ªæ•°å­—å‡ºçŽ°çš„æ¬¡æ•°è¶…è¿‡æ•°ç»„é•¿åº¦çš„ä¸€åŠï¼Œè¯·æ‰¾å‡ºè¿™ä¸ªæ•°å­—ã€‚
+//ä¾‹å¦‚è¾“å…¥ä¸€ä¸ªé•¿åº¦ä¸º9çš„æ•°ç»„{1,2,3,2,2,2,5,4,2}ã€‚
+//ç”±äºŽæ•°å­—2åœ¨æ•°ç»„ä¸­å‡ºçŽ°äº†5æ¬¡ï¼Œè¶…è¿‡æ•°ç»„é•¿åº¦çš„ä¸€åŠï¼Œå› æ­¤è¾“å‡º2ã€‚
+//å¦‚æžœä¸å­˜åœ¨åˆ™è¾“å‡º0ã€‚
 public class MoreThanHalfNum_Solution {
     public int test(int [] array) {
         int temp=0;
         int count=0;
-//        Ä¦¶ûÍ¶Æ±·¨£¬µÚÒ»¸öÊýcountÎª1£¬Ö®ºóÃ¿±éÀú£¬Óöµ½²»Í¬µÄ£¬count--£¬µ±count¼õµ½0£¬ÔòÓÃµ±Ç°±éÀúµ½µÄÊýÌæ»»
+//        æ‘©å°”æŠ•ç¥¨æ³•ï¼Œç¬¬ä¸€ä¸ªæ•°countä¸º1ï¼Œä¹‹åŽæ¯éåŽ†ï¼Œé‡åˆ°ä¸åŒçš„ï¼Œcount--ï¼Œå½“countå‡åˆ°0ï¼Œåˆ™ç”¨å½“å‰éåŽ†åˆ°çš„æ•°æ›¿æ¢
         for(int i=0;i<array.length;i++){
             if(count==0) temp=array[i];
             if(array[i]==temp) count++;
             else count--;
         }
-//        ÒÑÖªtempÎª³öÏÖ×î¶àµÄ£¬½ÓÏÂÀ´Ö»ÐèÒªÅÐ¶Ï³öÏÖ´ÎÊý
+//        å·²çŸ¥tempä¸ºå‡ºçŽ°æœ€å¤šçš„ï¼ŒæŽ¥ä¸‹æ¥åªéœ€è¦åˆ¤æ–­å‡ºçŽ°æ¬¡æ•°
         int count1=0;
         for(int i=0;i<array.length;i++){
             if(array[i]==temp) count1++;

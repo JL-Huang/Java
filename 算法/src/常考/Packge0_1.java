@@ -1,5 +1,5 @@
-package ³£¿¼;
-//f(i,v)=¡Æ Mi+1	f(i-1,v-k*Ci)
+package å¸¸è€ƒ;
+//f(i,v)=âˆ‘ Mi+1	f(i-1,v-k*Ci)
 public class Packge0_1 {
 
 }

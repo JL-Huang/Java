@@ -1,8 +1,8 @@
-package 秋招;
+package 绉嬫嫑;
 
 import java.util.Scanner;
 
-//提取多项式指数与底数
+//鎻愬彇澶氶」寮忔寚鏁颁笌搴曟暟
 public class HuaWei1 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);

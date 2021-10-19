@@ -1,14 +1,14 @@
-package SetÏà¹Ø;
+package Setç›¸å…³;
 
 import java.util.HashSet;
 import java.util.Set;
 
-//SetÓëListÒ»Ñù¼Ì³Ğ×ÔCollection£¬ÌØµãÊÇÎŞĞò£¬²»¿ÉÖØ¸´£¬¶øÇÒÔªËØÃ»ÓĞË÷Òı£¬Ö»ÄÜ±éÀú²é
-//ĞÂÔªËØÈôequal·½·¨ÅĞ¶Ïµ½Îªtrue£¬Ôò²»ÄÜ¼ÓÈë£¬ÉõÖÁnullÒ²Ö»ÄÜÓĞÒ»¸ö
-//setµÄ³£ÓÃÊµÏÖÀàÓĞHashSetÓëTreeSet
-//HashSetµÄµ×²ãËã·¨¾ÍÊÇHashMap£¬·ÅÈëµÄÖµÊÇ×÷ÎªHashMapµÄkey£¬valueÊÇÒ»¸ö³£Á¿
-//keyÊÇ²»ÄÜÖØ¸´µÄ£¬Ò²ÊÇÎŞĞòµÄ£¬ËùÒÔ¿ÉÒÔÊµÏÖSetµÄÌØĞÔ
-public class Set»ù±¾ {
+//Setä¸Listä¸€æ ·ç»§æ‰¿è‡ªCollectionï¼Œç‰¹ç‚¹æ˜¯æ— åºï¼Œä¸å¯é‡å¤ï¼Œè€Œä¸”å…ƒç´ æ²¡æœ‰ç´¢å¼•ï¼Œåªèƒ½éå†æŸ¥
+//æ–°å…ƒç´ è‹¥equalæ–¹æ³•åˆ¤æ–­åˆ°ä¸ºtrueï¼Œåˆ™ä¸èƒ½åŠ å…¥ï¼Œç”šè‡³nullä¹Ÿåªèƒ½æœ‰ä¸€ä¸ª
+//setçš„å¸¸ç”¨å®ç°ç±»æœ‰HashSetä¸TreeSet
+//HashSetçš„åº•å±‚ç®—æ³•å°±æ˜¯HashMapï¼Œæ”¾å…¥çš„å€¼æ˜¯ä½œä¸ºHashMapçš„keyï¼Œvalueæ˜¯ä¸€ä¸ªå¸¸é‡
+//keyæ˜¯ä¸èƒ½é‡å¤çš„ï¼Œä¹Ÿæ˜¯æ— åºçš„ï¼Œæ‰€ä»¥å¯ä»¥å®ç°Setçš„ç‰¹æ€§
+public class SetåŸºæœ¬ {
 	public static void main(String[] args) {
 		Set<String> s=new HashSet<String>();
 		s.add("one");
@@ -16,7 +16,7 @@ public class Set»ù±¾ {
 		System.out.println(s);
 		s.add("one");
 		System.out.println(s);
-//		×¢Òâ£¬size()·µ»ØµÄÊÇSetµÄ³¤¶È£¬ÊÇÖ¸ÔªËØµÄ¸öÊı
+//		æ³¨æ„ï¼Œsize()è¿”å›çš„æ˜¯Setçš„é•¿åº¦ï¼Œæ˜¯æŒ‡å…ƒç´ çš„ä¸ªæ•°
 		System.out.println(s.size());
 	}
 }

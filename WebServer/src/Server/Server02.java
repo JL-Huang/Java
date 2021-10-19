@@ -3,7 +3,7 @@ package Server;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-//·â×°°æ·şÎñÆ÷
+//å°è£…ç‰ˆæœåŠ¡å™¨
 public class Server02 {
 public static void main(String[] args) throws IOException {
 	ServerSocket ss=new ServerSocket(9099);

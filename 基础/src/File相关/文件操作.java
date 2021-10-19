@@ -1,17 +1,17 @@
-package FileÏà¹Ø;
+package Fileç›¸å…³;
 
 import java.io.File;
 import java.io.IOException;
 
 
-public class ÎÄ¼ş²Ù×÷ {
+public class æ–‡ä»¶æ“ä½œ {
 public static void main(String[] args) throws IOException {
-//	ÏîÄ¿Â·¾¶
+//	é¡¹ç›®è·¯å¾„
 	System.out.println(System.getProperty("user.dir"));
-//	´´½¨Ò»¸öÎÄ¼şÀà£¬×¢Òâ´ËÊ±²¢Ã»ÓĞÉú³ÉÊµ¼ÊÎÄ¼ş
+//	åˆ›å»ºä¸€ä¸ªæ–‡ä»¶ç±»ï¼Œæ³¨æ„æ­¤æ—¶å¹¶æ²¡æœ‰ç”Ÿæˆå®é™…æ–‡ä»¶
 	File f=new File("f.txt");
 	f.renameTo(new File("ff.txt"));
-//	 ´´½¨Ò»¸öÊµ´òÊµµÄĞÂÎÄ¼ş£¬×¢ÒâÊÇÔÚprojectµÄ¸ùÄ¿Â¼ÏÂ²úÉú£¬²»ÊÇÔÚsrc¸ü²»ÊÇÔÚ°üÖĞ
+//	 åˆ›å»ºä¸€ä¸ªå®æ‰“å®çš„æ–°æ–‡ä»¶ï¼Œæ³¨æ„æ˜¯åœ¨projectçš„æ ¹ç›®å½•ä¸‹äº§ç”Ÿï¼Œä¸æ˜¯åœ¨srcæ›´ä¸æ˜¯åœ¨åŒ…ä¸­
 	f.createNewFile();
 	System.out.println(f.exists());
 	System.out.println(f.length());
@@ -23,12 +23,12 @@ static void PrintFiles(File file,int level) {
 		System.out.print("-");
 	}
 	System.out.println(file.getName());
-//	 ÅĞ¶ÏÊÇ·ñÊÇÎÄ¼ş¼Ğ,ÊÇµÄ»°²ãÊı¼ÓÒ»
+//	 åˆ¤æ–­æ˜¯å¦æ˜¯æ–‡ä»¶å¤¹,æ˜¯çš„è¯å±‚æ•°åŠ ä¸€
 	if(file.isDirectory()){
 	level++;
-//	ÁĞ³öËùÓĞÎÄ¼ş£¬²¢´æ´¢µ½flÊı×éÖĞ
+//	åˆ—å‡ºæ‰€æœ‰æ–‡ä»¶ï¼Œå¹¶å­˜å‚¨åˆ°flæ•°ç»„ä¸­
 	File[] fl=file.listFiles();
-//	¶ÔÊı×éÖĞËùÓĞÔªËØ½øĞĞµİ¹é²Ù×÷
+//	å¯¹æ•°ç»„ä¸­æ‰€æœ‰å…ƒç´ è¿›è¡Œé€’å½’æ“ä½œ
 	for(File temp:fl) {
 		PrintFiles(temp,level);
 	}

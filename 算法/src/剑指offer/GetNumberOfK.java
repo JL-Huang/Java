@@ -1,17 +1,17 @@
-package ½£Ö¸offer;
-//Í³¼ÆÒ»¸öÊı×ÖÔÚÅÅĞòÊı×éÖĞ³öÏÖµÄ´ÎÊı¡£
+package å‰‘æŒ‡offer;
+//ç»Ÿè®¡ä¸€ä¸ªæ•°å­—åœ¨æ’åºæ•°ç»„ä¸­å‡ºç°çš„æ¬¡æ•°ã€‚
 public class GetNumberOfK {
-//	Ë¼Â··Ç³£¼òµ¥£¬¹Ø¼üÊÇ¾ßÌåÊµÏÖ
-//	¼ÈÈ»ÌáÊ¾ÁËÅÅĞòÊı×é£¬ÄÇ¾ÍÒ»¶¨ÊÇ¶ş·Ö·¨
-//	¶ş·Ö·¨×îÖµµÃ×¢ÒâµÄÊÇ£¬start=endÊ±Ã»ÓĞÑ­»·£¬start>end²ÅÊÇ
+//	æ€è·¯éå¸¸ç®€å•ï¼Œå…³é”®æ˜¯å…·ä½“å®ç°
+//	æ—¢ç„¶æç¤ºäº†æ’åºæ•°ç»„ï¼Œé‚£å°±ä¸€å®šæ˜¯äºŒåˆ†æ³•
+//	äºŒåˆ†æ³•æœ€å€¼å¾—æ³¨æ„çš„æ˜¯ï¼Œstart=endæ—¶æ²¡æœ‰å¾ªç¯ï¼Œstart>endæ‰æ˜¯
     public int test(int [] array , int k) {
     	if(array.length==0) return 0;
     	if((getlastk(array, 0, array.length-1, k)!=-1)&&(getfirstk(array, k)+1!=-1))
     	return getlastk(array, 0, array.length-1, k)-getfirstk(array, k)+1;
     	else return 0;
     }
-//    ÕâÊÇµü´úĞ´·¨
-//    ×¢Òâ£¬µ±start=endÊ±³ö½á¹û£¬ËùÒÔforÑ­»·Ìõ¼şÎªstart<=end
+//    è¿™æ˜¯è¿­ä»£å†™æ³•
+//    æ³¨æ„ï¼Œå½“start=endæ—¶å‡ºç»“æœï¼Œæ‰€ä»¥forå¾ªç¯æ¡ä»¶ä¸ºstart<=end
     public int getfirstk(int [] array , int k) {
     	 for(int start=0,end=array.length-1,middle=(end+start)/2;start<=end;middle=(end+start)/2) {
     	     if(start>end) return -1;
@@ -24,9 +24,9 @@ public class GetNumberOfK {
     	 }
     	 return -1;
     }
-//    ÕâÊÇµİ¹éĞ´·¨
-//    Í¬Ñù£¬ÖÕÖ¹µİ¹éµÄÌõ¼şÊÇstart>end£¬²»ÊÇµÈÓÚ
-//    ¿¼ÂÇµÈÓÚµÄÇé¿ö£¬ÄÇ¾ÍÊÇÖ»Ê£Ò»¸öÊı£¬ÄÇ±ØÈ»ÊÇ·µ»ØÕâ¸öÊı¶ø²»ÊÇ·µ»Ø-1
+//    è¿™æ˜¯é€’å½’å†™æ³•
+//    åŒæ ·ï¼Œç»ˆæ­¢é€’å½’çš„æ¡ä»¶æ˜¯start>endï¼Œä¸æ˜¯ç­‰äº
+//    è€ƒè™‘ç­‰äºçš„æƒ…å†µï¼Œé‚£å°±æ˜¯åªå‰©ä¸€ä¸ªæ•°ï¼Œé‚£å¿…ç„¶æ˜¯è¿”å›è¿™ä¸ªæ•°è€Œä¸æ˜¯è¿”å›-1
     public int getlastk(int [] array,int start,int end,int k) {
     	if(start>end) return -1;
     	int middle=(end+start)/2;

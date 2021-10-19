@@ -1,5 +1,5 @@
 package MyThread;
-//ĞÅºÅµÆ·¨£ºÍ¨¹ıÒ»¸ö²¼¶û±äÁ¿¼Ówait£¬¿ØÖÆÉú²úÕßÓëÏû·ÑÕßÖ´ĞĞË³Ğò
+//ä¿¡å·ç¯æ³•ï¼šé€šè¿‡ä¸€ä¸ªå¸ƒå°”å˜é‡åŠ waitï¼Œæ§åˆ¶ç”Ÿäº§è€…ä¸æ¶ˆè´¹è€…æ‰§è¡Œé¡ºåº
 public class PC2 {
 public static void main(String[] args) {
 	TV tv=new TV();
@@ -51,7 +51,7 @@ class TV{
 			}
 		}
 		this.voice=voice;
-		System.out.println("±íÑİÁË"+voice);
+		System.out.println("è¡¨æ¼”äº†"+voice);
 		this.notify();
 		flag=!flag;
 	}
@@ -64,7 +64,7 @@ class TV{
 				e.printStackTrace();
 			}
 		}
-		System.out.println("Ìıµ½ÁË"+this.voice);
+		System.out.println("å¬åˆ°äº†"+this.voice);
 		this.notify();
 		flag=!flag;
 	}

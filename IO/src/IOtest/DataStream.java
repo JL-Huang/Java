@@ -8,27 +8,27 @@ import java.io.IOException;
 import java.io.InputStream;
 
 //DataInputStream,DataOutputStream
-//¹¹Ôì·½·¨²ÎÊıÎªÒ»¸ö×Ö½ÚÁ÷,Êı¾İÁ÷¶ÀÓĞµÄ¶ÁĞ´·½·¨¿ÉÒÔ½«²»Í¬ÀàĞÍµÄÊı¾İ·Ö±ğ´æ´¢
-//µ«ÊÇ½öÖ§³Ö°ËÖÖÊı¾İÀàĞÍºÍ×Ö·û´®
-//²å²¥Ò»¸ö¶ÔÏóÁ÷£¬¶ÔÏóÁ÷¿ÉÒÔ·Ö±ğ´æ´¢ÈÎºÎÀàµÄÊı¾İ£¬µ«Ç°ÌáÊÇ¸ÃÀàÊµÏÖÁËjava.io.Serializable½Ó¿Ú
-//¶ÔÏóÁ÷Ğ´ÓĞÒ»¸ödos.writeObject·½·¨£¬Ğ´Ê±Ã»ÎÊÌâ£¬µ«ÊÇ¶ÁÈ¡Ê±ÒªÇ¿×ª
-//ÅĞ¶ÏÊÇ²»ÊÇÄ³ÖÖÀàĞÍ£¬ÓÃinstanceof·½·¨£¬·µ»Ø²¼¶ûÀàĞÍ
+//æ„é€ æ–¹æ³•å‚æ•°ä¸ºä¸€ä¸ªå­—èŠ‚æµ,æ•°æ®æµç‹¬æœ‰çš„è¯»å†™æ–¹æ³•å¯ä»¥å°†ä¸åŒç±»å‹çš„æ•°æ®åˆ†åˆ«å­˜å‚¨
+//ä½†æ˜¯ä»…æ”¯æŒå…«ç§æ•°æ®ç±»å‹å’Œå­—ç¬¦ä¸²
+//æ’æ’­ä¸€ä¸ªå¯¹è±¡æµï¼Œå¯¹è±¡æµå¯ä»¥åˆ†åˆ«å­˜å‚¨ä»»ä½•ç±»çš„æ•°æ®ï¼Œä½†å‰ææ˜¯è¯¥ç±»å®ç°äº†java.io.Serializableæ¥å£
+//å¯¹è±¡æµå†™æœ‰ä¸€ä¸ªdos.writeObjectæ–¹æ³•ï¼Œå†™æ—¶æ²¡é—®é¢˜ï¼Œä½†æ˜¯è¯»å–æ—¶è¦å¼ºè½¬
+//åˆ¤æ–­æ˜¯ä¸æ˜¯æŸç§ç±»å‹ï¼Œç”¨instanceofæ–¹æ³•ï¼Œè¿”å›å¸ƒå°”ç±»å‹
 public class DataStream {
 public static void main(String[] args) {
-	// ÏÈĞ´ÈëÒ»¸ö×Ö½ÚÊä³öÁ÷
+	// å…ˆå†™å…¥ä¸€ä¸ªå­—èŠ‚è¾“å‡ºæµ
 
 	try {
 		ByteArrayOutputStream baos=new ByteArrayOutputStream();
-//		ÈÎºÎÁ÷ÔÚÊµÀı»¯Ê±£¬¾ÍÖ¸¶¨ÁËÆä²Ù×÷Ä¿±ê¶ÔÏó
+//		ä»»ä½•æµåœ¨å®ä¾‹åŒ–æ—¶ï¼Œå°±æŒ‡å®šäº†å…¶æ“ä½œç›®æ ‡å¯¹è±¡
 		DataOutputStream dos=new DataOutputStream(baos);
-		dos.writeUTF("¹ş¹ş¹ş");
+		dos.writeUTF("å“ˆå“ˆå“ˆ");
 		dos.writeInt(7);
 		dos.write(6);
 		dos.flush();
 		byte[] bytes=baos.toByteArray();
 		ByteArrayInputStream bais=new ByteArrayInputStream(bytes);
 		DataInputStream dis=new DataInputStream(bais);
-//		×¢ÒâµÄÊÇ£¬´æµÄË³ĞòÒªºÍÈ¡µÄË³ĞòÒ»Ä£Ò»Ñù£¬·ñÔò»á±¨´í
+//		æ³¨æ„çš„æ˜¯ï¼Œå­˜çš„é¡ºåºè¦å’Œå–çš„é¡ºåºä¸€æ¨¡ä¸€æ ·ï¼Œå¦åˆ™ä¼šæŠ¥é”™
 		String s=dis.readUTF();
 		int i=dis.readInt();
 		System.out.println(i);

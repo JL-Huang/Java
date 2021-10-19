@@ -1,12 +1,12 @@
-package ³£¿¼;
-//È«ÅÅÁĞ£¬¾­µä»ØËİ+¼ôÖ¦
+package å¸¸è€ƒ;
+//å…¨æ’åˆ—ï¼Œç»å…¸å›æº¯+å‰ªæ
 
 import java.util.ArrayList;
 
-public class È«ÅÅÁĞ {
+public class å…¨æ’åˆ— {
 	static ArrayList<ArrayList<Character>> list=new ArrayList<ArrayList<Character>>();
 	public static void main(String[] args) {
-		È«ÅÅÁĞ permutation=new È«ÅÅÁĞ();
+		å…¨æ’åˆ— permutation=new å…¨æ’åˆ—();
 		char[] chars=new String("abc").toCharArray();
 		permutation.permute(chars);
 		for(ArrayList<Character> temp:list) {
@@ -19,8 +19,8 @@ public class È«ÅÅÁĞ {
 //		recur1(inner_list, chars);
 		recur2(inner_list, chars,flag);
 	}
-//	È«ÅÅÁĞ¾ÍÊÇÏÂÃæµÄ´úÂë£¬µ«ÊÇÕâ¸öÈ«ÅÅÁĞÊÇÔÊĞíÖØ¸´µÄ
-//	¾ÍÊÇÔÚforÀïÌí¼Óµ±Ç°Î»£¬È»ºóµİ¹é£¬µİ¹éÍêºó¼ÇµÃ»ØÍË£¬ÒòÎªÖ»ÓĞÒ»¸öinner_list£¬Òª¸´ÓÃ
+//	å…¨æ’åˆ—å°±æ˜¯ä¸‹é¢çš„ä»£ç ï¼Œä½†æ˜¯è¿™ä¸ªå…¨æ’åˆ—æ˜¯å…è®¸é‡å¤çš„
+//	å°±æ˜¯åœ¨foré‡Œæ·»åŠ å½“å‰ä½ï¼Œç„¶åé€’å½’ï¼Œé€’å½’å®Œåè®°å¾—å›é€€ï¼Œå› ä¸ºåªæœ‰ä¸€ä¸ªinner_listï¼Œè¦å¤ç”¨
 	 private void recur1(ArrayList<Character> inner_list,char[] chars) {
 		 if(inner_list.size()==chars.length) {
 			 this.list.add(new ArrayList<Character>(inner_list));
@@ -32,8 +32,8 @@ public class È«ÅÅÁĞ {
 			 inner_list.remove(inner_list.size()-1);
 		 }
 	 }
-//	 ¶øÕâ¸öÊÇÈ¥ÖØ´úÂë£¬ÓÃÁËÒ»¸ö±êÖ¾Êı×éflag£¬Õâ¸öºÜÇÉÃî£¬Ã¿´Îµ±flag=true¾Í²»Ñ­»·ÁË£¬¶øÃ¿´Îµİ¹éÇ°£¬°Ñµ±Ç°iÉèÎªtrue£¬µİ¹éÊ±¾Í»áÌø¹ı
-//	 µ«ÊÇ¼ÇµÃµİ¹éÖ®ºó»¹Òª±ä»ØÀ´£¬·ñÔòµİ¹é°ÑÈ«²¿±êÖ¾Î»¶¼»á±ä³Étrue
+//	 è€Œè¿™ä¸ªæ˜¯å»é‡ä»£ç ï¼Œç”¨äº†ä¸€ä¸ªæ ‡å¿—æ•°ç»„flagï¼Œè¿™ä¸ªå¾ˆå·§å¦™ï¼Œæ¯æ¬¡å½“flag=trueå°±ä¸å¾ªç¯äº†ï¼Œè€Œæ¯æ¬¡é€’å½’å‰ï¼ŒæŠŠå½“å‰iè®¾ä¸ºtrueï¼Œé€’å½’æ—¶å°±ä¼šè·³è¿‡
+//	 ä½†æ˜¯è®°å¾—é€’å½’ä¹‹åè¿˜è¦å˜å›æ¥ï¼Œå¦åˆ™é€’å½’æŠŠå…¨éƒ¨æ ‡å¿—ä½éƒ½ä¼šå˜æˆtrue
 	 private void recur2(ArrayList<Character> inner_list,char[] chars,boolean[] flag) {
 		 if(inner_list.size()==chars.length) {
 			 this.list.add(new ArrayList<Character>(inner_list));

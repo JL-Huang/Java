@@ -1,5 +1,5 @@
 package DFS;
-//»®·ÖÎªk¸öÏàµÈ×Ó¼¯
+//åˆ’åˆ†ä¸ºkä¸ªç›¸ç­‰å­é›†
 public class K_son {
     public boolean canPartitionKSubsets(int[] nums, int k) {
         int sum = 0, maxNum = 0;
@@ -18,9 +18,9 @@ public class K_son {
     	}
     	for(int i=start;i<nums.length;i++) {
     		if(cur+nums[i]<=target&&!flag[i]) {
-//    			ÕâÀïµÄ´¦ÀíÊ®·ÖÇÉÃî£¬ÒòÎª¼´Ê¹¼ÓÆğÀ´±ÈtargetĞ¡£¬Ò²¿ÉÄÜ²»ÊÇÕıÈ·½á¹û
-//    			±ÈÈç15324,ÏÈ¼ÓÁË3£¬µ«ÊÇÊÇ´íµÄ£¬µ½×îºóÒ²Ã»ÄÜ==target£¬È»ºó»áÊÍ·Å3
-//    			ËùÒÔÈç¹ûµ½×îºó¶¼Ã»ÓĞÓöµ½cur==target£¬¾Í»á·µ»Øfalse£¬ÊÍ·Åµ±Ç°½Úµã
+//    			è¿™é‡Œçš„å¤„ç†ååˆ†å·§å¦™ï¼Œå› ä¸ºå³ä½¿åŠ èµ·æ¥æ¯”targetå°ï¼Œä¹Ÿå¯èƒ½ä¸æ˜¯æ­£ç¡®ç»“æœ
+//    			æ¯”å¦‚15324,å…ˆåŠ äº†3ï¼Œä½†æ˜¯æ˜¯é”™çš„ï¼Œåˆ°æœ€åä¹Ÿæ²¡èƒ½==targetï¼Œç„¶åä¼šé‡Šæ”¾3
+//    			æ‰€ä»¥å¦‚æœåˆ°æœ€åéƒ½æ²¡æœ‰é‡åˆ°cur==targetï¼Œå°±ä¼šè¿”å›falseï¼Œé‡Šæ”¾å½“å‰èŠ‚ç‚¹
     			flag[i]=true;
     			if(recur(nums, cur+nums[i], target, flag, k, i+1)) return true;
     			flag[i]=false;

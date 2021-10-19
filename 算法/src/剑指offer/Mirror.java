@@ -1,8 +1,8 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import Tree.TreeNode;
 
-//²Ù×÷¸ø¶¨µÄ¶ş²æÊ÷£¬½«Æä±ä»»ÎªÔ´¶ş²æÊ÷µÄ¾µÏñ¡£
+//æ“ä½œç»™å®šçš„äºŒå‰æ ‘ï¼Œå°†å…¶å˜æ¢ä¸ºæºäºŒå‰æ ‘çš„é•œåƒã€‚
 public class Mirror {
     public void test(TreeNode root) {
     	if(root==null) return;

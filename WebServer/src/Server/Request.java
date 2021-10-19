@@ -11,15 +11,15 @@ import java.util.Map;
 
 public class Request {
 	final String CRLF="\r\n";
-//	ËùÓĞĞÅÏ¢
+//	æ‰€æœ‰ä¿¡æ¯
 	private String requestInfo;
-//	ÇëÇó·½Ê½
+//	è¯·æ±‚æ–¹å¼
 	private String method;
-//	ÇëÇóurl
+//	è¯·æ±‚url
 	private String url;
-//	ÇëÇó²ÎÊı
+//	è¯·æ±‚å‚æ•°
 	private String queryldx;
-//	»ñÈ¡²ÎÊı£¨ÔÚÇëÇó²ÎÊıÀïÃæ£©
+//	è·å–å‚æ•°ï¼ˆåœ¨è¯·æ±‚å‚æ•°é‡Œé¢ï¼‰
 	private Map<String, List<String>> map;
 	private String[] keys=new String[10];
 	private String[] values=new String[10];
@@ -30,7 +30,7 @@ public class Request {
 	public Request(InputStream is) {
 		map=new HashMap<String, List<String>>();
 		try {
-			System.out.println("Ò»¸ö¿Í»§¶Ë¼òÀúÁËÁ¬½Ó");
+			System.out.println("ä¸€ä¸ªå®¢æˆ·ç«¯ç®€å†äº†è¿æ¥");
 			byte[] bytes=new byte[1024*1024];
 			int len;
 			len = is.read(bytes);
@@ -44,15 +44,15 @@ public class Request {
 		
 	}
 	public Request(Socket s) throws IOException {
-//		thisÖ»ÄÜÔÚÊ×ĞĞ£¬²»ÄÜtrycatch
-//		ÕâÀïÊÇµ÷ÓÃÁËÇ°ÃæÖØÔØµÄ¹¹Ôì·½·¨
+//		thisåªèƒ½åœ¨é¦–è¡Œï¼Œä¸èƒ½trycatch
+//		è¿™é‡Œæ˜¯è°ƒç”¨äº†å‰é¢é‡è½½çš„æ„é€ æ–¹æ³•
 		this(s.getInputStream());
 	}
 	private void parseRequestinfo() {
-		System.out.println("----·Ö½â----");
+		System.out.println("----åˆ†è§£----");
 		System.out.println(requestInfo);
-		System.out.println("----»ñÈ¡ÇëÇó·½Ê½----");
-//		trim()È¥³ıÊ×Î²µÄ¿Õ¸ñ
+		System.out.println("----è·å–è¯·æ±‚æ–¹å¼----");
+//		trim()å»é™¤é¦–å°¾çš„ç©ºæ ¼
 		this.method=this.requestInfo.substring(0,this.requestInfo.indexOf('/')).trim();
 		System.out.println(this.method);
 		System.out.println("----url----");
@@ -66,11 +66,11 @@ public class Request {
 				this.queryldx=temp[1];	
 			}
 			System.out.println(url);
-			System.out.println("----ÇëÇó²ÎÊı----");
+			System.out.println("----è¯·æ±‚å‚æ•°----");
 		switch(method) {
 		case("GET"):{
 			if(this.queryldx==null) {
-				System.out.println("ÎŞ");
+				System.out.println("æ— ");
 			}else {
 				System.out.println(this.queryldx);
 			}
@@ -87,11 +87,11 @@ public class Request {
 			
 		}
 	private void keymap() {
-//		ÓÃ&·Ö¸ô¼üÖµ¶Ô
+//		ç”¨&åˆ†éš”é”®å€¼å¯¹
 		String[] keyvalues=queryldx.split("&");
-//		·ÀÖ¹³öÏÖ&ºóÃæÎª¿ÕµÄÇé¿ö
+//		é˜²æ­¢å‡ºç°&åé¢ä¸ºç©ºçš„æƒ…å†µ
 		keyvalues=Arrays.copyOf(keyvalues,2);
-//		ÓÃ=·Ö¸ô¼üºÍÖµ
+//		ç”¨=åˆ†éš”é”®å’Œå€¼
 		for(int i=0;i<keyvalues.length;i++) {
 				String[] keyvalue=keyvalues[i].split("=");
 				keys[i]=keyvalue[0];
@@ -111,7 +111,7 @@ public class Request {
 		if(list==null||list.size()<0) {
 			return null;
 		}
-//		À¨ºÅÒ»¶¨ÒªĞ´¶«Î÷£¬·ñÔò»á·µ»ØObject[]
+//		æ‹¬å·ä¸€å®šè¦å†™ä¸œè¥¿ï¼Œå¦åˆ™ä¼šè¿”å›Object[]
 		return list.toArray(new String[0]);
 	}
 	public String findvalue(String key,int i) {

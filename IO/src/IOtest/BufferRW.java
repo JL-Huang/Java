@@ -14,15 +14,15 @@ public class BufferRW {
 public static void main(String[] args) {
 	File file=new File("abc.txt");
 	try {
-//		×¢ÒâµÄÊÇ£¬ÕâÀï²»Òª·¢Éú¶àÌ¬£¬ÒòÎªBufferedReaderÓĞ¸¸ÀàReaderÃ»ÓĞµÄ·½·¨
+//		æ³¨æ„çš„æ˜¯ï¼Œè¿™é‡Œä¸è¦å‘ç”Ÿå¤šæ€ï¼Œå› ä¸ºBufferedReaderæœ‰çˆ¶ç±»Readeræ²¡æœ‰çš„æ–¹æ³•
 		BufferedReader is=new BufferedReader(new FileReader(file));
 		String line=null;
 //		char[] chars=new char[1024];
-//		Êä³öÒ»ĞĞµÄÊı¾İ£¬Ö±µ½»»ĞĞ·û
+//		è¾“å‡ºä¸€è¡Œçš„æ•°æ®ï¼Œç›´åˆ°æ¢è¡Œç¬¦
 		while((line=is.readLine())!=null){
 			System.out.println(line);
 		}
-//		¶à¸öÁ÷Ç¶Ì×¹Ø±ÕµÄË³ĞòÒ»°ãÊÇÖ±½Ó¹Ø±Õ×îÍâ²ã
+//		å¤šä¸ªæµåµŒå¥—å…³é—­çš„é¡ºåºä¸€èˆ¬æ˜¯ç›´æ¥å…³é—­æœ€å¤–å±‚
 		if(is!=null) {			
 			is.close();
 		}
@@ -36,7 +36,7 @@ public static void main(String[] args) {
 	
 	try {
 		BufferedWriter os=new BufferedWriter(new FileWriter(file,true));
-//		¼Ó»»ĞĞ·ûÁíÆğÒ»ĞĞ
+//		åŠ æ¢è¡Œç¬¦å¦èµ·ä¸€è¡Œ
 		os.newLine();
 		os.append("dhas");
 		os.flush();

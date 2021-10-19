@@ -32,7 +32,7 @@ public void receive() {
 	try {
 		s=ss.accept();
 //		r=new Response(s);
-		System.out.println("Ò»¸ö¿Í»§¶Ë¼òÀúÁËÁ¬½Ó");
+		System.out.println("ä¸€ä¸ªå®¢æˆ·ç«¯ç®€å†äº†è¿æ¥");
 		InputStream is=s.getInputStream();
 		byte[] bytes=new byte[1024*1024];
 		int len=is.read(bytes);
@@ -41,42 +41,42 @@ public void receive() {
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
-		System.out.println("½¨Á¢Ê§°Ü");
+		System.out.println("å»ºç«‹å¤±è´¥");
 	}
 }
 public void response() throws IOException {
-//	 html¸ñÊ½
+//	 htmlæ ¼å¼
 	 StringBuilder content=new StringBuilder();
 	 content.append("<html>");
 	 content.append("<head>");
 	 content.append("<title>");
-	 content.append("·şÎñÆ÷ÏìÓ¦³É¹¦");
+	 content.append("æœåŠ¡å™¨å“åº”æˆåŠŸ");
 	 content.append("</title>");
 	 content.append("</head>");
 	 content.append("<body>");
-	 content.append("ÖÕÓÚ»ØÀ´ÁË");
+	 content.append("ç»ˆäºå›æ¥äº†");
 	 content.append("</body>");
 	 content.append("</html>");
-//	 Ò»¶¨Òª×¢Òâ£¬ÕâÀïĞèÒªµÄÊÇhtml¸ñÊ½µÄ×Ö½Ú³¤¶È£¬²»ÊÇ×Ö·û³¤¶È£¡
+//	 ä¸€å®šè¦æ³¨æ„ï¼Œè¿™é‡Œéœ€è¦çš„æ˜¯htmlæ ¼å¼çš„å­—èŠ‚é•¿åº¦ï¼Œä¸æ˜¯å­—ç¬¦é•¿åº¦ï¼
 	 int size=content.toString().getBytes().length;
 	 StringBuilder responseinfo=new StringBuilder();
 	 String blank=" ";
 	 String CRLF="\r\n";
-	 //ÏìÓ¦ĞĞHTTP/1.1 200 OK
+	 //å“åº”è¡ŒHTTP/1.1 200 OK
 	 responseinfo.append("HTTP/1.1").append(blank);
 	 responseinfo.append("200").append(blank);
 	 responseinfo.append("OK").append(CRLF);
-	 //ÏìÓ¦Í·£¨×îºóÒ»ĞĞ´æÔÚ¿ÕĞĞ£©
-	 //¸ñÊ½Ò»¶¨ÒªÕıÈ·£¬·ñÔòÖ±½ÓÕûĞĞÃ»ÓĞ
+	 //å“åº”å¤´ï¼ˆæœ€åä¸€è¡Œå­˜åœ¨ç©ºè¡Œï¼‰
+	 //æ ¼å¼ä¸€å®šè¦æ­£ç¡®ï¼Œå¦åˆ™ç›´æ¥æ•´è¡Œæ²¡æœ‰
 	 responseinfo.append("Date:").append(new Date()).append(CRLF);
 	 responseinfo.append("Server:").append("cazz;charset=GBK").append(CRLF);
 	 responseinfo.append("Content-type:text/html").append(CRLF);
-	 //ÕâÀïÊÇĞèÒª×¢ÒâµÄ£¬size²»ÊÇËæ±ã¶¨ÒåµÄ£¬ÊÇÉÏÎÄhtml¸ñÊ½µÄ³¤¶È,Èç¹û´íÁË£¬·µ»ØµÄhtml³¤¶È³ö´í
+	 //è¿™é‡Œæ˜¯éœ€è¦æ³¨æ„çš„ï¼Œsizeä¸æ˜¯éšä¾¿å®šä¹‰çš„ï¼Œæ˜¯ä¸Šæ–‡htmlæ ¼å¼çš„é•¿åº¦,å¦‚æœé”™äº†ï¼Œè¿”å›çš„htmlé•¿åº¦å‡ºé”™
 	 responseinfo.append("Content-length:").append(size).append(CRLF);
 	 responseinfo.append(CRLF); 
-//	 ÕıÎÄ
+//	 æ­£æ–‡
 	 responseinfo.append(content.toString());
-//	 Ğ´³öµ½¿Í»§¶Ë
+//	 å†™å‡ºåˆ°å®¢æˆ·ç«¯
 	 BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
 	 bw.write(responseinfo.toString());
 	 bw.flush();

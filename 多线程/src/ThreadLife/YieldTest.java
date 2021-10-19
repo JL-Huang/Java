@@ -1,7 +1,7 @@
 package ThreadLife;
-//yieldÀñÈÃ,µ±Ç°»Øµ½¾ÍĞ÷×´Ì¬¶ø²»ÊÇ×èÈû×´Ì¬,¾ÍĞ÷×´Ì¬ÒªÏë½øÈëÔËĞĞ×´Ì¬²»ĞèÒªÊÖ¶¯ÔËĞĞ,ÈÃ²Ù×÷ÏµÍ³µ÷¶È
-//×¢ÒâÊÇ¾²Ì¬·½·¨,Ã»ÓĞ¶ÔÏó,Ğ´ÔÚÄÄ¸öÏß³ÌÖĞÄÄ¸öÏß³Ì¾ÍÀñÈÃ
-//ÀñÈÃ²¢²»Éæ¼°×èÈû,Ò»¸öÏß³ÌÀñÈÃÁËÖ±½Ó»á»Øµ½¾ÍĞ÷×´Ì¬
+//yieldç¤¼è®©,å½“å‰å›åˆ°å°±ç»ªçŠ¶æ€è€Œä¸æ˜¯é˜»å¡çŠ¶æ€,å°±ç»ªçŠ¶æ€è¦æƒ³è¿›å…¥è¿è¡ŒçŠ¶æ€ä¸éœ€è¦æ‰‹åŠ¨è¿è¡Œ,è®©æ“ä½œç³»ç»Ÿè°ƒåº¦
+//æ³¨æ„æ˜¯é™æ€æ–¹æ³•,æ²¡æœ‰å¯¹è±¡,å†™åœ¨å“ªä¸ªçº¿ç¨‹ä¸­å“ªä¸ªçº¿ç¨‹å°±ç¤¼è®©
+//ç¤¼è®©å¹¶ä¸æ¶‰åŠé˜»å¡,ä¸€ä¸ªçº¿ç¨‹ç¤¼è®©äº†ç›´æ¥ä¼šå›åˆ°å°±ç»ªçŠ¶æ€
 public class YieldTest {
 public static void main(String[] args) {
 	MyYield my=new MyYield();
@@ -14,11 +14,11 @@ class MyYield implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-//		¼ÓÁËyieldºó,ÏÈÖ´ĞĞµ½ÕâÒ»¾äÏß³ÌµÄ»Øµ½¾ÍĞ÷×´Ì¬,È»ºó´ó¸ÅÂÊÔÚÁíÒ»¸öÏß³ÌÖ´ĞĞÁË"¿ªÊ¼"ºóµÚÒ»¸öÏß³Ì²ÅÖ´ĞĞ"½áÊø"
-	System.out.println("¿ªÊ¼"+Thread.currentThread().getName());
+//		åŠ äº†yieldå,å…ˆæ‰§è¡Œåˆ°è¿™ä¸€å¥çº¿ç¨‹çš„å›åˆ°å°±ç»ªçŠ¶æ€,ç„¶åå¤§æ¦‚ç‡åœ¨å¦ä¸€ä¸ªçº¿ç¨‹æ‰§è¡Œäº†"å¼€å§‹"åç¬¬ä¸€ä¸ªçº¿ç¨‹æ‰æ‰§è¡Œ"ç»“æŸ"
+	System.out.println("å¼€å§‹"+Thread.currentThread().getName());
 	Thread.yield();
 	for(int i=0;i<10;i++) {
-		System.out.println("½áÊø"+Thread.currentThread().getName());
+		System.out.println("ç»“æŸ"+Thread.currentThread().getName());
 	}
 
 	}

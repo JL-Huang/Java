@@ -7,21 +7,21 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-//»º³åÁ÷	£¬Ä¬ÈÏ8kb
+//ç¼“å†²æµ	ï¼Œé»˜è®¤8kb
 public class BufferIO {
 public static void main(String[] args) {
 	File file=new File("abc.txt");
 
 	try {
 //		InputStream is=new FileInputStream(file);
-//		¾ÍÊÇÒÔÏÂÕâÖÖĞ´·¨¡£½«ÊäÈëµÄ½ÚµãÁ÷×÷Îª»º³åÁ÷¹¹Ôì·½·¨µÄ²ÎÊıÌ×½ø»º³åÁ÷
+//		å°±æ˜¯ä»¥ä¸‹è¿™ç§å†™æ³•ã€‚å°†è¾“å…¥çš„èŠ‚ç‚¹æµä½œä¸ºç¼“å†²æµæ„é€ æ–¹æ³•çš„å‚æ•°å¥—è¿›ç¼“å†²æµ
 		BufferedInputStream is=new BufferedInputStream(new FileInputStream(file));
 		int len=-1;
 		byte[] bytes=new byte[1024];
 		while((len=is.read(bytes))!=-1){
 			System.out.println(new String(bytes,0,len));
 		}
-//		¶à¸öÁ÷Ç¶Ì×¹Ø±ÕµÄË³ĞòÒ»°ãÊÇÖ±½Ó¹Ø±Õ×îÍâ²ã
+//		å¤šä¸ªæµåµŒå¥—å…³é—­çš„é¡ºåºä¸€èˆ¬æ˜¯ç›´æ¥å…³é—­æœ€å¤–å±‚
 		if(is!=null) {			
 			is.close();
 		}

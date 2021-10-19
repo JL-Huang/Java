@@ -6,15 +6,15 @@ import java.util.Map;
 public class WebContent {
 	 private List<Entity> entities;
 	private List<Mapping> mappings;
-//	Õâ¸ö¼üÖµ¶ÔÊÇservlet-nameµ½servlet-classµÄÓ³Éä
+//	è¿™ä¸ªé”®å€¼å¯¹æ˜¯servlet-nameåˆ°servlet-classçš„æ˜ å°„
 	private Map<String, String> entitymap=new HashMap<String, String>();
-//	Õâ¸ö¼üÖµ¶ÔÊÇurl-patternµ½servlet-nameµÄÓ³Éä
+//	è¿™ä¸ªé”®å€¼å¯¹æ˜¯url-patternåˆ°servlet-nameçš„æ˜ å°„
 	private Map<String, String> mappingmap=new HashMap<String, String>();
 	public WebContent(List<Entity> entities, List<Mapping> mappings) {
 		super();
 		this.entities = entities;
 		this.mappings = mappings;
-//		°ÑÊäÈëµÄList×ª»»³ÉMap
+//		æŠŠè¾“å…¥çš„Listè½¬æ¢æˆMap
 		for(Entity temp:entities) {
 			entitymap.put(temp.getName(), temp.getClz());
 		}
@@ -24,7 +24,7 @@ public class WebContent {
 			}
 		}
 	}
-//	Í¨¹ıÊäÈëÒ»¸öURLpatternÀ´·µ»ØÒ»¸öServletname,ÔÙÍ¨¹ıÕâ¸öServlet·µ»ØÒ»¸öClass
+//	é€šè¿‡è¾“å…¥ä¸€ä¸ªURLpatternæ¥è¿”å›ä¸€ä¸ªServletname,å†é€šè¿‡è¿™ä¸ªServletè¿”å›ä¸€ä¸ªClass
 	public String getClz(String pattern) {
 		String name=mappingmap.get(pattern);
 		return entitymap.get(name);

@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-//½«ÎÄ¼şÁ÷Óë×Ö½ÚÁ÷¶Ô½Ó£¬ÊµÏÖÎÄ¼ş×ª»¯Îª×Ö½ÚÊı×é£¬ÔÙ°Ñ×Ö½ÚÊı×é×ª»¯ÎªÎÄ¼ş£¬Ò»ÆøºÇ³É
+//å°†æ–‡ä»¶æµä¸å­—èŠ‚æµå¯¹æ¥ï¼Œå®ç°æ–‡ä»¶è½¬åŒ–ä¸ºå­—èŠ‚æ•°ç»„ï¼Œå†æŠŠå­—èŠ‚æ•°ç»„è½¬åŒ–ä¸ºæ–‡ä»¶ï¼Œä¸€æ°”å‘µæˆ
 public class Abutment {
 public static void main(String[] args) {
 	byte[] b=FtoB("F:\\JAVA\\practice\\IOsrc\\hhh.bmp");

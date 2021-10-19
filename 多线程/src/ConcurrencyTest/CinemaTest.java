@@ -3,25 +3,25 @@ package ConcurrencyTest;
 import java.util.ArrayList;
 import java.util.List;
 
-//ÀûÓÃÏß³ÌĞ´Ò»¸öÊµÀı£¬Ò»°ãÊÇ²Ù×÷µÄ¶ÔÏóÒ»¸öÀà£¬ÆäÒ»¸ö·½·¨ÊµÏÖ²Ù×÷ÄÚÈİ
-//	ÊµÏÖRunnable½Ó¿ÚÓÃÒ»¸öÀà£¬Õâ¸öÀà½«²Ù×÷Àà×÷Îª³ÉÔ±±äÁ¿²¢Ëø×¡
-//	¿ªÆôÏß³Ì·ÅÔÚÖ÷ÀàµÄmain·½·¨
-//¿ªÆôÏß³ÌÊ±£¬ÒªÏÈÊµÀı»¯ÕæÊµÀà¶ÔÏó
+//åˆ©ç”¨çº¿ç¨‹å†™ä¸€ä¸ªå®ä¾‹ï¼Œä¸€èˆ¬æ˜¯æ“ä½œçš„å¯¹è±¡ä¸€ä¸ªç±»ï¼Œå…¶ä¸€ä¸ªæ–¹æ³•å®ç°æ“ä½œå†…å®¹
+//	å®ç°Runnableæ¥å£ç”¨ä¸€ä¸ªç±»ï¼Œè¿™ä¸ªç±»å°†æ“ä½œç±»ä½œä¸ºæˆå‘˜å˜é‡å¹¶é”ä½
+//	å¼€å¯çº¿ç¨‹æ”¾åœ¨ä¸»ç±»çš„mainæ–¹æ³•
+//å¼€å¯çº¿ç¨‹æ—¶ï¼Œè¦å…ˆå®ä¾‹åŒ–çœŸå®ç±»å¯¹è±¡
 public class CinemaTest {
 	public static void main(String[] args) {
-//		°ÑÒªµ÷ÓÃµÄ¶ÔÏóµ¥¶À³ÉÀà
-		Cinema cinema=new Cinema(100, "»ª¹¤Ó°Ôº");
+//		æŠŠè¦è°ƒç”¨çš„å¯¹è±¡å•ç‹¬æˆç±»
+		Cinema cinema=new Cinema(100, "åå·¥å½±é™¢");
 		Customer customer1=new Customer(cinema, 5);
 		Customer customer2=new Customer(cinema, 3);
-//		ÕâÀï¸Ğ¾õÓĞµã²»ÊÊÓ¦£¬ÒòÎªÒÔÇ°²»Í¬ThreadµÄ²ÎÊı¶¼ÊÇÒ»ÑùµÄ£¬ÕâÀï±ä³É²»Ò»ÑùÁË
-		new Thread(customer1,"Ğ¡ºì").start();
-		new Thread(customer2,"Ğ¡Ã÷").start();
+//		è¿™é‡Œæ„Ÿè§‰æœ‰ç‚¹ä¸é€‚åº”ï¼Œå› ä¸ºä»¥å‰ä¸åŒThreadçš„å‚æ•°éƒ½æ˜¯ä¸€æ ·çš„ï¼Œè¿™é‡Œå˜æˆä¸ä¸€æ ·äº†
+		new Thread(customer1,"å°çº¢").start();
+		new Thread(customer2,"å°æ˜").start();
 	}
 
 }
 class Cinema{
 	int availseat;
-	String name;//µçÓ°ÔºÃû³Æ
+	String name;//ç”µå½±é™¢åç§°
 
 	public Cinema(int availseat, String name) {
 		super();
@@ -30,12 +30,12 @@ class Cinema{
 	}
 
 	public boolean booktickets() {
-		System.out.println("¿ÉÓÃÎ»ÖÃ"+availseat);
+		System.out.println("å¯ç”¨ä½ç½®"+availseat);
 		if(availseat>0) {
-			System.out.println("³öÆ±³É¹¦");
+			System.out.println("å‡ºç¥¨æˆåŠŸ");
 			return true;
 		}else {
-			System.out.println("³öÆ±Ê§°Ü");
+			System.out.println("å‡ºç¥¨å¤±è´¥");
 			return false;
 		}
 	}
@@ -43,8 +43,8 @@ class Cinema{
 }
 class Customer implements Runnable{
 	Cinema cinema;
-	int seatneeded;//Òª¶©µÄÎ»ÖÃÊıÁ¿
-//	int name;//¹Ë¿ÍÃû×Ö,Ê¡ÂÔÁË£¬Ö±½ÓÓÃ½ø³ÌÃû×÷Îª¹Ë¿ÍÃû×Ö
+	int seatneeded;//è¦è®¢çš„ä½ç½®æ•°é‡
+//	int name;//é¡¾å®¢åå­—,çœç•¥äº†ï¼Œç›´æ¥ç”¨è¿›ç¨‹åä½œä¸ºé¡¾å®¢åå­—
 	
 	public Customer(Cinema cinema, int seatneeded) {
 		super();
@@ -54,9 +54,9 @@ class Customer implements Runnable{
 
 	@Override
 	public void run() {
-//		Ã»¼ÓsynchronizedÖ®Ç°£¬ÓĞ¿ÉÄÜÁ½¸öÍ¬Ê±³öÆ±£¬È»ºó¶¼ÏÔÊ¾Æ±Êı100
-//		¼ÓÁËsynchronized£¬Ò»¶¨ÒªÒ»¸öÏß³ÌÏÈÇÀÍê£¬ÁíÒ»Ïß³Ì²ÅÏÔÊ¾ÇÀ ÍêÖ®ºóÊ£ÓàÆ±Êı
-//		ÕâÀïµÄcinemaÆäÊµÊÇĞÎ²Î£¬ÔÚµ÷ÓÃÊ±Ö¸ÏòCustomer¹¹ÔìÊ±µÄCinema²ÎÊı
+//		æ²¡åŠ synchronizedä¹‹å‰ï¼Œæœ‰å¯èƒ½ä¸¤ä¸ªåŒæ—¶å‡ºç¥¨ï¼Œç„¶åéƒ½æ˜¾ç¤ºç¥¨æ•°100
+//		åŠ äº†synchronizedï¼Œä¸€å®šè¦ä¸€ä¸ªçº¿ç¨‹å…ˆæŠ¢å®Œï¼Œå¦ä¸€çº¿ç¨‹æ‰æ˜¾ç¤ºæŠ¢ å®Œä¹‹åå‰©ä½™ç¥¨æ•°
+//		è¿™é‡Œçš„cinemaå…¶å®æ˜¯å½¢å‚ï¼Œåœ¨è°ƒç”¨æ—¶æŒ‡å‘Customeræ„é€ æ—¶çš„Cinemaå‚æ•°
 		synchronized (cinema) {
 
 			
@@ -64,7 +64,7 @@ class Customer implements Runnable{
 			boolean flag=cinema.booktickets();
 			cinema.availseat=cinema.availseat-seatneeded;
 			if(flag) {
-				System.out.println(Thread.currentThread().getName()+"ÂòÁË"+seatneeded+"ÕÅÆ±");
+				System.out.println(Thread.currentThread().getName()+"ä¹°äº†"+seatneeded+"å¼ ç¥¨");
 			}
 			
 		}

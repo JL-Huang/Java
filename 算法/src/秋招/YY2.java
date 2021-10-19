@@ -1,4 +1,4 @@
-package ÇïÕĞ;
+package ç§‹æ‹›;
 
 public class YY2 {
 	public static void main(String[] args) {

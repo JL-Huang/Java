@@ -1,17 +1,17 @@
 package MyThread;
 
 public class Race implements Runnable{
-//	·¸ÁËÒ»¸ö´íÎó£¬°ÑstepÉè³ÉÁË³ÉÔ±±äÁ¿£¬È»ºówinÎŞ²Î£¬ÕâÊÇ´íÎóµÄ¡£
-//	¿ªÆôÁ½¸öÏß³ÌÊ±£¬³ÉÔ±±äÁ¿ÊÇ¹²ÏíµÄ£¬¶østepÓ¦¸ÃÊÇÁ½¸öÏß³Ì×Ô¼ºµÄÊôĞÔ²Å¶Ô
+//	çŠ¯äº†ä¸€ä¸ªé”™è¯¯ï¼ŒæŠŠstepè®¾æˆäº†æˆå‘˜å˜é‡ï¼Œç„¶åwinæ— å‚ï¼Œè¿™æ˜¯é”™è¯¯çš„ã€‚
+//	å¼€å¯ä¸¤ä¸ªçº¿ç¨‹æ—¶ï¼Œæˆå‘˜å˜é‡æ˜¯å…±äº«çš„ï¼Œè€Œstepåº”è¯¥æ˜¯ä¸¤ä¸ªçº¿ç¨‹è‡ªå·±çš„å±æ€§æ‰å¯¹
 	public String winner;
 	
 	@Override
 	public void run() {
 		for(int step=0;step<=1000;step++) {
 
-//			ÕâÀï»¹ÊÇÓĞµãÎÊÌâ£¬ÓĞÊ±»á³öÏÖÒ»·½ÒÑ¾­Ó®ÁË£¬ÁíÒ»·½»¹ÍùÇ°ÅÜÒ»²½£¬¿ÉÄÜÊÇ²¢·¢ÎÊÌâ
-			if(Thread.currentThread().getName()=="ÍÃ×Ó"&&step==10) {
-//				Ïß³ÌµÄÒì³£Ö»ÄÜtrycatch£¬²»ÄÜthrows
+//			è¿™é‡Œè¿˜æ˜¯æœ‰ç‚¹é—®é¢˜ï¼Œæœ‰æ—¶ä¼šå‡ºç°ä¸€æ–¹å·²ç»èµ¢äº†ï¼Œå¦ä¸€æ–¹è¿˜å¾€å‰è·‘ä¸€æ­¥ï¼Œå¯èƒ½æ˜¯å¹¶å‘é—®é¢˜
+			if(Thread.currentThread().getName()=="å…”å­"&&step==10) {
+//				çº¿ç¨‹çš„å¼‚å¸¸åªèƒ½trycatchï¼Œä¸èƒ½throws
 				try {
 					Thread.sleep(10);
 				} catch (InterruptedException e) {
@@ -20,7 +20,7 @@ public class Race implements Runnable{
 				}
 			}
 			System.out.println(Thread.currentThread().getName()+step);
-//			ÕâÀïµÄthis¾ÓÈ»¿ÉÒÔÊ¡ÂÔ£¬¾ªÁË£¬ÕâÃ÷Ã÷ÊÇ·Ç¾²Ì¬·½·¨°¡
+//			è¿™é‡Œçš„thiså±…ç„¶å¯ä»¥çœç•¥ï¼ŒæƒŠäº†ï¼Œè¿™æ˜æ˜æ˜¯éé™æ€æ–¹æ³•å•Š
 			boolean b=this.win(step);
 			if(b==true) {
 				break; 
@@ -29,8 +29,8 @@ public class Race implements Runnable{
 			}
 		}
 	public boolean win(int s) {
-//		ÕâÀïÊÇºÜ¹Ø¼üµÄ£¬winnerÊÇ¹²ÏíµÄ±äÁ¿£¬²»¼ÓÕâ¾äµÄ»°»á³öÏÖÔÚÒ»¸ö½ø³ÌÄÚwinnerÒÑ¾­¸³Öµ
-//		µ«ÔÚÁíÒ»¸ö½ø³ÌÈÔÔÚ¼ÌĞøÅÜ£¬È»ºó³öÏÖÁ½¸ö¹Ú¾ü
+//		è¿™é‡Œæ˜¯å¾ˆå…³é”®çš„ï¼Œwinneræ˜¯å…±äº«çš„å˜é‡ï¼Œä¸åŠ è¿™å¥çš„è¯ä¼šå‡ºç°åœ¨ä¸€ä¸ªè¿›ç¨‹å†…winnerå·²ç»èµ‹å€¼
+//		ä½†åœ¨å¦ä¸€ä¸ªè¿›ç¨‹ä»åœ¨ç»§ç»­è·‘ï¼Œç„¶åå‡ºç°ä¸¤ä¸ªå† å†›
 		if(winner!=null) {
 			return true;
 		}else {
@@ -45,8 +45,8 @@ public class Race implements Runnable{
 
 public static void main(String[] args) {
 	Race r=new Race();
-	new Thread(r,"ÍÃ×Ó").start();
-	new Thread(r,"ÎÚ¹ê").start();
+	new Thread(r,"å…”å­").start();
+	new Thread(r,"ä¹Œé¾Ÿ").start();
 	
 }
 }

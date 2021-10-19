@@ -5,23 +5,23 @@ import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.util.Calendar;
 //Date
-//ÁúÃùÀà£¬Ö»ĞèÒªÖªµÀ·µ»Øµ±Ç°Ê±¼ä¾ÍÊÇÁË
-//»¹ÓĞ¾ÍÊÇDate(2020-1990,2,24)±íÊ¾2020Äê3ÔÂ24ÈÕ
+//é¾™é¸£ç±»ï¼Œåªéœ€è¦çŸ¥é“è¿”å›å½“å‰æ—¶é—´å°±æ˜¯äº†
+//è¿˜æœ‰å°±æ˜¯Date(2020-1990,2,24)è¡¨ç¤º2020å¹´3æœˆ24æ—¥
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class ÈÕÆÚ {
+public class æ—¥æœŸ {
 public static void main(String[] args) throws ParseException {
 	 Date date=new Date();
 	 System.out.println(date);
-//	 yÄê·İ£¬MÔÂ·İ£¬wÄêÖÜÊı£¬WÔÂÖÜÊı£¬DÄêÌìÊı£¬dÔÂÌìÊı£¬FÔÂĞÇÆÚÊı£¬EĞÇÆÚ¼¸
-//	 aÉÏÏÂÎç£¬H0-23Ê±£¬k1-24Ê±£¬K0-11Ê±£¬h1-12Ê±
-//	 mĞ¡Ê±·ÖÖÓÊı£¬s·ÖÖÓÃëÊı£¬SºÁÃë£¬
-//	 DateFormatÍ¨¹ıSimpleDateFormate¶¨Òå£¬²ÎÊıÎªÆä¸ñÊ½£¬Æäformat·½·¨½«ÈÕÆÚ×ªÎª¹æ¶¨¸ñÊ½µÄ×Ö·û´®
+//	 yå¹´ä»½ï¼ŒMæœˆä»½ï¼Œwå¹´å‘¨æ•°ï¼ŒWæœˆå‘¨æ•°ï¼ŒDå¹´å¤©æ•°ï¼Œdæœˆå¤©æ•°ï¼ŒFæœˆæ˜ŸæœŸæ•°ï¼ŒEæ˜ŸæœŸå‡ 
+//	 aä¸Šä¸‹åˆï¼ŒH0-23æ—¶ï¼Œk1-24æ—¶ï¼ŒK0-11æ—¶ï¼Œh1-12æ—¶
+//	 må°æ—¶åˆ†é’Ÿæ•°ï¼Œsåˆ†é’Ÿç§’æ•°ï¼ŒSæ¯«ç§’ï¼Œ
+//	 DateFormaté€šè¿‡SimpleDateFormateå®šä¹‰ï¼Œå‚æ•°ä¸ºå…¶æ ¼å¼ï¼Œå…¶formatæ–¹æ³•å°†æ—¥æœŸè½¬ä¸ºè§„å®šæ ¼å¼çš„å­—ç¬¦ä¸²
 	 DateFormat df=new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
 	 String str=df.format(date);
 	 System.out.println(str);
-//	 Æäparse·½·¨¿ÉÒÔ°Ñ×Ö·û´®±äÎªÈÕÆÚ£¬×Ö·û´®±ØĞë°´ÕÕ¸ñÊ½£¬×¢ÒâÕâÀïÒªÅ×³ö»òÕßtry catch
+//	 å…¶parseæ–¹æ³•å¯ä»¥æŠŠå­—ç¬¦ä¸²å˜ä¸ºæ—¥æœŸï¼Œå­—ç¬¦ä¸²å¿…é¡»æŒ‰ç…§æ ¼å¼ï¼Œæ³¨æ„è¿™é‡Œè¦æŠ›å‡ºæˆ–è€…try catch
 	 Date da=df.parse("2019-09-01 13-32-34");
 	 System.out.println(da);
 	 DateFormat df3=new SimpleDateFormat("D");
@@ -29,21 +29,21 @@ public static void main(String[] args) throws ParseException {
 	 System.out.println(str3);
 	 
 	 Calendar calendar=new GregorianCalendar(2030,04,12,11,12,34);
-//	 Calendar.YEARÊÇ³éÏóÀàµÄ³ÉÔ±±äÁ¿£¬Óë¸Ã³éÏóÀàµÄÆäËû³ÉÔ±±äÁ¿¶¼¿ÉÒÔ×÷Îªget·½·¨µÄ¹Ì¶¨²ÎÊı
-//	 ²»ÄÜÖ±½Ócalendar.year£¬·ñÔò»á·µ»ØÄ¬ÈÏÖµ
+//	 Calendar.YEARæ˜¯æŠ½è±¡ç±»çš„æˆå‘˜å˜é‡ï¼Œä¸è¯¥æŠ½è±¡ç±»çš„å…¶ä»–æˆå‘˜å˜é‡éƒ½å¯ä»¥ä½œä¸ºgetæ–¹æ³•çš„å›ºå®šå‚æ•°
+//	 ä¸èƒ½ç›´æ¥calendar.yearï¼Œå¦åˆ™ä¼šè¿”å›é»˜è®¤å€¼
 	 int i=calendar.get(Calendar.YEAR);
-//	 ÉèÖÃÄê·İ
+//	 è®¾ç½®å¹´ä»½
 //	 calendar.set(Calendar.YEAR,1099);
-//	 ÉèÖÃÈÕÆÚ
+//	 è®¾ç½®æ—¥æœŸ
 //	 calendar.add(Calendar.DATE, 100);
 	 System.out.println(i);
-//	 ÈÕÀú×ªÈÕÆÚ
+//	 æ—¥å†è½¬æ—¥æœŸ
 	 Date dd=calendar.getTime();
-//	 ÈÕÆÚ×ªÈÕÀú
+//	 æ—¥æœŸè½¬æ—¥å†
 	 calendar.setTime(dd);
 		 
 	 }
-//	 ¶¨Òå´òÓ¡ÈÕÀúµÄ·½·¨
+//	 å®šä¹‰æ‰“å°æ—¥å†çš„æ–¹æ³•
 public void printCalendar(Calendar c) {
 	int x=c.get(Calendar.YEAR);
 }

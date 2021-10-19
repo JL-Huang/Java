@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-//½«ÎÄ¼şÁ÷Óë×Ö½ÚÁ÷¶Ô½Ó£¬ÊµÏÖÎÄ¼ş×ª»¯Îª×Ö½ÚÊı×é£¬ÔÙ°Ñ×Ö½ÚÊı×é×ª»¯ÎªÎÄ¼ş£¬Ò»ÆøºÇ³É
+//å°†æ–‡ä»¶æµä¸å­—èŠ‚æµå¯¹æ¥ï¼Œå®ç°æ–‡ä»¶è½¬åŒ–ä¸ºå­—èŠ‚æ•°ç»„ï¼Œå†æŠŠå­—èŠ‚æ•°ç»„è½¬åŒ–ä¸ºæ–‡ä»¶ï¼Œä¸€æ°”å‘µæˆ
 public class pack {
 public static void main(String[] args) throws IOException {
 //	byte[] b=FtoB("F:\\JAVA\\practice\\IOsrc\\hhh.bmp");
@@ -22,7 +22,7 @@ public static void main(String[] args) throws IOException {
 	InputStream iis=new FileInputStream(new File(InFilepath));
 	ByteArrayOutputStream baos =new ByteArrayOutputStream();
 	FtoB(iis,baos);
-//	toByteArray»ñÈ¡×Ö½ÚÊä³öÁ÷µÄÄÚÈİ
+//	toByteArrayè·å–å­—èŠ‚è¾“å‡ºæµçš„å†…å®¹
 	byte[] bb=baos.toByteArray();
 	String OutputFilepath = "F:\\JAVA\\practice\\IOsrc\\jjj.bmp";
 	ByteArrayInputStream bais=new ByteArrayInputStream(bb);
@@ -71,7 +71,7 @@ public static void closeOS(OutputStream os) {
 		e.printStackTrace();
 	}
 }
-//JDK9Ö®ºóÓĞµÄ·½·¨£¬²»ĞèÒªÊÖ¶¯close£¬tryÀïÃæÁĞÒ»ÏÂIO¾ÍĞĞ
+//JDK9ä¹‹åæœ‰çš„æ–¹æ³•ï¼Œä¸éœ€è¦æ‰‹åŠ¨closeï¼Œtryé‡Œé¢åˆ—ä¸€ä¸‹IOå°±è¡Œ
 public static void newcloseOS(OutputStream os) {
 	
 	try(os;/*is*/) {
@@ -93,8 +93,8 @@ public static void closeIS(InputStream is) {
 		e.printStackTrace();
 	}
 }
-//ÕâÀïÓĞµã·Ñ½â£¬CloseableÊÇÒ»¸ö½Ó¿Ú£¬ÎªÉ¶Ò²ÓĞ¶ÔÏó
-//ºÃÁËÎÒ¶®ÁË£¬Êµ¼Êµ÷ÓÃÊ±£¬Õâ¸öĞÎ²Î¶ÔÏóµÄÊµ²ÎÓ¦¸ÃÊÇÒ»¸ö½Ó¿ÚÊµÏÖÀà¶ÔÏó
+//è¿™é‡Œæœ‰ç‚¹è´¹è§£ï¼ŒCloseableæ˜¯ä¸€ä¸ªæ¥å£ï¼Œä¸ºå•¥ä¹Ÿæœ‰å¯¹è±¡
+//å¥½äº†æˆ‘æ‡‚äº†ï¼Œå®é™…è°ƒç”¨æ—¶ï¼Œè¿™ä¸ªå½¢å‚å¯¹è±¡çš„å®å‚åº”è¯¥æ˜¯ä¸€ä¸ªæ¥å£å®ç°ç±»å¯¹è±¡
 public static void closeIO(Closeable...ios) {
 	for(Closeable io:ios) {
 		try {

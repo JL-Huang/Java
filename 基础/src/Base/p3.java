@@ -1,11 +1,11 @@
 package Base;
-//·µ»ØÖÊÊı
+//è¿”å›è´¨æ•°
 public class p3 {
 	public static void main(String[] args) {
 		outer:for(int i=1;i<150;i++) {
 			for(int j=2;j<=i/2;j++) {
 				if(i%j==0) {
-					continue outer;//²»ÄÜ¸Ä³Ébreak£¬breakÌø³öËùÓĞÑ­»·
+					continue outer;//ä¸èƒ½æ”¹æˆbreakï¼Œbreakè·³å‡ºæ‰€æœ‰å¾ªç¯
 				}
 
 			}

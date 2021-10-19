@@ -1,4 +1,4 @@
-package ÇïÕÐ;
+package ç§‹æ‹›;
 
 public class QiAnXin2 {
 //	public static void main(String[] args) {

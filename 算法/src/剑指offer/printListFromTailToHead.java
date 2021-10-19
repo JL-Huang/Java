@@ -1,11 +1,11 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 import java.util.Stack;
 
 import Tree.ListNode;
 
-//ÊäÈëÒ»¸öÁ´±í£¬°´Á´±í´ÓÎ²µ½Í·µÄË³Ğò·µ»ØÒ»¸öArrayList¡£
+//è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼ŒæŒ‰é“¾è¡¨ä»å°¾åˆ°å¤´çš„é¡ºåºè¿”å›ä¸€ä¸ªArrayListã€‚
 public class printListFromTailToHead {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode){
         Stack<Integer> stack=new Stack<Integer>();

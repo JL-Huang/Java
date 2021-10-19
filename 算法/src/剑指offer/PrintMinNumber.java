@@ -1,8 +1,8 @@
-package ½£Ö¸offer;
-//ÊäÈëÒ»¸öÕýÕûÊýÊý×é£¬°ÑÊý×éÀïËùÓÐÊý×ÖÆ´½ÓÆðÀ´ÅÅ³ÉÒ»¸öÊý£¬´òÓ¡ÄÜÆ´½Ó³öµÄËùÓÐÊý×ÖÖÐ×îÐ¡µÄÒ»¸ö¡£
-//ÀýÈçÊäÈëÊý×é{3£¬32£¬321}£¬Ôò´òÓ¡³öÕâÈý¸öÊý×ÖÄÜÅÅ³ÉµÄ×îÐ¡Êý×ÖÎª321323¡£
+package å‰‘æŒ‡offer;
+//è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°æ•°ç»„ï¼ŒæŠŠæ•°ç»„é‡Œæ‰€æœ‰æ•°å­—æ‹¼æŽ¥èµ·æ¥æŽ’æˆä¸€ä¸ªæ•°ï¼Œæ‰“å°èƒ½æ‹¼æŽ¥å‡ºçš„æ‰€æœ‰æ•°å­—ä¸­æœ€å°çš„ä¸€ä¸ªã€‚
+//ä¾‹å¦‚è¾“å…¥æ•°ç»„{3ï¼Œ32ï¼Œ321}ï¼Œåˆ™æ‰“å°å‡ºè¿™ä¸‰ä¸ªæ•°å­—èƒ½æŽ’æˆçš„æœ€å°æ•°å­—ä¸º321323ã€‚
 public class PrintMinNumber {
-//	ÊÂÊµÉÏ£¬Õâ¾ÍÊÇÒ»¸öÅÅÐò£¬Ö»ÊÇÅÅÐòµÄ¹æÔò±äÁË£¬ÅÅÐòËã·¨Ã»±ä£¬ÕâÀïÓÃµÄÃ°ÅÝ
+//	äº‹å®žä¸Šï¼Œè¿™å°±æ˜¯ä¸€ä¸ªæŽ’åºï¼Œåªæ˜¯æŽ’åºçš„è§„åˆ™å˜äº†ï¼ŒæŽ’åºç®—æ³•æ²¡å˜ï¼Œè¿™é‡Œç”¨çš„å†’æ³¡
     public String test(int [] numbers) {
     	for(int i=0;i<numbers.length-1;i++) {
     		for(int j=numbers.length-1;j>i;j--) {
@@ -17,8 +17,8 @@ public class PrintMinNumber {
     	for(int i=0;i<numbers.length;i++) result+=numbers[i];
     	return result;
     }
-//    ÅÅÐòµÄ¹æÔò¾ÍÊÇÁ½¸öÊý£¬Èç¹ûÆ´ÆðÀ´Ð¡µÄÅÅÇ°Ãæ£¬×Ö·û´®Æ´½Ó¼´¿É
-//    ×¢ÒâÆ´½ÓÖ®ºó±È½ÏÒªÓÃlong£¬²»È»ÓÐ¿ÉÄÜ»áÒç³ö
+//    æŽ’åºçš„è§„åˆ™å°±æ˜¯ä¸¤ä¸ªæ•°ï¼Œå¦‚æžœæ‹¼èµ·æ¥å°çš„æŽ’å‰é¢ï¼Œå­—ç¬¦ä¸²æ‹¼æŽ¥å³å¯
+//    æ³¨æ„æ‹¼æŽ¥ä¹‹åŽæ¯”è¾ƒè¦ç”¨longï¼Œä¸ç„¶æœ‰å¯èƒ½ä¼šæº¢å‡º
     public boolean newcompare(int a,int b) {
     	String a_str=String.valueOf(a);
     	String b_str=String.valueOf(b);

@@ -1,12 +1,12 @@
-package ¶¯Ì¬¹æ»®;
-//×î³¤ÉÏÉı×ÓĞòÁĞ
+package åŠ¨æ€è§„åˆ’;
+//æœ€é•¿ä¸Šå‡å­åºåˆ—
 import java.util.Arrays;
 
-public class ×î³¤ÉÏÉı×ÓĞòÁĞ {
-//	¶¯Ì¬¹æ»®£¬×îÓÅ½â²»ÊÇÂíÉÏÈ·¶¨µÚÒ»²½
+public class æœ€é•¿ä¸Šå‡å­åºåˆ— {
+//	åŠ¨æ€è§„åˆ’ï¼Œæœ€ä¼˜è§£ä¸æ˜¯é©¬ä¸Šç¡®å®šç¬¬ä¸€æ­¥
 	
 	public static void main(String[] args) {
-		×î³¤ÉÏÉı×ÓĞòÁĞ l=new ×î³¤ÉÏÉı×ÓĞòÁĞ();
+		æœ€é•¿ä¸Šå‡å­åºåˆ— l=new æœ€é•¿ä¸Šå‡å­åºåˆ—();
 		int[] nums={10,9,2,5,3,7,101,18};
 		System.out.println(l.lengthOfLIS(nums));
 	}
@@ -18,10 +18,10 @@ public class ×î³¤ÉÏÉı×ÓĞòÁĞ {
     	Arrays.sort(result);
     	return result[nums.length-1];
     }
-//	²»Í¬µÄ×ÓÎÊÌâ£º¶ÔÓÚÃ¿Ò»index£¬¶¼ÒªÇóindex½áÎ²µÄ×ÓĞòÁĞ³¤¶È×î´óÖµlength[index]
-//	¹«¹²×Ó×ÓÎÊÌâ£ºÃ¿Ò»¸ö½â¶¼¿ÉÒÔÍ¨¹ılength[index-1]Çó³ö
-//	¿ÉÒÔ±£´æµÄÄÚÈİ£ºlength[index-1]
-//    Ë¼Â·ÊÇÓÃresult[i]±£´æÒÔnums[i]½áÎ²µÄ×ÓĞòÁĞ³¤¶È×î´óÖµ
+//	ä¸åŒçš„å­é—®é¢˜ï¼šå¯¹äºæ¯ä¸€indexï¼Œéƒ½è¦æ±‚indexç»“å°¾çš„å­åºåˆ—é•¿åº¦æœ€å¤§å€¼length[index]
+//	å…¬å…±å­å­é—®é¢˜ï¼šæ¯ä¸€ä¸ªè§£éƒ½å¯ä»¥é€šè¿‡length[index-1]æ±‚å‡º
+//	å¯ä»¥ä¿å­˜çš„å†…å®¹ï¼šlength[index-1]
+//    æ€è·¯æ˜¯ç”¨result[i]ä¿å­˜ä»¥nums[i]ç»“å°¾çš„å­åºåˆ—é•¿åº¦æœ€å¤§å€¼
 //    result[i]=max(result[0~i-1])
     public void recur(int[]nums,int[] result) {
     	for(int i=0;i<nums.length;i++) {

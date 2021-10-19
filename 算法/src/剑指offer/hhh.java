@@ -1,4 +1,4 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 public class hhh {
     public boolean hasPath(char[][] matrix, int rows, int cols, char[] str) {

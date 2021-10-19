@@ -5,12 +5,12 @@ import java.util.List;
 
 public class BetterCinemaTest {
 public static void main(String[] args) {
-//	ÈİÆ÷µÄÌí¼Ó
+//	å®¹å™¨çš„æ·»åŠ 
 	List<Integer> availablelist=new ArrayList<Integer>();
 	for(int i=0;i<10;i++) {
 		availablelist.add(i);
 	}
-	BetterCinema bc=new BetterCinema(availablelist, "»ª¹¤Ó°Ôº");
+	BetterCinema bc=new BetterCinema(availablelist, "åå·¥å½±é™¢");
 	List<Integer> needlist1=new ArrayList<Integer>();
 	for(int i=0;i<3;i++) {
 		needlist1.add(i);
@@ -19,8 +19,8 @@ public static void main(String[] args) {
 	for(int i=5;i<7;i++) {
 		needlist2.add(i);
 	}
-	new Thread(new BetterCustomer(bc, needlist1),"Ğ¡Ã÷").start();
-	new Thread(new BetterCustomer(bc, needlist2),"Ğ¡»Æ").start();
+	new Thread(new BetterCustomer(bc, needlist1),"å°æ˜").start();
+	new Thread(new BetterCustomer(bc, needlist2),"å°é»„").start();
 	
 }
 }
@@ -50,18 +50,18 @@ class BetterCustomer implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
 		synchronized (bc) {
-			System.out.println("¿ÉÓÃÎ»ÖÃ"+bc.availablelist);
+			System.out.println("å¯ç”¨ä½ç½®"+bc.availablelist);
 			List<Integer> copylist=new ArrayList<Integer>(bc.availablelist);
-//			×¢ÒâÏÂÃæÕâÖÖĞ´·¨ÊÇ´íÎóµÄ£¬ÕâÑù×ÓÊÇ°ÑavailalistµÄµØÖ·¸øÁËcopylist£¬¶Ôcopylist²Ù×÷µÈÍ¬ÓÚ¶ÔÇ°Õß²Ù×÷
+//			æ³¨æ„ä¸‹é¢è¿™ç§å†™æ³•æ˜¯é”™è¯¯çš„ï¼Œè¿™æ ·å­æ˜¯æŠŠavailalistçš„åœ°å€ç»™äº†copylistï¼Œå¯¹copylistæ“ä½œç­‰åŒäºå¯¹å‰è€…æ“ä½œ
 //			List<Integer> copylist=bc.availablelist;
 	
 			copylist.removeAll(needlist);
 			if(bc.availablelist.size()-copylist.size()==needlist.size()) {
 				bc.availablelist=copylist;
-				System.out.println("³öÆ±³É¹¦£¬Î»ÖÃÎª->"+Thread.currentThread().getName()+needlist);
-				System.out.println("Ê£ÓàÎ»ÖÃ"+bc.availablelist);
+				System.out.println("å‡ºç¥¨æˆåŠŸï¼Œä½ç½®ä¸º->"+Thread.currentThread().getName()+needlist);
+				System.out.println("å‰©ä½™ä½ç½®"+bc.availablelist);
 			}else {
-				System.out.println("³öÆ±Ê§°Ü");
+				System.out.println("å‡ºç¥¨å¤±è´¥");
 			}
 		}
 }

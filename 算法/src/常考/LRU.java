@@ -1,4 +1,4 @@
-package ³£¿¼;
+package å¸¸è€ƒ;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -7,13 +7,13 @@ public class LRU {
 	private int capacity;
 	private HashMap<Integer, Integer> map;
 	private LinkedList<Integer> list;
-//	list´ækey£¬map´ækey-value
+//	listå­˜keyï¼Œmapå­˜key-value
     public LRU(int capacity) {
     	this.capacity=capacity;
     	this.map=new HashMap<Integer, Integer>();
     	this.list=new LinkedList<Integer>();
     }
-//    È¡µÄÊ±ºòÔÚlist°ÑkeyÈ¥³ı£¬ÖØĞÂ·ÅÔÚ¶ÓÎ²
+//    å–çš„æ—¶å€™åœ¨listæŠŠkeyå»é™¤ï¼Œé‡æ–°æ”¾åœ¨é˜Ÿå°¾
     public int get(int key) {
     	if(map.containsKey(key)) {
     		list.remove(key);
@@ -22,9 +22,9 @@ public class LRU {
     	}
     	return -1;
     }
-//    ´æµÄÊ±ºò½øĞĞÁ½¸öÅĞ¶Ï£¬Ò»¸öÊÇlist»òmapÀïÓĞÃ»ÓĞ£¬ÓĞÔòÈ¥³ı
-//    Ò»¸öÊÇ¿´ÊÇ²»ÊÇÂúÁË£¬ÂúÁË¾Í°Ñ¶ÓÍ·È¥³ı
-//    È»ºó²ÅÌí¼Ó£¬listÓëmap¶¼Ìí¼Ó
+//    å­˜çš„æ—¶å€™è¿›è¡Œä¸¤ä¸ªåˆ¤æ–­ï¼Œä¸€ä¸ªæ˜¯listæˆ–mapé‡Œæœ‰æ²¡æœ‰ï¼Œæœ‰åˆ™å»é™¤
+//    ä¸€ä¸ªæ˜¯çœ‹æ˜¯ä¸æ˜¯æ»¡äº†ï¼Œæ»¡äº†å°±æŠŠé˜Ÿå¤´å»é™¤
+//    ç„¶åæ‰æ·»åŠ ï¼Œlistä¸mapéƒ½æ·»åŠ 
     public void put(int key, int value) {
     	if(map.containsKey(key))  list.remove((Integer)key);
     	if(list.size()==capacity) map.remove(list.removeFirst());

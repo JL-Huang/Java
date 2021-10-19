@@ -18,19 +18,19 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAX {
 public static void main(String[] args) {
 	try {
-//	1.»ñÈ¡½âÎö¹¤³§
+//	1.è·å–è§£æå·¥å‚
 		SAXParserFactory factory=SAXParserFactory.newInstance();
-//	2.´Ó½âÎö¹¤³§»ñµÃ½âÎöÆ÷
+//	2.ä»è§£æå·¥å‚è·å¾—è§£æå™¨
 		SAXParser parse=factory.newSAXParser();
-//	3.±àĞ´´¦ÀíÆ÷(ÔÚÏÂÃæ)
-//	4.¼ÓÔØÎÄµµ×¢²á´¦ÀíÆ÷
+//	3.ç¼–å†™å¤„ç†å™¨(åœ¨ä¸‹é¢)
+//	4.åŠ è½½æ–‡æ¡£æ³¨å†Œå¤„ç†å™¨
 		PHandler pHandler=new PHandler();
-//	5.½âÎö
-		//»ñµÃµ±Ç°Ïß³ÌµÄÀà¼ÓÔØÆ÷,ÔÙ»ñµÃxmlÎÄ¼ş×ÊÔ´,×¢ÒâÊÇ°üÃû+xmlÎÄ¼şÃû,ÓÃ/²»ÓÃ.
+//	5.è§£æ
+		//è·å¾—å½“å‰çº¿ç¨‹çš„ç±»åŠ è½½å™¨,å†è·å¾—xmlæ–‡ä»¶èµ„æº,æ³¨æ„æ˜¯åŒ…å+xmlæ–‡ä»¶å,ç”¨/ä¸ç”¨.
 		InputStream is=new FileInputStream(new File("p.xml"));
 		parse.parse(is,pHandler);
 //		parse.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("xmlTest/p.xml"),pHandler);
-//	6.»ñÈ¡
+//	6.è·å–
 		List<Person> list=pHandler.getList();
 		for(Person temp:list) {
 			System.out.println(temp.getName()+temp.getAge());
@@ -47,11 +47,11 @@ public static void main(String[] args) {
 	}
 }
 }
-//Á÷Ë³Ğò,Óöµ½Ê²Ã´ÄÚÈİ¾ÍÖ´ĞĞ¶ÔÓ¦µÄ·½·¨
+//æµé¡ºåº,é‡åˆ°ä»€ä¹ˆå†…å®¹å°±æ‰§è¡Œå¯¹åº”çš„æ–¹æ³•
 class PHandler extends DefaultHandler{
 	private List<Person> list;
 	private Person person;
-//	±êÇ©,ÓÃÓÚ½«xmlÄÚÈİ¹éÀà
+//	æ ‡ç­¾,ç”¨äºå°†xmlå†…å®¹å½’ç±»
 	String tag;
 	
 	public List<Person> getList() {
@@ -63,7 +63,7 @@ class PHandler extends DefaultHandler{
 	public void startDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.startDocument();
-//		System.out.println("¼ìË÷ÎÄ¼şÍ·,½âÎö¿ªÊ¼");
+//		System.out.println("æ£€ç´¢æ–‡ä»¶å¤´,è§£æå¼€å§‹");
 		list=new ArrayList<Person>();
 	}
 
@@ -71,7 +71,7 @@ class PHandler extends DefaultHandler{
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		// TODO Auto-generated method stub
 		super.startElement(uri, localName, qName, attributes);
-//		System.out.println("»ñÈ¡¿ªÊ¼±êÇ©Ãû"+qName);
+//		System.out.println("è·å–å¼€å§‹æ ‡ç­¾å"+qName);
 		if(qName!=null) {
 			tag=qName;
 			
@@ -87,13 +87,13 @@ class PHandler extends DefaultHandler{
 		// TODO Auto-generated method stub
 		super.characters(ch, start, length);
 		String content=new String(ch,start,length);
-//		System.out.println("ÄÚÈİÎª"+content);
+//		System.out.println("å†…å®¹ä¸º"+content);
 		if(tag!=null) {
 			
 			if(tag.equals("name")) {
 				person.setName(content);
 			}else if(tag.equals("age")) {
-//			½«×Ö·û´®×ªInteger
+//			å°†å­—ç¬¦ä¸²è½¬Integer
 				person.setAge(Integer.valueOf(content));
 			}
 		}
@@ -103,12 +103,12 @@ class PHandler extends DefaultHandler{
 	public void endElement(String uri, String localName, String qName) throws SAXException {
 		// TODO Auto-generated method stub
 		super.endElement(uri, localName, qName);
-//		System.out.println("»ñÈ¡½áÊø±êÇ©Ãû"+qName);
+//		System.out.println("è·å–ç»“æŸæ ‡ç­¾å"+qName);
 		if(qName.equals("person")) {
 			list.add(person);			
 		}
 
-//		Ã¿´ÎÓöµ½½áÊø±êÇ©¾Í°ÑtagÖÃ¿Õ,·ÀÖ¹³ÌĞòÎó¶ÁÈ¡½áÊø±êÇ©ºóµÄÄÚÈİ
+//		æ¯æ¬¡é‡åˆ°ç»“æŸæ ‡ç­¾å°±æŠŠtagç½®ç©º,é˜²æ­¢ç¨‹åºè¯¯è¯»å–ç»“æŸæ ‡ç­¾åçš„å†…å®¹
 		tag=null;
 	}
 
@@ -116,7 +116,7 @@ class PHandler extends DefaultHandler{
 	public void endDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.endDocument();
-//		System.out.println("½âÎöÎÄµµ½áÊø");
+//		System.out.println("è§£ææ–‡æ¡£ç»“æŸ");
 	}
 	
 }

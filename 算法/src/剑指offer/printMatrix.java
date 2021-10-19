@@ -1,10 +1,10 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 
-//ÊäÈëÒ»¸ö¾ØÕó£¬°´ÕÕ´ÓÍâÏòÀïÒÔË³Ê±ÕëµÄË³ĞòÒÀ´Î´òÓ¡³öÃ¿Ò»¸öÊı×Ö
-//ÀıÈç£¬Èç¹ûÊäÈëÈçÏÂ4 X 4¾ØÕó£º 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
-//ÔòÒÀ´Î´òÓ¡³öÊı×Ö1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10
+//è¾“å…¥ä¸€ä¸ªçŸ©é˜µï¼ŒæŒ‰ç…§ä»å¤–å‘é‡Œä»¥é¡ºæ—¶é’ˆçš„é¡ºåºä¾æ¬¡æ‰“å°å‡ºæ¯ä¸€ä¸ªæ•°å­—
+//ä¾‹å¦‚ï¼Œå¦‚æœè¾“å…¥å¦‚ä¸‹4 X 4çŸ©é˜µï¼š 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
+//åˆ™ä¾æ¬¡æ‰“å°å‡ºæ•°å­—1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10
 public class printMatrix {
 	public static void main(String[] args) {
 		int[][] a= {{2,3,4},{1,2,3},{3,2,4}};
@@ -34,7 +34,7 @@ public class printMatrix {
 		 return result;
 	 }
 }
-////	Ë¼Â·Ê®·ÖÇÉÃî£¬Ã¿´ÎÊä³öÒ»ĞĞºó£¬½«¾ØÕóÄæÊ±Õë·´×ª
+////	æ€è·¯ååˆ†å·§å¦™ï¼Œæ¯æ¬¡è¾“å‡ºä¸€è¡Œåï¼Œå°†çŸ©é˜µé€†æ—¶é’ˆåè½¬
 //    public ArrayList<Integer> test(int [][] matrix) {
 //    	if(matrix==null) return null;
 //    	if(matrix.length==0) return null;
@@ -45,7 +45,7 @@ public class printMatrix {
 //        test(next2);
 //        return result;
 //    }
-////    É¾³ı¾ØÕóµÚÒ»ĞĞ
+////    åˆ é™¤çŸ©é˜µç¬¬ä¸€è¡Œ
 //    public int[][] deletefirstline(int[][] matrix){
 //    	if(matrix==null) return null;
 //    	if(matrix.length==0) return null;
@@ -58,7 +58,7 @@ public class printMatrix {
 //    	}
 //    	return next;
 //    }
-////    ÄæÊ±ÕëĞı×ªÒ»¸ö¾ØÕó
+////    é€†æ—¶é’ˆæ—‹è½¬ä¸€ä¸ªçŸ©é˜µ
 //    public int[][] turnleft(int[][] matrix){
 //    	if(matrix==null) return null;
 //    	if(matrix.length==0) return null;

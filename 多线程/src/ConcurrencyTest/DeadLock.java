@@ -2,12 +2,12 @@ package ConcurrencyTest;
 
 import ThreadLife.SleepTest;
 
-//¹ı¶àµÄÍ¬²½¿ÉÄÜÔì³É»¥Ïà²»ÊÍ·Å×ÊÔ´´Ó¶ø»¥ÏàµÈ´ı
-//Ò»°ã·¢ÉúÓÚÍ¬²½ÖĞ³ÖÓĞ¶à¸ö¶ÔÏóµÄËø
+//è¿‡å¤šçš„åŒæ­¥å¯èƒ½é€ æˆäº’ç›¸ä¸é‡Šæ”¾èµ„æºä»è€Œäº’ç›¸ç­‰å¾…
+//ä¸€èˆ¬å‘ç”ŸäºåŒæ­¥ä¸­æŒæœ‰å¤šä¸ªå¯¹è±¡çš„é”
 public class DeadLock {
 	public static void main(String[] args) {
-		new Thread(new Trade("ÕÔ",1)).start();
-		new Thread(new Trade("Àî",2)).start();
+		new Thread(new Trade("èµµ",1)).start();
+		new Thread(new Trade("æ",2)).start();
 	}
 }
 class Money{
@@ -29,7 +29,7 @@ class Item{
 	
 }
 class Trade implements Runnable{
-//	¾²Ì¬³ÉÔ±±äÁ¿±ØĞëÔÚÀàÀï¾ÍÊµÀı»¯£¬²»È»µ÷ÓÃÊ±»á¿ÕÖ¸Õë
+//	é™æ€æˆå‘˜å˜é‡å¿…é¡»åœ¨ç±»é‡Œå°±å®ä¾‹åŒ–ï¼Œä¸ç„¶è°ƒç”¨æ—¶ä¼šç©ºæŒ‡é’ˆ
 	 static Money money=new Money(100);
 	 static Item item=new Item(10);
 	 String trader;
@@ -40,16 +40,16 @@ class Trade implements Runnable{
 		this.trader = trader;
 		this.temp = temp;
 	}
-//¸Ğ¾õ¹Ö¹ÖµÄ£¬±¾À´²»ÓÃË«ÖØËø¶¼ÒÑ¾­Ôì³ÉËÀËøÁË£¬µ«ÊÇ²»Ë«ÖØËø»¹ÊÇ¿ÉÒÔÕı³£ÔËĞĞ
-//	¿ÉÄÜÊÇĞèÒªÄÃµ½Ëø²ÅÄÜÕı³£Ö´ĞĞÏÂÈ¥²Å½ĞËÀËø£¬²»ÊÇÄÃµ½¶ÔÏó²ÅÄÜÕı³£Ö´ĞĞÏÂÈ¥
-//	½â¾ö·½·¨ºÜ¼òµ¥£¬°ÑÇ¶Ì×µÄËøÅ²³öÈ¥
-//	×Ü½á¾ÍÊÇ²»ÒªÔÙÒ»¸ö´úÂë¿éÀïÍ¬Ê±³ÖÓĞ¶à¸ö¶ÔÏóËø
+//æ„Ÿè§‰æ€ªæ€ªçš„ï¼Œæœ¬æ¥ä¸ç”¨åŒé‡é”éƒ½å·²ç»é€ æˆæ­»é”äº†ï¼Œä½†æ˜¯ä¸åŒé‡é”è¿˜æ˜¯å¯ä»¥æ­£å¸¸è¿è¡Œ
+//	å¯èƒ½æ˜¯éœ€è¦æ‹¿åˆ°é”æ‰èƒ½æ­£å¸¸æ‰§è¡Œä¸‹å»æ‰å«æ­»é”ï¼Œä¸æ˜¯æ‹¿åˆ°å¯¹è±¡æ‰èƒ½æ­£å¸¸æ‰§è¡Œä¸‹å»
+//	è§£å†³æ–¹æ³•å¾ˆç®€å•ï¼ŒæŠŠåµŒå¥—çš„é”æŒªå‡ºå»
+//	æ€»ç»“å°±æ˜¯ä¸è¦å†ä¸€ä¸ªä»£ç å—é‡ŒåŒæ—¶æŒæœ‰å¤šä¸ªå¯¹è±¡é”
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		if(temp==1) {
 			synchronized (money) {
-				System.out.println("ÎÒÄÃ×ÅÇ®");
+				System.out.println("æˆ‘æ‹¿ç€é’±");
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
@@ -63,7 +63,7 @@ class Trade implements Runnable{
 			}
 		}else {
 			synchronized (item) {
-				System.out.println("ÎÒÄÃ×Å»õ");
+				System.out.println("æˆ‘æ‹¿ç€è´§");
 				try {
 					Thread.sleep(3000);
 				} catch (InterruptedException e) {

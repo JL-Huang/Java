@@ -1,8 +1,8 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 
-//ÊäÈëÒ»¸öµİÔöÅÅĞòµÄÊı×éºÍÒ»¸öÊı×ÖS£¬ÔÚÊı×éÖĞ²éÕÒÁ½¸öÊı£¬Ê¹µÃËûÃÇµÄºÍÕıºÃÊÇS£¬Èç¹ûÓĞ¶à¶ÔÊı×ÖµÄºÍµÈÓÚS£¬Êä³öÁ½¸öÊıµÄ³Ë»ı×îĞ¡µÄ¡£
+//è¾“å…¥ä¸€ä¸ªé€’å¢æ’åºçš„æ•°ç»„å’Œä¸€ä¸ªæ•°å­—Sï¼Œåœ¨æ•°ç»„ä¸­æŸ¥æ‰¾ä¸¤ä¸ªæ•°ï¼Œä½¿å¾—ä»–ä»¬çš„å’Œæ­£å¥½æ˜¯Sï¼Œå¦‚æœæœ‰å¤šå¯¹æ•°å­—çš„å’Œç­‰äºSï¼Œè¾“å‡ºä¸¤ä¸ªæ•°çš„ä¹˜ç§¯æœ€å°çš„ã€‚
 public class FindNumbersWithSum {
     public ArrayList<Integer> test(int [] array,int sum) {
     	ArrayList<Integer> list=new ArrayList<Integer>();

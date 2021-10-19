@@ -1,4 +1,4 @@
-package ³£¿¼;
+package å¸¸è€ƒ;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,9 +6,9 @@ import java.util.Queue;
 
 import Tree.TreeNode;
 
-//¶ş²æÊ÷µÄ²ãĞò±éÀúBFS
-//BFSµÄ¹Ø¼üÊµÏÖÊÇ¶ÓÁĞ£¬ ÄÇÃ´¶à¸öÔªËØ³ö¶ÓÁĞ£¬Ã¿´Î³ö¶ÓÁĞ¶¼°ÑÆä×óÓÒº¢×Ó¼ÓÈë¶ÓÁĞ
-//×îºóÒ»´ÎÊ±£¬È«²¿Ò»²ã¶¼³ö¶ÓÁĞ£¬ÓÖÃ»ÓĞĞÂÔªËØ¼ÓÈë£¬¶ÓÁĞ±ä¿Õ£¬×÷ÎªÑ­»·½áÊøÌõ¼ş
+//äºŒå‰æ ‘çš„å±‚åºéå†BFS
+//BFSçš„å…³é”®å®ç°æ˜¯é˜Ÿåˆ—ï¼Œ é‚£ä¹ˆå¤šä¸ªå…ƒç´ å‡ºé˜Ÿåˆ—ï¼Œæ¯æ¬¡å‡ºé˜Ÿåˆ—éƒ½æŠŠå…¶å·¦å³å­©å­åŠ å…¥é˜Ÿåˆ—
+//æœ€åä¸€æ¬¡æ—¶ï¼Œå…¨éƒ¨ä¸€å±‚éƒ½å‡ºé˜Ÿåˆ—ï¼Œåˆæ²¡æœ‰æ–°å…ƒç´ åŠ å…¥ï¼Œé˜Ÿåˆ—å˜ç©ºï¼Œä½œä¸ºå¾ªç¯ç»“æŸæ¡ä»¶
 public class BFS {
 	public static void main(String[] args) {
 		Integer[] nums={1,2,3,4,5,6,7,8,9,10};
@@ -20,12 +20,12 @@ public class BFS {
 		 Queue<TreeNode> queue=new LinkedList<TreeNode>();
 		 if(pRoot!=null) queue.offer(pRoot);
 		 while(!queue.isEmpty()){
-//			 ÕâÀï±ØĞëÒªÓÃn¸³Öµ
+//			 è¿™é‡Œå¿…é¡»è¦ç”¨nèµ‹å€¼
 			 int n=queue.size();
 			 ArrayList<Integer> inside_list=new ArrayList<Integer>();
 			 for(int i=0;i<n;i++) {
 				 TreeNode node=queue.poll();
-//				 ×¢Òâ¼ÓÈëlistÔÚµ¯³ö¶ÓÁĞµÄÊ±ºò£¬²»ÊÇ¼ÓÈë¶ÓÁĞµÄÊ±ºò
+//				 æ³¨æ„åŠ å…¥liståœ¨å¼¹å‡ºé˜Ÿåˆ—çš„æ—¶å€™ï¼Œä¸æ˜¯åŠ å…¥é˜Ÿåˆ—çš„æ—¶å€™
 				 inside_list.add(node.val);
 				 if(node.left!=null) queue.add(node.left);
 				 if(node.right!=null) queue.add(node.right);

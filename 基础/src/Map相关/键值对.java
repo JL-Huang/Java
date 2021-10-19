@@ -1,13 +1,13 @@
-package MapÏà¹Ø;
+package Mapç›¸å…³;
 
 import java.util.HashMap;
 import java.util.Map;
-//Map,¼üÖµ¶Ô
-public class ¼üÖµ¶Ô {
+//Map,é”®å€¼å¯¹
+public class é”®å€¼å¯¹ {
 public static void main(String[] args) {
 	Map<Integer, String> m1=new HashMap<Integer, String>();
-//	Öµ¿ÉÒÔÖØ¸´£¬µ«¼ü²»ÄÜÖØ¸´
-//	ÖµÖØ¸´ÁË£¬ĞÂµÄ»á¸²¸Ç¾ÉµÄ£¬ÅĞ¶ÏÊÇ·ñÒ»ÑùÊÇÍ¨¹ıeauals·½·¨
+//	å€¼å¯ä»¥é‡å¤ï¼Œä½†é”®ä¸èƒ½é‡å¤
+//	å€¼é‡å¤äº†ï¼Œæ–°çš„ä¼šè¦†ç›–æ—§çš„ï¼Œåˆ¤æ–­æ˜¯å¦ä¸€æ ·æ˜¯é€šè¿‡eaualsæ–¹æ³•
 	m1.put(1, "one");
 	m1.put(2,"two");
 	System.out.println(m1.isEmpty());
@@ -16,7 +16,7 @@ public static void main(String[] args) {
 	System.out.println(m1.containsValue("two"));
 	
 	
-	Student s1=new Student("¹ş¹ş¹ş",18,"male");
+	Student s1=new Student("å“ˆå“ˆå“ˆ",18,"male");
 	Map<Integer,Student> m2=new HashMap<Integer, Student>();
 	m2.put(1001, s1);
 	System.out.println(m2.get(1001).name);

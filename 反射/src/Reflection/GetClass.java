@@ -9,22 +9,22 @@ public class GetClass {
 public static void main(String[] args) {
 	try {
 		String path="Reflection.Test1";
-//		Ôö¼Ó·ºĞÍºÍÇ¿×ª,»ñµÃÀàµÄClass¶ÔÏó
+//		å¢åŠ æ³›å‹å’Œå¼ºè½¬,è·å¾—ç±»çš„Classå¯¹è±¡
 		Class<Test1> c=(Class<Test1>) Class.forName(path);
-//		JDK9ĞÂ·½·¨,ÏÈ»ñµÃÀàµÄClass¶ÔÏó,»ñµÃÆä¹¹ÔìÆ÷,ÔÙÓÃ»ñµÃµÄ¹¹ÔìÆ÷ÊµÀı»¯
+//		JDK9æ–°æ–¹æ³•,å…ˆè·å¾—ç±»çš„Classå¯¹è±¡,è·å¾—å…¶æ„é€ å™¨,å†ç”¨è·å¾—çš„æ„é€ å™¨å®ä¾‹åŒ–
 		Test1 t=c.getConstructor(String.class,int.class).newInstance("kkk",7);
-//		Ê¹ÓÃÀàµÄClass¶ÔÏónewInstance()·½·¨,µ÷ÓÃÆäÎŞ²Î¹¹Ôì·½·¨ÊµÀı»¯¶ÔÏó
+//		ä½¿ç”¨ç±»çš„Classå¯¹è±¡newInstance()æ–¹æ³•,è°ƒç”¨å…¶æ— å‚æ„é€ æ–¹æ³•å®ä¾‹åŒ–å¯¹è±¡
 		Test1 t1=c.newInstance();
-//		Ö±½Ó»ñµÃ´ø²Î¹¹Ôì·½·¨µÄClass¶ÔÏó
+//		ç›´æ¥è·å¾—å¸¦å‚æ„é€ æ–¹æ³•çš„Classå¯¹è±¡
 		Constructor<Test1> con=c.getDeclaredConstructor(String.class,int.class);
-		Test1 t2=con.newInstance("Àî",11);
-//		ÕâÀï±È½ÏÄÑ¼Ç,ÊÇ¶ÔÀàµÄclass¶ÔÏó²Ù×÷»ñµÃMethod¶ÔÏó,ÊäÈë²ÎÊıÎª·½·¨Ãû³ÆºÍ·½·¨²ÎÊıÀàĞÍ
-//		ÒòÎªÕâ¸ö·½·¨ÊÇ·Ç¾²Ì¬·½·¨,ËùÒÔinvokeÊ±ĞèÒªÒ»¸öÀà¶ÔÏó,Õâ¸öÀà¶ÔÏóÍ¨¹ı»ñµÃÀàµÄClass¶ÔÏó,ÔÙÓÃÎŞ²Î¹¹Ôì·½·¨»ñµÃ
+		Test1 t2=con.newInstance("æ",11);
+//		è¿™é‡Œæ¯”è¾ƒéš¾è®°,æ˜¯å¯¹ç±»çš„classå¯¹è±¡æ“ä½œè·å¾—Methodå¯¹è±¡,è¾“å…¥å‚æ•°ä¸ºæ–¹æ³•åç§°å’Œæ–¹æ³•å‚æ•°ç±»å‹
+//		å› ä¸ºè¿™ä¸ªæ–¹æ³•æ˜¯éé™æ€æ–¹æ³•,æ‰€ä»¥invokeæ—¶éœ€è¦ä¸€ä¸ªç±»å¯¹è±¡,è¿™ä¸ªç±»å¯¹è±¡é€šè¿‡è·å¾—ç±»çš„Classå¯¹è±¡,å†ç”¨æ— å‚æ„é€ æ–¹æ³•è·å¾—
 		Method m=c.getDeclaredMethod("hhh", String.class);
-		m.invoke(t1, "¹ş¹ş¹ş");
+		m.invoke(t1, "å“ˆå“ˆå“ˆ");
 		Field f=c.getDeclaredField("name");
-//		ÏÂÃæÕâĞĞ¿ÉÒÔ°ÑË½ÓĞµÄ³ÉÔ±±äÁ¿È¡Ïû°²È«¼ì²é
-//		¼´Ê¹ÊÇpublicĞŞÊÎÊ¹ÓÃsetAccessibleÒ²»á²úÉúĞ§¹û,»á¼õÉÙÔËĞĞËùĞèÒªµÄÊ±¼ä
+//		ä¸‹é¢è¿™è¡Œå¯ä»¥æŠŠç§æœ‰çš„æˆå‘˜å˜é‡å–æ¶ˆå®‰å…¨æ£€æŸ¥
+//		å³ä½¿æ˜¯publicä¿®é¥°ä½¿ç”¨setAccessibleä¹Ÿä¼šäº§ç”Ÿæ•ˆæœ,ä¼šå‡å°‘è¿è¡Œæ‰€éœ€è¦çš„æ—¶é—´
 		f.setAccessible(true);
 		f.set(t1, "jjj");
 		Method mm=c.getDeclaredMethod("getName",null);

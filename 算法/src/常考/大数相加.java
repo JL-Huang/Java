@@ -1,6 +1,6 @@
-package ³£¿¼;
-//¾­µä´óÊıÏà¼Ó
-public class ´óÊıÏà¼Ó {
+package å¸¸è€ƒ;
+//ç»å…¸å¤§æ•°ç›¸åŠ 
+public class å¤§æ•°ç›¸åŠ  {
     public static String addStrings(String num1, String num2) {
     	int i=num1.length()-1,j=num2.length()-1,cin=0;
     	StringBuilder sb=new StringBuilder();

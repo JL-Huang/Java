@@ -12,7 +12,7 @@ public void test() {
 	}
 }
 public static void main(String[] args) {
-	// ÎŞÏŞ´òÓ¡£¬ËµÃ÷Ëø±»µ±Ç°Ïß³ÌÖØÈë
+	// æ— é™æ‰“å°ï¼Œè¯´æ˜é”è¢«å½“å‰çº¿ç¨‹é‡å…¥
 	new Re().test();
 }
 }

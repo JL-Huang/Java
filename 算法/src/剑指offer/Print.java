@@ -1,4 +1,4 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 
@@ -10,11 +10,11 @@ public class Print {
         depth(pRoot, 1, list);
         return list;
     }
-//    Õâ¸ö×ö·¨·Ç³£ÇÉÃî£¬Ö÷ÒªË¼Â·ÊÇÓÃdepth¼ÇÂ¼Ã¿Ò»²ãµÄ²ãÊı£¬²ãÊı´Ó0¿ªÊ¼£¬depth´Ó1¿ªÊ¼
-//    µ±depth>size,ÔÚlistµÄdepthÎ»ÖÃÔöÒ»¸öĞÂµÄ·ºĞÍList£¬È·±£size=depth-1
-//    È»ºó£¬ÔÚÌí¼Ó·ºĞÍListµÄÊ±ºò£¬ÔÚdepth-1ÕâÀï£¬°Ñµ±Ç°root¼Ó½øÈ¥
-//    È»ºó×óÓÒµİ¹é£¬Òª×¢ÒâµÄÊÇ£¬ÕâÀïÆäÊµÊÇÉî¶ÈÓÅÏÈ±éÀú
-//    µ«ÊÇËüÈ·±£ÁËÃ¿Ò»²ã¶¼Ö»ÔÚÆä¶ÔÓ¦µÄ·ºĞÍListÀï²Ù×÷
+//    è¿™ä¸ªåšæ³•éå¸¸å·§å¦™ï¼Œä¸»è¦æ€è·¯æ˜¯ç”¨depthè®°å½•æ¯ä¸€å±‚çš„å±‚æ•°ï¼Œå±‚æ•°ä»0å¼€å§‹ï¼Œdepthä»1å¼€å§‹
+//    å½“depth>size,åœ¨listçš„depthä½ç½®å¢ä¸€ä¸ªæ–°çš„æ³›å‹Listï¼Œç¡®ä¿size=depth-1
+//    ç„¶åï¼Œåœ¨æ·»åŠ æ³›å‹Listçš„æ—¶å€™ï¼Œåœ¨depth-1è¿™é‡Œï¼ŒæŠŠå½“å‰rootåŠ è¿›å»
+//    ç„¶åå·¦å³é€’å½’ï¼Œè¦æ³¨æ„çš„æ˜¯ï¼Œè¿™é‡Œå…¶å®æ˜¯æ·±åº¦ä¼˜å…ˆéå†
+//    ä½†æ˜¯å®ƒç¡®ä¿äº†æ¯ä¸€å±‚éƒ½åªåœ¨å…¶å¯¹åº”çš„æ³›å‹Listé‡Œæ“ä½œ
     private void depth(TreeNode root, int depth, ArrayList<ArrayList<Integer>> list) {
     	if(root==null) return;
     	if(depth>list.size()) list.add(new ArrayList<Integer>());

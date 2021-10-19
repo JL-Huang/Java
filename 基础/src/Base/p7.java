@@ -5,8 +5,8 @@ public class p7 {
 	public static void main(String[] args) {
 		Test test=new Test();
 		test.k(1, 1, "1", "1");
-//		»ù±¾Êı¾İÀàĞÍÓÃ==±È½ÏÖµ
-//		ÒıÓÃÊı¾İÀàĞÍÓÃ==±È½ÏµØÖ·
+//		åŸºæœ¬æ•°æ®ç±»å‹ç”¨==æ¯”è¾ƒå€¼
+//		å¼•ç”¨æ•°æ®ç±»å‹ç”¨==æ¯”è¾ƒåœ°å€
 		if(test.i1==test.i2) {
 			System.out.println("==");
 		}

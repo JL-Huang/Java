@@ -1,34 +1,34 @@
-package MapÏà¹Ø;
+package Mapç›¸å…³;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-//TreeMapÊÇºìºÚ¶ş²æÊ÷µÄµäĞÍÊµÏÖ£¬ÓëHashMapÒ»ÑùÒ²ÊÇMapµÄÊµÏÖÀà
-//ËüµÄ³ÉÔ±±äÁ¿ÓĞ¸¸½Úµã£¬×ó½Úµã£¬ÓÒ½Úµã£¬±¾ÉíÊı¾İÒÔ¼°½ÚµãÑÕÉ«£¬ĞèÒª²¹Ò»ÏÂºìºÚÊ÷µÄÖªÊ¶
-//HashMapĞ§ÂÊ¸ßÓÚTreeMap£¬ÔÚĞèÒªÅÅĞòµÄMap²ÅĞèÒªÓÃTreeMap
-//ÈôÒª×Ô¶¨ÒåÅÅĞò¹æÔò£¬ÔòÒªĞÅ¼şÒ»¸öÀàÊµÏÖComparable½Ó¿Ú£¬ÔÚÖØĞ´µÄ·½·¨Àï¶¨ÒåÅÅĞò¹æÔò£¬ÓÃ¸ÃÀà¶ÔÏó×÷ÎªkeyÖµ
-public class TreeMap»ù±¾ {
+//TreeMapæ˜¯çº¢é»‘äºŒå‰æ ‘çš„å…¸å‹å®ç°ï¼Œä¸HashMapä¸€æ ·ä¹Ÿæ˜¯Mapçš„å®ç°ç±»
+//å®ƒçš„æˆå‘˜å˜é‡æœ‰çˆ¶èŠ‚ç‚¹ï¼Œå·¦èŠ‚ç‚¹ï¼Œå³èŠ‚ç‚¹ï¼Œæœ¬èº«æ•°æ®ä»¥åŠèŠ‚ç‚¹é¢œè‰²ï¼Œéœ€è¦è¡¥ä¸€ä¸‹çº¢é»‘æ ‘çš„çŸ¥è¯†
+//HashMapæ•ˆç‡é«˜äºTreeMapï¼Œåœ¨éœ€è¦æ’åºçš„Mapæ‰éœ€è¦ç”¨TreeMap
+//è‹¥è¦è‡ªå®šä¹‰æ’åºè§„åˆ™ï¼Œåˆ™è¦ä¿¡ä»¶ä¸€ä¸ªç±»å®ç°Comparableæ¥å£ï¼Œåœ¨é‡å†™çš„æ–¹æ³•é‡Œå®šä¹‰æ’åºè§„åˆ™ï¼Œç”¨è¯¥ç±»å¯¹è±¡ä½œä¸ºkeyå€¼
+public class TreeMapåŸºæœ¬ {
 public static void main(String[] args) {
 	Map<Integer, String> treemap1=new TreeMap<Integer, String>();
 	treemap1.put(3,"three");
 	treemap1.put(9,"nine");
 	treemap1.put(6,"six");
-//	¿ÉÒÔ¿´µ½TreeMapÔÚ´æ·ÅÊ±ÊÇ°´¼üµÄ´óĞ¡Ë³ĞòÅÅÁĞµÄ
+//	å¯ä»¥çœ‹åˆ°TreeMapåœ¨å­˜æ”¾æ—¶æ˜¯æŒ‰é”®çš„å¤§å°é¡ºåºæ’åˆ—çš„
 	for(Integer temp:treemap1.keySet()) {
 		System.out.println(temp+"---"+treemap1.get(temp));
 	}
 	
 	Map<Studentee,String> treemap2=new TreeMap<Studentee, String>();
-	treemap2.put(new Studentee("ÍõĞ¡Ã÷"), "Ãû×ÖÈı¸ö×Ö");
-	treemap2.put(new Studentee("ÍõÃ÷"), "Ãû×ÖÁ½¸ö×Ö");
-	treemap2.put(new Studentee("ÍõĞ¡Ğ¡Ã÷"), "Ãû×ÖËÄ¸ö×Ö");
+	treemap2.put(new Studentee("ç‹å°æ˜"), "åå­—ä¸‰ä¸ªå­—");
+	treemap2.put(new Studentee("ç‹æ˜"), "åå­—ä¸¤ä¸ªå­—");
+	treemap2.put(new Studentee("ç‹å°å°æ˜"), "åå­—å››ä¸ªå­—");
 	for(Studentee temp:treemap2.keySet()) {
 		System.out.println(temp.name+"---"+treemap2.get(temp));
 	}
 }
 }
-//ÕâÊÇ¶ÔÉÏÃæµÄ²¹³ä£¬Èç¹û¼ü²»ÎªIntegerÊÇÎŞ·¨±È½ÏÈ»ºóÅÅĞòµÄ£¬
-//ÊÂÊµÉÏ£¬ÔÚ±È½ÏÊ±ÊÇµ÷ÓÃÁËComparable½Ó¿Ú£¬ÈôÒª×Ô¶¨ÒåÅÅĞòÔòÒªÊµÏÖ±È½Ï½Ó¿Ú
+//è¿™æ˜¯å¯¹ä¸Šé¢çš„è¡¥å……ï¼Œå¦‚æœé”®ä¸ä¸ºIntegeræ˜¯æ— æ³•æ¯”è¾ƒç„¶åæ’åºçš„ï¼Œ
+//äº‹å®ä¸Šï¼Œåœ¨æ¯”è¾ƒæ—¶æ˜¯è°ƒç”¨äº†Comparableæ¥å£ï¼Œè‹¥è¦è‡ªå®šä¹‰æ’åºåˆ™è¦å®ç°æ¯”è¾ƒæ¥å£
 class Studentee  implements Comparable<Studentee>{
 	String name;
 	

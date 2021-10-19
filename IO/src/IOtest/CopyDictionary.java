@@ -1,6 +1,6 @@
 package IOtest;
-//����ճ���ļ��м���������
-//�޷����ļ��зŽ�IO����IO��ֻ����ָ���ļ������Է���һ�㹦��
+//复制粘贴文件夹及里面内容
+//无法将文件夹放进IO流，IO流只能是指向文件，所以废了一点功夫
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,14 +19,14 @@ public  static void m(String cd,String pd) {
 	if(file1==null||!file1.exists()) {
 		return;
 	}else {
-//		�����·�����ļ�������һ�ݵ�Ŀ���ַ
+//		如果该路径是文件，则复制一份到目标地址
 		if(file1.isFile()) {
 			copy(cd,pd);			
 			}
-//		�����·�����ļ��У�����Ŀ���ַ�½�һ���ļ���
+//		如果该路径是文件夹，则在目标地址新建一个文件夹
 		else {
 			file2.mkdir();
-//			�Ը��ļ��н��б�����Ȼ��ݹ飬���Ƶ�ַ������������ļ��ĵ�ַ��ճ����ַ��Ϊ��ǰĿ�ĵ�ַ��\\�ļ���
+//			对该文件夹进行遍历，然后递归，复制地址变成所遍历到文件的地址，粘贴地址变为当前目的地址加\\文件名
 			for(File temp:file1.listFiles()) {
 				m(temp.getAbsolutePath(),file2.getAbsolutePath()+"\\"+temp.getName());
 			}

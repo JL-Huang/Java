@@ -1,6 +1,6 @@
-package ½£Ö¸offer;
-//Çó1+2+3+...+n£¬ÒªÇó²»ÄÜÊ¹ÓÃ³Ë³ı·¨¡¢for¡¢while¡¢if¡¢else¡¢switch¡¢caseµÈ¹Ø¼ü×Ö¼°Ìõ¼şÅĞ¶ÏÓï¾ä£¨A?B:C£©¡£
-//ÆäÊµ¾ÍÊÇ¿¼²ì&&¶ÌÂ·ÌØĞÔ£¬¶ÌÂ·Ö®ºó²»Ö´ĞĞ£¬Ïàµ±ÓÚÅĞ¶ÏÓï¾ä
+package å‰‘æŒ‡offer;
+//æ±‚1+2+3+...+nï¼Œè¦æ±‚ä¸èƒ½ä½¿ç”¨ä¹˜é™¤æ³•ã€forã€whileã€ifã€elseã€switchã€caseç­‰å…³é”®å­—åŠæ¡ä»¶åˆ¤æ–­è¯­å¥ï¼ˆA?B:Cï¼‰ã€‚
+//å…¶å®å°±æ˜¯è€ƒå¯Ÿ&&çŸ­è·¯ç‰¹æ€§ï¼ŒçŸ­è·¯ä¹‹åä¸æ‰§è¡Œï¼Œç›¸å½“äºåˆ¤æ–­è¯­å¥
 public class Sum_Solution {
 	public static void main(String[] args) {
 		System.out.println(new Sum_Solution().test(10));

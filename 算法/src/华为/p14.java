@@ -1,4 +1,4 @@
-package »ªÎª;
+package åä¸º;
 
 public class p14 {
 	static int max=0;

@@ -1,8 +1,8 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 
-//ÕÒ³öËùÓĞºÍÎªSµÄÁ¬ĞøÕıÊıĞòÁĞ£¬ĞòÁĞ×îÉÙÁ½¸öÊı
+//æ‰¾å‡ºæ‰€æœ‰å’Œä¸ºSçš„è¿ç»­æ­£æ•°åºåˆ—ï¼Œåºåˆ—æœ€å°‘ä¸¤ä¸ªæ•°
 public class FindContinuousSequence{
 	public static void main(String[] args) {
 		FindContinuousSequence findContinuousSequence=new FindContinuousSequence();
@@ -11,24 +11,24 @@ public class FindContinuousSequence{
 	}
 	public ArrayList<ArrayList<Integer>> test(int sum) {
 		ArrayList<ArrayList<Integer>> lists=new ArrayList<>();
-		//left,right´°¿Ú±ß½çÖµ
+		//left,rightçª—å£è¾¹ç•Œå€¼
 		for(int i=0,left=1,right=1,temp=0;i<=sum/2;i++) {
 			if(temp<sum) {
-//				¼ÓÉÏÓÒ´°¿ÚÖµ£¬´°¿ÚÀ©´ó
+//				åŠ ä¸Šå³çª—å£å€¼ï¼Œçª—å£æ‰©å¤§
 				temp+=right;
 				++right;
 			}
 			else if(temp>sum) {
-//				¼õÈ¥×ó´°¿ÚÖµ£¬´°¿Ú¼õĞ¡
+//				å‡å»å·¦çª—å£å€¼ï¼Œçª—å£å‡å°
 				temp-=left;
 				++left;
 			}
 			else {
-//				Ç¡ºÃÏàµÈ£¬´Ó×ó´°¿Ú½ØÈ¡µ½ÓÒ´°¿Ú
+//				æ°å¥½ç›¸ç­‰ï¼Œä»å·¦çª—å£æˆªå–åˆ°å³çª—å£
 				ArrayList<Integer>list=new ArrayList<Integer>();
 				for(int k=left;k<right;k++) list.add(k);
 				lists.add(list);
-//				´°¿ÚËõĞ¡£¬¼ÌĞø
+//				çª—å£ç¼©å°ï¼Œç»§ç»­
 				temp-=left;
 				++left;
 			}
@@ -38,25 +38,25 @@ public class FindContinuousSequence{
 }
 //    public ArrayList<ArrayList<Integer>> test(int sum) {
 //    	ArrayList<ArrayList<Integer>> lists=new ArrayList<>();
-////    	ÒòÎª×îÉÙÁ½¸ö£¬µ½Ò»°ë¾ÍĞĞ
+////    	å› ä¸ºæœ€å°‘ä¸¤ä¸ªï¼Œåˆ°ä¸€åŠå°±è¡Œ
 //        for(int i=1;i<sum/2+1;i++) {
-////        	´ÓµÚÒ»¸öÖ¸Õë¿ªÊ¼£¬temp±£´æsumµÄÖµ£¬temp×Ô¼õj£¬Èç¹ûtempµÈÓÚ0£¬ÔòËµÃ÷Õâ¸öÊı¼°Ç°ÃæÄ³¼¸¸öÊıÊÇÒª±£´æµÄ
+////        	ä»ç¬¬ä¸€ä¸ªæŒ‡é’ˆå¼€å§‹ï¼Œtempä¿å­˜sumçš„å€¼ï¼Œtempè‡ªå‡jï¼Œå¦‚æœtempç­‰äº0ï¼Œåˆ™è¯´æ˜è¿™ä¸ªæ•°åŠå‰é¢æŸå‡ ä¸ªæ•°æ˜¯è¦ä¿å­˜çš„
 //        	for(int j=i,temp=sum;temp>=0;j++) {
 //        		temp-=j;
 ////        		System.out.println(temp+"+"+j);
 //        		if(temp==0) {
-////        			ÕâÊ±²ÅĞÂ½¨Êı×é£¬¼õÉÙÄÚ´æ¿ªÏú
+////        			è¿™æ—¶æ‰æ–°å»ºæ•°ç»„ï¼Œå‡å°‘å†…å­˜å¼€é”€
 //        			ArrayList<Integer> list=new ArrayList<Integer>();
-////        			´Óµ±Ç°Êı¿ªÊ¼ÍùÇ°£¬±£´æj,j-1,j-2¡­¡­ÓÃtempsum×÷Îª±êÖ¾,×¢ÒâforÑ­»·µÄÌØµã
-////        			Èç¹ûÌõ¼şĞ´³Étempsum>sum,×îºóÒ»¸öÊ¹µÃÌõ¼ş²»³ÉÁ¢µÄµÄÊı²»¸ÃÌí¼Ó½øÀ´£¬µ«ÏÈÌí¼ÓÔÙÅĞ¶Ï£¬ËùÒÔÒÑ¾­ÍíÁË
-////        			ËùÒÔÕâÀïµÄÅĞ¶ÏÌõ¼şÒªÌØ±ğÁôÒâ
-////        			»¹ÓĞÒ»¸ö¾ÍÊÇ£¬µ±j-depth<0£¬µÚ¶ş¸öÅĞ¶Ï»áºã³ÉÁ¢£¬ËùÒÔÒª¼ÓÒ»¸ö´óÓÚ0µÄÅĞ¶Ï
+////        			ä»å½“å‰æ•°å¼€å§‹å¾€å‰ï¼Œä¿å­˜j,j-1,j-2â€¦â€¦ç”¨tempsumä½œä¸ºæ ‡å¿—,æ³¨æ„forå¾ªç¯çš„ç‰¹ç‚¹
+////        			å¦‚æœæ¡ä»¶å†™æˆtempsum>sum,æœ€åä¸€ä¸ªä½¿å¾—æ¡ä»¶ä¸æˆç«‹çš„çš„æ•°ä¸è¯¥æ·»åŠ è¿›æ¥ï¼Œä½†å…ˆæ·»åŠ å†åˆ¤æ–­ï¼Œæ‰€ä»¥å·²ç»æ™šäº†
+////        			æ‰€ä»¥è¿™é‡Œçš„åˆ¤æ–­æ¡ä»¶è¦ç‰¹åˆ«ç•™æ„
+////        			è¿˜æœ‰ä¸€ä¸ªå°±æ˜¯ï¼Œå½“j-depth<0ï¼Œç¬¬äºŒä¸ªåˆ¤æ–­ä¼šæ’æˆç«‹ï¼Œæ‰€ä»¥è¦åŠ ä¸€ä¸ªå¤§äº0çš„åˆ¤æ–­
 //        			for(int tempsum=0,depth=0;(j-depth)>0&&tempsum+(j-depth)<=sum;depth++) {
 //        				tempsum+=(j-depth);
 //        				list.add(j-depth);
 //        			}
 //        			if(list.size()>1&&(!lists.contains(list))) {
-////        				ÕâÀïÒ²¿ÉÒÔÖ±½ÓÓÃlistµÄsort
+////        				è¿™é‡Œä¹Ÿå¯ä»¥ç›´æ¥ç”¨listçš„sort
 //        				Collections.reverse(list);
 //        				lists.add(list);
 //        			}

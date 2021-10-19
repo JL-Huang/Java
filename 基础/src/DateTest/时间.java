@@ -8,9 +8,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 
-public class Ê±¼ä {
+public class æ—¶é—´ {
 public static void main(String[] args) throws ParseException {
-	System.out.println( "ÈÕ\tÒ»\t¶ş\tÈı\tËÄ\tÎå\tÁù");
+	System.out.println( "æ—¥\tä¸€\täºŒ\tä¸‰\tå››\täº”\tå…­");
 	String str=new String("2020-01-14");
 	DateFormat df=new SimpleDateFormat("yyyy-MM-dd");
 	Date date=df.parse(str);
@@ -19,13 +19,13 @@ public static void main(String[] args) throws ParseException {
 
 	int days=calendar.get(Calendar.DAY_OF_MONTH);
 	int maxday=calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
-	//µ±iĞ¡ÓÚµÈÓÚµ±Ç°DAY_OF-WEEKÊ±£¬Êä³ö¿Õ¸ñ£¬µ±Ç°ÊÇĞÇÆÚÒ»£¬DAY_OF-WEEK=1£¬ÔòÊä³öÒ»¸ö¿Õ¸ñ
+	//å½“iå°äºç­‰äºå½“å‰DAY_OF-WEEKæ—¶ï¼Œè¾“å‡ºç©ºæ ¼ï¼Œå½“å‰æ˜¯æ˜ŸæœŸä¸€ï¼ŒDAY_OF-WEEK=1ï¼Œåˆ™è¾“å‡ºä¸€ä¸ªç©ºæ ¼
 	for(int i=0;i<calendar.get(Calendar.DAY_OF_WEEK);i++) {
 		System.out.print("\t");
 	}
 	for(int i=1;i<=maxday;i++) {
 		calendar.add(Calendar.DAY_OF_MONTH,1);
-//		ÕâÀïÓĞÎÊÌâ
+//		è¿™é‡Œæœ‰é—®é¢˜
 //		if(maxday==calendar.get(Calendar.DAY_OF_MONTH)) {
 //			System.out.print(i+"\t"+"*");
 //		}else {

@@ -5,26 +5,26 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-//ÊµÏÖCallable½Ó¿Ú£¬Ö¸¶¨·ºĞÍ£¬ÖØĞ´·½·¨£¬·½·¨×¢Ã÷·µ»ØÖµ
+//å®ç°Callableæ¥å£ï¼ŒæŒ‡å®šæ³›å‹ï¼Œé‡å†™æ–¹æ³•ï¼Œæ–¹æ³•æ³¨æ˜è¿”å›å€¼
 public class CallableTest implements Callable<Boolean>{
 
 	@Override
 	public Boolean call() throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println("Ò»±ß³ª¸è");
+		System.out.println("ä¸€è¾¹å”±æ­Œ");
 		return true;
 	}
 public static void main(String[] args) throws InterruptedException, ExecutionException {
 	CallableTest c1=new CallableTest();
-//	´´½¨Ö´ĞĞ·şÎñ
+//	åˆ›å»ºæ‰§è¡ŒæœåŠ¡
 	ExecutorService ser=Executors.newFixedThreadPool(3);
-//	Ìá½»Ö´ĞĞ,ÕâÒ»²½»á¿ªÆôÏß³Ì
+//	æäº¤æ‰§è¡Œ,è¿™ä¸€æ­¥ä¼šå¼€å¯çº¿ç¨‹
 	Future<Boolean>result1=ser.submit(c1);
-//	»ñÈ¡·µ»ØµÄ½á¹û,¾ÍÊÇÉÏÃæµÄ·µ»ØÖµ
+//	è·å–è¿”å›çš„ç»“æœ,å°±æ˜¯ä¸Šé¢çš„è¿”å›å€¼
 	boolean r1=result1.get();
 	System.out.println(r1);
-//	¹Ø±Õ·şÎñ
+//	å…³é—­æœåŠ¡
 	ser.shutdownNow();
-	System.out.println("Ò»±ßĞ´´úÂë");
+	System.out.println("ä¸€è¾¹å†™ä»£ç ");
 }
 }

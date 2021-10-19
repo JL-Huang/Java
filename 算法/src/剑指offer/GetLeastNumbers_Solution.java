@@ -1,5 +1,5 @@
-package ½£Ö¸offer;
-//ÊäÈën¸öÕûÊı£¬ÕÒ³öÆäÖĞ×îĞ¡µÄK¸öÊı¡£ÀıÈçÊäÈë4,5,1,6,2,7,3,8Õâ8¸öÊı×Ö£¬Ôò×îĞ¡µÄ4¸öÊı×ÖÊÇ1,2,3,4¡£
+package å‰‘æŒ‡offer;
+//è¾“å…¥nä¸ªæ•´æ•°ï¼Œæ‰¾å‡ºå…¶ä¸­æœ€å°çš„Kä¸ªæ•°ã€‚ä¾‹å¦‚è¾“å…¥4,5,1,6,2,7,3,8è¿™8ä¸ªæ•°å­—ï¼Œåˆ™æœ€å°çš„4ä¸ªæ•°å­—æ˜¯1,2,3,4ã€‚
 
 import java.util.ArrayList;
 public class GetLeastNumbers_Solution {
@@ -19,9 +19,9 @@ public class GetLeastNumbers_Solution {
         return list;
     }
     public void adjust(int[] input,int i,int length) {
-//    	¶ÑÅÅĞòµ÷Õû¹Ì¶¨Ğ´·¨£¬Ç¿¼Ç
+//    	å †æ’åºè°ƒæ•´å›ºå®šå†™æ³•ï¼Œå¼ºè®°
     	for(int k=2*i+1;k<length;k=2*k+1) {
-//    		»ñÈ¡×óÓÒ¶ù×Ó×î´óÖµ¶ÔÓ¦µÄk
+//    		è·å–å·¦å³å„¿å­æœ€å¤§å€¼å¯¹åº”çš„k
 			if(k+1<length&&input[k]<input[k+1]) k++;
 			if(input[k]>input[i]) {
 				int temp=input[i];

@@ -1,4 +1,4 @@
-package 秋招;
+package 绉嬫嫑;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class Baidu3 {
 				}
 			}
 		}
-//		i是第i个，j是重量不超过j，k是钱不多于k
+//		i鏄i涓紝j鏄噸閲忎笉瓒呰繃j锛宬鏄挶涓嶅浜巏
 		int[][][] pack=new int[n+1][max_n+1][max_money+1];
 		for(int i=0;i<n+1;i++) {
 			pack[i][0][0]=1;

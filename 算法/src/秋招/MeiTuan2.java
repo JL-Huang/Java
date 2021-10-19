@@ -1,5 +1,5 @@
-package 秋招;
-//找数组中的平衡点
+package 绉嬫嫑;
+//鎵炬暟缁勪腑鐨勫钩琛＄偣
 public class MeiTuan2 {
 	public static void main(String[] args) {
 		MeiTuan2 m=new MeiTuan2();

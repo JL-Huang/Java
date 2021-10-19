@@ -1,5 +1,5 @@
-package ½£Ö¸offer;
-//×Ö·ûĞòÁĞS=¡±abcXYZdef¡±,ÒªÇóÊä³öÑ­»·×óÒÆ3Î»ºóµÄ½á¹û£¬¼´¡°XYZdefabc¡±¡£
+package å‰‘æŒ‡offer;
+//å­—ç¬¦åºåˆ—S=â€abcXYZdefâ€,è¦æ±‚è¾“å‡ºå¾ªç¯å·¦ç§»3ä½åçš„ç»“æœï¼Œå³â€œXYZdefabcâ€ã€‚
 public class LeftRotateString {
     public String test(String str,int n) {
     	if(str.equals("")) return "";

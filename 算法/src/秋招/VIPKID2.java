@@ -1,4 +1,4 @@
-package ÇïÕÐ;
+package ç§‹æ‹›;
 
 public class VIPKID2 {
 

@@ -1,4 +1,4 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,29 +6,29 @@ import java.util.Queue;
 
 import Tree.TreeNode;
 
-//´ÓÉÏÍùÏÂ´òÓ¡³ö¶ş²æÊ÷µÄÃ¿¸ö½Úµã£¬Í¬²ã½Úµã´Ó×óÖÁÓÒ´òÓ¡¡£
+//ä»ä¸Šå¾€ä¸‹æ‰“å°å‡ºäºŒå‰æ ‘çš„æ¯ä¸ªèŠ‚ç‚¹ï¼ŒåŒå±‚èŠ‚ç‚¹ä»å·¦è‡³å³æ‰“å°ã€‚
 public class PrintFromTopToBottom {
 	public static void main(String[] args) {
 		Integer[] a={10,6,14,4,8,12,16};
 		TreeNode root=TreeNode.getTreeNode(a);
 		System.out.println(new PrintFromTopToBottom().test(root).toString());
 	}
-//	×î×îµäĞÍµÄ¹ã¶ÈÓÅÏÈBFS£¬ÓÃ¶ÓÁĞÊµÏÖ
+//	æœ€æœ€å…¸å‹çš„å¹¿åº¦ä¼˜å…ˆBFSï¼Œç”¨é˜Ÿåˆ—å®ç°
 	Queue<TreeNode> queue=new LinkedList<TreeNode>();
 	ArrayList<Integer> list=new ArrayList<Integer>();
     public ArrayList<Integer> test(TreeNode root) {
     	if(root==null) return list;
-//    	Ê×ÏÈ°Ñ¸ù½Úµã´æ½ø¶ÓÁĞ
+//    	é¦–å…ˆæŠŠæ ¹èŠ‚ç‚¹å­˜è¿›é˜Ÿåˆ—
     	queue.offer(root);
     	while(!queue.isEmpty()) {
-//    		È¡³ö¶ÓÁĞÍ·£¬´æÆğÀ´£¬²¢±£´æÆäÊıÖµ
+//    		å–å‡ºé˜Ÿåˆ—å¤´ï¼Œå­˜èµ·æ¥ï¼Œå¹¶ä¿å­˜å…¶æ•°å€¼
     		TreeNode temp=queue.poll();
     		list.add(temp.val);
-//    		°Ñ×óº¢×Ó¼ÓÈë¶ÓÁĞ
+//    		æŠŠå·¦å­©å­åŠ å…¥é˜Ÿåˆ—
     		if(temp.left!=null) {
     			queue.offer(temp.left);
     		}
-//    		°ÑÓÒº¢×Ó¼ÓÈë¶ÓÁĞ
+//    		æŠŠå³å­©å­åŠ å…¥é˜Ÿåˆ—
     		if(temp.right!=null) {
     			queue.offer(temp.right);
     		}

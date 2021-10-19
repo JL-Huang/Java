@@ -1,13 +1,13 @@
-package ExceptionÏà¹Ø;
-//Èç¹ûJDKÃ»ÓÐ½â¾öÎÒÃÇµÄÒì³£µÄ·½·¨£¬¿ÉÒÔ×Ô¶¨ÒåÒì³£Àà
-//Èô¼Ì³Ð×ÔExceptionÀà£¬ÔòÊÇÊÜ¼ì²éÒì³££¬±àÒëÆ÷±ØÐë´¦Àí,trycatch»òÕßthrows
-//Èô¼Ì³Ð×ÔRuntimeException,ÔòÎªÔËÐÐÊ±Òì³££¬¿ÉÒÔÔÚÔËÐÐ³ö´íÔÙ´¦Àí
-//Ï°¹ßÉÏ×Ô¶¨ÒåÒì³£ÒªÓÐÁ½¸ö¹¹ÔìÆ÷£¬Ò»¸öÄ¬ÈÏ£¬Ò»¸ö´øÓÐÏêÏ¸ÐÅÏ¢
-public class ×Ô¶¨ÒåÒì³£ {
+package Exceptionç›¸å…³;
+//å¦‚æžœJDKæ²¡æœ‰è§£å†³æˆ‘ä»¬çš„å¼‚å¸¸çš„æ–¹æ³•ï¼Œå¯ä»¥è‡ªå®šä¹‰å¼‚å¸¸ç±»
+//è‹¥ç»§æ‰¿è‡ªExceptionç±»ï¼Œåˆ™æ˜¯å—æ£€æŸ¥å¼‚å¸¸ï¼Œç¼–è¯‘å™¨å¿…é¡»å¤„ç†,trycatchæˆ–è€…throws
+//è‹¥ç»§æ‰¿è‡ªRuntimeException,åˆ™ä¸ºè¿è¡Œæ—¶å¼‚å¸¸ï¼Œå¯ä»¥åœ¨è¿è¡Œå‡ºé”™å†å¤„ç†
+//ä¹ æƒ¯ä¸Šè‡ªå®šä¹‰å¼‚å¸¸è¦æœ‰ä¸¤ä¸ªæž„é€ å™¨ï¼Œä¸€ä¸ªé»˜è®¤ï¼Œä¸€ä¸ªå¸¦æœ‰è¯¦ç»†ä¿¡æ¯
+public class è‡ªå®šä¹‰å¼‚å¸¸ {
 public static void main(String[] args) throws Illegalsex {
 	Person person=new Person();
 	person.setAge(1);
-	person.setSex("¹«");
+	person.setSex("å…¬");
 }
 }
 class Person{
@@ -18,9 +18,9 @@ class Person{
 	}
 
 	public void setAge(int age) {
-//Ö±½ÓÓÃÓï¾äÅ×³ö,×¢ÒâÊÇthrow²»ÊÇthrows
+//ç›´æŽ¥ç”¨è¯­å¥æŠ›å‡º,æ³¨æ„æ˜¯throwä¸æ˜¯throws
 		if(age<0) {
-			throw new IllegalAge("Ì«ÄêÇáÁË");
+			throw new IllegalAge("å¤ªå¹´è½»äº†");
 		}
 		this.age = age;
 	}
@@ -30,8 +30,8 @@ class Person{
 	}
 
 	public void setSex(String sex) throws Illegalsex {
-		if(sex!="ÄÐ" & sex!=" Å®") {
-			throw new Illegalsex("´íÁË");
+		if(sex!="ç”·" & sex!=" å¥³") {
+			throw new Illegalsex("é”™äº†");
 		}
 		this.sex = sex;
 	}
@@ -39,7 +39,7 @@ class Person{
 }
 
 
-//ÕâÊÇRuntimeException
+//è¿™æ˜¯RuntimeException
 class IllegalAge extends RuntimeException{
 	public IllegalAge() {
 		// TODO Auto-generated constructor stub
@@ -48,12 +48,12 @@ class IllegalAge extends RuntimeException{
 	super(msg);
 	}
 }
-//ÕâÊÇException
+//è¿™æ˜¯Exception
 class Illegalsex extends Exception{
 	public Illegalsex() {
 		// TODO Auto-generated constructor stub
 	}
-//	ÕâÀï²»ÊÇºÜ¶®Õâ¸ösuperÐ´·¨,¿ÉÄÜÊÇÆä¸¸ÀàÖ»ÓÐÒ»¸ö²ÎÊýÎªStringµÄ·½·¨°É
+//	è¿™é‡Œä¸æ˜¯å¾ˆæ‡‚è¿™ä¸ªsuperå†™æ³•,å¯èƒ½æ˜¯å…¶çˆ¶ç±»åªæœ‰ä¸€ä¸ªå‚æ•°ä¸ºStringçš„æ–¹æ³•å§
 	public Illegalsex(String aaa) {
 	super(aaa);
 	}

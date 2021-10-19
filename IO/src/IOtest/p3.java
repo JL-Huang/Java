@@ -12,8 +12,8 @@ public class p3 {
 		OutputStream os=null;
 		try {
 			os=new FileOutputStream(src,true);
-			//trueÎª×·¼Ó£¬falseÎªÌæ´ú
-			String str="ÎÒÔÚÑ§java";
+			//trueä¸ºè¿½åŠ ï¼Œfalseä¸ºæ›¿ä»£
+			String str="æˆ‘åœ¨å­¦java";
 			os.write(str.getBytes());
 			os.flush();
 		} catch (FileNotFoundException e) {

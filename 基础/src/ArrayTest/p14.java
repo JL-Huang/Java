@@ -7,22 +7,22 @@ public static void main(String[] args) {
 	String s1="dadawd dawdaf fc f f ";
 	String s2=s1.replace(' ', '&');
 	System.out.println(s2);
-	//indexof,·µ»ØµÚÒ»´Î³öÏÖĞèÒª²éÕÒµÄ×Ö·ûµÄË÷Òı
+	//indexof,è¿”å›ç¬¬ä¸€æ¬¡å‡ºç°éœ€è¦æŸ¥æ‰¾çš„å­—ç¬¦çš„ç´¢å¼•
 	System.out.println(s1.indexOf("wd"));
 	String[] s3= {"aa","bb","cc","dd","ee","ff"};
 	String[] s4=new String[6];
-//	½«S3¸´ÖÆµ½s4£¬´Ós3ÏÂ±êÎª1µÄ¿ªÊ¼£¬¸´ÖÆµ½s4ÏÂ±êÎª0µÄ£¬¹²¸´ÖÆ3¸ö
-//	¿ÉÒÔ·â×°³ÉÉ¾³ıÊı×éÖĞÄ³Ò»¸öÔªËØµÄ·½·¨£¨s3,index+1,s3,index,s3.length-index-1)
+//	å°†S3å¤åˆ¶åˆ°s4ï¼Œä»s3ä¸‹æ ‡ä¸º1çš„å¼€å§‹ï¼Œå¤åˆ¶åˆ°s4ä¸‹æ ‡ä¸º0çš„ï¼Œå…±å¤åˆ¶3ä¸ª
+//	å¯ä»¥å°è£…æˆåˆ é™¤æ•°ç»„ä¸­æŸä¸€ä¸ªå…ƒç´ çš„æ–¹æ³•ï¼ˆs3,index+1,s3,index,s3.length-index-1)
 	System.arraycopy(s3, 1, s4, 0, 3);
 	for(String n:s4) {
 		System.out.println(n);
 	}
 	int[] s5= {1,2,3};
 	System.out.println(s5);
-//	Arrays.toString()ÊÇÒ»¸ö¾²Ì¬·½·¨£¬ÊÇÓÃÀ´°ïÖú´òÓ¡Êı×éµÄ
+//	Arrays.toString()æ˜¯ä¸€ä¸ªé™æ€æ–¹æ³•ï¼Œæ˜¯ç”¨æ¥å¸®åŠ©æ‰“å°æ•°ç»„çš„
 	System.out.println(Arrays.toString(s5));
-//	Arrays.binarySearch(a, key) ArraysÌá¹©µÄ²éÕÒÊı×éÄÚÈİ·½·¨
-//	·µ»Ø¸ÃÔªËØµÄË÷Òı£¬Èç¹ûÊı×éÖĞÃ»ÓĞ¸ÃÔªËØ»á±¨´í
+//	Arrays.binarySearch(a, key) Arraysæä¾›çš„æŸ¥æ‰¾æ•°ç»„å†…å®¹æ–¹æ³•
+//	è¿”å›è¯¥å…ƒç´ çš„ç´¢å¼•ï¼Œå¦‚æœæ•°ç»„ä¸­æ²¡æœ‰è¯¥å…ƒç´ ä¼šæŠ¥é”™
 	System.out.println(Arrays.binarySearch(s5, 3));
 	
 	int[][] i1=new int[3][];

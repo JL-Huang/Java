@@ -1,5 +1,5 @@
 package MyThread;
-//Éú²úÕßÏû·ÑÕßÄ£Ê½Ö®¹Ü³Ì·¨
+//ç”Ÿäº§è€…æ¶ˆè´¹è€…æ¨¡å¼ä¹‹ç®¡ç¨‹æ³•
 public class PC1 {
 public static void main(String[] args) {
 	Container container=new Container(100);
@@ -14,7 +14,7 @@ class Consumer implements Runnable{
 		// TODO Auto-generated method stub
 		for(int i=0;i<100;i++) {
 			Bread bread=container.get();
-			System.out.println("ÄÃ³öÁËµÚ"+bread.id+"¸öÃæ°ü,²Ö¿â»¹ÓĞ"+container.count+"¸öÃæ°ü");
+			System.out.println("æ‹¿å‡ºäº†ç¬¬"+bread.id+"ä¸ªé¢åŒ…,ä»“åº“è¿˜æœ‰"+container.count+"ä¸ªé¢åŒ…");
 		}
 		
 	}
@@ -33,7 +33,7 @@ class Productor implements Runnable{
 		for(int i=0;i<100;i++) {
 			bread=new Bread(i);
 			container.put(bread);
-			System.out.println("´æÈëÁËµÚ"+bread.id+"¸öÃæ°ü,²Ö¿â»¹ÓĞ"+container.count+"¸öÃæ°ü");
+			System.out.println("å­˜å…¥äº†ç¬¬"+bread.id+"ä¸ªé¢åŒ…,ä»“åº“è¿˜æœ‰"+container.count+"ä¸ªé¢åŒ…");
 		}
 	}
 	public Productor(Container container) {
@@ -49,11 +49,11 @@ class Container{
 public Container(int size) {
 		super();
 		this.size = size;
-//Òª×¢Òâ£¬breadsµÄÊµÀı»¯Òª·ÅÔÚ¹¹Ôì·½·¨Àï£¬²»ÄÜ·ÅÔÚ³ÉÔ±±äÁ¿£¬ÒòÎª³ÉÔ±±äÁ¿³õÊ¼»¯ÔÚÖ´ĞĞ¹¹Ôì·½·¨Ö®Ç°¾ÍÒÑ¾­Ö´ĞĞ
+//è¦æ³¨æ„ï¼Œbreadsçš„å®ä¾‹åŒ–è¦æ”¾åœ¨æ„é€ æ–¹æ³•é‡Œï¼Œä¸èƒ½æ”¾åœ¨æˆå‘˜å˜é‡ï¼Œå› ä¸ºæˆå‘˜å˜é‡åˆå§‹åŒ–åœ¨æ‰§è¡Œæ„é€ æ–¹æ³•ä¹‹å‰å°±å·²ç»æ‰§è¡Œ
 		this.breads=new Bread[size];
 	}
-//	´æ²Ù×÷
-//	ÒıÈëËøÊÇÒòÎª·ÀÖ¹³öÏÖ´æÈ¡Í¬Ê±¶Ôcount²Ù×÷µ¼ÖÂ³öÏÖ×ÊÔ´ÇÀ¶á
+//	å­˜æ“ä½œ
+//	å¼•å…¥é”æ˜¯å› ä¸ºé˜²æ­¢å‡ºç°å­˜å–åŒæ—¶å¯¹countæ“ä½œå¯¼è‡´å‡ºç°èµ„æºæŠ¢å¤º
 	public synchronized void put(Bread bread) {
 	if(this.count==size) {
 		try {
@@ -67,11 +67,11 @@ public Container(int size) {
 	count++;	
 	this.notify();
 	}
-//	È¡²Ù×÷
+//	å–æ“ä½œ
 	public synchronized Bread get() {
-//		ÎÊÌâÀ´ÁË£¬Èç¹ûÈ¡µÄÌ«¿ì£¬¿â´æÒÑ¾­¿ÕÁË»¹ÔÚÈ¡£¬±ØÈ»»á±¨´í
-//		ËùÒÔÒªÒıÈëwait
-//		waitÈç¹ûÃ»ÓĞ»½ĞÑ£¬µ±Ç°Ïß³Ì»áÒ»Ö±×èÈûÏÂÈ¥
+//		é—®é¢˜æ¥äº†ï¼Œå¦‚æœå–çš„å¤ªå¿«ï¼Œåº“å­˜å·²ç»ç©ºäº†è¿˜åœ¨å–ï¼Œå¿…ç„¶ä¼šæŠ¥é”™
+//		æ‰€ä»¥è¦å¼•å…¥wait
+//		waitå¦‚æœæ²¡æœ‰å”¤é†’ï¼Œå½“å‰çº¿ç¨‹ä¼šä¸€ç›´é˜»å¡ä¸‹å»
 		if(count==0) {
 			try {
 				this.wait();
@@ -80,7 +80,7 @@ public Container(int size) {
 				e.printStackTrace();
 			}
 		}
-//			notifyÊÇ¸ù¾İÏß³ÌÓÅÏÈ¼¶Ëæ»ú»½ĞÑÒ»¸öÏß³Ì
+//			notifyæ˜¯æ ¹æ®çº¿ç¨‹ä¼˜å…ˆçº§éšæœºå”¤é†’ä¸€ä¸ªçº¿ç¨‹
 			this.notify();
 		count--;
 		return breads[count];

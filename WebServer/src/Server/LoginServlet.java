@@ -8,7 +8,7 @@ public class LoginServlet implements Servlet{
 		// TODO Auto-generated method stub
 	System.out.println("LoginServlet");	
 	try {
-		respons.send("»ØÓ¦", "Welcome"+request.findvalue("uname", 0));
+		respons.send("å›žåº”", "Welcome"+request.findvalue("uname", 0));
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

@@ -1,14 +1,14 @@
-package GenericÏà¹Ø;
+package Genericç›¸å…³;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class List»ù±¾ {
+public class ListåŸºæœ¬ {
 public static void main(String[] args) {
 	TestList();
 }
-//ListÊÇCollectionµÄ×Ó½Ó¿Ú,¹ÊÆä¾ßÓĞ¸¸½Ó¿ÚµÄËùÓĞ·½·¨
-//ListÊÇÓĞĞò£¬ÔªËØ¿ÉÖØ¸´µÄÈİÆ÷,²éÑ¯Ğ§ÂÊ¸ß£¬ÔöÉ¾Ğ§ÂÊµÍ£¬Ïß³Ì²»°²È«
+//Listæ˜¯Collectionçš„å­æ¥å£,æ•…å…¶å…·æœ‰çˆ¶æ¥å£çš„æ‰€æœ‰æ–¹æ³•
+//Listæ˜¯æœ‰åºï¼Œå…ƒç´ å¯é‡å¤çš„å®¹å™¨,æŸ¥è¯¢æ•ˆç‡é«˜ï¼Œå¢åˆ æ•ˆç‡ä½ï¼Œçº¿ç¨‹ä¸å®‰å…¨
 public static void TestList(){
 	List<String> list1=new ArrayList<String>();
 	list1.add("aa");
@@ -18,11 +18,11 @@ public static void TestList(){
 	list2.add("aa");
 	list2.add("dd");
 	list2.add("ee");
-//	retain£¬±£Áô£¬±£Áôlist1ÖĞËùÓĞlist2ÓĞµÄ³ÉÔ±,×¢Òâ²ÎÊıListÄÚÈİ²¢Ã»ÓĞ¸Ä±ä
+//	retainï¼Œä¿ç•™ï¼Œä¿ç•™list1ä¸­æ‰€æœ‰list2æœ‰çš„æˆå‘˜,æ³¨æ„å‚æ•°Listå†…å®¹å¹¶æ²¡æœ‰æ”¹å˜
 	list1.retainAll(list2);
 	System.out.println(list1);
 	System.out.println(list2);
-//	ÕâÊÇ°Ñlist2È«¼Ó¸ø¶ÔÏóList£¬×¢Òâlist2ÄÚÈİ²¢Ã»ÓĞ¸Ä±ä
+//	è¿™æ˜¯æŠŠlist2å…¨åŠ ç»™å¯¹è±¡Listï¼Œæ³¨æ„list2å†…å®¹å¹¶æ²¡æœ‰æ”¹å˜
 	list1.addAll(list2);
 	System.out.println(list1);
 	System.out.println(list2);

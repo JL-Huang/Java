@@ -1,17 +1,17 @@
-package ½£Ö¸offer;
-//¸ø¶¨Ò»¸ödoubleÀàĞÍµÄ¸¡µãÊıbaseºÍintÀàĞÍµÄÕûÊıexponent¡£ÇóbaseµÄexponent´Î·½¡£
+package å‰‘æŒ‡offer;
+//ç»™å®šä¸€ä¸ªdoubleç±»å‹çš„æµ®ç‚¹æ•°baseå’Œintç±»å‹çš„æ•´æ•°exponentã€‚æ±‚baseçš„exponentæ¬¡æ–¹ã€‚
 public class DefferentPower {
 	public static void main(String[] args) {
 		DefferentPower defferentPower=new DefferentPower();
 		System.out.println(defferentPower.test2(2.0,3));
 	}
-//	ÒòÎª²»Ê¹ÓÃ¿âº¯Êı£¬ËùÒÔÕâÀïÖ»ÄÜÀÛ³Ë
-//	Ö±½ÓÀÛ³ËÊ±¼ä¸´ÔÓ¶ÈO(n),Òª×¢ÒâÏ¸½Ú
-//	Ê×ÏÈµ±µ×ÊıÎª0Ö¸Êı±ØĞëÊÇÕıÊı
-//	È»ºódoubleÀàĞÍÖµÅĞ¶Ï£¬double a=1.00,a==1·µ»Øtrue£¬double b=1.01,a==1·µ»Øfalse
+//	å› ä¸ºä¸ä½¿ç”¨åº“å‡½æ•°ï¼Œæ‰€ä»¥è¿™é‡Œåªèƒ½ç´¯ä¹˜
+//	ç›´æ¥ç´¯ä¹˜æ—¶é—´å¤æ‚åº¦O(n),è¦æ³¨æ„ç»†èŠ‚
+//	é¦–å…ˆå½“åº•æ•°ä¸º0æŒ‡æ•°å¿…é¡»æ˜¯æ­£æ•°
+//	ç„¶ådoubleç±»å‹å€¼åˆ¤æ–­ï¼Œdouble a=1.00,a==1è¿”å›trueï¼Œdouble b=1.01,a==1è¿”å›false
     public double test1(double base, int exponent) {
         if(base==0) {
-        	if(exponent<=0) throw new RuntimeException("·ÖÄ¸²»ÄÜÎª0");
+        	if(exponent<=0) throw new RuntimeException("åˆ†æ¯ä¸èƒ½ä¸º0");
         	else return 0;
         }else {
         	if(exponent==0) return 1;
@@ -32,12 +32,12 @@ public class DefferentPower {
         	return 0;
         }
   }
-//    µ±È»ÕâÖÖÊÖ¶¯ÊµÏÖÃİÔËËã£¬×îºÃµÄ·½·¨»¹ÊÇ¶ş·Ö£¬ÄÜ°ÑÊ±¼ä¸´ÔÓ¶È½µµ½O(logn)
-//    µ«ÊÇ¶ş·ÖÏ¸½ÚÒª×¢ÒâÒ»¸öÏ¸½Ú¾ÍÊÇ¶ş·Ö½á¹û·ÇÕûÊı»á×Ô¶¯ÏòÏÂÈ¡Õû
+//    å½“ç„¶è¿™ç§æ‰‹åŠ¨å®ç°å¹‚è¿ç®—ï¼Œæœ€å¥½çš„æ–¹æ³•è¿˜æ˜¯äºŒåˆ†ï¼Œèƒ½æŠŠæ—¶é—´å¤æ‚åº¦é™åˆ°O(logn)
+//    ä½†æ˜¯äºŒåˆ†ç»†èŠ‚è¦æ³¨æ„ä¸€ä¸ªç»†èŠ‚å°±æ˜¯äºŒåˆ†ç»“æœéæ•´æ•°ä¼šè‡ªåŠ¨å‘ä¸‹å–æ•´
     double result=1;
     public double test2(double base, int exponent) {
         if(base==0) {
-        	if(exponent<=0) throw new RuntimeException("·ÖÄ¸²»ÄÜÎª0");
+        	if(exponent<=0) throw new RuntimeException("åˆ†æ¯ä¸èƒ½ä¸º0");
         	else return 0;
         }else {
         	if(exponent==0) return 1;

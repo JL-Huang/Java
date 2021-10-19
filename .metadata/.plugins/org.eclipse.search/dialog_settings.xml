@@ -41,7 +41,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="true"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="重复"/>
+			<item key="textPattern" value="閲嶅"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>

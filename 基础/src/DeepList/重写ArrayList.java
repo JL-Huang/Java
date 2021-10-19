@@ -3,13 +3,13 @@ package DeepList;
 
 import java.util.Arrays;
 
-//ÖØĞ´ArrayList
-//ArrayListÓÃÓÚ²éÕÒ£¬LinkListÓÃÓÚÔöÉ¾¸Ä
-//Ë³±ãËµÒ»ÏÂVector£¬ËüÓëArrayLiatÒ»Ñùµ×²ãÊÇÊı×é£¬µ«ËüÊÇÏß³Ì°²È«µÄ£¬ÒâÎ¶×ÅĞ§ÂÊµÍ
-public class ÖØĞ´ArrayList {
+//é‡å†™ArrayList
+//ArrayListç”¨äºæŸ¥æ‰¾ï¼ŒLinkListç”¨äºå¢åˆ æ”¹
+//é¡ºä¾¿è¯´ä¸€ä¸‹Vectorï¼Œå®ƒä¸ArrayLiatä¸€æ ·åº•å±‚æ˜¯æ•°ç»„ï¼Œä½†å®ƒæ˜¯çº¿ç¨‹å®‰å…¨çš„ï¼Œæ„å‘³ç€æ•ˆç‡ä½
+public class é‡å†™ArrayList {
 public static void main(String[] args) {
 	MyArrayList<String> myArrayList=new MyArrayList();
-// ÕâÀï¿ÉÒÔ¸üÉîÈëÀí½â·ºĞÍ£¬ËäÈ»ÎÒÔÚÀàÀïÉùÃ÷ÁË·ºĞÍString£¬µ«ÊÇÔÚadd·½·¨ÀïÃ»ÓĞÓÃÕâ¸ö·ºĞÍ£¬ËùÒÔÈÎÈ»¿ÉÒÔÈÎÒâÀàĞÍ
+// è¿™é‡Œå¯ä»¥æ›´æ·±å…¥ç†è§£æ³›å‹ï¼Œè™½ç„¶æˆ‘åœ¨ç±»é‡Œå£°æ˜äº†æ³›å‹Stringï¼Œä½†æ˜¯åœ¨addæ–¹æ³•é‡Œæ²¡æœ‰ç”¨è¿™ä¸ªæ³›å‹ï¼Œæ‰€ä»¥ä»»ç„¶å¯ä»¥ä»»æ„ç±»å‹
 //	myArrayList.add(2);
 //	myArrayList.add("duhada");
 //	System.out.println(myArrayList);
@@ -20,22 +20,22 @@ public static void main(String[] args) {
 	MyArrayList<Integer> list2=new MyArrayList();
 	list2.add(1);
 	list2.add(3);
-//	ÕâÀïÉæ¼°Ò»¸öÎÊÌâ£¬ÈçºÎ°ÑÒ»¸ö×Ô¶¨ÒåÀàµÄÔªËØ×ö³ÉÊı×é
+//	è¿™é‡Œæ¶‰åŠä¸€ä¸ªé—®é¢˜ï¼Œå¦‚ä½•æŠŠä¸€ä¸ªè‡ªå®šä¹‰ç±»çš„å…ƒç´ åšæˆæ•°ç»„
 	Integer[] ii=new Integer[2];
 	ii[0]=1;
 	ii[1]=2;
-//	×¢ÒâÕâÀï£¬²»ÄÜ¶ÔmyArraylistµ÷ÓÃ²ÎÊıÎªIntegerÀàĞÍµÄ·½·¨£¬ÒòÎª²»Í¬·ºĞÍ
+//	æ³¨æ„è¿™é‡Œï¼Œä¸èƒ½å¯¹myArraylistè°ƒç”¨å‚æ•°ä¸ºIntegerç±»å‹çš„æ–¹æ³•ï¼Œå› ä¸ºä¸åŒæ³›å‹
 	list2.remove(ii);
 	System.out.println(list2);
 	
 }
 }
 class MyArrayList<E>{
-//	sizeÊÇÀ©ÈİÊ±µÄ¸¨Öú²ÎÊı£¬±íÊ¾Êı×éÄ©Î»ÏÂ±ê
+//	sizeæ˜¯æ‰©å®¹æ—¶çš„è¾…åŠ©å‚æ•°ï¼Œè¡¨ç¤ºæ•°ç»„æœ«ä½ä¸‹æ ‡
 	 private int size;
-//	 elementDataÊÇArrayListµÄÊµÖÊÈİÆ÷
+//	 elementDataæ˜¯ArrayListçš„å®è´¨å®¹å™¨
 	 private Object[] elementData;
-//	 µ÷ÓÃ¸ÃÀàÎŞ²Î¹¹Ôì·½·¨Ê±Éú³ÉµÄÄ¬ÈÏÊı×é³¤¶È
+//	 è°ƒç”¨è¯¥ç±»æ— å‚æ„é€ æ–¹æ³•æ—¶ç”Ÿæˆçš„é»˜è®¤æ•°ç»„é•¿åº¦
 	 private static final int DEFAULT_LENGTH=10;
 	 public MyArrayList(){
 		 elementData=new Object[DEFAULT_LENGTH];
@@ -45,7 +45,7 @@ class MyArrayList<E>{
 	 }
 	 public void add(Object o) {
 		 if(size==elementData.length) {
-//			 Êı×éÀ©Èİ£¬ÓÒÒÆ¼ÓÒ»°ë£¬×¢ÒâÒªÀ¨ºÅ£¬ÒòÎª£«ÓÅÏÈ¼¶´óÓÚ>>
+//			 æ•°ç»„æ‰©å®¹ï¼Œå³ç§»åŠ ä¸€åŠï¼Œæ³¨æ„è¦æ‹¬å·ï¼Œå› ä¸ºï¼‹ä¼˜å…ˆçº§å¤§äº>>
 		 Object[] newobject=new Object[elementData.length+(elementData.length>>1)];
 		 System.arraycopy(elementData, 0, newobject, 0, elementData.length);
 		 elementData=newobject;
@@ -77,7 +77,7 @@ class MyArrayList<E>{
 		for(int i=0;i<size;i++) {
 			sb.append(elementData[i]);
 		}
-//		×¢ÒâÏµÍ³Ä¬ÈÏµÄtoString·½·¨Ö»ÊÇÎŞÄÔµØ°ÑÊı×éÄÚÈİ´òÓ¡³öÀ´
+//		æ³¨æ„ç³»ç»Ÿé»˜è®¤çš„toStringæ–¹æ³•åªæ˜¯æ— è„‘åœ°æŠŠæ•°ç»„å†…å®¹æ‰“å°å‡ºæ¥
 		return sb.toString();
 
 	}

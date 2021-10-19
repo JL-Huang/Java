@@ -1,23 +1,23 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import Tree.ListNode;
 //x+d=(x+kc+d)/2
-//µ±ÔÙ´Î×ßµ½Èë¿Ú£¬Ò»¸ö×ßÁËx£¬Ò»¸ö×ßÁËc-d
+//å½“å†æ¬¡èµ°åˆ°å…¥å£ï¼Œä¸€ä¸ªèµ°äº†xï¼Œä¸€ä¸ªèµ°äº†c-d
 public class EntryNodeOfLoop {
-//	¸øÒ»¸öÁ´±í£¬ÈôÆäÖÐ°üº¬»·£¬ÇëÕÒ³ö¸ÃÁ´±íµÄ»·µÄÈë¿Ú½áµã£¬·ñÔò£¬Êä³önull
+//	ç»™ä¸€ä¸ªé“¾è¡¨ï¼Œè‹¥å…¶ä¸­åŒ…å«çŽ¯ï¼Œè¯·æ‰¾å‡ºè¯¥é“¾è¡¨çš„çŽ¯çš„å…¥å£ç»“ç‚¹ï¼Œå¦åˆ™ï¼Œè¾“å‡ºnull
     public ListNode test(ListNode pHead) {
-//    	¾­µäµÄ¿ìÂýÖ¸Õë
+//    	ç»å…¸çš„å¿«æ…¢æŒ‡é’ˆ
         if(pHead==null) return null;
         ListNode fast=pHead;
         ListNode slow=pHead;
-//        ¿ìÖ¸ÕëËÙ¶ÈÊÇÂýÖ¸ÕëÁ½±¶£¬±ØÈ»»áÏàÓö
+//        å¿«æŒ‡é’ˆé€Ÿåº¦æ˜¯æ…¢æŒ‡é’ˆä¸¤å€ï¼Œå¿…ç„¶ä¼šç›¸é‡
         while(fast!=null&&fast.next!=null) {
         	fast=fast.next.next;
         	slow=slow.next;
         	if(fast==slow) break;
         }
-//        ÏàÓöÖ®ºóÒ»¸öÍ£ÁôÔÚÔ­µØ£¬Ò»¸ö·µ»ØÆðµã£¬ÒÔÒ»¸ö½ÚµãµÄËÙ¶ÈÍ¬ËÙÇ°½ø£¬Ôò±ØÈ»»áÔÚ»·Èë¿Ú´¦ÏàÓö
-//        ÌØ±ð×¢ÒâÕâ¸öÅÐ¶ÏÓï¾ä£¬µ±Ö»Òª¿ìÖ¸ÕëÓöµ½¿ÕµÄÇé¿ö£¬Ôò±ØÈ»Ã»ÓÐ»·£¬·µ»Ønull
+//        ç›¸é‡ä¹‹åŽä¸€ä¸ªåœç•™åœ¨åŽŸåœ°ï¼Œä¸€ä¸ªè¿”å›žèµ·ç‚¹ï¼Œä»¥ä¸€ä¸ªèŠ‚ç‚¹çš„é€Ÿåº¦åŒé€Ÿå‰è¿›ï¼Œåˆ™å¿…ç„¶ä¼šåœ¨çŽ¯å…¥å£å¤„ç›¸é‡
+//        ç‰¹åˆ«æ³¨æ„è¿™ä¸ªåˆ¤æ–­è¯­å¥ï¼Œå½“åªè¦å¿«æŒ‡é’ˆé‡åˆ°ç©ºçš„æƒ…å†µï¼Œåˆ™å¿…ç„¶æ²¡æœ‰çŽ¯ï¼Œè¿”å›žnull
         if(fast==null||fast.next==null)
             return null;
         fast=pHead;

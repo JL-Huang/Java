@@ -3927,7 +3927,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\IOtest\abc.txt.
-java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4041,7 +4041,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\IOtest\abc.txt.
-java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4127,7 +4127,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\IOtest\abc.txt.
-java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4176,7 +4176,7 @@ java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 另一个程
 !SUBENTRY 4 org.eclipse.core.filesystem 4 273 2020-03-28 16:38:43.452
 !MESSAGE Could not delete: F:\JAVA\practice\IOtest\abc.txt.
 !STACK 0
-java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\IOtest\abc.txt: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4700,7 +4700,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4814,7 +4814,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4900,7 +4900,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -4949,7 +4949,7 @@ java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.
 !SUBENTRY 4 org.eclipse.core.filesystem 4 273 2020-03-30 17:54:27.221
 !MESSAGE Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
 !STACK 0
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -5062,7 +5062,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -5176,7 +5176,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -5262,7 +5262,7 @@ org.eclipse.core.runtime.CoreException: Problems encountered while deleting file
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 Contains: Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -5311,7 +5311,7 @@ java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.
 !SUBENTRY 4 org.eclipse.core.filesystem 4 273 2020-03-30 17:54:39.567
 !MESSAGE Could not delete: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar.
 !STACK 0
-java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 另一个程序正在使用此文件，进程无法访问。
+java.nio.file.FileSystemException: F:\JAVA\practice\ThreadTest\lib\commons-io-2.6-sources.jar: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂��
 
 	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
 	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
@@ -7703,9 +7703,9 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-06 06:53:52.331
-!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.apache.felix.scr_2.1.16.v20200110-1820.jar.pack.gz failed on 你的主机中的软件中止了一个已建立的连接。. Retry attempt 0 started
+!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.apache.felix.scr_2.1.16.v20200110-1820.jar.pack.gz failed on 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��. Retry attempt 0 started
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -7733,7 +7733,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -7741,7 +7741,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 25 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -7753,9 +7753,9 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 	... 21 more
 
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-06 06:53:52.392
-!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/javaewah_1.1.7.v20200107-0831.jar.pack.gz failed on 你的主机中的软件中止了一个已建立的连接。. Retry attempt 0 started
+!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/javaewah_1.1.7.v20200107-0831.jar.pack.gz failed on 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��. Retry attempt 0 started
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -7783,7 +7783,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -7791,7 +7791,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 25 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -7803,9 +7803,9 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 	... 21 more
 
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-06 06:53:52.405
-!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.eclipse.ant.ui_3.7.700.v20200304-2203.jar.pack.gz failed on 你的主机中的软件中止了一个已建立的连接。. Retry attempt 0 started
+!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.eclipse.ant.ui_3.7.700.v20200304-2203.jar.pack.gz failed on 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��. Retry attempt 0 started
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -7833,7 +7833,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -7841,7 +7841,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 25 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -7865,7 +7865,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -7891,7 +7891,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -7899,7 +7899,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -7912,7 +7912,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:53:54.735
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.ant.launching/1.2.800.v20191221-1203.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -7938,7 +7938,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -7946,7 +7946,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -7958,9 +7958,9 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 	... 19 more
 
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-06 06:53:55.289
-!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.eclipse.core.commands_3.9.700.v20191217-1850.jar.pack.gz failed on 你的主机中的软件中止了一个已建立的连接。. Retry attempt 0 started
+!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.eclipse.core.commands_3.9.700.v20191217-1850.jar.pack.gz failed on 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��. Retry attempt 0 started
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -7988,7 +7988,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -7996,7 +7996,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 25 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8008,9 +8008,9 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 	... 21 more
 
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-06 06:53:56.458
-!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.eclipse.core.databinding_1.8.0.v20200205-2008.jar.pack.gz failed on 你的主机中的软件中止了一个已建立的连接。. Retry attempt 0 started
+!MESSAGE Connection to https://download.eclipse.org/releases/2020-03/202003181000/plugins/org.eclipse.core.databinding_1.8.0.v20200205-2008.jar.pack.gz failed on 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��. Retry attempt 0 started
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8038,7 +8038,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8046,7 +8046,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 25 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8070,7 +8070,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8096,7 +8096,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8104,7 +8104,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8117,7 +8117,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:53:59.666
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.core.databinding.beans/1.6.100.v20191217-1850.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8143,7 +8143,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8151,7 +8151,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8175,7 +8175,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8201,7 +8201,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8209,7 +8209,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8222,7 +8222,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:54:01.693
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.core.databinding/1.8.0.v20200205-2008.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8248,7 +8248,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8256,7 +8256,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8280,7 +8280,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8306,7 +8306,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8314,7 +8314,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8327,7 +8327,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:54:02.891
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.core.expressions/3.6.700.v20200212-1751.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8353,7 +8353,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8361,7 +8361,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8385,7 +8385,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8411,7 +8411,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8419,7 +8419,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8432,7 +8432,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:54:39.718
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.jdt.core/3.21.0.v20200304-1404.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8458,7 +8458,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8466,7 +8466,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8490,7 +8490,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8516,7 +8516,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8524,7 +8524,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8537,7 +8537,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:54:49.896
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.jdt.doc.user/3.15.600.v20200303-1108.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8563,7 +8563,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8571,7 +8571,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8595,7 +8595,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8621,7 +8621,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8629,7 +8629,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8642,7 +8642,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:55:40.397
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.ui.forms/3.9.0.v20200213-1442.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8668,7 +8668,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8676,7 +8676,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8700,7 +8700,7 @@ org.eclipse.core.runtime.CoreException: Unable to read repository at https://dow
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:759)
 	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8726,7 +8726,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	... 1 more
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8734,7 +8734,7 @@ Caused by: javax.net.ssl.SSLException: 你的主机中的软件中止了一个�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -8747,7 +8747,7 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 !SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2020-05-06 06:55:47.313
 !MESSAGE Unable to read repository at https://download.eclipse.org/stats/releases/2020-03/org.eclipse.urischeme/1.0.600.v20200115-1733.
 !STACK 0
-javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的连接。
+javax.net.ssl.SSLException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
@@ -8773,7 +8773,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-	Suppressed: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+	Suppressed: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
 		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
 		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
@@ -8781,7 +8781,7 @@ javax.net.ssl.SSLException: 你的主机中的软件中止了一个已建立的�
 		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
 		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
 		... 23 more
-Caused by: java.net.SocketException: 你的主机中的软件中止了一个已建立的连接。
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:326)
 	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
 	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
@@ -9715,7 +9715,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-06-16 22:51:39.067
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-06-16 22:51:39.657
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -9810,7 +9810,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-06-17 23:45:57.361
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-06-17 23:45:58.611
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -9912,7 +9912,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.core.net 4 0 2020-06-18 20:15:24.682
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 !SESSION 2020-06-19 20:31:07.113 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=13.0.2
@@ -10276,7 +10276,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-06-22 20:54:21.365
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-06-22 20:54:22.325
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -10654,7 +10654,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.core.net 4 0 2020-06-25 18:57:40.676
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 !SESSION 2020-06-26 10:00:37.169 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=13.0.2
@@ -10749,7 +10749,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.core.net 4 0 2020-06-26 10:01:07.142
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 !SESSION 2020-07-05 13:04:05.380 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=13.0.2
@@ -10840,7 +10840,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-07-05 13:04:33.905
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-07-05 13:04:34.979
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -11027,7 +11027,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-07-18 13:26:46.897
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-07-18 13:26:48.009
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -11122,7 +11122,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-07-21 23:30:13.542
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-07-21 23:30:16.408
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -11493,7 +11493,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-08-05 23:33:23.499
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-08-05 23:33:24.243
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -11595,7 +11595,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.core.net 4 0 2020-08-06 10:12:27.236
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 !SESSION 2020-08-21 21:43:34.057 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=13.0.2

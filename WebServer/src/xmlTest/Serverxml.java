@@ -14,7 +14,7 @@ import javax.xml.parsers.SAXParserFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-//ä¯ÀÀÆ÷ÊäÈëÍøÖ·/g,·µ»Ø¼üg¶ÔÓ¦µÄÀà
+//æµè§ˆå™¨è¾“å…¥ç½‘å€/g,è¿”å›é”®gå¯¹åº”çš„ç±»
 public class Serverxml {
 public static void main(String[] args) throws Exception {
 	try {
@@ -25,14 +25,14 @@ public static void main(String[] args) throws Exception {
 		parse.parse(is,webHandler);
 		
 		WebContent webContent=new WebContent(webHandler.getEnties(), webHandler.getMappings());
-//		Õâ¶¼¶ª½øWebContentÀïÃæÁË
+//		è¿™éƒ½ä¸¢è¿›WebContenté‡Œé¢äº†
 //		List<Entity> entities=webHandler.getEnties();
 //		List<Mapping> mappings=webHandler.getMappings();
-//		ÂıÂı½²½²ÏÂÃæÔÚ¸ÉÊ²Ã´
-//		Ê×ÏÈ,ÊÇ¸ù¾İURLpattern·µ»ØÒ»¸öClassÂ·¾¶,¸ù¾İÕâ¸öÂ·¾¶»ñÈ¡Class¶ÔÏó
-//		Õâ¸ö¶ÔÏóÊÇÖ¸ÏòÁËLoginServlet.class,ËùÒÔÏÂÃæÊÇ»ñµÃ¹¹Ôì·½·¨,ÊµÀı»¯¶ÔÏó
-//		ÕâÑù×Ó¾ÍÊµÏÖÁËURLpatternµ½ÊµÀı»¯Æä¶ÔÓ¦¶ÔÏóµÄ×ª»»
-//		Í¬ÑùµÀÀí¿ÉÒÔ»»³É/reg
+//		æ…¢æ…¢è®²è®²ä¸‹é¢åœ¨å¹²ä»€ä¹ˆ
+//		é¦–å…ˆ,æ˜¯æ ¹æ®URLpatternè¿”å›ä¸€ä¸ªClassè·¯å¾„,æ ¹æ®è¿™ä¸ªè·¯å¾„è·å–Classå¯¹è±¡
+//		è¿™ä¸ªå¯¹è±¡æ˜¯æŒ‡å‘äº†LoginServlet.class,æ‰€ä»¥ä¸‹é¢æ˜¯è·å¾—æ„é€ æ–¹æ³•,å®ä¾‹åŒ–å¯¹è±¡
+//		è¿™æ ·å­å°±å®ç°äº†URLpatternåˆ°å®ä¾‹åŒ–å…¶å¯¹åº”å¯¹è±¡çš„è½¬æ¢
+//		åŒæ ·é“ç†å¯ä»¥æ¢æˆ/reg
 		Class C1=Class.forName(webContent.getClz("/login"));
 		Servlet s1=(Servlet) C1.getConstructor().newInstance();
 		System.out.println(s1);
@@ -71,7 +71,7 @@ class WebHandler extends DefaultHandler{
 	public void startDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.startDocument();
-//		System.out.println("¼ìË÷ÎÄ¼şÍ·,½âÎö¿ªÊ¼");
+//		System.out.println("æ£€ç´¢æ–‡ä»¶å¤´,è§£æå¼€å§‹");
 		mappings=new ArrayList<Mapping>();
 		entities=new ArrayList<Entity>();
 	}
@@ -80,7 +80,7 @@ class WebHandler extends DefaultHandler{
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		// TODO Auto-generated method stub
 		super.startElement(uri, localName, qName, attributes);
-//		System.out.println("»ñÈ¡¿ªÊ¼±êÇ©Ãû"+qName);
+//		System.out.println("è·å–å¼€å§‹æ ‡ç­¾å"+qName);
 		if(qName!=null) {
 			tag=qName;		
 		}
@@ -99,7 +99,7 @@ class WebHandler extends DefaultHandler{
 		// TODO Auto-generated method stub
 		super.characters(ch, start, length);
 		String content=new String(ch,start,length);
-//		System.out.println("ÄÚÈİÎª"+content);
+//		System.out.println("å†…å®¹ä¸º"+content);
 		if(tag!=null) {
 			if(isMaping) {
 				if(tag.equals("servlet-name")) {
@@ -121,7 +121,7 @@ class WebHandler extends DefaultHandler{
 	public void endElement(String uri, String localName, String qName) throws SAXException {
 		// TODO Auto-generated method stub
 		super.endElement(uri, localName, qName);
-//		System.out.println("»ñÈ¡½áÊø±êÇ©Ãû"+qName);
+//		System.out.println("è·å–ç»“æŸæ ‡ç­¾å"+qName);
 		if(qName.equals("servlet")) {
 			entities.add(entity);			
 		}else if(qName.equals("servlet-mapping")) {
@@ -135,7 +135,7 @@ class WebHandler extends DefaultHandler{
 	public void endDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.endDocument();
-//		System.out.println("½âÎöÎÄµµ½áÊø");
+//		System.out.println("è§£ææ–‡æ¡£ç»“æŸ");
 	}
 	
 }

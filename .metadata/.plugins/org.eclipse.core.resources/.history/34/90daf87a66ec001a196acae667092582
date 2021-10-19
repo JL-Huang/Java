@@ -1,6 +1,6 @@
 package Classics;
-//µºÓìÎÊÌâ£¬ÇóµºÓì´óÐ¡£¬¾­µäDFS
-//Èç¹ûÊÇÇóµºÓìÊýÁ¿£¬¾ÍÔÚ±éÀúÊ±Óöµ½µºÓì++£¬È»ºóµÝ¹é°ÑÏàÁ¬µºÓìÈ«±ä0
+//å²›å±¿é—®é¢˜ï¼Œæ±‚å²›å±¿å¤§å°ï¼Œç»å…¸DFS
+//å¦‚æžœæ˜¯æ±‚å²›å±¿æ•°é‡ï¼Œå°±åœ¨éåŽ†æ—¶é‡åˆ°å²›å±¿++ï¼Œç„¶åŽé€’å½’æŠŠç›¸è¿žå²›å±¿å…¨å˜0
 public class Island {
 	public static void main(String[] args) {
 		int[][] nums= {{1,0,0,0},

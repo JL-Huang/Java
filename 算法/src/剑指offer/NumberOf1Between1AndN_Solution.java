@@ -1,5 +1,5 @@
-package ½£Ö¸offer;
-//Çó³öÈÎÒâ·Ç¸ºÕûÊıÇø¼äÖĞ1³öÏÖµÄ´ÎÊı£¨´Ó1 µ½ n ÖĞ1³öÏÖµÄ´ÎÊı£©
+package å‰‘æŒ‡offer;
+//æ±‚å‡ºä»»æ„éè´Ÿæ•´æ•°åŒºé—´ä¸­1å‡ºç°çš„æ¬¡æ•°ï¼ˆä»1 åˆ° n ä¸­1å‡ºç°çš„æ¬¡æ•°ï¼‰
 public class NumberOf1Between1AndN_Solution {
     public int test(int n) {
     	int result=0;

@@ -1168,7 +1168,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-09-10 16:21:37.031
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-09-10 16:21:38.598
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -1270,7 +1270,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.core.net 4 0 2020-09-11 14:27:59.559
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 !SESSION 2020-09-11 21:25:54.062 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=13.0.2
@@ -1361,7 +1361,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-09-11 21:26:25.848
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-09-11 21:26:27.216
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -1575,7 +1575,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.core.net 4 0 2020-09-14 09:11:59.463
-!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '虏禄脛脺脧脗脭卮煤脌铆路镁脦帽脝梅脳远炉脜盲脰' #12167.
 
 !ENTRY org.eclipse.egit.ui 2 0 2020-09-14 09:12:01.198
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git

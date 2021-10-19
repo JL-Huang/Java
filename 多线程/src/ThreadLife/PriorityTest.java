@@ -1,6 +1,6 @@
 package ThreadLife;
-//ÓÅÏÈ¼¶ÓÉ1-10Ôö´ó
-//ÓÅÏÈ¼¶Ô½¸ß,Ô½¿ÉÄÜÔçÖ´ĞĞ,µ«²»Ò»¶¨
+//ä¼˜å…ˆçº§ç”±1-10å¢å¤§
+//ä¼˜å…ˆçº§è¶Šé«˜,è¶Šå¯èƒ½æ—©æ‰§è¡Œ,ä½†ä¸ä¸€å®š
 //NORM_PRIORITY:5
 //MIN_PRIORITY:1
 //MAX_PRIORITY:10
@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	Thread t1=new Thread(new Test1(),"a");
 	Thread t2=new Thread(new Test1(),"b");
 	Thread t3=new Thread(new Test1(),"c");
-//	ÉèÖÃÓÅÏÈ¼¶Ò»¶¨ÒªÔÚÆô¶¯Ç°
+//	è®¾ç½®ä¼˜å…ˆçº§ä¸€å®šè¦åœ¨å¯åŠ¨å‰
 	t1.setPriority(Thread.MAX_PRIORITY);
 	t1.start();
 	t2.start();

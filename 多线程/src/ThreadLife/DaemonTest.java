@@ -1,12 +1,12 @@
 package ThreadLife;
-//Ïß³ÌÄ¬ÈÏÊÇÓÃ»§Ïß³Ì
-//JVM±ØĞëµÈËùÓĞÓÃ»§Ïß³ÌÖ´ĞĞÍê²ÅÄÜÍ£Ö¹
+//çº¿ç¨‹é»˜è®¤æ˜¯ç”¨æˆ·çº¿ç¨‹
+//JVMå¿…é¡»ç­‰æ‰€æœ‰ç”¨æˆ·çº¿ç¨‹æ‰§è¡Œå®Œæ‰èƒ½åœæ­¢
 public class DaemonTest {
 public static void main(String[] args) {
 	Thread t=new Thread(new Alien());
-//	ÒªÉèÎªÊØ»¤Ïß³ÌÒ»¶¨ÒªÔÚÏß³Ì¿ªÊ¼Ç°ÉèÖÃ
+//	è¦è®¾ä¸ºå®ˆæŠ¤çº¿ç¨‹ä¸€å®šè¦åœ¨çº¿ç¨‹å¼€å§‹å‰è®¾ç½®
 	t.setDaemon(true);
-//	¿ÉÒÔ¿´µ½,HumanÔËĞĞµ½100,AlienÂíÉÏÍ£Ö¹ÔËĞĞ
+//	å¯ä»¥çœ‹åˆ°,Humanè¿è¡Œåˆ°100,Aliené©¬ä¸Šåœæ­¢è¿è¡Œ
 	t.start();
 	new Thread(new Human()).start();
 }
@@ -16,7 +16,7 @@ class Human implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
 		for(int i=0;i<100;i++) {
-			System.out.println("ÈËÀà"+i);	
+			System.out.println("äººç±»"+i);	
 		}
 
 	}
@@ -26,7 +26,7 @@ class Alien implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
 	for(int i=0;i<1000;i++) {
-		System.out.println("ÍâĞÇÈË"+i);
+		System.out.println("å¤–æ˜Ÿäºº"+i);
 	}
 	}
 }

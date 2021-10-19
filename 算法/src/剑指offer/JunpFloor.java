@@ -1,16 +1,16 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 public class JunpFloor {
-//	Ò»´ÎÖ»ÄÜÌøÒ»»ò¶ş¼¶
-//	Ìø×îºóÒ»¼¶Ê±Ö»ÄÜÓÉÆäÇ°ÃæÒ»¼¶»òÇ°Ãæ¶ş¼¶ÌøÉÏÀ´
+//	ä¸€æ¬¡åªèƒ½è·³ä¸€æˆ–äºŒçº§
+//	è·³æœ€åä¸€çº§æ—¶åªèƒ½ç”±å…¶å‰é¢ä¸€çº§æˆ–å‰é¢äºŒçº§è·³ä¸Šæ¥
     public int JumpFloortest1(int target) {
         if(target==1) return 1;
         if(target==2) return 2;
         return JumpFloortest1(target-1)+JumpFloortest1(target-2);
     }
-//    Ò»´ÎÄÜÌøn¼¶
-//    Ìø×îºóÒ»¼¶ÄÜ´ÓÇ°ÃæËùÓĞ¼¶ÌøÉÏÀ´£¬ËùÒÔÊÇf(1)+¡­¡­+f(n-2)+f(n-1)
-//    f(n-1)=f(1)+¡­¡­+f(n-2)
+//    ä¸€æ¬¡èƒ½è·³nçº§
+//    è·³æœ€åä¸€çº§èƒ½ä»å‰é¢æ‰€æœ‰çº§è·³ä¸Šæ¥ï¼Œæ‰€ä»¥æ˜¯f(1)+â€¦â€¦+f(n-2)+f(n-1)
+//    f(n-1)=f(1)+â€¦â€¦+f(n-2)
     public int JumpFloortest2(int target) {
         if(target==1) return 1;
         return 2*JumpFloortest2(target-1);

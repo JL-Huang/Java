@@ -1,12 +1,12 @@
 package ConcurrencyTest;
 
-//ÕâÀï³ö´íÖ®´¦ÔÚÓÚ£¬t1Ö´ĞĞµ½ÏÖÓà¶îÊ±£¬t2ÒÑ¾­Ö´ĞĞµ½È¡³öÓà¶î£¬ÕâÑù×Ót1ÏÔÊ¾µÄ¾ÍÊÇt2Ö´ĞĞÍêºóµÄÓà¶î
+//è¿™é‡Œå‡ºé”™ä¹‹å¤„åœ¨äºï¼Œt1æ‰§è¡Œåˆ°ç°ä½™é¢æ—¶ï¼Œt2å·²ç»æ‰§è¡Œåˆ°å–å‡ºä½™é¢ï¼Œè¿™æ ·å­t1æ˜¾ç¤ºçš„å°±æ˜¯t2æ‰§è¡Œå®Œåçš„ä½™é¢
 public class SynchronizedAccount {
 public static void main(String[] args) {
-	Account1 account1=new Account1(1000, "ÕÉ·òµÄÕË»§");
-//	ÏÂÃæËø×¡µÄÊÇÕâÀï£¬¶¼ÊÇÁ½¸ö²»Í¬µÄĞÂ½¨¶ÔÏó£¬ËøÆğÀ´²¢Ã»ÓĞÊ²Ã´ÒâÒå
-	Drawing1 d1=new Drawing1(account1, "ÆŞ×Ó²Ù×÷", 100, 1150);
-	Drawing1 d2=new Drawing1(account1, "ÕÉ·ò²Ù×÷", 200, 1000);
+	Account1 account1=new Account1(1000, "ä¸ˆå¤«çš„è´¦æˆ·");
+//	ä¸‹é¢é”ä½çš„æ˜¯è¿™é‡Œï¼Œéƒ½æ˜¯ä¸¤ä¸ªä¸åŒçš„æ–°å»ºå¯¹è±¡ï¼Œé”èµ·æ¥å¹¶æ²¡æœ‰ä»€ä¹ˆæ„ä¹‰
+	Drawing1 d1=new Drawing1(account1, "å¦»å­æ“ä½œ", 100, 1150);
+	Drawing1 d2=new Drawing1(account1, "ä¸ˆå¤«æ“ä½œ", 200, 1000);
 	Thread t1=new Thread(d1);
 	Thread t2=new Thread(d2);
 	t1.start();
@@ -37,19 +37,19 @@ class Drawing1 implements Runnable{
 		this.input = input;
 		this.output = output;
 	}
-//	ÕâÊÇÒ»¸ö·Ç³£µäĞÍµÄ´íÎó£¬Ïß³ÌµÄ²»°²È«ÊÇÓÉÓÚ×ÊÔ´±»²»Í¬Ïß³ÌÍ¬Ê±ĞŞ¸ÄÓë·ÃÎÊÒıÆğµÄ£¬ËùÒÔÒªËøµÄÊÇ×ÊÔ´
-//	°ÑÒ»¸ö·½·¨Ëø×¡£¬Ôòµ÷ÓÃÕâ¸ö·½·¨µÄ¶ÔÏó¼°Æä³ÉÔ±±äÁ¿»á±»Ëø×¡£¬Ã¿´ÎÖ»ÄÜÓÉÒ»¸öÏß³Ìµ÷ÓÃ
-//	¶øÕâÀïËäÈ»Ëø×¡ÁËDarwing1£¬µ«ÊÇÃ»ÓĞËø×¡Account1£¬ËùÒÔ²»ÄÜ½â¾öÎÊÌâ
+//	è¿™æ˜¯ä¸€ä¸ªéå¸¸å…¸å‹çš„é”™è¯¯ï¼Œçº¿ç¨‹çš„ä¸å®‰å…¨æ˜¯ç”±äºèµ„æºè¢«ä¸åŒçº¿ç¨‹åŒæ—¶ä¿®æ”¹ä¸è®¿é—®å¼•èµ·çš„ï¼Œæ‰€ä»¥è¦é”çš„æ˜¯èµ„æº
+//	æŠŠä¸€ä¸ªæ–¹æ³•é”ä½ï¼Œåˆ™è°ƒç”¨è¿™ä¸ªæ–¹æ³•çš„å¯¹è±¡åŠå…¶æˆå‘˜å˜é‡ä¼šè¢«é”ä½ï¼Œæ¯æ¬¡åªèƒ½ç”±ä¸€ä¸ªçº¿ç¨‹è°ƒç”¨
+//	è€Œè¿™é‡Œè™½ç„¶é”ä½äº†Darwing1ï¼Œä½†æ˜¯æ²¡æœ‰é”ä½Account1ï¼Œæ‰€ä»¥ä¸èƒ½è§£å†³é—®é¢˜
 	@Override
 	public synchronized void run() {
 		// TODO Auto-generated method stub
-		System.out.println(Thread.currentThread().getName()+"ÕË»§Ô­Óà¶î"+account.money);
+		System.out.println(Thread.currentThread().getName()+"è´¦æˆ·åŸä½™é¢"+account.money);
 		account.money+=input;
 		account.money-=output;
 
-		System.out.println(Thread.currentThread().getName()+"´æÈë½ğ¶î"+input);
-		System.out.println(Thread.currentThread().getName()+"È¡³öÓà¶î"+output);
-		System.out.println(Thread.currentThread().getName()+"ÕË»§ÏÖÓà¶î"+account.money);
+		System.out.println(Thread.currentThread().getName()+"å­˜å…¥é‡‘é¢"+input);
+		System.out.println(Thread.currentThread().getName()+"å–å‡ºä½™é¢"+output);
+		System.out.println(Thread.currentThread().getName()+"è´¦æˆ·ç°ä½™é¢"+account.money);
 		
 		
 	}

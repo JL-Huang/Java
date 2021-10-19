@@ -1,16 +1,16 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.LinkedList;
 
-//°ÑÖ»°üº¬ÖÊÒò×Ó2¡¢3ºÍ5µÄÊı³Æ×÷³óÊı£¨Ugly Number£©¡£
-//ÀıÈç6¡¢8¶¼ÊÇ³óÊı£¬µ«14²»ÊÇ£¬ÒòÎªËü°üº¬ÖÊÒò×Ó7¡£
-//Ï°¹ßÉÏÎÒÃÇ°Ñ1µ±×öÊÇµÚÒ»¸ö³óÊı¡£Çó°´´ÓĞ¡µ½´óµÄË³ĞòµÄµÚN¸ö³óÊı¡£
+//æŠŠåªåŒ…å«è´¨å› å­2ã€3å’Œ5çš„æ•°ç§°ä½œä¸‘æ•°ï¼ˆUgly Numberï¼‰ã€‚
+//ä¾‹å¦‚6ã€8éƒ½æ˜¯ä¸‘æ•°ï¼Œä½†14ä¸æ˜¯ï¼Œå› ä¸ºå®ƒåŒ…å«è´¨å› å­7ã€‚
+//ä¹ æƒ¯ä¸Šæˆ‘ä»¬æŠŠ1å½“åšæ˜¯ç¬¬ä¸€ä¸ªä¸‘æ•°ã€‚æ±‚æŒ‰ä»å°åˆ°å¤§çš„é¡ºåºçš„ç¬¬Nä¸ªä¸‘æ•°ã€‚
 public class GetUglyNumber_Solution {
 	public static void main(String[] args) {
 		GetUglyNumber_Solution getUglyNumber_Solution=new GetUglyNumber_Solution();
 		System.out.println(getUglyNumber_Solution.test(2178));
 	}
-//	ÕâÀïµÄË¼Â·ÊÇÎ¬»¤Èı¸ö¶ÓÁĞ,¿ÉÒÔÔÚO(n)Ê±¼ä¸´ÔÓ¶ÈÄÚÇó½â
+//	è¿™é‡Œçš„æ€è·¯æ˜¯ç»´æŠ¤ä¸‰ä¸ªé˜Ÿåˆ—,å¯ä»¥åœ¨O(n)æ—¶é—´å¤æ‚åº¦å†…æ±‚è§£
     public int test(int index) {
         LinkedList<Integer> list2=new LinkedList<Integer>();
         LinkedList<Integer> list3=new LinkedList<Integer>();

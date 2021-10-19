@@ -1,8 +1,8 @@
 package ThreadLife;
-//joinºÏ²¢Ïß³Ì,´ýµ÷ÓÃjoin·½·¨µÄ¶ÔÏóÏß³ÌÖ´ÐÐÍêºó,ÔÙÖ´ÐÐÆäËûÏß³Ì,ÔÚ¶ÔÏóÏß³ÌÖ´ÐÐÊ±ÆäËûÏß³Ì×èÈû
-//joinÊÇ³ÉÔ±·½·¨,ÐèÒªÊµÀý»¯¶ÔÏó
+//joinåˆå¹¶çº¿ç¨‹,å¾…è°ƒç”¨joinæ–¹æ³•çš„å¯¹è±¡çº¿ç¨‹æ‰§è¡Œå®ŒåŽ,å†æ‰§è¡Œå…¶ä»–çº¿ç¨‹,åœ¨å¯¹è±¡çº¿ç¨‹æ‰§è¡Œæ—¶å…¶ä»–çº¿ç¨‹é˜»å¡ž
+//joinæ˜¯æˆå‘˜æ–¹æ³•,éœ€è¦å®žä¾‹åŒ–å¯¹è±¡
 public class JoinTest {
-//	ÔÚmain·½·¨¿ÉÒÔÖ±½ÓÅ×³öÒì³£
+//	åœ¨mainæ–¹æ³•å¯ä»¥ç›´æŽ¥æŠ›å‡ºå¼‚å¸¸
 public static void main(String[] args) throws InterruptedException {
 	Thread t=new Thread(()-> {
 		for(int i=0;i<100;i++) {
@@ -13,7 +13,7 @@ public static void main(String[] args) throws InterruptedException {
 	t.start();
 	for(int i=0;i<100;i++) {
 		if(i==20) {
-//			±¾À´ÊÇ½»Ìæµ÷¶È,¶ÔtÖ´ÐÐÁËjoinºó,Ö÷Ïß³Ì±ØÐëµÈtÖ´ÐÐÍê²ÅÄÜ¼ÌÐøÖ´ÐÐ
+//			æœ¬æ¥æ˜¯äº¤æ›¿è°ƒåº¦,å¯¹tæ‰§è¡Œäº†joinåŽ,ä¸»çº¿ç¨‹å¿…é¡»ç­‰tæ‰§è¡Œå®Œæ‰èƒ½ç»§ç»­æ‰§è¡Œ
 			t.join();
 		}
 		System.out.println("main"+i);

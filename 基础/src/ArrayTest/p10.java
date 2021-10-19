@@ -2,25 +2,25 @@ package ArrayTest;
 
 import java.util.Arrays;
 
-//Êı×é
+//æ•°ç»„
 public class p10 {
 public static void main(String[] args) {
-//	¾²Ì¬³õÊ¼»¯
+//	é™æ€åˆå§‹åŒ–
 	 pp10[] p= {new pp10(1,"one"),new pp10(2,"two")};
-//	 ´òÓ¡Êı×éµÚÒ»ÖÖ·½·¨£¬forÑ­»·
+//	 æ‰“å°æ•°ç»„ç¬¬ä¸€ç§æ–¹æ³•ï¼Œforå¾ªç¯
 	for(int i=0;i<p.length;i++) {
 		System.out.println(p[i].name);
 	}
-//	Ä¬ÈÏ³õÊ¼»¯
+//	é»˜è®¤åˆå§‹åŒ–
 	int[] i3=new int[3];
-//	´òÓ¡Êı×éµÚ¶şÖÖ·½·¨£¬µ¼ÈëArray°ü
+//	æ‰“å°æ•°ç»„ç¬¬äºŒç§æ–¹æ³•ï¼Œå¯¼å…¥ArrayåŒ…
 	System.out.println(Arrays.toString(i3));
-//	¶¯Ì¬³õÊ¼»¯
+//	åŠ¨æ€åˆå§‹åŒ–
 	String[] str3=new String[3];
 	str3[0]="zero";
 	str3[1]="one";
 	str3[2]="two";
-//	´òÓ¡Êı×éµÚÈıÖÖ·½·¨foreach£¬Ö»ÄÜ¶Á²»ÄÜ¸Ä
+//	æ‰“å°æ•°ç»„ç¬¬ä¸‰ç§æ–¹æ³•foreachï¼Œåªèƒ½è¯»ä¸èƒ½æ”¹
 	for(String n:str3) {
 		System.out.println(n);
 	}

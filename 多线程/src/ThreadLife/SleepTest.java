@@ -1,5 +1,5 @@
 package ThreadLife;
-//sleep±§×Å×ÊÔ´Ë¯¾õ,½øÈë×èÈû×´Ì¬
+//sleepæŠ±ç€èµ„æºç¡è§‰,è¿›å…¥é˜»å¡çŠ¶æ€
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

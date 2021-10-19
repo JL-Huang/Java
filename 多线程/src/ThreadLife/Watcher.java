@@ -13,20 +13,20 @@ public static void main(String[] args) throws InterruptedException {
 				e.printStackTrace();
 			}
 		}
-		System.out.println("¹ş¹ş¹ş");
+		System.out.println("å“ˆå“ˆå“ˆ");
 	});	
-//	StateÀà,ÓÃÓÚ¹Û²ìÏß³Ì×´Ì¬,·µ»Øµ±Ç°×´Ì¬
-//	½øÈënew×´Ì¬
+//	Stateç±»,ç”¨äºè§‚å¯Ÿçº¿ç¨‹çŠ¶æ€,è¿”å›å½“å‰çŠ¶æ€
+//	è¿›å…¥newçŠ¶æ€
 	State s=t.getState();
 	System.out.println(s);
-//	½øÈërunnable×´Ì¬
+//	è¿›å…¥runnableçŠ¶æ€
 	t.start();
 	s=t.getState();
 	System.out.println(s);
-//	Ïß³ÌÔËĞĞºó,sleepÊ¹Ïß³Ì½øÈëtimed_waiting×´Ì¬
-//	×¢ÒâÕâĞĞ,ºÜÓĞÓÃ,Í¨¹ıState¶ÔÏóÔÚÒ»¸öÏß³Ì»ñµÃÁíÒ»¸öÏß³Ì×´Ì¬,È»ºóÍ¨¹ıÅĞ¶ÏÀ´¼à¿Ø
+//	çº¿ç¨‹è¿è¡Œå,sleepä½¿çº¿ç¨‹è¿›å…¥timed_waitingçŠ¶æ€
+//	æ³¨æ„è¿™è¡Œ,å¾ˆæœ‰ç”¨,é€šè¿‡Stateå¯¹è±¡åœ¨ä¸€ä¸ªçº¿ç¨‹è·å¾—å¦ä¸€ä¸ªçº¿ç¨‹çŠ¶æ€,ç„¶åé€šè¿‡åˆ¤æ–­æ¥ç›‘æ§
 	while(s!=Thread.State.TERMINATED) {
-//		»¹ÓĞÁíÒ»ÖÖ¼à¿ØÏß³Ì·½·¨Í¨¹ıµ±Ç°Ïß³ÌÊıÀ´ÅĞ¶Ï,µ±ÁíÒ»¸öÏß³ÌËÀÍö,Ïß³ÌÊı±ã¼õÉÙ1
+//		è¿˜æœ‰å¦ä¸€ç§ç›‘æ§çº¿ç¨‹æ–¹æ³•é€šè¿‡å½“å‰çº¿ç¨‹æ•°æ¥åˆ¤æ–­,å½“å¦ä¸€ä¸ªçº¿ç¨‹æ­»äº¡,çº¿ç¨‹æ•°ä¾¿å‡å°‘1
 //		int num=Thread.activeCount();
 //		if(num==1) {
 //			break;

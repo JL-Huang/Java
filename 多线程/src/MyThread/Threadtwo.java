@@ -1,24 +1,24 @@
 package MyThread;
-//·½·¨¶ş£ºÒ»¸öÀàÊµÏÖrunnable½Ó¿Ú£¬ÖØĞ´run·½·¨
+//æ–¹æ³•äºŒï¼šä¸€ä¸ªç±»å®ç°runnableæ¥å£ï¼Œé‡å†™runæ–¹æ³•
 public class Threadtwo implements Runnable{
-//ÔÚrun·½·¨ÊµÏÖ½ø³ÌÄÚÈİ
+//åœ¨runæ–¹æ³•å®ç°è¿›ç¨‹å†…å®¹
 	@Override
 	public void run() {
 		for(int i=0;i<2;i++) {
-			System.out.println("Ò»±ßÌı¸è");
+			System.out.println("ä¸€è¾¹å¬æ­Œ");
 		}
 		
 	}
 public static void main(String[] args) {
 //	Threadone to=new Threadone();
-////	ThreadÓĞÒ»¸öÊÇ²ÎÊıÎªRunnableÊµÏÖÀàµÄ¹¹Ôì·½·¨
+////	Threadæœ‰ä¸€ä¸ªæ˜¯å‚æ•°ä¸ºRunnableå®ç°ç±»çš„æ„é€ æ–¹æ³•
 //	Thread t=new Thread(to);
 //	t.start();
-//	¶ÔÓÚÏß³Ì£¬¿ÉÒÔÖ±½Ó²»ÉùÃ÷¶ÔÏó
+//	å¯¹äºçº¿ç¨‹ï¼Œå¯ä»¥ç›´æ¥ä¸å£°æ˜å¯¹è±¡
 	new Thread(new Threadone()).start();
 
 	for(int i=0;i<20;i++) {
-		System.out.println("Ò»±ßÇÃ´úÂë");
+		System.out.println("ä¸€è¾¹æ•²ä»£ç ");
 	}
 }
 }

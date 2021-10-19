@@ -1,9 +1,9 @@
-package ½£Ö¸offer;
-//ÇëÊµÏÖÒ»¸öº¯ÊıÓÃÀ´ÅĞ¶Ï×Ö·û´®ÊÇ·ñ±íÊ¾ÊıÖµ£¨°üÀ¨ÕûÊıºÍĞ¡Êı£©¡£
-//ÀıÈç£¬×Ö·û´®"+100","5e2","-123","3.1416"ºÍ"-1E-16"¶¼±íÊ¾ÊıÖµ¡£ 
-//µ«ÊÇ"12e","1a3.14","1.2.3","+-5"ºÍ"12e+4.3"¶¼²»ÊÇ¡£
+package å‰‘æŒ‡offer;
+//è¯·å®ç°ä¸€ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦è¡¨ç¤ºæ•°å€¼ï¼ˆåŒ…æ‹¬æ•´æ•°å’Œå°æ•°ï¼‰ã€‚
+//ä¾‹å¦‚ï¼Œå­—ç¬¦ä¸²"+100","5e2","-123","3.1416"å’Œ"-1E-16"éƒ½è¡¨ç¤ºæ•°å€¼ã€‚ 
+//ä½†æ˜¯"12e","1a3.14","1.2.3","+-5"å’Œ"12e+4.3"éƒ½ä¸æ˜¯ã€‚
 public class isNumeric {
-//	²»¶®ÕıÔò£¬Ğ´³öÀ´µÄ´úÂë¾ÍºÜ³ó£¬Ì«ÀÃÁË
+//	ä¸æ‡‚æ­£åˆ™ï¼Œå†™å‡ºæ¥çš„ä»£ç å°±å¾ˆä¸‘ï¼Œå¤ªçƒ‚äº†
 	public static void main(String[] args) {
 		isNumeric isNumericc=new isNumeric();
 		char[] chars=new String("123.45e+6").toCharArray();
@@ -26,7 +26,7 @@ public class isNumeric {
         default:return false;
         }
     }
-//    ÅĞ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÊÇÕûÊı»òĞ¡Êı
+//    åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦ä¸²æ˜¯å¦æ˜¯æ•´æ•°æˆ–å°æ•°
     public boolean part1(String str) {
 //    	System.out.println(str);
     	String[] strs2=str.split("\\.");
@@ -52,7 +52,7 @@ public class isNumeric {
     	if(strs2.length>2) return false;
     	return true;
     }
-//    ÅĞ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÊÇ´ø·ûºÅÕûÊı
+//    åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦ä¸²æ˜¯å¦æ˜¯å¸¦ç¬¦å·æ•´æ•°
     public boolean part2(String str) {
     	String[] strs2=str.split("\\.");
     	if(strs2.length==1) {

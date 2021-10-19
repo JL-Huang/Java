@@ -20,7 +20,7 @@ public class Response {
 		this.s = s;
 	}
 //	public void send() throws IOException {
-//		sethtml("Á¬½Ó³É¹¦","³É¹¦ÁË");
+//		sethtml("è¿æ¥æˆåŠŸ","æˆåŠŸäº†");
 	public void send(String title,String body) throws IOException {
 		sethtml( title,body);
 		if(content==null) {
@@ -32,7 +32,7 @@ public class Response {
 		 BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
 		 bw.write(responseinfo.toString());
 		 bw.flush();
-//		 ÕâÒ»ĞĞ·Ç³£¹Ø¼ü£¬Ö´ĞĞµ½ÕâÒ»²½Ã»ÓĞ¹ØSocket£¬ÏÂÒ»¸öSocket¾Í½ø²»ÁË
+//		 è¿™ä¸€è¡Œéå¸¸å…³é”®ï¼Œæ‰§è¡Œåˆ°è¿™ä¸€æ­¥æ²¡æœ‰å…³Socketï¼Œä¸‹ä¸€ä¸ªSocketå°±è¿›ä¸äº†
 		 s.close();
 	}
 	public void sethtml(String title,String body) {

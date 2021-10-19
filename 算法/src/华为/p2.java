@@ -1,14 +1,14 @@
-package »ªÎª;
+package åä¸º;
 
 import java.util.Scanner;
 
-//Ğ´³öÒ»¸ö³ÌĞò£¬½ÓÊÜÒ»¸öÓÉ×ÖÄ¸ºÍÊı×Ö×é³ÉµÄ×Ö·û´®£¬ºÍÒ»¸ö×Ö·û£¬È»ºóÊä³öÊäÈë×Ö·û´®ÖĞº¬ÓĞ¸Ã×Ö·ûµÄ¸öÊı¡£²»Çø·Ö´óĞ¡Ğ´¡£
+//å†™å‡ºä¸€ä¸ªç¨‹åºï¼Œæ¥å—ä¸€ä¸ªç”±å­—æ¯å’Œæ•°å­—ç»„æˆçš„å­—ç¬¦ä¸²ï¼Œå’Œä¸€ä¸ªå­—ç¬¦ï¼Œç„¶åè¾“å‡ºè¾“å…¥å­—ç¬¦ä¸²ä¸­å«æœ‰è¯¥å­—ç¬¦çš„ä¸ªæ•°ã€‚ä¸åŒºåˆ†å¤§å°å†™ã€‚
 public class p2 {
 public static void main(String[] args) {
 //	 Scanner sc=new Scanner(System.in);
-////	 next´Ó¿ªÍ·»ò¿Õ¸ñ»ò»»ĞĞ·û¶Áµ½ÏÂÒ»¸ö»»ĞĞ·û»ò¿Õ¸ñ£¬È»ºó²úÉúÒ»¸ö½áÎ²
+////	 nextä»å¼€å¤´æˆ–ç©ºæ ¼æˆ–æ¢è¡Œç¬¦è¯»åˆ°ä¸‹ä¸€ä¸ªæ¢è¡Œç¬¦æˆ–ç©ºæ ¼ï¼Œç„¶åäº§ç”Ÿä¸€ä¸ªç»“å°¾
 //     String str = sc.next();
-////     nextLine´Ó¿ªÍ·»ò½áÎ²»ò»»ĞĞ·û¶Áµ½ÏÂÒ»¸ö»»ĞĞ·û»ò½áÎ²
+////     nextLineä»å¼€å¤´æˆ–ç»“å°¾æˆ–æ¢è¡Œç¬¦è¯»åˆ°ä¸‹ä¸€ä¸ªæ¢è¡Œç¬¦æˆ–ç»“å°¾
 //     String br = sc.nextLine();
 //     System.out.println(str);
 //     System.out.println(br);
@@ -20,13 +20,13 @@ public static void main(String[] args) {
 		while(sc.hasNextLine()){
 			String s=sc.nextLine();
 			String d=sc.nextLine();
-			//toUpperCase×ª´óĞ´
+			//toUpperCaseè½¬å¤§å†™
 			String s1=s.toUpperCase();
 			String d1=d.toUpperCase();
-//			StringÒ»¸ö×Ö·û×ªchar:charAt(int)
+//			Stringä¸€ä¸ªå­—ç¬¦è½¬char:charAt(int)
 			char dd=d1.charAt(0);
 			int i=0;
-//		String×ªcharÊı×é£ºtoCharArrY();
+//		Stringè½¬charæ•°ç»„ï¼štoCharArrY();
 			char[] ss=s1.toCharArray();
 		for(char temp:ss){
 			if(dd==temp){

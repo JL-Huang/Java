@@ -1,24 +1,24 @@
-�������ֵ��ܽ�
-private��default��protected��public����ͬ�࣬ͬ�������࣬���������
-final���κ��಻�ɼ̳У�����������д���������ɸı�
-static���κ��Ϊ��̬����������û�ж���ֱ�ӵ��ã�������Ϊ��̬���������Ϊ��̬��
-��:	һ��java�ļ�ֻ����һ���౻public���Σ�һ�㲻�����η�������static�����η�ֻ������Ϊ��̬�ڲ��ࡣ
- 	 �ڲ����Ϊ��̬��Ǿ�̬��ʵ����ʱ��Ҫ�������ⲿ�ࡣ��̬�ڲ���ֻ�ܷ����ⲿ��ľ�̬��Ա�;�̬������
- 	 ���ǿ��Է����Լ��ڲ��ķǾ�̬��������thisָ�뼴�ɡ��Ǿ�̬����Է����ⲿ��ķǾ�̬������ֻ��Ҫ
- 	 �ⲿ��.this.�ⲿ��������ɣ������Լ��ڲ��ķǾ�̬��������̬��һ��this.�ڲ��������
- 	 ��̬��newʱ��ֻ��Ҫ�����ⲿ�༴�ɣ����Ǿ�̬�ڲ��౻newʱ�����õ����ⲿ��Ĺ��췽��
-����:û�ӵ�static�ķ������ܱ��Ǿ�̬����߷Ǿ�̬����ֱ�ӵ��ã�
-	Ҫ������һ��Ҫ���½�һ������һ�����η�Ϊprivate
-	ͬһ�����С���ʹ�ǷǾ�̬������Ҳ���Բ�ʵ��������ֱ��ʹ��
-����:�����ж���Ľ�ȫ�ֱ��������Ա��������з������ã����÷Ǿ�̬ȫ�ֱ���ʱ����Ҫ���½�һ������Ķ���
-	 �����þ�̬ȫ�ֱ���ʱ��ֻ��Ҫ��.��������
-	 �ڷ����ڲ�����ı����оֲ�������ֻ����finalһ�����η���ֻ�ܸ���ǰ��������
+基础部分的总结
+private，default，protected，public是以同类，同包，子类，所有类递增
+final修饰后，类不可继承，方法不可重写，变量不可改变
+static修饰后变为静态，方法可以没有对象直接调用，变量变为静态变量，类变为静态类
+类:	一个java文件只能有一个类被public修饰，一般不加修饰符。加了static的修饰符只能是作为静态内部类。
+ 	 内部类分为静态与非静态，实例化时都要先声明外部类。静态内部类只能访问外部类的静态成员和静态方法，
+ 	 但是可以访问自己内部的非静态变量，用this指针即可。非静态类可以访问外部类的非静态变量，只需要
+ 	 外部类.this.外部类变量即可，访问自己内部的非静态变量跟静态类一样this.内部类变量。
+ 	 静态被new时，只需要声明外部类即可，而非静态内部类被new时，还得调用外部类的构造方法
+方法:没加的static的方法不能被非静态类或者非静态对象直接调用，
+	要调用则一定要先新建一个对象，一般修饰符为private
+	同一个类中。即使是非静态方法，也可以不实例化对象直接使用
+变量:在类中定义的叫全局变量，可以被该类所有方法调用，调用非静态全局变量时，需要先新建一个该类的对象，
+	 而调用静态全局变量时，只需要类.变量即可
+	 在方法内部定义的变量叫局部变量，只能有final一个修饰符，只能给当前方法调用
 
 hashcode,==,equals:
-==�Ƚϵ��ǵ�ַ����������ʵ��������ָ���ַ���ǳ����أ�����ֵһ����true,������Integer������[-128,127]����������
-�ӻ������õ����ݣ����Է���false
-hashcode�Ǹ��ݶ����ַ���ɵ�һ���룬��ַ��ͬhashcodeһ����ͬ����֮������
-equal�Ƚϵ�Ҳ�ǵ�ַ�����ǿ�����дequals����ʵ�ֲ�ͬ�ıȽ�
+==比较的是地址，基本类型实例化都是指向地址都是常量池，所以值一样则true,但对于Integer，超过[-128,127]的数，不是
+从缓冲区拿的数据，所以返回false
+hashcode是根据对象地址生成的一个码，地址相同hashcode一定相同，反之不成立
+equal比较的也是地址，但是可以重写equals方法实现不同的比较
 
 Iterator__Collection___Set__HashSet
 					|	|__Treeset
@@ -33,18 +33,18 @@ Map__HashMap
 |
 |__HashTable
 
-Set:Set��һ��Ԫ�������ظ���������Ԫ��û��������ֻ������������
-	Set�ӿ�������ʵ���࣬һ����HashSet����ײ�ʵ����ͨ��HashSet��TreeSet
-	HashSet�ĵײ�ʵ����ͨ��HashMap���Լ�����ʽ�洢���ݣ����Բ����ظ�
-	TreeSet�ĵײ�ʵ����ͨ��TreeMap
-Set�ı�������:--for(E temp:set){temp};
+Set:Set是一种元素无序重复的容器，元素没有索引，只能依靠遍历。
+	Set接口有两个实现类，一个是HashSet，其底层实现是通过HashSet或TreeSet
+	HashSet的底层实现是通过HashMap，以键的形式存储数据，所以不可重复
+	TreeSet的底层实现是通过TreeMap
+Set的遍历方法:--for(E temp:set){temp};
 			----for(Iterator<E> iterator=set.iterator();iterator.hasnext();)
 				{iterator.next()};
-List:List��Ԫ��������ظ����������ַ�ΪArrayList���飬Vector������LinkList��������
-	Vector���̰߳�ȫ��
-	ArrayList���̲߳���ȫ�ģ�����Ч�ʺܸߣ���Ϊ����ֱ����������������ɾ��Ч�ʵ�
-	LinkList��ɾ��Ч�ʺܸߣ���Ϊ����ֱ����ָ����������ǲ���Ч�ʺܵ�
-ArrayList�ı�������:--for(int i=0;i<list.size();i++){list.get(i)};
+List:List是元素有序可重复的容器，又分为ArrayList数组，Vector向量，LinkList链表三类
+	Vector是线程安全的
+	ArrayList是线程不安全的，查找效率很高，因为可以直接用索引，但是增删改效率低
+	LinkList增删查效率很高，因为可以直接用指针操作，但是查找效率很低
+ArrayList的遍历方法:--for(int i=0;i<list.size();i++){list.get(i)};
 			----for(E temp:list){temp};
 			----for(Iterator<E> iterator=list.iterator();iterator.hasnext();)
 				{iterator.next()};
@@ -54,23 +54,23 @@ ArrayList�ı�������:--for(int i=0;i<list.size();i++){list.get(i)};
 				e=iterator.next();
 				iterator.remove();
 				}return e;
-Map:Map�Ǽ�ֵ�ԣ���ʵ������HashMap��HashTable��TreeMap����
-	HashTable�̰߳�ȫ��������Ԫ��Ϊ��
-	HashMap��ͨ����ϣ������ʽ�洢���ݣ��������������������ŵ㡣�洢ʱ��ÿһ����ֵ����ĳ���㷨����Ψһ�Ĺ�ϣ�룬
-			��ϣ�����ͨ��ĳ���㷨�õ���ϣֵ����ϣֵ������������λͰ������ĸ������ҵ���λͰ����ÿ��Ԫ����һ��
-			�ڵ㡣�洢ʱ���ȿ���ϣֵ�Ҷ�Ӧ����λ�ã�������Ԫ�أ����������ķ�ʽ���ڸ�Ԫ�ص�β�ڵ����һ���ڵ㣬
-			����ʱҲ�Ǹ��ݹ�ϣֵ���������ٱ�������
-	TreeMap�����ú�����㷨��������Ԫ��ʱ�Ϳ��Ը��ݼ�ֵ�Զ�����Ĭ���ǱȽϼ�ֵ��С��Ҳ�����Զ�����ʵ��Comparable
-			�ӿڣ�ʵ����ӿڵıȽϷ�����Ȼ���TreeMap�ļ�ֵ��Ϊ����Ķ��󼴿ɡ�
-	Map����һ��keyset()���������᷵��һ��Set���������صĲ��ǿ����������ã��Է��ص�Set������в�������Ӱ��Map����
-Map�ı�������:--Set<E> set=map.keyset();
-			 	����set
+Map:Map是键值对，其实现类有HashMap，HashTable，TreeMap三种
+	HashTable线程安全，不允许元素为空
+	HashMap是通过哈希表的形式存储数据，集合了数组与链表的优点。存储时，每一个键值会有某种算法生成唯一的哈希码，
+			哈希码可以通过某种算法得到哈希值，哈希值决定了它可以位桶数组的哪个索引找到。位桶数组每个元素是一个
+			节点。存储时，先看哈希值找对应数组位置，若已有元素，则用链表的方式存在该元素的尾节点的下一个节点，
+			查找时也是根据哈希值先找数组再遍历链表
+	TreeMap是利用红黑树算法，在添加元素时就可以根据键值自动排序，默认是比较键值大小，也可以自定义类实现Comparable
+			接口，实现其接口的比较方法，然后把TreeMap的键值设为该类的对象即可。
+	Map类有一个keyset()方法，它会返回一个Set对象，它返回的不是拷贝而是引用，对返回的Set对象进行操作，会影响Map对象
+Map的遍历方法:--Set<E> set=map.keyset();
+			 	遍历set
 
-			 --Set<Entry<k,V>> set=map.enteySet();	//ֱ�ӻ�ü�ֵ�Դ���Set
+			 --Set<Entry<k,V>> set=map.enteySet();	//直接获得键值对存入Set
 			 --for(Iterator<Entry<k,V>> iterator=set.iterator();iterator.next();){
 			 	Entry<K,V> entry=interator.next();
 			 	entry.getKey();
 			 	entry.getValue();
 			 	}
-Iterator:�����������Ǳ��ַǳ��ߵĽӿڣ�������Ϊforѭ����i����������ͨ��list��set��iterator()����������û�д��
-		�������ݣ���next������ŵĲ����������ݣ���hasnext()�������ز������ͣ�����Ϊѭ���ж�����
+Iterator:迭代器，它是辈分非常高的接口，可以作为for循环的i，其对象可以通过list或set的iterator()建立。它并没有存放
+		容器内容，其next方法存放的才是容器内容，其hasnext()方法返回布尔类型，可作为循环判断依据

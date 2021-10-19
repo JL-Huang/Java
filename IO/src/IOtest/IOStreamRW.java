@@ -12,12 +12,12 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 
-//×ª»»Á÷£ºInputStreamReaderÓëOutputStreamWritter
-//1.½«×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷
-//2.Ö¸¶¨×Ö·û¼¯
+//è½¬æ¢æµï¼šInputStreamReaderä¸OutputStreamWritter
+//1.å°†å­—èŠ‚æµè½¬æ¢ä¸ºå­—ç¬¦æµ
+//2.æŒ‡å®šå­—ç¬¦é›†
 public class IOStreamRW {
 public static void main(String[] args) {
-//	System.inÊÇ×Ö½ÚÊäÈëÁ÷£¬×÷Îªisr1¹¹Ôì·½·¨µÄ²ÎÊı²úÉú×Ö·ûÁ÷¶ÔÏó£¬È»ºó¼ÓBufferÌá¸ßĞ§ÂÊ
+//	System.inæ˜¯å­—èŠ‚è¾“å…¥æµï¼Œä½œä¸ºisr1æ„é€ æ–¹æ³•çš„å‚æ•°äº§ç”Ÿå­—ç¬¦æµå¯¹è±¡ï¼Œç„¶ååŠ Bufferæé«˜æ•ˆç‡
 //	InputStreamReader isr=new InputStreamReader(System.in);
 	test();
 	test1();
@@ -28,9 +28,9 @@ public static void main(String[] args) {
 		try {
 			str=br.readLine();
 			bw.write(str);
-//			¼ÓÁËÕâĞĞ£¬ÒÔºóµÄÊä³ö»á×Ô¶¯»»µ½Êä³öµÄÏÂÒ»ĞĞ
+//			åŠ äº†è¿™è¡Œï¼Œä»¥åçš„è¾“å‡ºä¼šè‡ªåŠ¨æ¢åˆ°è¾“å‡ºçš„ä¸‹ä¸€è¡Œ
 			bw.newLine();
-//			×¢Òâ£¬ÕâÀïÊÇÒ»¶¨Òªflush£¬ÒòÎªÊäÈëÄÚÈİÊÇ´æµ½brÕâ¸ö»º³åÁ÷£¬²»Ç¿ÖÆË¢ĞÂ»áÖ±µ½´æÂú²ÅÊä³ö
+//			æ³¨æ„ï¼Œè¿™é‡Œæ˜¯ä¸€å®šè¦flushï¼Œå› ä¸ºè¾“å…¥å†…å®¹æ˜¯å­˜åˆ°brè¿™ä¸ªç¼“å†²æµï¼Œä¸å¼ºåˆ¶åˆ·æ–°ä¼šç›´åˆ°å­˜æ»¡æ‰è¾“å‡º
 			bw.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -41,9 +41,9 @@ public static void main(String[] args) {
 }
 public static void test() {
 	try {
-//		URL¶ÔÏóµÄopenStream()·½·¨¿ÉÒÔ´´½¨Ò»¸ö×Ö½ÚÊäÈëÁ÷
-//		isrµÄ¹¹Ôì·½·¨»¹¿ÉÒÔ·ÅÒ»¸ö²ÎÊı£¬¾ÍÊÇ×Ö½ÚÊäÈëÁ÷×ª»»Îª×Ö·ûÁ÷µÄ±àÂë½âÂë·½Ê½
-//		ÕâÀïÏÈ×¢ÊÍµôÁË£¬»á¾­³£µ¯³öÌ«·³ÈË
+//		URLå¯¹è±¡çš„openStream()æ–¹æ³•å¯ä»¥åˆ›å»ºä¸€ä¸ªå­—èŠ‚è¾“å…¥æµ
+//		isrçš„æ„é€ æ–¹æ³•è¿˜å¯ä»¥æ”¾ä¸€ä¸ªå‚æ•°ï¼Œå°±æ˜¯å­—èŠ‚è¾“å…¥æµè½¬æ¢ä¸ºå­—ç¬¦æµçš„ç¼–ç è§£ç æ–¹å¼
+//		è¿™é‡Œå…ˆæ³¨é‡Šæ‰äº†ï¼Œä¼šç»å¸¸å¼¹å‡ºå¤ªçƒ¦äºº
 		
 		InputStreamReader isr=new InputStreamReader(new URL("http://www.baidu.com").openStream(),"UTF-8");
 		BufferedReader bf=new BufferedReader(isr);
@@ -60,13 +60,13 @@ public static void test() {
 
 public static void test1() {
 	try {
-//		´´½¨Êä³öÁ÷£¬Í¬ÑùÊÇ°Ñ×Ö½ÚÁ÷±ä³É×Ö·ûÁ÷
+//		åˆ›å»ºè¾“å‡ºæµï¼ŒåŒæ ·æ˜¯æŠŠå­—èŠ‚æµå˜æˆå­—ç¬¦æµ
 		OutputStreamWriter osw=new OutputStreamWriter(new FileOutputStream(new File("baidu.txt")),"UTF-8");
 		BufferedWriter bw=new BufferedWriter(osw);
-//		Ö¸¶¨Êä³öÄÚÈİ
+//		æŒ‡å®šè¾“å‡ºå†…å®¹
 		String str="hdash";
 		bw.write(str);
-//		Í¬ÑùĞèÒªflush
+//		åŒæ ·éœ€è¦flush
 		bw.flush();
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block

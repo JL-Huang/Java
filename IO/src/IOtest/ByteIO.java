@@ -1,5 +1,5 @@
 package IOtest;
-//×Ö½ÚÊäÈëÁ÷ÊÇÖ±½Ó¶ÔÄÚ´æ²Ù×÷£¬ÓĞGC½øĞĞÄÚ´æ¹ÜÀí£¬²»ĞèÒªclose
+//å­—èŠ‚è¾“å…¥æµæ˜¯ç›´æ¥å¯¹å†…å­˜æ“ä½œï¼Œæœ‰GCè¿›è¡Œå†…å­˜ç®¡ç†ï¼Œä¸éœ€è¦close
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -7,16 +7,16 @@ import java.io.IOException;
 public class ByteIO {
 public static void main(String[] args) {
 	System.out.println(ByteI());
-//	ÏÂÃæµÄ´úÂë»áÊä³öµØÖ·£¬Ô­ÒòÊÇ·µ»ØµÄÊÇĞ´ºÃµÄ×Ö½ÚÊı×é£¬»¹Ã»ÓĞ¾­¹ıÒëÂë
+//	ä¸‹é¢çš„ä»£ç ä¼šè¾“å‡ºåœ°å€ï¼ŒåŸå› æ˜¯è¿”å›çš„æ˜¯å†™å¥½çš„å­—èŠ‚æ•°ç»„ï¼Œè¿˜æ²¡æœ‰ç»è¿‡è¯‘ç 
 	System.out.println(ByteO());
-//	String¹¹Ôì·½·¨µÄÆ«ÒÆÁ¿Óë³¤¶È£¬Õë¶ÔµÄ¶¼ÊÇ×Ö½ÚÊı×é¶ø²»ÊÇ×Ö·û´®
+//	Stringæ„é€ æ–¹æ³•çš„åç§»é‡ä¸é•¿åº¦ï¼Œé’ˆå¯¹çš„éƒ½æ˜¯å­—èŠ‚æ•°ç»„è€Œä¸æ˜¯å­—ç¬¦ä¸²
 	System.out.println(new String(ByteO(),0,ByteO().length-4));
 }
 public static StringBuffer ByteI() {
 	String str="caahszxchz";
 	StringBuffer sb=new StringBuffer();
-	byte[] bytes1=str.getBytes();	//ÕâÊÇÒª¶ÁÈ¡µÄÈİÆ÷
-	ByteArrayInputStream is=new ByteArrayInputStream(bytes1);	//×Ö½ÚÊäÈëÁ÷ÒÔ¼°Æä¹¹Ôì·½·¨
+	byte[] bytes1=str.getBytes();	//è¿™æ˜¯è¦è¯»å–çš„å®¹å™¨
+	ByteArrayInputStream is=new ByteArrayInputStream(bytes1);	//å­—èŠ‚è¾“å…¥æµä»¥åŠå…¶æ„é€ æ–¹æ³•
 	try {
 		int i=-1;
 		byte[] temp=new byte[2];
@@ -30,19 +30,19 @@ public static StringBuffer ByteI() {
 	return sb;
 }
 public static byte[] ByteO() {
-//	×Ö½ÚÊä³öÁ÷Ğ´Èë×Ö½ÚÔ´£¬³¤¶È²»ºÃ°ÑÎÕ£¬ËùÒÔÓÉÏµÍ³×ÔĞĞ²úÉúÔ´
-//	ÕâÀï²»ÄÜÓÃOutputStream£¬ÒòÎªByteArrayOutputStream()ÓĞĞÂÔö·½·¨²»ÄÜÊµÏÖ¶àÌ¬
+//	å­—èŠ‚è¾“å‡ºæµå†™å…¥å­—èŠ‚æºï¼Œé•¿åº¦ä¸å¥½æŠŠæ¡ï¼Œæ‰€ä»¥ç”±ç³»ç»Ÿè‡ªè¡Œäº§ç”Ÿæº
+//	è¿™é‡Œä¸èƒ½ç”¨OutputStreamï¼Œå› ä¸ºByteArrayOutputStream()æœ‰æ–°å¢æ–¹æ³•ä¸èƒ½å®ç°å¤šæ€
 	ByteArrayOutputStream os=new ByteArrayOutputStream();
 	String str="ahauhaschacuh";
 	try {
 		os.write(str.getBytes());
-		os.flush();			//ÈÎºÎÊä³öÁ÷Ğ´Íêºó¶¼Òªflush£¬°ÑÊä³öÁ÷»º³åÇøµÄÊı¾İÈ«²¿Ë¢ĞÂ³öÈ¥
+		os.flush();			//ä»»ä½•è¾“å‡ºæµå†™å®Œåéƒ½è¦flushï¼ŒæŠŠè¾“å‡ºæµç¼“å†²åŒºçš„æ•°æ®å…¨éƒ¨åˆ·æ–°å‡ºå»
 
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-//	½«×Ö½ÚÊä³öÁ÷Ğ´ºÃµÄÊı×éÊä³öÊ¹ÓÃµÄÊÇ×Ö½ÚÊä³öÁ÷µÄtoByteArray()·½·¨
+//	å°†å­—èŠ‚è¾“å‡ºæµå†™å¥½çš„æ•°ç»„è¾“å‡ºä½¿ç”¨çš„æ˜¯å­—èŠ‚è¾“å‡ºæµçš„toByteArray()æ–¹æ³•
 	return os.toByteArray();	
 }
 }

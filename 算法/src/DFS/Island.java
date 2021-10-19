@@ -1,6 +1,6 @@
 package DFS;
-//µºÓìÎÊÌâ£¬ÇóµºÓì´óĞ¡£¬¾­µäDFS
-//Èç¹ûÊÇÇóµºÓìÊıÁ¿£¬¾ÍÔÚ±éÀúÊ±Óöµ½µºÓì++£¬È»ºóµİ¹é°ÑÏàÁ¬µºÓìÈ«±ä0
+//å²›å±¿é—®é¢˜ï¼Œæ±‚å²›å±¿å¤§å°ï¼Œç»å…¸DFS
+//å¦‚æœæ˜¯æ±‚å²›å±¿æ•°é‡ï¼Œå°±åœ¨éå†æ—¶é‡åˆ°å²›å±¿++ï¼Œç„¶åé€’å½’æŠŠç›¸è¿å²›å±¿å…¨å˜0
 public class Island {
 	public static void main(String[] args) {
 		int[][] nums= {{1,1,1,0},
@@ -22,7 +22,7 @@ public class Island {
 		}
 		System.out.println(result);
 	}
-//	×î´óµºÓì
+//	æœ€å¤§å²›å±¿
 	public static int recur1(int[][] nums,int row,int col) {
 		if(row<0||row>=nums.length||col<0||col>=nums[0].length||nums[row][col]==0) return 0;
 			nums[row][col]=0;
@@ -32,7 +32,7 @@ public class Island {
 					recur1(nums, row, col-1)+1;
 
 	}
-//	µºÓì¸öÊı
+//	å²›å±¿ä¸ªæ•°
 	public static void recur2(int[][] nums,int row,int col) {
 		if(row<0||row>=nums.length||col<0||col>=nums[0].length||nums[row][col]==0) return ;
 		if(nums[row][col]==1) {

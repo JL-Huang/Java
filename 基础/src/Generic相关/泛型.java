@@ -1,17 +1,17 @@
-package GenericÏà¹Ø;
-//·ºĞÍ
-public class ·ºĞÍ {
+package Genericç›¸å…³;
+//æ³›å‹
+public class æ³›å‹ {
 public static void main(String[] args) {
 	Testnogeneric tng=new Testnogeneric();
-//	×ÓÀàÇ¿×ª¸¸Àà,ËùÒÔËäÈ»TestnogenericÖĞµÚÒ»¸ö²ÎÊıÊÇObjectÀà,µ«¿ÉÒÔÖ±½Ó¸³×Ö·û´®Öµ
+//	å­ç±»å¼ºè½¬çˆ¶ç±»,æ‰€ä»¥è™½ç„¶Testnogenericä¸­ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯Objectç±»,ä½†å¯ä»¥ç›´æ¥èµ‹å­—ç¬¦ä¸²å€¼
 	tng.set("eer", 0);
-//	ÕâÀï¿ÉÒÔ¿´µ½,·µ»ØµÄÊÇObjectÀàĞÍ,±ØĞëÇ¿×ª²ÅÄÜ±ä³É×ÓÀàString
+//	è¿™é‡Œå¯ä»¥çœ‹åˆ°,è¿”å›çš„æ˜¯Objectç±»å‹,å¿…é¡»å¼ºè½¬æ‰èƒ½å˜æˆå­ç±»String
 	String str1=(String) tng.get(0);
 	Testgeneric<String> tg=new Testgeneric();
-	tg.set("Êı×Ö",1 );
+	tg.set("æ•°å­—",1 );
 	tg.get(1);
 	System.out.println(tg.objectlist[1]);
-//	±¨´í,ÒòÎªÒÑ¾­ÉÏÃæÒÑ¾­Ëø¶¨tg.set·½·¨µÚÒ»¸ö²ÎÊıÎªString
+//	æŠ¥é”™,å› ä¸ºå·²ç»ä¸Šé¢å·²ç»é”å®štg.setæ–¹æ³•ç¬¬ä¸€ä¸ªå‚æ•°ä¸ºString
 //	tg.set(123, 2);
 }
 }
@@ -24,7 +24,7 @@ class Testnogeneric{
 		return objlist[index];
 	}
 }
-//·ºĞÍµÄĞÎ²ÎÒ»°ãÎªTEVÈı¸ö×ÖÄ¸,¼ÓÔÚÀàÖ®ºó
+//æ³›å‹çš„å½¢å‚ä¸€èˆ¬ä¸ºTEVä¸‰ä¸ªå­—æ¯,åŠ åœ¨ç±»ä¹‹å
 class Testgeneric<E>{
 	Object[] objectlist=new Object[5];
 	public void set(E e,int index) {
@@ -32,7 +32,7 @@ class Testgeneric<E>{
 	}
 	@SuppressWarnings("unchecked")
 	public E get(int index) {
-//		·ºĞÍÒ²ÊÇĞèÒªÇ¿×ªµÄ,µ«ÊÇ¿ÉÒÔÔÚÕâÀïÇ¿×ª,²»ĞèÒªµ÷ÓÃÊ±ÔÙÇ¿×ª
+//		æ³›å‹ä¹Ÿæ˜¯éœ€è¦å¼ºè½¬çš„,ä½†æ˜¯å¯ä»¥åœ¨è¿™é‡Œå¼ºè½¬,ä¸éœ€è¦è°ƒç”¨æ—¶å†å¼ºè½¬
 		return (E) objectlist[index];
 	}
 }

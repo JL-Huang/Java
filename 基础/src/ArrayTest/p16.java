@@ -1,12 +1,12 @@
 package ArrayTest;
-//°ü×°Àà
+//åŒ…è£…ç±»
 public class p16 {
 public static void main(String[] args) {
-//	abc¾ùÎªIntegerÀàĞÍ
+//	abcå‡ä¸ºIntegerç±»å‹
 	Integer a=new Integer(1);
 	Integer b=Integer.valueOf(2);
 	Integer c=Integer.valueOf("3");
-//	½«IntegerÀàĞÍ×ª»»Îªint»òdouble
+//	å°†Integerç±»å‹è½¬æ¢ä¸ºintæˆ–double
 	int d=b.intValue();
 	double e=c.doubleValue();
 	Object[] f= {a,b,c,d,e};
@@ -14,26 +14,26 @@ public static void main(String[] args) {
 		System.out.println(temp);
 	}
 	Integer g=new Integer("4");
-//	String×ªÎªInteger
+//	Stringè½¬ä¸ºInteger
 	Integer h=Integer.parseInt("15");
 	System.out.println(h);
-//	Integer×ªÎªString
+//	Integerè½¬ä¸ºString
 	String i=h.toString();
 	System.out.println(i);
-//	×Ô¶¯×°Ïä£¬¼´×Ô¶¯µ÷ÓÃInteger.valueOf()·½·¨
+//	è‡ªåŠ¨è£…ç®±ï¼Œå³è‡ªåŠ¨è°ƒç”¨Integer.valueOf()æ–¹æ³•
 	Integer j=100;
-//	×Ô¶¯²ğÏä£¬¼´×Ô¶¯µ÷ÓÃj.intvalue()·½·¨
+//	è‡ªåŠ¨æ‹†ç®±ï¼Œå³è‡ªåŠ¨è°ƒç”¨j.intvalue()æ–¹æ³•
 	int k=j;
 	Integer l=null;
-//	int m=l;±¨¿ÕÖ¸Õë´íÎó
-//	Ô­ÒòÊÇlÎª¿Õ£¬È´µ÷ÓÃÁËlµÄ·½·¨
+//	int m=l;æŠ¥ç©ºæŒ‡é’ˆé”™è¯¯
+//	åŸå› æ˜¯lä¸ºç©ºï¼Œå´è°ƒç”¨äº†lçš„æ–¹æ³•
 	Integer m=-128;
 	Integer n=-128;
-//	·µ»Øtrue£¬ÒòÎª-128µ½127µÄÊı¶¼´æÔÚ»º´æÇø£¬¶¼ÊÇ´Ó»º´æÊı×éÖĞÄÃÈ¡£¬ÊÇÒÑ¾­¶¨ÒåºÃµÄ³£Á¿¶ÔÏó
+//	è¿”å›trueï¼Œå› ä¸º-128åˆ°127çš„æ•°éƒ½å­˜åœ¨ç¼“å­˜åŒºï¼Œéƒ½æ˜¯ä»ç¼“å­˜æ•°ç»„ä¸­æ‹¿å–ï¼Œæ˜¯å·²ç»å®šä¹‰å¥½çš„å¸¸é‡å¯¹è±¡
 	System.out.println(m==n);
 	Integer o=1234;
 	Integer p=1234;
-//	·µ»Øfalse£¬ÒòÎª1234²»ÊÇ»º´æÊı×é£¬Ê¹ÓÃÊ±ĞèÒªĞÂ½¨Á½¸ö²»Í¬µÄ¶ÔÏó
+//	è¿”å›falseï¼Œå› ä¸º1234ä¸æ˜¯ç¼“å­˜æ•°ç»„ï¼Œä½¿ç”¨æ—¶éœ€è¦æ–°å»ºä¸¤ä¸ªä¸åŒçš„å¯¹è±¡
 	System.out.println(o==p);
 }
 }

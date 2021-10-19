@@ -16,9 +16,9 @@ public class Eight_Queen {
 		return list;
 		
 	}
-//	»ØËİ£¬ÊäÈë²ÎÊırÊÇ±íÊ¾±éÀúµ½µÚ¼¸ĞĞ
+//	å›æº¯ï¼Œè¾“å…¥å‚æ•°ræ˜¯è¡¨ç¤ºéå†åˆ°ç¬¬å‡ è¡Œ
 	public void backtrack(int r,int n,char[][] board,List<List<String>> list) {
-//	µ±±éÀúµ½×îºóÒ»ĞĞ£¬ËµÃ÷Ç°Ãæ¶¼ÊÇavailableµÄ£¬Õû¸öÆåÅÌÒ»ĞĞÒ»ĞĞÊäÈëµ½innerlist£¬ÔÚ°ÑinnerlistÌí¼Óµ½×Ü¼¯ºÏ
+//	å½“éå†åˆ°æœ€åä¸€è¡Œï¼Œè¯´æ˜å‰é¢éƒ½æ˜¯availableçš„ï¼Œæ•´ä¸ªæ£‹ç›˜ä¸€è¡Œä¸€è¡Œè¾“å…¥åˆ°innerlistï¼Œåœ¨æŠŠinnerlistæ·»åŠ åˆ°æ€»é›†åˆ
 		if(r==n) {
 			ArrayList<String> inner_list=new ArrayList<String>();
 			for(int i=0;i<n;i++) {
@@ -27,7 +27,7 @@ public class Eight_Queen {
 			list.add(inner_list);
 			return;
 		}
-//		µ±Ç°ĞĞÒ»ÁĞÒ»ÁĞ±éÀú£¬Èç¹ûµ±Ç°µã¿ÉĞĞ£¬±ä³ÉQ£¬¶ÔÏÂÒ»ĞĞµİ¹é£¬µİ¹éÍê»ØËİ
+//		å½“å‰è¡Œä¸€åˆ—ä¸€åˆ—éå†ï¼Œå¦‚æœå½“å‰ç‚¹å¯è¡Œï¼Œå˜æˆQï¼Œå¯¹ä¸‹ä¸€è¡Œé€’å½’ï¼Œé€’å½’å®Œå›æº¯
 		for(int i=0;i<n;i++) {
 			if(available(n, n, r, i, board)) {
 				board[r][i]='Q';
@@ -36,7 +36,7 @@ public class Eight_Queen {
 			}
 		}
 	}
-	//ÅĞ¶ÏÒ»¸öµãÊÇ·ñ¿ÉÓÃ
+	//åˆ¤æ–­ä¸€ä¸ªç‚¹æ˜¯å¦å¯ç”¨
 	boolean available(int rows,int cols,int row,int col,char[][]input) {
 		for(int i=0;i<rows;i++) {
 			if(input[i][col]=='Q') return false;

@@ -2,23 +2,23 @@ package IOtest;
 
 import java.io.UnsupportedEncodingException;
 
-//UTF-8:±ä³¤¶È£¬1-3¸ö×Ö½Ú£¬Ó¢ÎÄÄ¬ÈÏ±àÂë·½Ê½
-//UTF-16LE:¶¨³¤¶È£¬2¸ö×Ö½Ú
-//GBK£¬¶¨³¤¶È£¬2¸ö×Ö½Ú£¬ºº×ÖÄ¬ÈÏ±àÂë·½Ê½£¬ÀïÃæÒ²ÓĞ×ÖÄ¸
+//UTF-8:å˜é•¿åº¦ï¼Œ1-3ä¸ªå­—èŠ‚ï¼Œè‹±æ–‡é»˜è®¤ç¼–ç æ–¹å¼
+//UTF-16LE:å®šé•¿åº¦ï¼Œ2ä¸ªå­—èŠ‚
+//GBKï¼Œå®šé•¿åº¦ï¼Œ2ä¸ªå­—èŠ‚ï¼Œæ±‰å­—é»˜è®¤ç¼–ç æ–¹å¼ï¼Œé‡Œé¢ä¹Ÿæœ‰å­—æ¯
 public class Code {
 
 public static void main(String[] args) throws UnsupportedEncodingException {
-	String str="Éç»á½¨Éèa";
+	String str="ç¤¾ä¼šå»ºè®¾a";
 	String str2="adfaasdfsdfa";
 	byte[] bytes1=str.getBytes("GBK");
 	System.out.println(bytes1.length);
 	byte[] bytes2=str.getBytes("UTF-8");
 	System.out.println(bytes2.length);
-	byte[] bytes3=str.getBytes();//±àÂë½âÂë¶¼Ä¬ÈÏºº×ÖGBK£¬Ó¢ÎÄUTF-8
+	byte[] bytes3=str.getBytes();//ç¼–ç è§£ç éƒ½é»˜è®¤æ±‰å­—GBKï¼Œè‹±æ–‡UTF-8
 	System.out.println(bytes3.length);
-	String dstr=new String(bytes2, "GBK");//ÂÒÂëÁË£¬ÒòÎªbytes2ÊÇUTF-8±àÂë£¬±àÂëºóµÄÂë×ÖÔÚGBKÖĞ¶ÔÓ¦±ğµÄºº×Ö
+	String dstr=new String(bytes2, "GBK");//ä¹±ç äº†ï¼Œå› ä¸ºbytes2æ˜¯UTF-8ç¼–ç ï¼Œç¼–ç åçš„ç å­—åœ¨GBKä¸­å¯¹åº”åˆ«çš„æ±‰å­—
 	System.out.println(dstr);
-	String ddstr=new String(bytes1, "UTF-8");//ÂÒÂëÁË£¬ÒòÎªbytes1ÊÇGBK±àÂë£¬±àÂëºóµÄÂë×ÖÔÚUTF-8ÖĞÃ»ÓĞ¶ÔÓ¦
+	String ddstr=new String(bytes1, "UTF-8");//ä¹±ç äº†ï¼Œå› ä¸ºbytes1æ˜¯GBKç¼–ç ï¼Œç¼–ç åçš„ç å­—åœ¨UTF-8ä¸­æ²¡æœ‰å¯¹åº”
 	System.out.println(ddstr);
 }
 }

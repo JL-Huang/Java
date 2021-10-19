@@ -7,24 +7,24 @@ public class ClassOperation {
 public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, SecurityException, NoSuchMethodException {
 	String path="Reflection.Test1";
 	Class c1=Class.forName(path);
-//	·µ»Ø¸ÃClass¶ÔÏóµÄÂ·¾¶¼ÓÃû×Ö
+//	è¿”å›è¯¥Classå¯¹è±¡çš„è·¯å¾„åŠ åå­—
 	System.out.println(c1.getName());
-//	·µ»Ø¸ÃClass¶ÔÏóµÄÃû×Ö
+//	è¿”å›è¯¥Classå¯¹è±¡çš„åå­—
 	System.out.println(c1.getSimpleName());
-//	»ñµÃ¸ÃÀàµÄpublic³ÉÔ±±äÁ¿
+//	è·å¾—è¯¥ç±»çš„publicæˆå‘˜å˜é‡
 	Field[] fields=c1.getFields();
 	System.out.println(fields.length);
-//	»ñµÃ¸ÃÀàµÄËùÓĞ³ÉÔ±±äÁ¿
+//	è·å¾—è¯¥ç±»çš„æ‰€æœ‰æˆå‘˜å˜é‡
 	Field[] fields1=c1.getDeclaredFields();
 	System.out.println(fields1.length);
-//	°´³ÉÔ±±äÁ¿Ãû»ñÈ¡ÊôĞÔ£¬×¢Òâ·ÇpublicµÄ»¹ÊÇÒªÓÃgetDeclaredField
+//	æŒ‰æˆå‘˜å˜é‡åè·å–å±æ€§ï¼Œæ³¨æ„épublicçš„è¿˜æ˜¯è¦ç”¨getDeclaredField
 	Field field2=c1.getDeclaredField("age");
 	System.out.println(field2);
-//	·½·¨µÄ²Ù×÷ÍêÈ«Ò»Ñù£¬Ö»ÊÇÆÕÍ¨·½·¨µÄ°ÑField»»³ÉMethod£¬¹¹Ôì·½·¨°ÑField»»³ÉConstructor
-//	Í¨¹ıÊäÈë²ÎÊıÇø±ğÖØÔØµÄ·½·¨
+//	æ–¹æ³•çš„æ“ä½œå®Œå…¨ä¸€æ ·ï¼Œåªæ˜¯æ™®é€šæ–¹æ³•çš„æŠŠFieldæ¢æˆMethodï¼Œæ„é€ æ–¹æ³•æŠŠFieldæ¢æˆConstructor
+//	é€šè¿‡è¾“å…¥å‚æ•°åŒºåˆ«é‡è½½çš„æ–¹æ³•
 	Method method1=c1.getDeclaredMethod("hhh");
 	Method method2=c1.getDeclaredMethod("hhh",String.class);
-//	ÉñÆæµÄÊÇ£¬ÖØÔØµÄ·½·¨hashcode¾ÓÈ»ÊÇÒ»ÑùµÄ,µ«ÊÇµØÖ·²»Ò»Ñù,ËùÓĞequal½á¹ûÊÇfalse
+//	ç¥å¥‡çš„æ˜¯ï¼Œé‡è½½çš„æ–¹æ³•hashcodeå±…ç„¶æ˜¯ä¸€æ ·çš„,ä½†æ˜¯åœ°å€ä¸ä¸€æ ·,æ‰€æœ‰equalç»“æœæ˜¯false
 	System.out.println(method1.hashCode());
 	System.out.println(method2.hashCode());
 	System.out.println(method2.equals(method1));

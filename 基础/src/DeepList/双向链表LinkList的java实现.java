@@ -1,21 +1,21 @@
 package DeepList;
-//Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ
+//åŒå‘é“¾è¡¨LinkListçš„javaå®ç°
 
 
-public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
-//	Í·Ö¸ÕëÓëÎ²Ö¸Õë
+public class åŒå‘é“¾è¡¨LinkListçš„javaå®ç° {
+//	å¤´æŒ‡é’ˆä¸å°¾æŒ‡é’ˆ
 	private Node first;
 	private Node last;
 	private static int size;
 	public static void main(String[] args) {
-	Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ s=new Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ();
+	åŒå‘é“¾è¡¨LinkListçš„javaå®ç° s=new åŒå‘é“¾è¡¨LinkListçš„javaå®ç°();
 	s.addtail("2");
 	s.addtail("4");
 	s.addtail("6");
 	for(int i=0;i<size;i++) {
 	System.out.print(s.get(i).object);
 	}
-//	ÉÔÎ¢×¢ÒâÒ»ÏÂ£¬ÕâÀï²âÊÔÊ±Ò»¶¨ÒªÒ»¶ÎÒ»¶Î·Ö±ğ²âÊÔ£¬ÒòÎªÉ¾ÁËÒÔºó»á¸Ä±äsµÄÊôĞÔ
+//	ç¨å¾®æ³¨æ„ä¸€ä¸‹ï¼Œè¿™é‡Œæµ‹è¯•æ—¶ä¸€å®šè¦ä¸€æ®µä¸€æ®µåˆ†åˆ«æµ‹è¯•ï¼Œå› ä¸ºåˆ äº†ä»¥åä¼šæ”¹å˜sçš„å±æ€§
 //	s.delete(1);
 //	for(int i=0;i<size;i++) {
 //	System.out.print(s.get(i).object);
@@ -28,8 +28,8 @@ public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
 	}
 
 			
-//	ÊµÏÖÁ´±íµÄÔö²Ù×÷
-//	Î²²å·¨£¬Ã¿´ÎÔöµÄÄÚÈİÔÚÁ´±íÎ²²¿
+//	å®ç°é“¾è¡¨çš„å¢æ“ä½œ
+//	å°¾æ’æ³•ï¼Œæ¯æ¬¡å¢çš„å†…å®¹åœ¨é“¾è¡¨å°¾éƒ¨
 	public void addtail(Object o) {
 		Node node=new Node(o);
 		if(first==null) {
@@ -41,14 +41,14 @@ public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
 			node.previous=last;
 			last.next=node;
 			last=node;
-//			ÕâÀï°ÑÖ¸ÕëÉèÎªnull±íÊ¾Î²Ö¸ÕëµÄºóÖ¸Õë²»Ö¸ÏòÍ·Ö¸Õë£¬·ñÔò»á³öÏÖË÷Òı³¬Î¬¶ÈÈÔÖ¸ÏòÍ·Ö¸ÕëµÄÎÊÌâ
-//			²ÈÁË¸ö´ó¿Ó£¬ÕâÁ½ĞĞÊÇ·Ç³£ÖØÒªµÄ£¬ºóÃæ¶ÔµÚÒ»Î»µÄ²Ù×÷¶¼Òª¿¼ÂÇÏÂÃæÕâÁ½ĞĞ´úÂë
+//			è¿™é‡ŒæŠŠæŒ‡é’ˆè®¾ä¸ºnullè¡¨ç¤ºå°¾æŒ‡é’ˆçš„åæŒ‡é’ˆä¸æŒ‡å‘å¤´æŒ‡é’ˆï¼Œå¦åˆ™ä¼šå‡ºç°ç´¢å¼•è¶…ç»´åº¦ä»æŒ‡å‘å¤´æŒ‡é’ˆçš„é—®é¢˜
+//			è¸©äº†ä¸ªå¤§å‘ï¼Œè¿™ä¸¤è¡Œæ˜¯éå¸¸é‡è¦çš„ï¼Œåé¢å¯¹ç¬¬ä¸€ä½çš„æ“ä½œéƒ½è¦è€ƒè™‘ä¸‹é¢è¿™ä¸¤è¡Œä»£ç 
 			node.next=first;
 			first.previous=node;
 		}
 		size++;
 	}
-//	ÖĞ¼ä²åÈë½Úµã,×¢ÒâÓÉÓÚ±êË÷ÒıµÄÏ°¹ß£¬ÕâÀïµÄ²åÈëÊÇÔÙÄ³¸ö½ÚµãÇ°Ãæ²åÈë,²»ÌÖÂÛ¿ÕÁ´±íµÄÇé¿ö
+//	ä¸­é—´æ’å…¥èŠ‚ç‚¹,æ³¨æ„ç”±äºæ ‡ç´¢å¼•çš„ä¹ æƒ¯ï¼Œè¿™é‡Œçš„æ’å…¥æ˜¯å†æŸä¸ªèŠ‚ç‚¹å‰é¢æ’å…¥,ä¸è®¨è®ºç©ºé“¾è¡¨çš„æƒ…å†µ
 	public void addmiddle(Object o,int index) {
 		Node node=get(index);
 		Node newnode=new Node();
@@ -61,12 +61,12 @@ public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
 		size++;
 		
 	}
-//	ÊµÏÖÁ´±íµÄ²é²Ù×÷
-//	×¢ÒâÕâÊÇ×îÖ±¹ÛµÄ·½·¨£¬Ëã·¨»¹ÓĞºÜ´óµÄÓÅ»¯¿Õ¼ä
+//	å®ç°é“¾è¡¨çš„æŸ¥æ“ä½œ
+//	æ³¨æ„è¿™æ˜¯æœ€ç›´è§‚çš„æ–¹æ³•ï¼Œç®—æ³•è¿˜æœ‰å¾ˆå¤§çš„ä¼˜åŒ–ç©ºé—´
 	public Node get(int index) {
 		if(index<0 || index>size-1) {
-//			Å×³öÒì³£ºó²»ÓÃÔÙreturn
-			throw new RuntimeException("Ë÷Òı³¬³öÎ¬¶È"+"£º"+index);
+//			æŠ›å‡ºå¼‚å¸¸åä¸ç”¨å†return
+			throw new RuntimeException("ç´¢å¼•è¶…å‡ºç»´åº¦"+"ï¼š"+index);
 			
 		}else {
 			Node node=first;
@@ -77,8 +77,8 @@ public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
 		}
 
 	}
-//	ÊµÏÖÁ´±íµÄÉ¾²Ù×÷
-//	Ê×ÏÈµÃ»ñÈ¡Õâ¸ö½Úµã£¬ÓÃ¸ÕĞ´ºÃµÄ²é·½·¨
+//	å®ç°é“¾è¡¨çš„åˆ æ“ä½œ
+//	é¦–å…ˆå¾—è·å–è¿™ä¸ªèŠ‚ç‚¹ï¼Œç”¨åˆšå†™å¥½çš„æŸ¥æ–¹æ³•
 	public void delete(int index) {
 		Node node=get(index);
 		node.previous.next=node.next;
@@ -88,7 +88,7 @@ public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
 	
 	
 	
-//	Õâ¸öÄÚ²¿Àà¶¨ÒåÁËNodeÀà£¬ÊÂÊµÉÏjavaµÄÁ´±íÊÇÍ¨¹ıNodeÀàÊµÀı»¯ÊµÏÖÁËÖ¸ÕëµÄ¹¦ÄÜ
+//	è¿™ä¸ªå†…éƒ¨ç±»å®šä¹‰äº†Nodeç±»ï¼Œäº‹å®ä¸Šjavaçš„é“¾è¡¨æ˜¯é€šè¿‡Nodeç±»å®ä¾‹åŒ–å®ç°äº†æŒ‡é’ˆçš„åŠŸèƒ½
 	 class Node{
 		Node previous;
 		Node next;
@@ -96,14 +96,14 @@ public class Ë«ÏòÁ´±íLinkListµÄjavaÊµÏÖ {
 		public Node() {
 			
 		}
-//		Õâ¸ö¹¹Ôì·½·¨Ê¹ÓÃÊ±±ØĞëÊäÈëÇ°Ö¸ÕëºóÖ¸Õë²ÎÊı
+//		è¿™ä¸ªæ„é€ æ–¹æ³•ä½¿ç”¨æ—¶å¿…é¡»è¾“å…¥å‰æŒ‡é’ˆåæŒ‡é’ˆå‚æ•°
 		public Node(Node previous, Node next, Object object) {
 			super();
 			this.previous = previous;
 			this.next = next;
 			this.object = object;
 		}
-//		Õâ¸ö¹¹Ôì·½·¨Ê¹ÓÃÊ±Ö»ĞèÊäÈëµ±Ç°½ÚµãÄÚÈİ
+//		è¿™ä¸ªæ„é€ æ–¹æ³•ä½¿ç”¨æ—¶åªéœ€è¾“å…¥å½“å‰èŠ‚ç‚¹å†…å®¹
 		public Node(Object object) {
 			super();
 			this.object = object;

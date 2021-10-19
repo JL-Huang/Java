@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-//CollectionsÊÇÒ»¸ö¹¤¾ßÀà£¬Ìá¹©¶ÔList,Map,SetµÄÔöÉ¾¸Ä²é·½·¨
-//×¢ÒâCollectionsËµ¶ÔÈİÆ÷Ö±½Ó²Ù×÷£¬»á¸Ä±äÈİÆ÷µÄÖµ
-public class Collections»ù±¾ {
+//Collectionsæ˜¯ä¸€ä¸ªå·¥å…·ç±»ï¼Œæä¾›å¯¹List,Map,Setçš„å¢åˆ æ”¹æŸ¥æ–¹æ³•
+//æ³¨æ„Collectionsè¯´å¯¹å®¹å™¨ç›´æ¥æ“ä½œï¼Œä¼šæ”¹å˜å®¹å™¨çš„å€¼
+public class CollectionsåŸºæœ¬ {
 public static void main(String[] args) {
 	List<Integer> list=new ArrayList<Integer>();
 	for(int i=0;i<10;i++) {
@@ -14,15 +14,15 @@ public static void main(String[] args) {
 	}
 	
 
-	Collections.shuffle(list);	//Ëæ»úÅÅĞò
+	Collections.shuffle(list);	//éšæœºæ’åº
 	System.out.println(list);
-	Collections.reverse(list);;	//ÄæĞò
+	Collections.reverse(list);;	//é€†åº
 	System.out.println(list);
-	Collections.sort(list);	//Ë³Ğò
+	Collections.sort(list);	//é¡ºåº
 	System.out.println(list);
 //	Collections.fill(list, 1);
-//	System.out.println(list);	//Ìî³äÖØĞ´
-	System.out.println(Collections.binarySearch(list, 5));//¶ÔË³Ğò»òÄæĞòµÄÈİÆ÷½øĞĞÕÛ°ë²éÕÒ
+//	System.out.println(list);	//å¡«å……é‡å†™
+	System.out.println(Collections.binarySearch(list, 5));//å¯¹é¡ºåºæˆ–é€†åºçš„å®¹å™¨è¿›è¡ŒæŠ˜åŠæŸ¥æ‰¾
 }
 }
-//²å²¥javabean£¬javabean¾ÍÊÇÒ»¸öÀà£¬Ò»¸öjavabean±ØĞëÓĞËùÓĞ³ÉÔ±±äÁ¿setÓëget·½·¨¼°¿Õ¹¹ÔìÆ÷
+//æ’æ’­javabeanï¼Œjavabeanå°±æ˜¯ä¸€ä¸ªç±»ï¼Œä¸€ä¸ªjavabeanå¿…é¡»æœ‰æ‰€æœ‰æˆå‘˜å˜é‡setä¸getæ–¹æ³•åŠç©ºæ„é€ å™¨

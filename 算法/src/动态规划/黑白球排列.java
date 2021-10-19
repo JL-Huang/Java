@@ -1,9 +1,9 @@
-package ¶¯Ì¬¹æ»®;
+package åŠ¨æ€è§„åˆ’;
 
 import java.util.ArrayList;
 
-//N¸öºÚÇòM¸ö°×Çò£¬ÓĞ¶àÉÙÖÖÅÅÁĞ
-public class ºÚ°×ÇòÅÅÁĞ {
+//Nä¸ªé»‘çƒMä¸ªç™½çƒï¼Œæœ‰å¤šå°‘ç§æ’åˆ—
+public class é»‘ç™½çƒæ’åˆ— {
 	public static void main(String[] args) {
 		int N=1,M=5;
 		ArrayList<Character>list=new ArrayList<Character>();

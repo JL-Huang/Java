@@ -1,5 +1,5 @@
-package ½£Ö¸offer;
-//Èç¹û version1 > version2 ·µ»Ø 1£¬Èç¹û version1 < version2 ·µ»Ø -1£¬ ³ý´ËÖ®Íâ·µ»Ø 0¡£
+package å‰‘æŒ‡offer;
+//å¦‚æžœ version1 > version2 è¿”å›ž 1ï¼Œå¦‚æžœ version1 < version2 è¿”å›ž -1ï¼Œ é™¤æ­¤ä¹‹å¤–è¿”å›ž 0ã€‚
 public class CompareVersion {
     public int test(String version1, String version2) {
     	String[] strs_1=version1.split("\\.");

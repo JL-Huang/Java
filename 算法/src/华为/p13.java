@@ -1,4 +1,4 @@
-package 华为;
+package 鍗庝负;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,16 +15,16 @@ public class p13 {
         return list;
     }
     public void recur(int left,int right,int max,String str,List<String> list){
-        //跳出判断
+        //璺冲嚭鍒ゆ柇
         if(left==max&&right==max){
             list.add(str);
             return;
         }
-        //当前逻辑
+        //褰撳墠閫昏緫
         
 //        String s1=str+"(";
 //        String s2=str+")";
-        //递归
+        //閫掑綊
         if(left<max)
         recur(left+1,right,max,str+"(",list);
         if(left>right)

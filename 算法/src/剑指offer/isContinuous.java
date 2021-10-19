@@ -1,8 +1,8 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.Arrays;
 
-//Ò»¸±ÅÆËÄ¸ö´óĞ¡Íõ£¬´óĞ¡ÍõÊÓÎª0£¬JÎª11,QÎª12£¬KÎª13£¬AÎª1£¬´óĞ¡Íõ¿ÉÊÓÎªÈÎÒâµãÊı£¬Çó³éÎåÕÅÊÇ²»ÊÇË³×Ó
+//ä¸€å‰¯ç‰Œå››ä¸ªå¤§å°ç‹ï¼Œå¤§å°ç‹è§†ä¸º0ï¼ŒJä¸º11,Qä¸º12ï¼ŒKä¸º13ï¼ŒAä¸º1ï¼Œå¤§å°ç‹å¯è§†ä¸ºä»»æ„ç‚¹æ•°ï¼Œæ±‚æŠ½äº”å¼ æ˜¯ä¸æ˜¯é¡ºå­
 public class isContinuous {
 public static void main(String[] args) {
 	
@@ -10,16 +10,16 @@ public static void main(String[] args) {
 public boolean test(int [] numbers) {
 	if(numbers==null||numbers.length==0) return false;
 	int numofzero=0;
-//	ÏÈÅÅĞò
+//	å…ˆæ’åº
 	Arrays.sort(numbers);
 	for(Integer temp:numbers) {
 		if(temp==0) numofzero++;
 	}
 	int target=numbers.length-numofzero;
-//	Ë¼Â·ºÜ¼òµ¥£¬´ÓµÚÒ»·ÇÁã¿ªÊ¼£¬µ½×îºóÒ»¸öÔªËØÇ°Ò»¸ö
+//	æ€è·¯å¾ˆç®€å•ï¼Œä»ç¬¬ä¸€éé›¶å¼€å§‹ï¼Œåˆ°æœ€åä¸€ä¸ªå…ƒç´ å‰ä¸€ä¸ª
 	for(int i=numofzero;i<numbers.length-1;i++) {
-//		Èç¹ûÓöµ½²»ÊÇË³×Ó£¬ÔòÇ°Ò»¸öÊı¼ÓÒ»£¬Í¬Ê±ÁãµÄÊıÁ¿¼õÒ»
-//		µ±ÁãºÄÍê»¹²»ÊÇË³×Ó£¬¾Í·µ»ØfalseÁË
+//		å¦‚æœé‡åˆ°ä¸æ˜¯é¡ºå­ï¼Œåˆ™å‰ä¸€ä¸ªæ•°åŠ ä¸€ï¼ŒåŒæ—¶é›¶çš„æ•°é‡å‡ä¸€
+//		å½“é›¶è€—å®Œè¿˜ä¸æ˜¯é¡ºå­ï¼Œå°±è¿”å›falseäº†
 		while(numbers[i]!=numbers[i+1]-1) {
 			numofzero--;
 			numbers[i]++;

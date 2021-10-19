@@ -1,4 +1,4 @@
-package 华为;
+package 鍗庝负;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public static void main(String[] args) {
 		System.out.println();
 	}
 }
-//dfs深度优先，对每个元素按是否添加来进行递归
+//dfs娣卞害浼樺厛锛屽姣忎釜鍏冪礌鎸夋槸鍚︽坊鍔犳潵杩涜閫掑綊
 private static void recur(List<List<Integer>> ans,int level,int[]nums,List<Integer> list) {
 	if(level==nums.length) {
 		ans.add(new ArrayList<Integer>(list));

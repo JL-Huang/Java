@@ -1,22 +1,22 @@
-package FileÏà¹Ø;
-//Ã¶¾Ù
+package Fileç›¸å…³;
+//æšä¸¾
 
-public class Ã¶¾Ù {
+public class æšä¸¾ {
 public static void main(String[] args) {
-//	¿ÉÒÔµ÷ÓÃÃ¶¾ÙÀà²úÉúÒ»¸ö¶ÔÏó£¬µ«ÊÇ¸Ã¶ÔÏóÖ»ÄÜ¶¨ÒåÎª¸ÃÃ¶¾ÙÀàÖĞµÄ³£Á¿
-	Season a=Season.ÏÄÌì;
+//	å¯ä»¥è°ƒç”¨æšä¸¾ç±»äº§ç”Ÿä¸€ä¸ªå¯¹è±¡ï¼Œä½†æ˜¯è¯¥å¯¹è±¡åªèƒ½å®šä¹‰ä¸ºè¯¥æšä¸¾ç±»ä¸­çš„å¸¸é‡
+	Season a=Season.å¤å¤©;
 	switch(a) {
 	case FALL:
-	System.out.println("³Ô¹û×Ó");
+	System.out.println("åƒæœå­");
 	break;
-	case ÏÄÌì:
-	System.out.println("ÓÎÓ¾");
+	case å¤å¤©:
+	System.out.println("æ¸¸æ³³");
 	break;
 	}
 }
 }
-//Ã¶¾ÙµØÎ»Ïàµ±ÓÚÒ»¸öÀà£¬ËùÒÔ±ØĞëÔÚÀàÒÔÍâ¶¨Òå
-//Ëü¶¨ÒåÁËÒ»ÏµÁĞ³£Á¿
+//æšä¸¾åœ°ä½ç›¸å½“äºä¸€ä¸ªç±»ï¼Œæ‰€ä»¥å¿…é¡»åœ¨ç±»ä»¥å¤–å®šä¹‰
+//å®ƒå®šä¹‰äº†ä¸€ç³»åˆ—å¸¸é‡
 enum Season{
-	 ´ºÌì,ÏÄÌì,FALL,WINTER
+	 æ˜¥å¤©,å¤å¤©,FALL,WINTER
 }

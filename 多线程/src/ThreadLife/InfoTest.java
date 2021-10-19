@@ -1,16 +1,16 @@
 package ThreadLife;
-//ÕâÀïÕ¹Ê¾Ò»Ğ©Ïß³Ì³£ÓÃµÄĞÅÏ¢
+//è¿™é‡Œå±•ç¤ºä¸€äº›çº¿ç¨‹å¸¸ç”¨çš„ä¿¡æ¯
 public class InfoTest {
 public static void main(String[] args) throws InterruptedException {
-//	isAlive()¾²Ì¬·½·¨,Ïß³ÌÃ»ÓĞËÀÍö¶¼·µ»Øtrue
+//	isAlive()é™æ€æ–¹æ³•,çº¿ç¨‹æ²¡æœ‰æ­»äº¡éƒ½è¿”å›true
 	System.out.println(Thread.currentThread().isAlive());
-//	ÈçÏÂ,×¢ÒâÇø±ğ´úÀíÀàÃû×ÖÓëÏß³ÌÃû×Ö
-	Thread t=new Thread(new Info("´úÀíÀàÃû×Ö"));
-//	setName()²»ÊÇ¾²Ì¬·½·¨,ĞèÒªÒ»¸öthread¶ÔÏó²ÅÄÜµ÷ÓÃ
-	t.setName("Ïß³ÌÃû×Ö");
+//	å¦‚ä¸‹,æ³¨æ„åŒºåˆ«ä»£ç†ç±»åå­—ä¸çº¿ç¨‹åå­—
+	Thread t=new Thread(new Info("ä»£ç†ç±»åå­—"));
+//	setName()ä¸æ˜¯é™æ€æ–¹æ³•,éœ€è¦ä¸€ä¸ªthreadå¯¹è±¡æ‰èƒ½è°ƒç”¨
+	t.setName("çº¿ç¨‹åå­—");
 	t.start();
 	Thread.sleep(1000);
-//	Ò»Ãëºó£¬Ïß³ÌÒÑ¾­Ö´ĞĞÍê£¬ËÀÍöÁË
+//	ä¸€ç§’åï¼Œçº¿ç¨‹å·²ç»æ‰§è¡Œå®Œï¼Œæ­»äº¡äº†
 	System.out.println(t.isAlive());
 }
 }

@@ -1,4 +1,4 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import Tree.TreeLinkNode;
 
@@ -6,14 +6,14 @@ public class GetNext {
     public TreeLinkNode test(TreeLinkNode pNode) {
     	return pNode.right==null?recur2(pNode.next):recur1(pNode.right);
     }
-//    Õâ¸öµİ¹éÊÇÕÒ×î×ó½Úµã
+//    è¿™ä¸ªé€’å½’æ˜¯æ‰¾æœ€å·¦èŠ‚ç‚¹
     public TreeLinkNode recur1(TreeLinkNode pNode) {
     	if(pNode==null||pNode.left==null) return pNode;
     	return recur1(pNode.left);
     }
-//    Õâ¸öµİ¹éÊÇÕÒÎª¸¸½Úµã×óº¢×ÓµÄ½Úµã£¬·µ»ØÆä¸¸½Úµã
+//    è¿™ä¸ªé€’å½’æ˜¯æ‰¾ä¸ºçˆ¶èŠ‚ç‚¹å·¦å­©å­çš„èŠ‚ç‚¹ï¼Œè¿”å›å…¶çˆ¶èŠ‚ç‚¹
     public TreeLinkNode recur2(TreeLinkNode pNode) {
-//    	Ò»Ö±ÕÒµ½¸ù½Úµã¶¼²»ÊÇ×óº¢×Ó£¬ËµÃ÷ÊÇÎ²½Úµã£¬·µ»Ønull
+//    	ä¸€ç›´æ‰¾åˆ°æ ¹èŠ‚ç‚¹éƒ½ä¸æ˜¯å·¦å­©å­ï¼Œè¯´æ˜æ˜¯å°¾èŠ‚ç‚¹ï¼Œè¿”å›null
     	if(pNode==null||pNode.next==null) return null;
     	if(pNode==pNode.next.left) return pNode.next;
     	else return recur2(pNode.next);

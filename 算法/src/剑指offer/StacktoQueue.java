@@ -1,6 +1,6 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 import java.util.Stack;
-//Á½¸öÕ»ÊµÏÖ¶ÓÁĞ
+//ä¸¤ä¸ªæ ˆå®ç°é˜Ÿåˆ—
 public class StacktoQueue {
     Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();
@@ -12,12 +12,12 @@ public class StacktoQueue {
 		System.out.println(s2q.pop());
 		System.out.println(s2q.pop());
 	}
-//    ´æÊÇÖ±½Ó´æ½øs1
+//    å­˜æ˜¯ç›´æ¥å­˜è¿›s1
     public void push(int node) {
         stack1.push(node);
     }
-//    Èç¹ûs2²»Îª¿Õ£¬¿ñ±©Êı×Ö´Ós1µ¯³öºäÈës2
-//    s1´æÈëÊı×Ö£¬ÔÚµÚÒ»´ÎpopÊ±È«²¿½øÈës2£¬ÏÂ´Îs1ÔÙ´æÈëÊı×Ö±ØÈ»µÈs2È«²¿µ¯³öÎª¿Õ²Å½øÈës2£¬ÊµÏÖºó½øºó³ö
+//    å¦‚æœs2ä¸ä¸ºç©ºï¼Œç‹‚æš´æ•°å­—ä»s1å¼¹å‡ºè½°å…¥s2
+//    s1å­˜å…¥æ•°å­—ï¼Œåœ¨ç¬¬ä¸€æ¬¡popæ—¶å…¨éƒ¨è¿›å…¥s2ï¼Œä¸‹æ¬¡s1å†å­˜å…¥æ•°å­—å¿…ç„¶ç­‰s2å…¨éƒ¨å¼¹å‡ºä¸ºç©ºæ‰è¿›å…¥s2ï¼Œå®ç°åè¿›åå‡º
     public int pop() {
         if (stack2.empty()) {
     	while(!stack1.isEmpty()) stack2.push(stack1.pop());

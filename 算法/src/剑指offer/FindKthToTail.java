@@ -1,8 +1,8 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import Tree.ListNode;
 
-//ÊäÈëÒ»¸öÁ´±í£¬Êä³ö¸ÃÁ´±íÖĞµ¹ÊıµÚk¸ö½áµã¡£
+//è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼Œè¾“å‡ºè¯¥é“¾è¡¨ä¸­å€’æ•°ç¬¬kä¸ªç»“ç‚¹ã€‚
 /*
 public class ListNode {
     int val;
@@ -14,21 +14,21 @@ public class ListNode {
 }*/
 public class FindKthToTail {
     public ListNode test(ListNode head,int k) {
-//    	µ±·Ç·¨ÊäÈë·µ»Ø¿Õ
+//    	å½“éæ³•è¾“å…¥è¿”å›ç©º
     	if(head==null||k<=0) return null;
     	ListNode p1=head;
     	ListNode p2=head;
-//    	ÏÈ°Ñp2ÏòÓÒÒÆ¶¯k-1´Î
+//    	å…ˆæŠŠp2å‘å³ç§»åŠ¨k-1æ¬¡
         while(k-1>0) {
-//        	k´óÓÚÁ´±í³¤¶È£¬·µ»Ø¿Õ
+//        	kå¤§äºé“¾è¡¨é•¿åº¦ï¼Œè¿”å›ç©º
         	if(p2.next==null) return null;
         	if(p2.next!=null) {
         		p2=p2.next;
         		k--;		
         	}
         }
-//        ÔÙ°Ñp2ÒÆ¶¯µ½×îºóÒ»¸ö£¬×Ü¹²ÒªÒÆ¶¯n-1-(k-1)=n-k´Î
-//        ´ËÊ±p1Ò²ÒÆ¶¯ÁËn-k´Î£¬Ç¡ºÃ¾ÍÊÇµ¹ÊıµÚk¸ö
+//        å†æŠŠp2ç§»åŠ¨åˆ°æœ€åä¸€ä¸ªï¼Œæ€»å…±è¦ç§»åŠ¨n-1-(k-1)=n-kæ¬¡
+//        æ­¤æ—¶p1ä¹Ÿç§»åŠ¨äº†n-kæ¬¡ï¼Œæ°å¥½å°±æ˜¯å€’æ•°ç¬¬kä¸ª
         while(p2.next!=null) {
         	p1=p1.next;
         	p2=p2.next;

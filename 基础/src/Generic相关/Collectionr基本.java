@@ -1,26 +1,26 @@
-package GenericÏà¹Ø;
+package Genericç›¸å…³;
 
-//CollectionrÈİÆ÷½Ó¿Ú
+//Collectionrå®¹å™¨æ¥å£
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class Collectionr»ù±¾ {
+public class CollectionråŸºæœ¬ {
 public static void main(String[] args) {
-//	CollectionÊÇÒ»¸ö½Ó¿Ú,ÆäÊµÏÖÀàÎªArrayList
+//	Collectionæ˜¯ä¸€ä¸ªæ¥å£,å…¶å®ç°ç±»ä¸ºArrayList
 	Collection<String> c=new ArrayList<String>();
-	c.add("Ò»");
-	c.add("¶ş");
+	c.add("ä¸€");
+	c.add("äºŒ");
 	System.out.println(c);
 	System.out.println(c.size());
 	System.out.println(c.isEmpty());
 	Object[] objectlist=c.toArray();
 	System.out.println(Arrays.toString(objectlist));
-//	ÒÆ³ı²¢·ÇÊÇÉ¾³ı,Êı¾İ¶ÔÏó»¹ÔÚ,Ö»ÊÇÔÚc¶ÔÏóÖĞÉ¾µôÁË¶ÔÏóµÄµØÖ·
-	c.remove("Ò»");
+//	ç§»é™¤å¹¶éæ˜¯åˆ é™¤,æ•°æ®å¯¹è±¡è¿˜åœ¨,åªæ˜¯åœ¨cå¯¹è±¡ä¸­åˆ æ‰äº†å¯¹è±¡çš„åœ°å€
+	c.remove("ä¸€");
 	System.out.println(c);
-	System.out.println(c.contains("Ò»`"));
-//	ÓëÉÏÃæÍ¬Àí
+	System.out.println(c.contains("ä¸€`"));
+//	ä¸ä¸Šé¢åŒç†
 	c.clear();
 	System.out.println(c.isEmpty());
 }

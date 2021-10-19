@@ -19,10 +19,10 @@ public static void main(String[] args) {
 	LockSupport.unpark(t1);
 }
 public static void syns() {
-	System.out.println("¹ş¹ş¹ş");
-//	park()·½·¨»áÔì³É×èÈû£¬µ«²»Õ¼ÓÃcpu
+	System.out.println("å“ˆå“ˆå“ˆ");
+//	park()æ–¹æ³•ä¼šé€ æˆé˜»å¡ï¼Œä½†ä¸å ç”¨cpu
 	LockSupport.park();
-	System.out.println("ºÇºÇºÇ");
+	System.out.println("å‘µå‘µå‘µ");
 	ReentrantLock r=new ReentrantLock(true);
 	r.lock();
 }

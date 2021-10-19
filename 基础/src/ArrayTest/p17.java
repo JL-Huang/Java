@@ -5,24 +5,24 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-//StringBuilder,¿ÉÀ©ÈİµÄ×Ö·û´®
+//StringBuilder,å¯æ‰©å®¹çš„å­—ç¬¦ä¸²
 public class p17 {
 public static void main(String[] args) {
 	StringBuffer sb=new StringBuffer();
-//	append·½·¨£¬×·¼Ó
+//	appendæ–¹æ³•ï¼Œè¿½åŠ 
 	for(int i=0;i<26;i++) {
 		sb.append((char)('a'+i));
 	}
-//	insert·½·¨£¬²åÈë
-	sb.insert(0,"×ÖÄ¸±í");
-//	setCharAt,Ìæ»»£¬×¢ÒâÖ»ÄÜÓÃcharÀàĞÍÌæ»»
+//	insertæ–¹æ³•ï¼Œæ’å…¥
+	sb.insert(0,"å­—æ¯è¡¨");
+//	setCharAt,æ›¿æ¢ï¼Œæ³¨æ„åªèƒ½ç”¨charç±»å‹æ›¿æ¢
 	sb.setCharAt(25, '7');
-//	delete£¬É¾³ı
+//	deleteï¼Œåˆ é™¤
 	sb.delete(2, 4);
 	char[] a=new char[sb.length()];
 	sb.getChars(0, sb.length(), a, 0);
 	System.out.println(a[0]);
-//	b=°ÑStringBuilder·µ»ØÎª×Ö·û´®
+//	b=æŠŠStringBuilderè¿”å›ä¸ºå­—ç¬¦ä¸²
 //	String stre=sb.toString();
 	System.out.println(sb);
 	
@@ -33,9 +33,9 @@ public static void main(String[] args) {
 	long ramstart1=Runtime.getRuntime().freeMemory();
 	for(int i=0;i<500;i++) {
 //		str=str+i;
-//		´íÎó×ö·¨£¬»á²úÉú1000¸ö¶ÔÏó,·Ç³£ºÄ·ÑÄÚ´æ
+//		é”™è¯¯åšæ³•ï¼Œä¼šäº§ç”Ÿ1000ä¸ªå¯¹è±¡,éå¸¸è€—è´¹å†…å­˜
 	}
-//	»ñÈ¡µ±Ç°Ê£ÓàÄÚ´æ
+//	è·å–å½“å‰å‰©ä½™å†…å­˜
 	long timeend1=System.currentTimeMillis();
 	long ramend1=Runtime.getRuntime().freeMemory();
 	System.out.println((timeend1-timestart1));
@@ -47,7 +47,7 @@ public static void main(String[] args) {
 	long ramstart2=Runtime.getRuntime().freeMemory();
 	for(int i=0;i<500;i++) {
 //		sb1.append(i);
-//		ÕıÈ·×ö·¨£¬Ö»²úÉúÒ»¸ö¶ÔÏó
+//		æ­£ç¡®åšæ³•ï¼Œåªäº§ç”Ÿä¸€ä¸ªå¯¹è±¡
 	}
 	long timeend2=System.currentTimeMillis();
 	long ramend2=Runtime.getRuntime().freeMemory();

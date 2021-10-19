@@ -1,5 +1,5 @@
-package ½£Ö¸offer;
-//¡°student. a am I¡±·­×ªÁËÎª¡°I am a student.¡±¡£
+package å‰‘æŒ‡offer;
+//â€œstudent. a am Iâ€ç¿»è½¬äº†ä¸ºâ€œI am a student.â€ã€‚
 public class ReverseSentence {
 	public static void main(String[] args) {
 		ReverseSentence reverseSentence=new ReverseSentence();

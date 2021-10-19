@@ -1,4 +1,4 @@
-package »ªÎª;
+package åä¸º;
 
 import java.util.Scanner;
 import java.util.Set;
