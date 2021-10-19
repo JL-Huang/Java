@@ -1,4 +1,4 @@
-package 设计模式.单例模式;
+package 现在的理解.单例模式;
 
 public class StaticInnerClass {
 	public static void main(String[] args) {
