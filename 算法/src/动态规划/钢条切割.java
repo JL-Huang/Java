@@ -11,7 +11,7 @@ public class 钢条切割 {
     public static void main(String[] args) {
         int[] price = new int[]{1, 5, 8, 9, 10, 17, 17, 20, 24, 25};
         int n = 10;
-        System.out.println(recur(price,n));
+        System.out.println(recur(price, n));
     }
 
     private static int recur(int[] price, int n) {
@@ -21,9 +21,12 @@ public class 钢条切割 {
             r[i] = Integer.MIN_VALUE;
             int temp_max = Integer.MIN_VALUE;
             for (int j = 1; j <= i; j++) {
-                temp_max = temp_max > price[j-1] + r[i - j] ? temp_max : price[j-1] + r[i - j];
+                if(temp_max <= price[j - 1] + r[i - j]){
+                    temp_max=price[j - 1] + r[i - j];
+                }
             }
             r[i] = temp_max;
+            System.out.println(String.format("长度为%d最优解", i) + r[i]);
         }
         return r[n];
     }
