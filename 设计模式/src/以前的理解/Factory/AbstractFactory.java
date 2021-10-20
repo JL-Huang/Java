@@ -1,5 +1,5 @@
-package ÒÔÇ°µÄÀí½â.Factory;
-//³éÏó¹¤³§Ä£Ê½£º²»¿ÉÔö¼Ó²úÆ·£¬¿ÉÔö¼Ó²úÆ·×å
+package ä»¥å‰çš„ç†è§£.Factory;
+//æŠ½è±¡å·¥å‚æ¨¡å¼ï¼šä¸å¯å¢åŠ äº§å“ï¼Œå¯å¢åŠ äº§å“æ—
 public class AbstractFactory {
 public static void main(String[] args) {
 	Engine e1=new LuxuryFactory().createengine();
@@ -16,28 +16,28 @@ class LuxuryEngine implements Engine{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("ÅÜµÃ¿ì");
+		System.out.println("è·‘å¾—å¿«");
 	}
 }
 class LowEngine implements Engine{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-	System.out.println("ÅÜµÃÂı");	
+	System.out.println("è·‘å¾—æ…¢");	
 	}
 }
 class LuxurySeat implements Seat{
 	@Override
 	public void feel() {
 		// TODO Auto-generated method stub
-	System.out.println("ºÜÊæ·ş");	
+	System.out.println("å¾ˆèˆ’æœ");	
 	}
 }
 class LowSeat implements Seat{
 	@Override
 	public void feel() {
 		// TODO Auto-generated method stub
-	System.out.println("²»Êæ·ş");	
+	System.out.println("ä¸èˆ’æœ");	
 	}
 }
 interface ItemFactory{

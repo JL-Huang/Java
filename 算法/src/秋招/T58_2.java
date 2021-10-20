@@ -3,7 +3,7 @@ package 秋招;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import Tree.TreeNode;
+import 树.TreeNode;
 
 public class T58_2 {
 	public static void main(String[] args) {

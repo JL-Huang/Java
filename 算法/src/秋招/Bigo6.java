@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import Tree.TreeNode;
+import 树.TreeNode;
 
 public class Bigo6 {
 	private List<List<TreeNode>> test(TreeNode node) {

@@ -1,6 +1,6 @@
 package 剑指offer;
 
-import Tree.ListNode;
+import 树.ListNode;
 //x+d=(x+kc+d)/2
 //当再次走到入口，一个走了x，一个走了c-d
 public class EntryNodeOfLoop {

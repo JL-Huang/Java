@@ -3,7 +3,7 @@ package 剑指offer;
 import java.util.ArrayList;
 import java.util.Stack;
 
-import Tree.ListNode;
+import 树.ListNode;
 
 //输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
 public class printListFromTailToHead {

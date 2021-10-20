@@ -1,26 +1,26 @@
-package ÒÔÇ°µÄÀí½â.Decorate;
-//Á½¸öÀàÊµÏÖÍ¬Ò»¸ö½Ó¿Ú£¬Ò»¸öÀàÀïÃæ¶¨ÒåÁíÒ»¸öÀà¶ÔÏó×÷Îª³ÉÔ±±äÁ¿£¬²¢½«Æä×÷Îª¹¹Ôì·½·¨µÄ²ÎÊý
-//È»ºóÔÚ×Ô¼ºµÄ½Ó¿Ú·½·¨Àïµ÷ÓÃ³ÉÔ±±äÁ¿µÄ½Ó¿Ú·½·¨£¬¶ÔÆä½øÐÐ¸÷ÖÖ²Ù×÷£¬Õû¸ö¹ý³Ì¾ÍÊÇ×°ÊÎÐÔÄ£Ê½
-//1.³éÏó×é¼þ£ºÐèÒª×°ÊÎµÄ³éÏó¶ÔÏó£¨½Ó¿Ú»ò³éÏó¸¸Àà£©
-//2.¾ßÌå×é¼þ£ºÐèÒª×°ÊÎµÄ¶ÔÏó
-//3.³éÏó×°ÊÎÀà£º°üº¬ÁË¶Ô³éÏó×é¼þµÄÒýÓÃÒÔ¼°ÐÞÊÎ×Å¹²ÓÐµÄ·½·¨
-//4.¾ßÌåÐÞÊÎÀà£º±»×°ÊÎµÄ¶ÔÏó
+package ä»¥å‰çš„ç†è§£.Decorate;
+//ä¸¤ä¸ªç±»å®žçŽ°åŒä¸€ä¸ªæŽ¥å£ï¼Œä¸€ä¸ªç±»é‡Œé¢å®šä¹‰å¦ä¸€ä¸ªç±»å¯¹è±¡ä½œä¸ºæˆå‘˜å˜é‡ï¼Œå¹¶å°†å…¶ä½œä¸ºæž„é€ æ–¹æ³•çš„å‚æ•°
+//ç„¶åŽåœ¨è‡ªå·±çš„æŽ¥å£æ–¹æ³•é‡Œè°ƒç”¨æˆå‘˜å˜é‡çš„æŽ¥å£æ–¹æ³•ï¼Œå¯¹å…¶è¿›è¡Œå„ç§æ“ä½œï¼Œæ•´ä¸ªè¿‡ç¨‹å°±æ˜¯è£…é¥°æ€§æ¨¡å¼
+//1.æŠ½è±¡ç»„ä»¶ï¼šéœ€è¦è£…é¥°çš„æŠ½è±¡å¯¹è±¡ï¼ˆæŽ¥å£æˆ–æŠ½è±¡çˆ¶ç±»ï¼‰
+//2.å…·ä½“ç»„ä»¶ï¼šéœ€è¦è£…é¥°çš„å¯¹è±¡
+//3.æŠ½è±¡è£…é¥°ç±»ï¼šåŒ…å«äº†å¯¹æŠ½è±¡ç»„ä»¶çš„å¼•ç”¨ä»¥åŠä¿®é¥°ç€å…±æœ‰çš„æ–¹æ³•
+//4.å…·ä½“ä¿®é¥°ç±»ï¼šè¢«è£…é¥°çš„å¯¹è±¡
 
 
-//				ÊµÏÖ½Ó¿Ú£¬ÖØÐ´Ä¿±ê·½·¨²¢·µ»Ø×Ô¼ºÊôÐÔ
-//³éÏó×é¼þ£¨½Ó¿Ú£©¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¾ßÌå×é¼þ£¨±»×°ÊÎµÄÀà£©
+//				å®žçŽ°æŽ¥å£ï¼Œé‡å†™ç›®æ ‡æ–¹æ³•å¹¶è¿”å›žè‡ªå·±å±žæ€§
+//æŠ½è±¡ç»„ä»¶ï¼ˆæŽ¥å£ï¼‰â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”å…·ä½“ç»„ä»¶ï¼ˆè¢«è£…é¥°çš„ç±»ï¼‰
 //		|
 //		|
 //		|
-//		|ÊµÏÖ½Ó¿Ú£¬½«½Ó¿Ú¶ÔÏó×÷Îª³ÉÔ±±äÁ¿²¢×÷Îª¹¹Ôì·½·¨²ÎÊý£¬ÖØÐ´Ä¿±ê·½·¨·µ»Ø¸Ã³ÉÔ±±äÁ¿µÄÄ¿±ê·½·¨			
-//		|¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª³éÏó×°ÊÎÀà
+//		|å®žçŽ°æŽ¥å£ï¼Œå°†æŽ¥å£å¯¹è±¡ä½œä¸ºæˆå‘˜å˜é‡å¹¶ä½œä¸ºæž„é€ æ–¹æ³•å‚æ•°ï¼Œé‡å†™ç›®æ ‡æ–¹æ³•è¿”å›žè¯¥æˆå‘˜å˜é‡çš„ç›®æ ‡æ–¹æ³•			
+//		|â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”æŠ½è±¡è£…é¥°ç±»
 //																								|
 //																								|
-//				  ¼Ì³Ð³éÏó×°ÊÎÀà£¬×Ô¶¯ÖØÐ´¹¹Ôì·½·¨£¬ÊÖ¶¯ÖØÐ´Ä¿±ê·½·¨¡£·µ»ØsuperÄ¿±ê·½·¨+×Ô¼ºµÄ²Ù×÷	|
-//		¾ßÌåÐÞÊÎÀà¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+//				  ç»§æ‰¿æŠ½è±¡è£…é¥°ç±»ï¼Œè‡ªåŠ¨é‡å†™æž„é€ æ–¹æ³•ï¼Œæ‰‹åŠ¨é‡å†™ç›®æ ‡æ–¹æ³•ã€‚è¿”å›žsuperç›®æ ‡æ–¹æ³•+è‡ªå·±çš„æ“ä½œ	|
+//		å…·ä½“ä¿®é¥°ç±»â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 
-//¾ßÌåÒýÓÃÊ±ÐèÒªÁ½¸ö½Ó¿Ú¶ÔÏó£¬Ò»¸öÓÃ¾ßÌå×é¼þµÄ¹¹Ôì·½·¨£¬ÁíÒ»¸öÓÃ¾ßÌå×°ÊÎÀàµÄ¹¹Ôì·½·¨£¬½«Ç°Ò»¸ö¶ÔÏó×÷Îª²ÎÊý
-//ÕâÑù×ÓµÄºÃ´¦ÊÇÕû¸ö¹ý³Ì±»ÐÞÊÎµÄÀà¼°ÆäÄ¿±ê·½·¨²¢Ã»ÓÐ±»¸Ä±ä£¬µ«Í¨¹ý×°ÊÎÊµÏÖÁË¿½±´£¬¶Ô¿½±´µÄÀàºÍÄ¿±ê·½·¨½øÐÐÁË±ä»»
+//å…·ä½“å¼•ç”¨æ—¶éœ€è¦ä¸¤ä¸ªæŽ¥å£å¯¹è±¡ï¼Œä¸€ä¸ªç”¨å…·ä½“ç»„ä»¶çš„æž„é€ æ–¹æ³•ï¼Œå¦ä¸€ä¸ªç”¨å…·ä½“è£…é¥°ç±»çš„æž„é€ æ–¹æ³•ï¼Œå°†å‰ä¸€ä¸ªå¯¹è±¡ä½œä¸ºå‚æ•°
+//è¿™æ ·å­çš„å¥½å¤„æ˜¯æ•´ä¸ªè¿‡ç¨‹è¢«ä¿®é¥°çš„ç±»åŠå…¶ç›®æ ‡æ–¹æ³•å¹¶æ²¡æœ‰è¢«æ”¹å˜ï¼Œä½†é€šè¿‡è£…é¥°å®žçŽ°äº†æ‹·è´ï¼Œå¯¹æ‹·è´çš„ç±»å’Œç›®æ ‡æ–¹æ³•è¿›è¡Œäº†å˜æ¢
 
 public class TryDecorate {
 public static void main(String[] args) {
@@ -32,14 +32,14 @@ public static void main(String[] args) {
 	System.out.println(milktea.info()+milktea.cost());
 }
 }
-//³éÏó×é¼þ,³éÏó×é¼þÒ»°ãÊÇÒ»¸ö½Ó¿Ú£¬ÀïÃæµÄ·½·¨ÊÇÄ¿±ê·½·¨£¬ÊÇÕû¸ö¹ý³Ì²Ù×÷µÄ¶ÔÏó
+//æŠ½è±¡ç»„ä»¶,æŠ½è±¡ç»„ä»¶ä¸€èˆ¬æ˜¯ä¸€ä¸ªæŽ¥å£ï¼Œé‡Œé¢çš„æ–¹æ³•æ˜¯ç›®æ ‡æ–¹æ³•ï¼Œæ˜¯æ•´ä¸ªè¿‡ç¨‹æ“ä½œçš„å¯¹è±¡
 interface Drink{
 	Double cost();
 	String info();
 }
-//¾ßÌå×é¼þ£¬¾ßÌå×é¼þ¿ÉÒÔÓÐ¶à¸ö£¬µ«¹²Í¬Ö®´¦¶¼ÔÚÓÚÊµÏÖÀà½Ó¿ÚµÄ·½·¨²¢ÇÒ·µ»ØµÄÊÇ×Ô¼ºµÄÊôÐÔ
+//å…·ä½“ç»„ä»¶ï¼Œå…·ä½“ç»„ä»¶å¯ä»¥æœ‰å¤šä¸ªï¼Œä½†å…±åŒä¹‹å¤„éƒ½åœ¨äºŽå®žçŽ°ç±»æŽ¥å£çš„æ–¹æ³•å¹¶ä¸”è¿”å›žçš„æ˜¯è‡ªå·±çš„å±žæ€§
 class Coffee implements Drink{
-	private String name="Ô­Î¶¿§·È"; 
+	private String name="åŽŸå‘³å’–å•¡"; 
 	private Double price=(double) 10;
 	@Override
 	public Double cost() {
@@ -53,7 +53,7 @@ class Coffee implements Drink{
 	
 }
 class Tea implements Drink{
-	private String name="²è"; 
+	private String name="èŒ¶"; 
 	private Double price=(double) 20;
 	@Override
 	public Double cost() {
@@ -66,12 +66,12 @@ class Tea implements Drink{
 	}
 	
 }
-//³éÏó×°ÊÎÀà£¬×°ÊÎÄ£Ê½µÄºËÐÄÊàÅ¦£¬ËüÊÇÒ»¸öÊµÏÖÁË½Ó¿ÚµÄ³éÏóÀà£¬ÔÚ³éÏó×°ÊÎÀàÀïÉùÃ÷ÁËÒ»¸ö½Ó¿Ú¶ÔÏó
-//ÔÚÆä¹¹Ôì·½·¨Àï¼ÓÈëÁË½Ó¿Ú¶ÔÏó£¬È»ºóÓÖÖØÐ´½Ó¿Ú·½·¨£¬ÊµÏÖÁË³éÏó×é¼þ£¨½Ó¿Ú£©µ½ÐÞÊÎÀà£¨³éÏó+¾ßÌå£©µÄÁ¬½Ó
+//æŠ½è±¡è£…é¥°ç±»ï¼Œè£…é¥°æ¨¡å¼çš„æ ¸å¿ƒæž¢çº½ï¼Œå®ƒæ˜¯ä¸€ä¸ªå®žçŽ°äº†æŽ¥å£çš„æŠ½è±¡ç±»ï¼Œåœ¨æŠ½è±¡è£…é¥°ç±»é‡Œå£°æ˜Žäº†ä¸€ä¸ªæŽ¥å£å¯¹è±¡
+//åœ¨å…¶æž„é€ æ–¹æ³•é‡ŒåŠ å…¥äº†æŽ¥å£å¯¹è±¡ï¼Œç„¶åŽåˆé‡å†™æŽ¥å£æ–¹æ³•ï¼Œå®žçŽ°äº†æŠ½è±¡ç»„ä»¶ï¼ˆæŽ¥å£ï¼‰åˆ°ä¿®é¥°ç±»ï¼ˆæŠ½è±¡+å…·ä½“ï¼‰çš„è¿žæŽ¥
 abstract class Decorate implements Drink{
 	private Drink drink;
 	
-//		ÖØÔØ¹¹Ôì·½·¨£¬ÐÎ²Î¼ÓÈë³éÏó×é¼þ¶ÔÏó
+//		é‡è½½æž„é€ æ–¹æ³•ï¼Œå½¢å‚åŠ å…¥æŠ½è±¡ç»„ä»¶å¯¹è±¡
 	public Decorate(Drink drink) {
 		super();
 		this.drink = drink;
@@ -89,10 +89,10 @@ abstract class Decorate implements Drink{
 	
 }
 
-//¾ßÌåÐÞÊÎÀà£¨±»×°ÊÎ¶ÔÏó+×°ÊÎÄÚÈÝ£©
-//ÒýÓÃ±»×°ÊÎ¶ÔÏó²»ÊÇÍ¨¹ýÖ±½ÓÒýÓÃ£¬¶øÊÇÍ¨¹ý¼Ì³Ð³éÏó×°ÊÎÀà
-//¾ßÌå×°ÊÎÀà¼Ì³ÐÁË³éÏó×°ÊÎÀà£¬¾Í¿ÉÒÔ¼ä½ÓÒýÓÃ×°ÊÎ¶ÔÏóÁË
-//java¹æ¶¨Èô¸¸ÀàÖØÔØÁË¹¹Ôì·½·¨£¬Ôò×ÓÀà±ØÐëÖØÐ´×ÔÉí¹¹Ôì·½·¨£¬Ê¹ÐÎ²ÎºÍ·µ»ØÖµÓë¸¸ÀàÖØÔØºóµÄ¹¹Ôì·½·¨Ò»Ñù
+//å…·ä½“ä¿®é¥°ç±»ï¼ˆè¢«è£…é¥°å¯¹è±¡+è£…é¥°å†…å®¹ï¼‰
+//å¼•ç”¨è¢«è£…é¥°å¯¹è±¡ä¸æ˜¯é€šè¿‡ç›´æŽ¥å¼•ç”¨ï¼Œè€Œæ˜¯é€šè¿‡ç»§æ‰¿æŠ½è±¡è£…é¥°ç±»
+//å…·ä½“è£…é¥°ç±»ç»§æ‰¿äº†æŠ½è±¡è£…é¥°ç±»ï¼Œå°±å¯ä»¥é—´æŽ¥å¼•ç”¨è£…é¥°å¯¹è±¡äº†
+//javaè§„å®šè‹¥çˆ¶ç±»é‡è½½äº†æž„é€ æ–¹æ³•ï¼Œåˆ™å­ç±»å¿…é¡»é‡å†™è‡ªèº«æž„é€ æ–¹æ³•ï¼Œä½¿å½¢å‚å’Œè¿”å›žå€¼ä¸Žçˆ¶ç±»é‡è½½åŽçš„æž„é€ æ–¹æ³•ä¸€æ ·
 class milk extends Decorate{
 
 	public milk(Drink drink) {
@@ -109,7 +109,7 @@ class milk extends Decorate{
 	@Override
 	public String info() {
 		// TODO Auto-generated method stub
-		return super.info()+"¼ÓÈëÁËÅ£ÄÌ";
+		return super.info()+"åŠ å…¥äº†ç‰›å¥¶";
 	}	
 }
 
@@ -129,7 +129,7 @@ class sugar extends Decorate{
 	@Override
 	public String info() {
 		// TODO Auto-generated method stub
-		return super.info()+"¼ÓÈëÁËÌÇ";
+		return super.info()+"åŠ å…¥äº†ç³–";
 	}
 	
 	

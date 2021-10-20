@@ -1,16 +1,16 @@
-package ÒÔÇ°µÄÀí½â.Factory;
-//¼òµ¥¹¤³§Ä£Ê½Ò²½Ğ¾²Ì¬¹¤³§Ä£Ê½£¬ÒòÎª¹¤³§µÄ·½·¨¶¼ÊÇ¾²Ì¬·½·¨
-//Ìí¼ÓĞÂ²úÆ·ĞèÒªĞŞ¸Ä·Ç³£¶àµÄ´úÂë
+package ä»¥å‰çš„ç†è§£.Factory;
+//ç®€å•å·¥å‚æ¨¡å¼ä¹Ÿå«é™æ€å·¥å‚æ¨¡å¼ï¼Œå› ä¸ºå·¥å‚çš„æ–¹æ³•éƒ½æ˜¯é™æ€æ–¹æ³•
+//æ·»åŠ æ–°äº§å“éœ€è¦ä¿®æ”¹éå¸¸å¤šçš„ä»£ç 
 public class SimpleFactory {
 	public static void main(String[] args) {
-		Car car1=SimpleCarFactory.createcar("±¦Âí");
+		Car car1=SimpleCarFactory.createcar("å®é©¬");
 		car1.run();
 	}
 }
 class SimpleCarFactory{
 	public static Car createcar(String name) {
-		if(name.equals("±¦Âí")) return new Bwm();
-		if(name.equals("±¼³Û")) return new Benz();
+		if(name.equals("å®é©¬")) return new Bwm();
+		if(name.equals("å¥”é©°")) return new Benz();
 		return null;
 	}
 }
@@ -19,7 +19,7 @@ class Bwm implements Car{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("¿ª±¦Âí");
+		System.out.println("å¼€å®é©¬");
 	}
 	
 }
@@ -28,7 +28,7 @@ class Benz implements Car{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("¿ª±¼³Û");
+		System.out.println("å¼€å¥”é©°");
 	}
 	
 }

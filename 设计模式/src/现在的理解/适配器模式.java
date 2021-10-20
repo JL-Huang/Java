@@ -1,6 +1,6 @@
-package com.example.myapplication.DesignMode;
+package 现在的理解;
 //适配器模式
-public class AdapterDemo {
+public class 适配器模式 {
     public interface MusicPlayer{
         public void play(String format);
     }
@@ -50,8 +50,8 @@ public class AdapterDemo {
 }
    class AudioPlayer {
     public static void main(String[] args) {
-    AdapterDemo.MusicAdapter1 adapter1=new AdapterDemo.MusicAdapter1();
-    AdapterDemo.MusicAdapter2 adapter2=new AdapterDemo.MusicAdapter2();
+    适配器模式.MusicAdapter1 adapter1=new 适配器模式.MusicAdapter1();
+    适配器模式.MusicAdapter2 adapter2=new 适配器模式.MusicAdapter2();
 //    实现用音乐播放器实现类，通过play方法实现视频播放
         adapter1.play("RMVB");
     }

@@ -1,4 +1,4 @@
-package Tree;
+package 树;
 
 public class RandomListNode {
     public int label;

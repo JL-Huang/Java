@@ -1,6 +1,6 @@
 package 剑指offer;
 
-import Tree.TreeLinkNode;
+import 树.TreeLinkNode;
 
 public class GetNext {
     public TreeLinkNode test(TreeLinkNode pNode) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import Tree.TreeNode;
+import 树.TreeNode;
 
 //二叉树的层序遍历BFS
 //BFS的关键实现是队列， 那么多个元素出队列，每次出队列都把其左右孩子加入队列

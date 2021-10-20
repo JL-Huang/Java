@@ -1,7 +1,7 @@
-package com.example.myapplication.DesignMode;
+package 现在的理解;
 
 //工厂模式
-public class FactoryDemo {
+public class 工厂模式 {
     public static void main(String[] args) {
         ComputerFactory computerFactory = new RealComputerFactory();
         LenovoComputer lenovoComputer = computerFactory.createComputer(LenovoComputer.class);

@@ -1,6 +1,6 @@
 package 秋招;
 
-import Tree.ListNode;
+import 树.ListNode;
 
 public class Bigo3 {
 	ListNode result=new ListNode();

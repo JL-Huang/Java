@@ -1,4 +1,4 @@
-package Tree;
+package 树;
 //这个类是引用专题
 public class Reference {
 	public static void main(String[] args) {

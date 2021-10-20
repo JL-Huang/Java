@@ -1,6 +1,6 @@
-package com.example.myapplication.DesignMode;
+package 现在的理解;
 
-public class DecorateDemo {
+public class 装饰模式 {
     public static void main(String[] args) {
         Component component=new RealComponent();
         Decorator decorator=new RealDecorator(component);

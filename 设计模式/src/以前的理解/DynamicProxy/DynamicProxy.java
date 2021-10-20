@@ -1,24 +1,24 @@
-package ÒÔÇ°µÄÀí½â.DynamicProxy;
+package ä»¥å‰çš„ç†è§£.DynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-//¶¯Ì¬´úÀíÄ£Ê½£¬×Ô¶¯Éú³É´úÀíÀà£¬²»ÓÃÏñ¾²Ì¬´úÀíÄÇÑùÊÖ¶¯´´½¨
-//Proxy.newProxyInstance·µ»ØµÄÊÇµÚ¶ş¸ö²ÎÊıµÄÊµÀı¶ÔÏó
-//µ÷ÓÃproxyµÄÈÎºÎ½Ó¿Ú·½·¨£¬¶¼»á´¥·¢handle±»ÖØĞ´µÄinvoke·½·¨
-//method.invoke(star_1, args)±íÊ¾µ÷ÓÃstar_1ÖĞµÄ¸Ãmethod£¬Èç¹û»»³ÉÆäËûStarµÄÊµÏÖÀà¶ÔÏóÔòÊÇÊµÏÖÆäËûÊµÏÖÀà¶ÔÏóµÄsign·½·¨
-//ËùÒÔ¿ÉÒÔ°ÑĞèÒª¸´ÓÃµÄ·½·¨ÈÓÖØĞ´invokeÀïÃæ
-//¸üÍòÄÜµÄÊÇ.¿ÉÒÔ°ÑStarHandlerµÄ²ÎÊıÀàĞÍ¸Ä³ÉObject.È»ºóÓÉµ÷ÓÃ·½½øĞĞÇ¿×ª,ÕâÑùµÄ»°Ò»¸ö´úÀíÀà¿ÉÒÔ´úÀíËùÓĞÀà
+//åŠ¨æ€ä»£ç†æ¨¡å¼ï¼Œè‡ªåŠ¨ç”Ÿæˆä»£ç†ç±»ï¼Œä¸ç”¨åƒé™æ€ä»£ç†é‚£æ ·æ‰‹åŠ¨åˆ›å»º
+//Proxy.newProxyInstanceè¿”å›çš„æ˜¯ç¬¬äºŒä¸ªå‚æ•°çš„å®ä¾‹å¯¹è±¡
+//è°ƒç”¨proxyçš„ä»»ä½•æ¥å£æ–¹æ³•ï¼Œéƒ½ä¼šè§¦å‘handleè¢«é‡å†™çš„invokeæ–¹æ³•
+//method.invoke(star_1, args)è¡¨ç¤ºè°ƒç”¨star_1ä¸­çš„è¯¥methodï¼Œå¦‚æœæ¢æˆå…¶ä»–Starçš„å®ç°ç±»å¯¹è±¡åˆ™æ˜¯å®ç°å…¶ä»–å®ç°ç±»å¯¹è±¡çš„signæ–¹æ³•
+//æ‰€ä»¥å¯ä»¥æŠŠéœ€è¦å¤ç”¨çš„æ–¹æ³•æ‰”é‡å†™invokeé‡Œé¢
+//æ›´ä¸‡èƒ½çš„æ˜¯.å¯ä»¥æŠŠStarHandlerçš„å‚æ•°ç±»å‹æ”¹æˆObject.ç„¶åç”±è°ƒç”¨æ–¹è¿›è¡Œå¼ºè½¬,è¿™æ ·çš„è¯ä¸€ä¸ªä»£ç†ç±»å¯ä»¥ä»£ç†æ‰€æœ‰ç±»
 
-//Á½¸öÒªËØ£º
-//InvocationHandlerÊµÏÖÀà£¬ÊÇÒ»¸ö½Ó¿ÚÔöÇ¿Àà£¬¹¹Ôì·½·¨²ÎÊıÊÇĞèÒªÊµÏÖµÄ½Ó¿Ú£¬ĞèÒªÊµÏÖinvoke·½·¨£¬¿ÉÒÔÌí¼ÓÒ»Ğ©ÔöÇ¿µÄ·½·¨
-//proxy¶ÔÏó£¬µ÷ÓÃProxyµÄnewProxyInstance¾²Ì¬·½·¨»ñµÃ£¬½«handle×÷Îª£¬ÀûÓÃ·´Éä»ñµÃ½Ó¿Ú¶ÔÏó
-//proxy¶ÔÏó¾Í¿ÉÒÔÖ±½Ó´úÀí
+//ä¸¤ä¸ªè¦ç´ ï¼š
+//InvocationHandlerå®ç°ç±»ï¼Œæ˜¯ä¸€ä¸ªæ¥å£å¢å¼ºç±»ï¼Œæ„é€ æ–¹æ³•å‚æ•°æ˜¯éœ€è¦å®ç°çš„æ¥å£ï¼Œéœ€è¦å®ç°invokeæ–¹æ³•ï¼Œå¯ä»¥æ·»åŠ ä¸€äº›å¢å¼ºçš„æ–¹æ³•
+//proxyå¯¹è±¡ï¼Œè°ƒç”¨Proxyçš„newProxyInstanceé™æ€æ–¹æ³•è·å¾—ï¼Œå°†handleä½œä¸ºï¼Œåˆ©ç”¨åå°„è·å¾—æ¥å£å¯¹è±¡
+//proxyå¯¹è±¡å°±å¯ä»¥ç›´æ¥ä»£ç†
 public class DynamicProxy {
 	public static void main(String[] args) {
 		Star star_1=new RealStar();
 		StarHandler handler=new StarHandler(star_1);
-		//ÕâĞĞ¿ÉÒÔĞ´µ½StarHandlerÀïÃæ
+		//è¿™è¡Œå¯ä»¥å†™åˆ°StarHandleré‡Œé¢
 		Star proxy=(Star) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[] {Star.class}, handler);
 		proxy.sign();
 	}
@@ -47,7 +47,7 @@ class RealStar implements Star{
 	@Override
 	public void sign() {
 		// TODO Auto-generated method stub
-		System.out.println("ËïÎò¿Õ");
+		System.out.println("å­™æ‚Ÿç©º");
 	}
 	
 }

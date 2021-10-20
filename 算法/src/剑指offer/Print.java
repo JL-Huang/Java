@@ -2,7 +2,7 @@ package 剑指offer;
 
 import java.util.ArrayList;
 
-import Tree.TreeNode;
+import 树.TreeNode;
 
 public class Print {
     ArrayList<ArrayList<Integer> > test(TreeNode pRoot) {
