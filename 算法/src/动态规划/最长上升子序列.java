@@ -18,11 +18,8 @@ public class 最长上升子序列 {
     	Arrays.sort(result);
     	return result[nums.length-1];
     }
-//	不同的子问题：对于每一index，都要求index结尾的子序列长度最大值length[index]
-//	公共子子问题：每一个解都可以通过length[index-1]求出
-//	可以保存的内容：length[index-1]
-//    思路是用result[i]保存以nums[i]结尾的子序列长度最大值
-//    result[i]=max(result[0~i-1])
+//思路：保存"必须包含当前位的最优解"，因为如果是"可以不包含当前位的最优解"，不一定能得到最优解
+//最优子结构：
     public void recur(int[]nums,int[] result) {
     	for(int i=0;i<nums.length;i++) {
     		for(int k=i;k>=0;k--) {

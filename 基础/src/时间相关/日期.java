@@ -1,8 +1,7 @@
-package DateTest;
+package 时间相关;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Year;
 import java.util.Calendar;
 //Date
 //龙鸣类，只需要知道返回当前时间就是了
