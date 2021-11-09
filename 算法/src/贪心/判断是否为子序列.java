@@ -30,12 +30,14 @@ public class 判断是否为子序列 {
         if (s.length() > t.length()) return false;
         for (int i = 0; i < s.length(); ) {
             for (int j = 0; j < t.length(); ) {
+//                两个终结条件
                 if (j == t.length() - 1 && i != s.length() - 1) {
                     return false;
                 }
                 if (j == t.length() - 1 && s.charAt(i) != t.charAt(j)) {
                     return false;
                 }
+//                关键代码，局部最优可推导出全局最优
                 if (s.charAt(i) != t.charAt(j)) {
                     j++;
                 } else {

@@ -18,7 +18,7 @@ public class 最长上升子序列 {
     	Arrays.sort(result);
     	return result[nums.length-1];
     }
-//思路：保存"必须包含当前位的最优解"，因为如果是"可以不包含当前位的最优解"，不一定能得到最优解
+//思路：保存"必须包含当前位的最优解"，因为如果是"可以不包含当前位的最优解"，得不到递推
 //最优子结构：
     public void recur(int[]nums,int[] result) {
     	for(int i=0;i<nums.length;i++) {
