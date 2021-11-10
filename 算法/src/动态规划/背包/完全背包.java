@@ -1,4 +1,4 @@
-package 动态规划;
+package 动态规划.背包;
 
 public class 完全背包 {
     public static void main(String[] args) {
