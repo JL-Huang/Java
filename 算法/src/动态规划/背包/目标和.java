@@ -17,7 +17,7 @@ package 动态规划.背包;
 //背包种类：一个只能用一次，是零一背包
 //背包容量：x
 //重量：nums[i]
-//价值：nums[i]
+//价值：无
 
 public class 目标和 {
     public static void main(String[] args) {
