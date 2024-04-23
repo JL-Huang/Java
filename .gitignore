@@ -1,12 +1,2 @@
 # Project exclude paths
-/Annotation/bin/
-/Base/bin/
-/BaseinBase/bin/
-/CV/bin/
-/Design/bin/
-/IOtest/bin/
-/MYTEST/bin/
-/ThreadTest/bin/
-/TryUDP/bin/
-/WebServer/bin/
-/WebTest/bin/
+/*/bin/

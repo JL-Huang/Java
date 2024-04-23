@@ -22,5 +22,6 @@ public class Bigo6 {
 			map.put(temp_int, new ArrayList<TreeNode>());
 			map.get(temp_int).add(temp_node);
 		}
+		return list;
 	}
 }
