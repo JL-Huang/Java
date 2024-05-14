@@ -1,0 +1,14 @@
+# Q&A
+## 项目结构
+20+module，通过buildgradle实现依赖，通过反射实现模块间通信调用，拍摄部分封装为sdk对外提供，sdk内业务逻辑通过一个总线调用app主体实现
+
+mvp：mvp中presenter持有view，view持有presenter，通过接口更新，需要写很多接口
+Mvvm：最大的思想是数据驱动，model层的数据改变驱动viewmodel数据变更，viewmodel数据变更驱动view更新，livedata实现
+问题：
+1. 数据倒灌
+现象：先设了value再observe，因为内部是通过对比livedate的version对比判断是否触发的，所以会引起数据倒灌，屏幕旋转，切换系统语言
+解决办法：1 设一个trigger，true-》false，observe的时候判断为true才执行2重写livedata，在创建observer的时候记录一个id，执行触发observe回调的时候判断这个id是否已经存在，存在了才回调onchange
+2. 数据丢失
+现象：postvalue存值到mpendingdata，往主线程丢一个runable，在runable里实现setvalue，setvalue在observe非活跃不会回调
+解决办法：1observforever手动管理生命周期2postvalue手动抛runable3重写observe
+

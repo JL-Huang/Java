@@ -80,3 +80,29 @@
 	String转char或char[]:toCharArray(),charAt(int i),getChars(srcBegin, srcEnd, dst, dstBegin)
 	StringBuilder转String:toString(),加元素用append,删元素用deleteCharAt(int)
 	十进制转二八十六进制字符串:Integer.toBinaryString(int i),Integer.toOctalString(int i),Integer.toHexString(int i)
+
+2024.4.27
+1.关于双指针
+永远不要在当前指针计算和保存result[index+1]，会很混乱！
+正确做法应该是 计算result[index]->if(result[index+1]……)->i++
+2.关于贪心
+从前往后
+--可以算出局部最优，观察得出局部最优到全局最优的归类
+--可以是在遍历所有可能的前提下，去掉非最优解（盛水最多的容器）
+从后往前
+--假设有局部最优，思考从这个假设的局部最优怎么得到当前的最优
+3.关于滑动窗口
+需要求一个连续子集时优先考虑
+固定套路
+int startIndex = 0;
+int endIndex = 0;
+int tempResult = 0;
+while (endIndex < nums.length) {
+    handle(tempResult);
+    while (startIndex < nums.length && tempSum >= target) {
+        result = Math.min(result, tempResult);
+        handle(tempResult);
+        }
+    endIndex++;
+}
+
