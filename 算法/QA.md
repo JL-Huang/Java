@@ -1,6 +1,15 @@
 # Q&A
+## ×îÉÃ³¤Ê²Ã´
+ÒµÎñ·½Ãæ£¬±È½ÏÉÃ³¤´Ó»ìÂÒµÄ´úÂëÂß¼­µÄÕûÀíºÍ¹éÄÉ³öÒ»¸ö±È½ÏÇåÎúÍê±¸µÄÁ÷³Ì£¬ÖØ¹¹¹ý¼¸¸öÄ£¿é£¬ÏîÄ¿Õ¹Ê¾ÒÔ¼°Ñ¹ËõÉÏ´«
+## ÓÐÊ²Ã´¶Ì°å
+ÄÃµ½Ò»¸ö²úÆ·ÐèÇóÊ×ÏÈÏëµ½µÄÊÇÔõÃ´ÊµÏÖ£¬ÊÂÊµÉÏÓ¦¸ÃÕ¾ÔÚÒ»¸ö¸üÈ«ÃæµÄÊÓ½Ç¿´£¬²úÆ·µÄÐèÇó½Ç¶È¿ÉÄÜÊÇ»ùÓÚÊý¾Ý»ùÓÚÒµÎñ
+¼¼ÊõµÄ½Ç¶È¿ÉÒÔ¿´µ½µÄÊÇ±³ºóµÄÊµÏÖ£¬ÓÅ»¯µÄ·½ÏòÒÔ¼°Ç±ÔÚµÄ·çÏÕ£¬Èç¹ûÖ÷¶¯µØÈ¥ÁË½â²»Í¬ÊÓ½ÇÈ¥½áºÏ¿ÉÒÔµÃµ½¸ø³ö¸üÈ«ÃæµÄ½áÂÛ£¬
+¶ø²»½ö½öÊÇÄÜ²»ÄÜ×öÅÅÆÚ¶à¾ÃÕâÑù¡£ Õâ·½ÃæÓÐÒâÊ¶µØÔÚÃÖ²¹£¬ÔÚ¼¼ÊõÉÏÀí½âÐèÇóµÄÍ¬Ê±»á¸üÖ÷¶¯ÁË½âÒµÎñ±³¾°È¥ÓÅ»¯ÐèÇó»òÕßÊµÏÖ
 ## ÏîÄ¿½á¹¹
-20+module£¬Í¨¹ýbuildgradleÊµÏÖÒÀÀµ£¬Í¨¹ý·´ÉäÊµÏÖÄ£¿é¼äÍ¨ÐÅµ÷ÓÃ£¬ÅÄÉã²¿·Ö·â×°Îªsdk¶ÔÍâÌá¹©£¬sdkÄÚÒµÎñÂß¼­Í¨¹ýÒ»¸ö×ÜÏßµ÷ÓÃappÖ÷ÌåÊµÏÖ
+20+module£¬Í¨¹ýbuildgradleÊµÏÖÒÀÀµ
+Ã¿¸öÄ£¿éÖÐ¶¼ÓÐÒ»¸ömoduleÀà£¬½«Ëû×¢²áµ½Ò»¸öÈ«¾ÖÒÀÀµµÄÄ£¿éModuleService£¬ModuleServiceÍ¨¹ý·´Éä»ñµÃÃ¿Ò»¸öÄ£¿éµÄmoduleÀàºÍÆäÖÐµÄ·½·¨
+Í¨¹ý·´ÉäÊµÏÖÄ£¿é¼äÍ¨ÐÅµ÷ÓÃ£¬×¢²áÒ»¸ö
+ÅÄÉã²¿·Ö·â×°Îªsdk¶ÔÍâÌá¹©£¬sdkÄÚÒµÎñÂß¼­Í¨¹ýÒ»¸ö×ÜÏßµ÷ÓÃappÖ÷ÌåÊµÏÖ
 
 mvp£ºmvpÖÐpresenter³ÖÓÐview£¬view³ÖÓÐpresenter£¬Í¨¹ý½Ó¿Ú¸üÐÂ£¬ÐèÒªÐ´ºÜ¶à½Ó¿Ú
 Mvvm£º×î´óµÄË¼ÏëÊÇÊý¾ÝÇý¶¯£¬model²ãµÄÊý¾Ý¸Ä±äÇý¶¯viewmodelÊý¾Ý±ä¸ü£¬viewmodelÊý¾Ý±ä¸üÇý¶¯view¸üÐÂ£¬livedataÊµÏÖ
@@ -12,3 +21,210 @@ Mvvm£º×î´óµÄË¼ÏëÊÇÊý¾ÝÇý¶¯£¬model²ãµÄÊý¾Ý¸Ä±äÇý¶¯viewmodelÊý¾Ý±ä¸ü£¬viewmodelÊý¾
 ÏÖÏó£ºpostvalue´æÖµµ½mpendingdata£¬ÍùÖ÷Ïß³Ì¶ªÒ»¸örunable£¬ÔÚrunableÀïÊµÏÖsetvalue£¬setvalueÔÚobserve·Ç»îÔ¾²»»á»Øµ÷
 ½â¾ö°ì·¨£º1observforeverÊÖ¶¯¹ÜÀíÉúÃüÖÜÆÚ2postvalueÊÖ¶¯Å×runable3ÖØÐ´observe
 
+## appÆô¶¯
+### launcher
+-----startactivity binder----->
+### ams
+-----socket Process.start----->
+### zygote
+-----------fork------>
+### app½ø³Ì
+----attach°ó¶¨amsÓëapplicationthread binder----->
+### ams
+--------scheduleLaunchActivity binder-->
+### applicationthread
+--LAUNCH_ACTIVITY handler-->
+### activitythread
+------Activity.onCreate()
+
+## Handlerµ¼ÖÂµÄÄÚ´æÐ¹Â¶Ô­Òò¼°Æä½â¾ö·½°¸
+·Ç¾²Ì¬ÄÚ²¿Àà»òÄäÃûÄÚ²¿ÀàÖÐ´´½¨ÁËÖ÷Ïß³Ìhandler£¬·¢ËÍÁËÑÓÊ±ÏûÏ¢£¬ÏûÏ¢³ÖÓÐhandler¶ÔÏó³ÖÓÐÍâ²¿Àà¶ÔÏóµ¼ÖÂ²»ÄÜ»ØÊÕ
+1.½«³ÖÓÐHandlerµÄ×ÓÀàÉèÖÃ³É¾²Ì¬ÄÚ²¿Àà,Ê¹ÓÃÈõÒýÓÃ³ÖÓÐActivityÊµÀý 
+2.µ±Íâ²¿Àà½áÊøÉúÃüÖÜÆÚÊ±£¬removeCallbacksAndMessages(null)Çå¿ÕHandlerÄÚÏûÏ¢¶ÓÁÐ
+
+## ×ÓÏß³Ì¸üÐÂui
+Í¨¹ýViewRootImpl.requestLayout()ÖÐµ÷ÓÃcheckThread()Ð£Ñé
+onCreateÊ±Ö´,ÏÈrequestLayoutºóµ÷ÓÃ£¬windowManager¼Óviewµ÷ÓÃ£¬surfaceViewµ÷ÓÃ
+
+## Ö÷Ïß³ÌÎªÊ²Ã´²»»áÒòÎªLooper.loop()ÀïµÄËÀÑ­»·¿¨ËÀ£¿
+messageQueue.nextÃ»ÏûÏ¢Ê±»áµ÷ÓÃnativeµÄnativePollOnce()£¬Ö÷Ïß³Ì»áÊÍ·ÅCPU×ÊÔ´½øÈëÐÝÃß×´Ì¬£¬Ö±µ½ÏÂ¸öÏûÏ¢µ½´ï»òÕßÓÐÊÂÎñ·¢Éú £¬ÔÚnative²ã»áÓÐÒ»¸ö¶ÁÈ¡¶ËºÍÒ»¸öÐ´Èë¶Ë£¬µ±ÓÐÏûÏ¢·¢ËÍ¹ýÀ´
+µÄÊ±ºò»áÈ¥»½ÐÑ¶ÁÈ¡¶Ë£¬È»ºó½øÐÐÏûÏ¢·¢ËÍÓë´¦Àí
+
+## Í¨¹ýHandlerÈçºÎÊµÏÖÏß³ÌµÄÇÐ»»
+»ñÈ¡ÁíÒ»¸öÏß³ÌµÄhandler£¬ÓÃÕâ¸öhandler·¢ËÍÒ»¸öÏûÏ¢µ½messageQueue,looper¶ÁÈ¡µ½ÒÔºó£¬message³ÖÓÐhandlerÒýÓÃ£¬»áµ÷ÓÃhandlerµÄdispatchMessage´¦Àí
+
+## Looper ÈçºÎÓë Thread ¹ØÁªµÄ
+threadÄÚ²¿Î¬»¤ÁËÒ»¸öthreadlocalmap£¬keyÊÇthreadlocal¶ÔÏó£¬vulueÊÇ·ºÐÍ
+ThreadLocalµÄset·½·¨»ñÈ¡µ±Ç°Ïß³ÌµÄthreadlocalmap£¬ÕÒµ½×Ô¼º¶ÔÓ¦µÄkey´æÖµ½øÈ¥
+LooperÀïÃæÓÐÒ»¸ö¾²Ì¬±äÁ¿sThreadLocal£¬ÔÚprepareÊ±keyÎªsThreadLocal£¬valueÎª×Ô¼º´æ½øÈ¥
+
+## ÎªÊ²Ã´zygote½ø³Ì¸úÆäËû½ø³ÌÍ¨Ñ¶Ê¹ÓÃsocket¶ø²»ÊÇbinder
+1. BinderËäÈ»ÔÚÄÚºË£¬µ«ÊÇÌá¹©·þÎñµÄÊÇServiceManager
+Õâ¸öÊ±ºòÈç¹ûÒª¸øAMSÌá¹©Binder IPC¾ÍÐèÒªµÈServiceManagerÏÈ³õÊ¼»¯ºÃ£¬Õâ¸öÊÇÃ»°ì·¨±£Ö¤µÄ£¬Èç¹ûÒª±£Ö¤Õâ¸öÏÈºóË³ÐòÓÖÒª¸ã¶àÒ»Ì×½ø³ÌÍ¨Ñ¶¾Í¸üÂé·³ÁË¡£
+2. ÁíÍâ£¬ÓÉÓÚZygote½ø³ÌÖ»ÓëÉÙÊý¼¸¸ö½ø³Ì½øÐÐÍ¨Ñ¶£¬Ê¹ÓÃSocketÍ¨Ñ¶µÄ¿ªÏúÏà¶Ô½ÏÐ¡£¬Òò´ËÑ¡ÔñSocketÍ¨Ñ¶¸ü¼ÓºÏÊÊ¡£¶øÇÒÕâÀïÃæÊÇÓÅ»¯¹ýµÄLocalSocketÐ§ÂÊ»á¸ü¸ß
+
+## ÊÂ¼þÊÇÏÈµ½DecorView»¹ÊÇÏÈµ½Window
+### ViewRootImpl -> DecorView -> Activity -> PhoneWindow -> DecorView
+DecorViewµÄdispatchTouchView²¢Ã»ÓÐµ÷ÓÃsuper,µ¥´¿µÄµ÷ÓÃÁËmwindow.callback°ÑÊÂ¼þ½»¸øactivity,activity½»¸øwindow£¬
+windowµ÷ÓÃDecorViewµÄsuper.dispatchTouchView£¬Õâ¸öÊ±ºòÊÓÎªviewgroup
+
+## ACTION_DOWN
+Èç¹ûdownÊÂ¼þÄ¬ÈÏ²»À¹½Ø£¬·ÇdownÊÂ¼þmFirstTouchTarget²»Îª¿Õ²Å²»À¹½Ø£¬²»À¹½Ø¾ÍÊÇÍùÏÂÖ´ÐÐ×ÓviewµÄontouchevent
+ÏÂ´Î³ýdownÊÂ¼þÀ´µÄÊ±ºò£¬»áÂäµ½×îºóÒ»¸öÏû·ÑµÄviewgroup
+
+## Èý¸öºËÐÄÊÂ¼þ
+1¡¢dispatchTouchEvent()£º·½·¨·µ»ØÖµÎªtrue±íÊ¾ÊÂ¼þ±»µ±Ç°ÊÓÍ¼Ïû·Ñµô£» ·µ»ØÎªfalse±íÊ¾ Í£Ö¹Íù×ÓView´«
+µÝºÍ·Ö·¢,½»¸ø¸¸ÀàµÄonTouchEvent´¦Àí
+2¡¢onInterceptTouchEvent() £º return false ±íÊ¾²»À¹½Ø£¬ÐèÒª¼ÌÐø´«µÝ¸ø×ÓÊÓÍ¼¡£return true À¹½ØÕâ¸öÊÂ¼þ
+²¢½»ÓÉ×ÔÉíµÄonTouchEvent·½·¨½øÐÐÏû·Ñ.
+3¡¢ onTouchEvent() £º return false ÊÇ²»Ïû·ÑÊÂ¼þ£¬»á±»´«µÝ¸ø¸¸ÊÓÍ¼µÄonTouchEvent·½·¨½øÐÐ´¦Àí¡£return
+true ÊÇÏû·ÑÊÂ¼þ¡£
+
+## ÎªÊ²Ã´´´½¨activityÓÃsocket²»ÓÃbinder
+1. forkÖ»Ö§³Öµ¥Ïß³Ì£¬ÒòÎªfork³öÀ´µÄ×Ó½ø³Ì»á¸´ÖÆ¸¸½ø³ÌµÄËùÓÐÄÚÈÝ£¬°üÀ¨¸¸½ø³ÌµÄËùÓÐÏß³Ì×´Ì¬£¬Èç¹ûÊÇ×èÈû»áÒ»Ö±×èÈûÔì³ÉËÀËø
+binderÐèÒª¶àÏß³ÌÖ§³Ö£¬ËùÒÔ²»ÄÜ²ÉÓÃbinder
+½ø½×£ºÆäÊµforkÖ®Ç°Í¨ÐÅÒÑ¾­½áÊø£¬ÊÇbinderÇý¶¯ÀïµÄÉè¼Æ²»Ö§³Öfork
+2. ×Ó½ø³ÌÊ¹ÓÃbinderÊ±£¬ÐÂ½¨ProcessState£¬µ¥Àý»¹ÊÇ¸¸½ø³ÌµÄÒýÓÃ£¬ÀïÃæ»áÓÐ²Ù×÷open_driverÉæ¼°Ð´²Ù×÷£¬ÐèÒªmmapÉêÇëÒ»Æ¬ÄÚ´æÓÃÒÔÌá¹©¸øÄÚºË½øÐÐÊý¾Ý½»»»Ê¹ÓÃ¡£
+¶øÈç¹ûzygoteÊ¹ÓÃÁËbinder£¬ÒòÎª×Ó½ø³ÌÊÇfork³öÀ´µÄ£¬×Ó½ø³ÌÔÚ½øÐÐbinderÍ¨ÐÅÊ±£¬ÄÚºË»¹ÊÇ»á¼ÌÐøÊ¹ÓÃ¸¸½ø³ÌÉêÇëµÄµØÖ·Ð´Êý¾Ý£¬¶ø´ËÊ±»á´¥·¢×Ó½ø³ÌCOW(Copy on Write)£¬´Ó¶øµ¼ÖÂµØÖ·¿Õ¼äÒÑ¾­ÖØÐÂÓ³Éä£¬¶ø×Ó½ø³Ì»¹³¢ÊÔ·ÃÎÊÖ®Ç°¸¸½ø³ÌmmapµÄµØÖ·£¬»áµ¼ÖÂSIGSEGV¡¢SEGV_MAPERR¶Î´íÎó¡£
+
+
+## ActivityManagerServiceÊÇÊ²Ã´£¿Ê²Ã´Ê±ºò³õÊ¼»¯µÄ£¿ÓÐÊ²Ã´×÷ÓÃ£¿
+ActivityManagerService Ö÷Òª¸ºÔðÏµÍ³ÖÐËÄ´ó×é¼þµÄÆô¶¯¡¢ÇÐ»»¡¢µ÷¶È¼°Ó¦ÓÃ½ø³ÌµÄ¹ÜÀíºÍµ÷¶ÈµÈ¹¤×÷£¬ÆäÖ°Ôð
+Óë²Ù×÷ÏµÍ³ÖÐµÄ½ø³Ì¹ÜÀíºÍµ÷¶ÈÄ£¿éÀàËÆ¡£
+ActivityManagerService½øÐÐ³õÊ¼»¯µÄÊ±»úºÜÔÚSystemServer½ø³Ì¿ªÆôµÄÊ±ºò
+Èç¹û´ò¿ªÒ»¸öAppµÄ»°£¬ÐèÒªAMSÈ¥Í¨Öªzygote½ø³Ì£¬ ËùÓÐµÄActivityµÄÉúÃüÖÜÆÚAMSÀ´¿ØÖÆ
+
+## InstrumentationÊÇÊ²Ã´£¿ºÍActivityThreadÊÇÊ²Ã´¹ØÏµ£¿
+AMSÓëActivityThreadÖ®¼äÖîÈçActivityµÄ´´½¨¡¢ÔÝÍ£µÈµÄ½»»¥¹¤×÷Êµ¼ÊÉÏÊÇÓÉInstrumentation¾ßÌå²Ù×÷µÄ¡£Ã¿
+¸öActivity¶¼³ÖÓÐÒ»¸öInstrumentation¶ÔÏóµÄÒ»¸öÒýÓÃ£¬ Õû¸ö½ø³ÌÖÐÊÇÖ»ÓÐÒ»¸öInstrumentation¡£
+
+## apk×é³É
+1. META-INFÊÇÇ©ÃûÎÄ¼þ¼Ð¡£ ´æ·ÅÇ©ÃûÐÅÏ¢
+2. res´æ·Å×ÊÔ´ÎÄ¼þµÄÄ¿Â¼,resources.arsc ±àÒëºóµÄ¶þ½øÖÆ×ÊÔ´Ë÷Òý
+3. classes.dex ÊÇk×Ö½ÚÂë 
+4. AndroidManifest.xml ³ÌÐòµÄÈ«¾ÖÇåµ¥ÅäÖÃÎÄ¼þ
+Ö±½ÓÔÚandroid studio analysis apk£¬Õ¼±È×î¶àÊÇËÄ¿é
+### res£¬asset
+TinyPNG²å¼þ¶Ôpng½øÐÐÑ¹Ëõ£¬Ö»±£Áôxxhdpi£¬¾¡Á¿ÓÃsvgÒÔ¼°lottlie£¬±ÜÃâÊ¹ÓÃÖ¡¶¯»­
+### class.dex
+minifyEnabled true
+ÒÆ³ýÎ´±»Ê¹ÓÃµÄÀàºÍ³ÉÔ±£¬²¢ÇÒ»áÔÚÓÅ»¯¶¯×÷Ö´ÐÐÖ®ºóÔÙ´ÎÖ´ÐÐ£¬ÒòÎªÓÅ»¯ºó¿ÉÄÜ»áÔÙ´Î±©Â¶Ò»Ð©Î´±»Ê¹ÓÃµÄÀàºÍ³ÉÔ±
+·´Éä£¬WebViewÖÐJavaScriptµ÷ÓÃµÄ·½·¨£¬jni£¬Óë·þÎñ¶Ë½»»¥Ê±µÄ½âÎöÀà
+### lib
+stripÈ¥µô·ûºÅ±í
+²ÉÓÃ¶¯Ì¬»¯¼ÓÔØso
+Æô¶¯appÊ±,´´½¨classloaderÊµÀý£¬½«soÎÄ¼þÄ¿Â¼×¢ÈëÏà¹Ø×Ö¶Î
+system.load´ÓclassloaderÖ¸¶¨Ä¿Â¼ÖÐ°´ÎÄ¼þÃûÑ°ÕÒ²¢¼ÓÔØsoÎÄ¼þ
+1. °æ±¾Î¬»¤
+ÅÐ¶Ï zip ÊÇ·ñÓÐ¸üÐÂ£¬Èç¹ûÓÐ¸üÐÂ£¬ÔòÐèÒªÖØÐÂÏÂÔØ
+2. °²È«ÐÔÎÊÌâ£º±£Ö¤ÏÂÔØµÄzipÒ»ÖÂ
+ÏÂÔØÍê½âÑ¹Ö®Ç°¶ÔÆä×öÒ»´Îmd5Ð£Ñé£¬Í¨¹ý½Ó¿ÚÏÂ·¢£¬½âÑ¹ºóÐ£ÑéÎÄ¼þ´óÐ¡
+3. ×¢ÈëclassloaderÊµÀý
+Í¨¹ý·´ÉäÐÞ¸ÄsystemNativeLibraryDirectories±äÁ¿
+
+## Ð­³Ì
+ÓÅµã
+1. ¶à¸öÐ­³Ì¿ÉÒÔ±»°²ÅÅÔÚÍ¬Ò»¸öÏß³ÌÉÏ
+2. Òì³£µÄ´¦ÀíºÍÈ¡Ïû
+3. Á¼ºÃµÄ×ÊÔ´¹ÜÀí£¬Í¨¹ý×÷ÓÃÓòÊµÏÖ
+   Ê¹ÓÃµÄÊ±ºòÖ÷ÒªÓÐ¼¸µã
+1. Ð­³Ì×÷ÓÃÓò
+   GlobeScope£º×÷ÓÃÓòÈ«¾Ö
+    MainScope£ºÖ÷Ïß³Ì×÷ÓÃÓò
+   lifecycleScope£º¸úÉúÃüÖÜÆÚ°ó¶¨
+    viewmodelScope£º¸úviewmodelÉúÃüÖÜÆÚ°ó¶¨
+×Ô¶¨ÒåÐ­³Ì×÷ÓÃÓò£ºÏ£ÍûÐ­³ÌÓëÄ³¸öÌØ¶¨µÄÉúÃüÖÜÆÚ°ó¶¨
+»áµÈËùÓÐÖ´ÐÐÍê²ÅÍùÏÂ×ß
+2. Ð­³ÌÆô¶¯·½Ê½
+   launch£º·µ»ØÒ»¸öjob±íÊ¾Ð­³Ì×´Ì¬ 
+   async/await: ·µ»ØÒì²½Ö´ÐÐ½á¹û
+   runBlocking£º×èÈûµ±Ç°Ð­³ÌÖ±µ½Ö´ÐÐÍê
+3. Ð­³Ìµ÷¶ÈÆ÷
+io£¬default£¬main
+×Ô¶¨Òåµ÷¶ÈÆ÷£ºÐèÒªÌØ¶¨µÄÏß³Ì³ØÉÏÔËÐÐ
+¼Ì³ÐCoroutineDispatcher£¬ÖØÐ´dispatch·½·¨£¬Èë²Î´«Ò»¸öÏß³Ì³Ø
+4. suspend
+¹ÒÆðº¯Êý£º¿ÉÒÔ×öµ½°Ñµ±Ç°Ïß³Ì¹ÒÆð£¬×ªµ½ÁíÒ»¸öÏß³ÌÖ´ÐÐ£¬Ö´ÐÐÍê»Øµ½µ±Ç°Ïß³Ì£¬±¾ÖÊÉÏÊÇ»Øµ÷
+Òì³£²¶×½
+launch²»»áÍùÍâÅ×Òì³£
+   CoroutineExceptionHandlerÖ»ÄÜ´¦Àíµ±Ç°ÓòÄÚ¿ªÆôµÄ×ÓÐ­³Ì»òÕßµ±Ç°Ð­³ÌÅ×³öµÄÒì³£
+
+## ½²½²synchronized
+»ù±¾µÄÔ­ÀíÊÇÍ¨¹ýsynchronizedÏÞÖÆ·ÃÎÊ£¬±£Ö¤ÔÚÍ¬Ò»Ê±¿Ì×î¶àÖ»ÓÐÒ»¸öÏß³ÌÖ´ÐÐ´úÂë¿é£¬ÆäËûÏß³Ì×èÈû¹ÒÆð
+¿ÉÒÔÊµÏÖ²¢·¢°²È«£¬µ«ÊÇJDK1.6Ö®Ç°ÏûºÄºÜ´ó£¬ÒòÎªÒ»¸öÏß³Ì¹ÒÆðºÍ»Ö¸´ÐèÒª´ÓÓÃ»§Ì¬ºÍÄÚºËÌ¬½øÐÐÇÐ»»£¬ºÜ´ó¿ªÏú
+jdk1.6Ö®ºó×öÁËÒ»Ð©ÓÅ»¯
+### ËøÉý¼¶
+1. Æ«ÏòËø£º¼ÓËøµÄÊ±ºò±ê¼Çµ±Ç°Ïß³Ì£¬Í¬Ò»Ïß³ÌÔÙ´Î·ÃÎÊÎÞÐè»ñµÃËø
+2. ÇáÁ¿Ëø£ºµ±³öÏÖÁËµÚ¶þ¸öÏß³Ì¾ºÕùËø»á³·ÏúÆ«ÏòËø£¬ÔÝÍ£³ÖÓÐÆ«ÏòËøµÄÏß³Ì£¬¼ì²éËø×´Ì¬£¬È»ºó»Ö¸´Ïß³ÌµÄÔËÐÐ£¬ÓÃ×ÔÐýµÄ·½Ê½³¢ÊÔ»ñÈ¡Ëø
+3. ÖØÁ¿¼¶Ëø£º¶à¸öÏß³Ì·´¸´³¢ÊÔ»ñÈ¡ÇáÁ¿¼¶Ëø»áÉý¼¶£¬£¬ËùÓÐ×ÔÐýµÈ´ýµÄÏß³Ì¶¼»á½øÈë×èÈû×´Ì¬£¬µÈ´ýÖØÁ¿¼¶ËøµÄÊÍ·Å¡£
+ËøºÏ²¢ËøÏû³ý£ºËø×¡¸ü´óµÄ´úÂë¿é¼õÉÙËøµÄ»ñÈ¡ÓëÊÍ·Å£¬ÅÐ¶ÏÒ»Ð©²»´æÔÚ¾ºÕùµÄ³¡¾°È¥³ýËø
+ÊÊÓ¦ÐÔ×ÔÐý£ºÒ»¸öÏß³Ì³É¹¦»ñÈ¡ÁËËø£¬ÇÒ³ÖËøÊ±¼ä½Ï¶Ì£¬×ÔÐý´ÎÊýÔö¶à£¬Ïà·û¾ÍºÜ¿ì½øÈë×èÈû
+
+ÓÐÒ»Ð©¹¦ÄÜÉÏµÄÏÞÖÆ£¬ÎÞ·¨ÖÐ¶ÏÕýÔÚµÈ´ý»ñÈ¡ËøµÄÏß³Ì£¬²»ÄÜÊµÏÖ¹«Æ½ËøÔì³ÉËø¼¢¶ö
+
+## GCRoots
+1. ÐéÄâ»úÕ»(Õ»èåÖÐµÄ±¾µØ±äÁ¿±í)ÖÐµÄÒýÓÃµÄ¶ÔÏó 
+2. ·½·¨ÇøÖÐµÄÀà¾²Ì¬ÊôÐÔÒýÓÃµÄ¶ÔÏó 
+3. ·½·¨ÇøÖÐµÄ³£Á¿ÒýÓÃµÄ¶ÔÏó 
+4. ±¾µØ·½·¨Õ»ÖÐJNI£¨Native·½·¨£©µÄÒýÓÃµÄ¶ÔÏó
+
+openglÄãÃÇÊÇÔõÃ´×öµÄ
+Ëã·¨Éú³ÉÒ»¸öplyÎÄ¼þ£¬ÆäÊµÀïÃæÊÇÒ»ÏµÁÐµÄÊý¾Ý
+±àÂë·½Ê½ascii»òÕßbinary£¬µãÔÆÊýÁ¿£¬xyzrgb
+ÎÊÌâ£º¼ÓÔØËÙ¶È´óÓÚäÖÈ¾ËÙ¶È£¬µ¼ÖÂÉú²úµÄply¶ÔÏóÒ»Ö±ÔÚ±¾µØ£¬¶øÇÒ¼ÓÔØ¹ý³ÌÖÐµÄÁÙÊ±±äÁ¿Ò²Õ¼¾ÝºÜ´óµÄÄÚ´æ
+ÓÅ»¯£º¼Ó¿ìäÖÈ¾£¬×èÈû¼ÓÔØ
+
+## ±¾µØÊý¾ÝºÍ·þÎñ¶ËÊý¾ÝÍ¬²½
+±³¾°£ºÃ¿Ò»Ì×vrÊÇÒ»¸öÏîÄ¿£¬Êý¾Ý±¾µØÒ»·Ý·þÎñ¶ËÒ»·Ý£¬È»ºóÍ¨¹ýÍ¬²½²Ù×÷½¨Á¢ÁªÏµ
+ÎÊÌâ£ºÈõÍø»·¾³ÐÞ¸ÄºóÍ¬²½¿ÉÄÜÊ§°Ü£¬Ê§°ÜºóÔõÃ´´¦Àí£¿±´¿ÇÃÅµê¿ÉÒÔ¼¸¸öÈËÒ»Æð²É¼¯Ò»Ì×VR²Ù×÷Í¬Ò»¸öÊý¾Ý£¬ÔõÃ´ÊµÏÖ£¿
+µ÷ÑÐ£º
+Í¬²½¿Í»§¶Ë·þÎñÆ÷ (S-CS)£º×èÈû²Ù×÷£¬²»Í¬²½³É¹¦ÎÞ·¨ÐÞ¸Ä±¾µØÊý¾Ý£¬Î¢ÐÅ
+Òì²½¿Í»§¶Ë·þÎñÆ÷ (A-CS)£º±¾µØ±£´æÊý¾ÝºóÌ¨Í¬²½
+Òì²½¶ÔµÈ·½Ê½ (A-P2P)£º
+Ñ¡ÐÍ£ºÒòÎªÈõÍø»·¾³ºÜ³£¼ûÓÈÆäº£Íâ£¬²»ÄÜ×èÈû£¬ËùÒÔ²ÉÓÃÁËµÚ¶þÖÖ
+Ë¼Â·£ºÖ÷ÒªÈý¸öÎÊÌâ
+1.¿ÅÁ£´óÐ¡:µ±Ä³¸öÊôÐÔ×Ö¶Î±»ÐÞ¸Ä¹ýºó£¬È·¶¨×·×ÙÕâ¸ö×Ö¶Î»¹ÊÇ×·×ÙÕû¸öÊµÀý
+2.¼ÇÂ¼±ä»¯:³¢ÊÔÍ¬²½Ê±ÐÂÄÚÈÝ¸²¸Çµô·þÎñ¶Ë¾ÉÄÚÈÝ£¬Èç¹û·þÎñ¶Ë¸üÐÂ»áÌáÊ¾³åÍ»£¬ÌáÊ¾±£ÁôÄÄ¸ö°æ±¾
+3.É¾³ý´¦Àí£ºÉ¾³ý×÷ÎªÌØÊâkey
+ÊµÏÖ£º
+1.Í¬²½Ê±´øÊ±¼ä´Á£¬·þÎñ¶ËÐ£ÑéÊ±¼ä´Á±È·þÎñ¶Ë¸üÐÂ²Å³É¹¦
+2.Ê§°ÜkeyÎª×Ö¶Î£¬valueÎª´øÊ±¼ä´ÁµÄÊµÀý´æ·ÅÍ¬²½²Ù×÷£¬È·±£±¾µØ¶ÔÄ³¸ö×Ö¶ÎÖ»±£Áô×îºóÒ»´Î²Ù×÷
+3.½øappÊ±»áÀ­È¡ÊµÀý£¬À­È¡³É¹¦ÌáÊ¾ÓÃ»§´¥·¢Í¬²½
+
+## hashmap
+Êý×é¼ÓÁ´±í£¬³õÊ¼16µÄÊý×é´óÐ¡£¬¸ù¾Ý¹þÏ£ÖµºÍÊý×é´óÐ¡È¡ÓàÅÐ¶Ï·ÅµÄÎ»ÖÃ
+Èç¹û¹þÏ£³åÍ»¾Í»áÒÔÁ´±íÐÎÊ½Í·²åµ½Ç°Ãæ
+Èç¹ûÔªËØ´ïµ½Êý×é³¤¶ÈµÄ0.75¾Í»áÀ©ÈÝ£¬ÖØÐÂ¹¹½¨hashmap
+ÎªÊ²Ã´ÊÇ0.75£¿hashÅö×²¸ÅÂÊÔÚ0.5×óÓÒ×îÊÊÖÐ£¬¸ú¸ºÔØÒò×ÓÓÐ¹Ø£¬ln2=0.69£¬·½±ãÎ»ÔËËã
+jdk7Ç°À©ÈÝ¿ÉÄÜ¸Ä±äÏà¶ÔË³Ðò£¬jdk8ÐÞ¸´ÁË£¬Í¨¹ýhashcodeÓë16Î»ÎÞ·ûºÅÕûÊýÈ¡Òì»ò
+
+ÎªÊ²Ã´Ïß³Ì²»°²È«£¿
+putµÄÊ±ºòÓÐÐÂ½¨Á´±í½ÚµãÐ´ÈëÄÚ´æµÄ²Ù×÷£¬¿ÉÄÜ»á¸²¸Ç»òÕßÔì³ÉÁ´±íËÀÑ­»·
+À©ÈÝÊ±get»áÈ¡µ½null
+
+ConcurrentHashMap
+jdk7Ö®Ç°ÊÇ·Ö¶ÎËø£¬Ò»¸öSegmentÀï°üº¬Ò»¸öHashEntryÁ´±í
+ÎªÊ²Ã´ÉáÆú£¿ÄÚ´æ²»Á¬Ðø£¬Ã»ÓÐ¸ù±¾½â¾ö£¬segment´óµÄÊ±ºò»¹ÊÇ»áÔì³ÉÐÔÄÜÏÂ½µ
+jdk8×ö¼¸¸ö²Ù×÷
+ÎÞ¹þÏ£Åö×²cas·ÀÖ¹Ð´ÈëÊ±¸²¸Ç»òÕßËÀÑ­»·
+ÓÐ¹þÏ£Åö×²Ê×ÏÈÅÐ¶ÏÕâ¸ö½ÚµãµÄÀàÐÍ¡£Èç¹û¸Ã½Úµãfh==MOVED(´ú±íforwardingNode£¬Êý×éÕýÔÚ½øÐÐÀ©ÈÝ)µÄ»°£¬ËµÃ÷ÕýÔÚ½øÐÐÀ©ÈÝ£¬synchronize
+CopyOnWriteArrayList
+CopyOnWrite£¬¶Á²»¼ÓËø£¬Ð´µÄÊ±ºòÐÂ½¨Ò»¸ö
+
+## ·ºÐÍ
+ÀàÐÍ²ÎÊý½â¾öÁËÔªËØµÄ²»È·¶¨ÐÔ£¬ÆäÊµÊÇÒ»¸öÓï·¨ÌÇ£¬ÔÚ±àÒëºó¾Í»á·ºÐÍ²Á³ýÓÃÇ¿×ªµÄ·½Ê½ÊµÏÖµ÷ÓÃ
+
+## JsBridge
+¶ÔÓÚAndroidµ÷ÓÃJS´úÂëµÄ·½·¨ÓÐ2ÖÖ£º
+1. Í¨¹ýWebViewµÄloadUrl£¨£©£¬µ÷ÓÃWebView JS
+2. Í¨¹ýWebViewµÄevaluateJavascript£¨£©£¬°²×¿4.4ÒÔºóÖ§³Ö£¬¿ÉÒÔ»ñÈ¡»Øµ÷
+¶ÔÓÚJSµ÷ÓÃAndroid´úÂëµÄ·½·¨ÓÐ3ÖÖ£º
+3. Í¨¹ý WebViewµÄaddJavascriptInterface£¨£©½øÐÐ¶ÔÏóÓ³Éä£¬ÔÚjsÏëÒªµ÷ÓÃµÄnative·½·¨Ç°¼ÓÉÏ @JavascriptInterface£¬²¢mWebView.addJavascriptInterface(new AndroidtoJs(), "test")Ó³Éä¶ÔÏó£¬ÓÐÂ©¶´jsÄÃµ½¶ÔÏóºó¿ÉÒÔ·´Éä»ñµÃRuntime£¬¿ÉÒÔÖ´ÐÐÒ»Ð©ÃüÁî
+4. Í¨¹ý WebViewClient µÄshouldOverrideUrlLoading ()·½·¨»Øµ÷À¹½Ø url£¬Ô¼¶¨ºÃscheme£¬ÄÃ·µ»ØÖµÐèÒª¿Í»§¶ËÔÙloadurl
+5. Í¨¹ý WebChromeClient µÄonJsAlert()¡¢onJsConfirm()¡¢onJsPrompt£¨£©·½·¨»Øµ÷À¹½ØJS¶Ô»°¿òalert()¡¢confirm()¡¢prompt£¨£© ÏûÏ¢£¬jsalert()Ê±»á´¥·¢
+
+
+## ViewµÄ»æÖÆÁ÷³Ì
+1. XML×ª»»³ÉView
+LayoutInflater£¬io½âÎöxml£¬½«±êÇ©Ãû×ª»¯ÎªViewµÄÃû³Æ,XMLÖÐµÄ¸÷ÖÖÊôÐÔ×ª»¯ÎªAttributeSet¶ÔÏó,È»ºóÍ¨¹ý·´ÉäÉú³ÉView¶ÔÏó
+2. 
