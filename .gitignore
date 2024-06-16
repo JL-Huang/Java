@@ -1,9 +1,3 @@
 # Project exclude paths
-/IO/bin/
-/反射/bin/
-/基础/bin/
-/多线程/bin/
-/注解/bin/
-/算法/bin/
-/设计模式/bin/
+/*/bin/
 /out
