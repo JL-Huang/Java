@@ -17,7 +17,9 @@ public class ListNode {
         for (int i = 0; i < nums.length; i++) {
             node.val = nums[i];
             if (node != null) {
-                node.next = new ListNode();
+                if(i!= nums.length-1){
+                    node.next = new ListNode();
+                }
                 node = node.next;
             }
         }

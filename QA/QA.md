@@ -21,22 +21,6 @@ Mvvm£º×î´óµÄË¼ÏëÊÇÊı¾İÇı¶¯£¬model²ãµÄÊı¾İ¸Ä±äÇı¶¯viewmodelÊı¾İ±ä¸ü£¬viewmodelÊı¾
 ÏÖÏó£ºpostvalue´æÖµµ½mpendingdata£¬ÍùÖ÷Ïß³Ì¶ªÒ»¸örunable£¬ÔÚrunableÀïÊµÏÖsetvalue£¬setvalueÔÚobserve·Ç»îÔ¾²»»á»Øµ÷
 ½â¾ö°ì·¨£º1observforeverÊÖ¶¯¹ÜÀíÉúÃüÖÜÆÚ2postvalueÊÖ¶¯Å×runable3ÖØĞ´observe
 
-## appÆô¶¯
-### launcher
------startactivity binder----->
-### ams
------socket Process.start----->
-### zygote
------------fork------>
-### app½ø³Ì
-----attach°ó¶¨amsÓëapplicationthread binder----->
-### ams
---------scheduleLaunchActivity binder-->
-### applicationthread
---LAUNCH_ACTIVITY handler-->
-### activitythread
-------Activity.onCreate()
-
 ## Handlerµ¼ÖÂµÄÄÚ´æĞ¹Â¶Ô­Òò¼°Æä½â¾ö·½°¸
 ·Ç¾²Ì¬ÄÚ²¿Àà»òÄäÃûÄÚ²¿ÀàÖĞ´´½¨ÁËÖ÷Ïß³Ìhandler£¬·¢ËÍÁËÑÓÊ±ÏûÏ¢£¬ÏûÏ¢³ÖÓĞhandler¶ÔÏó³ÖÓĞÍâ²¿Àà¶ÔÏóµ¼ÖÂ²»ÄÜ»ØÊÕ
 1.½«³ÖÓĞHandlerµÄ×ÓÀàÉèÖÃ³É¾²Ì¬ÄÚ²¿Àà,Ê¹ÓÃÈõÒıÓÃ³ÖÓĞActivityÊµÀı 
@@ -80,23 +64,7 @@ windowµ÷ÓÃDecorViewµÄsuper.dispatchTouchView£¬Õâ¸öÊ±ºòÊÓÎªviewgroup
 3¡¢ onTouchEvent() £º return false ÊÇ²»Ïû·ÑÊÂ¼ş£¬»á±»´«µİ¸ø¸¸ÊÓÍ¼µÄonTouchEvent·½·¨½øĞĞ´¦Àí¡£return
 true ÊÇÏû·ÑÊÂ¼ş¡£
 
-## ÎªÊ²Ã´´´½¨activityÓÃsocket²»ÓÃbinder
-1. forkÖ»Ö§³Öµ¥Ïß³Ì£¬ÒòÎªfork³öÀ´µÄ×Ó½ø³Ì»á¸´ÖÆ¸¸½ø³ÌµÄËùÓĞÄÚÈİ£¬°üÀ¨¸¸½ø³ÌµÄËùÓĞÏß³Ì×´Ì¬£¬Èç¹ûÊÇ×èÈû»áÒ»Ö±×èÈûÔì³ÉËÀËø
-binderĞèÒª¶àÏß³ÌÖ§³Ö£¬ËùÒÔ²»ÄÜ²ÉÓÃbinder
-½ø½×£ºÆäÊµforkÖ®Ç°Í¨ĞÅÒÑ¾­½áÊø£¬ÊÇbinderÇı¶¯ÀïµÄÉè¼Æ²»Ö§³Öfork
-2. ×Ó½ø³ÌÊ¹ÓÃbinderÊ±£¬ĞÂ½¨ProcessState£¬µ¥Àı»¹ÊÇ¸¸½ø³ÌµÄÒıÓÃ£¬ÀïÃæ»áÓĞ²Ù×÷open_driverÉæ¼°Ğ´²Ù×÷£¬ĞèÒªmmapÉêÇëÒ»Æ¬ÄÚ´æÓÃÒÔÌá¹©¸øÄÚºË½øĞĞÊı¾İ½»»»Ê¹ÓÃ¡£
-¶øÈç¹ûzygoteÊ¹ÓÃÁËbinder£¬ÒòÎª×Ó½ø³ÌÊÇfork³öÀ´µÄ£¬×Ó½ø³ÌÔÚ½øĞĞbinderÍ¨ĞÅÊ±£¬ÄÚºË»¹ÊÇ»á¼ÌĞøÊ¹ÓÃ¸¸½ø³ÌÉêÇëµÄµØÖ·Ğ´Êı¾İ£¬¶ø´ËÊ±»á´¥·¢×Ó½ø³ÌCOW(Copy on Write)£¬´Ó¶øµ¼ÖÂµØÖ·¿Õ¼äÒÑ¾­ÖØĞÂÓ³Éä£¬¶ø×Ó½ø³Ì»¹³¢ÊÔ·ÃÎÊÖ®Ç°¸¸½ø³ÌmmapµÄµØÖ·£¬»áµ¼ÖÂSIGSEGV¡¢SEGV_MAPERR¶Î´íÎó¡£
 
-
-## ActivityManagerServiceÊÇÊ²Ã´£¿Ê²Ã´Ê±ºò³õÊ¼»¯µÄ£¿ÓĞÊ²Ã´×÷ÓÃ£¿
-ActivityManagerService Ö÷Òª¸ºÔğÏµÍ³ÖĞËÄ´ó×é¼şµÄÆô¶¯¡¢ÇĞ»»¡¢µ÷¶È¼°Ó¦ÓÃ½ø³ÌµÄ¹ÜÀíºÍµ÷¶ÈµÈ¹¤×÷£¬ÆäÖ°Ôğ
-Óë²Ù×÷ÏµÍ³ÖĞµÄ½ø³Ì¹ÜÀíºÍµ÷¶ÈÄ£¿éÀàËÆ¡£
-ActivityManagerService½øĞĞ³õÊ¼»¯µÄÊ±»úºÜÔÚSystemServer½ø³Ì¿ªÆôµÄÊ±ºò
-Èç¹û´ò¿ªÒ»¸öAppµÄ»°£¬ĞèÒªAMSÈ¥Í¨Öªzygote½ø³Ì£¬ ËùÓĞµÄActivityµÄÉúÃüÖÜÆÚAMSÀ´¿ØÖÆ
-
-## InstrumentationÊÇÊ²Ã´£¿ºÍActivityThreadÊÇÊ²Ã´¹ØÏµ£¿
-AMSÓëActivityThreadÖ®¼äÖîÈçActivityµÄ´´½¨¡¢ÔİÍ£µÈµÄ½»»¥¹¤×÷Êµ¼ÊÉÏÊÇÓÉInstrumentation¾ßÌå²Ù×÷µÄ¡£Ã¿
-¸öActivity¶¼³ÖÓĞÒ»¸öInstrumentation¶ÔÏóµÄÒ»¸öÒıÓÃ£¬ Õû¸ö½ø³ÌÖĞÊÇÖ»ÓĞÒ»¸öInstrumentation¡£
 
 ## apk×é³É
 1. META-INFÊÇÇ©ÃûÎÄ¼ş¼Ğ¡£ ´æ·ÅÇ©ÃûĞÅÏ¢
@@ -222,9 +190,3 @@ CopyOnWrite£¬¶Á²»¼ÓËø£¬Ğ´µÄÊ±ºòĞÂ½¨Ò»¸ö
 3. Í¨¹ı WebViewµÄaddJavascriptInterface£¨£©½øĞĞ¶ÔÏóÓ³Éä£¬ÔÚjsÏëÒªµ÷ÓÃµÄnative·½·¨Ç°¼ÓÉÏ @JavascriptInterface£¬²¢mWebView.addJavascriptInterface(new AndroidtoJs(), "test")Ó³Éä¶ÔÏó£¬ÓĞÂ©¶´jsÄÃµ½¶ÔÏóºó¿ÉÒÔ·´Éä»ñµÃRuntime£¬¿ÉÒÔÖ´ĞĞÒ»Ğ©ÃüÁî
 4. Í¨¹ı WebViewClient µÄshouldOverrideUrlLoading ()·½·¨»Øµ÷À¹½Ø url£¬Ô¼¶¨ºÃscheme£¬ÄÃ·µ»ØÖµĞèÒª¿Í»§¶ËÔÙloadurl
 5. Í¨¹ı WebChromeClient µÄonJsAlert()¡¢onJsConfirm()¡¢onJsPrompt£¨£©·½·¨»Øµ÷À¹½ØJS¶Ô»°¿òalert()¡¢confirm()¡¢prompt£¨£© ÏûÏ¢£¬jsalert()Ê±»á´¥·¢
-
-
-## ViewµÄ»æÖÆÁ÷³Ì
-1. XML×ª»»³ÉView
-LayoutInflater£¬io½âÎöxml£¬½«±êÇ©Ãû×ª»¯ÎªViewµÄÃû³Æ,XMLÖĞµÄ¸÷ÖÖÊôĞÔ×ª»¯ÎªAttributeSet¶ÔÏó,È»ºóÍ¨¹ı·´ÉäÉú³ÉView¶ÔÏó
-2. 

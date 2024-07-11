@@ -10,6 +10,7 @@ public class Test150 {
         minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3});
         minWindow("ADOBECODEBANC", "ABC");
         addTwoNumbers(ListNode.toListNode(new int[]{9, 9, 9, 9}), ListNode.toListNode(new int[]{9, 9, 9}));
+        deleteSameNode(ListNode.toListNode(new int[]{3, 1, 2, 3,5,6,5,4}));
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -142,5 +143,30 @@ public class Test150 {
             if (fast == slow) return true;
         }
         return false;
+    }
+
+    public static ListNode deleteSameNode(ListNode node) {
+        ListNode temp = node;
+        HashMap<Integer, Integer> map = new HashMap();
+        while (temp != null) {
+            if (map.get(temp.val) == null) {
+                map.put(temp.val, 0);
+            }
+            map.put(temp.val, map.get(temp.val) + 1);
+            temp = temp.next;
+        }
+        ListNode result = new ListNode();
+        result.val = -1;
+        result.next = node;
+        map.put(-1,1);
+        temp = result;
+        while (temp.next != null) {
+            if (map.get(temp.next.val) > 1) {
+                temp.next = temp.next.next;
+            }else {
+                temp=temp.next;
+            }
+        }
+        return result.next;
     }
 }

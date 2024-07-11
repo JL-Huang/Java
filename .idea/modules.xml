@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CV/CV.iml" filepath="$PROJECT_DIR$/CV/CV.iml" />
       <module fileurl="file://$PROJECT_DIR$/IO/IO.iml" filepath="$PROJECT_DIR$/IO/IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QA/QA.iml" filepath="$PROJECT_DIR$/QA/QA.iml" />
       <module fileurl="file://$PROJECT_DIR$/UDP/UDP.iml" filepath="$PROJECT_DIR$/UDP/UDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServer/WebServer.iml" filepath="$PROJECT_DIR$/WebServer/WebServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebTest/WebTest.iml" filepath="$PROJECT_DIR$/WebTest/WebTest.iml" />
