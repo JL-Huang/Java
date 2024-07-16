@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Book/Book.iml" filepath="$PROJECT_DIR$/Book/Book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CPP/CPP.iml" filepath="$PROJECT_DIR$/CPP/CPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBase/JavaBase.iml" filepath="$PROJECT_DIR$/JavaBase/JavaBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/QA/QA.iml" filepath="$PROJECT_DIR$/QA/QA.iml" />
       <module fileurl="file://$PROJECT_DIR$/算法/算法.iml" filepath="$PROJECT_DIR$/算法/算法.iml" />
